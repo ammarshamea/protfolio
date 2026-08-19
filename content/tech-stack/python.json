@@ -1,0 +1,11 @@
+{
+  "slug": "python",
+  "name": "Python",
+  "category": "backend",
+  "yearsOfExperience": 1,
+  "proficiency": 3,
+  "experience": "I reach for Python whenever a task leans toward automation, scripting, or Telegram bot workflows — aiogram and asyncio make conversational interfaces straightforward without forcing a web framework into the job.",
+  "whyChosen": "For chat-bot and automation work specifically, Python's async ecosystem (aiogram, asyncio) is a better fit than adapting a web framework to a conversational interface.",
+  "alternatives": ["Node.js"],
+  "projectSlugs": []
+}

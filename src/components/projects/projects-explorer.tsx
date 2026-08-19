@@ -1,0 +1,126 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
+import { Search } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { ProjectCard } from "./project-card";
+import {
+  StaggerContainer,
+  StaggerItem,
+} from "@/components/motion/stagger-children";
+import { EmptyState } from "@/components/shared/empty-state";
+import type { Project, ProjectCategory } from "@/lib/schemas/project";
+import { cn } from "@/lib/utils";
+
+const CATEGORIES: (ProjectCategory | "all")[] = [
+  "all",
+  "saas",
+  "mobile",
+  "web",
+  "agency",
+  "automation",
+];
+
+const PAGE_SIZE = 9;
+
+export function ProjectsExplorer({ projects }: { projects: Project[] }) {
+  const t = useTranslations("common");
+  const tp = useTranslations("pages.projects");
+  const [category, setCategory] = useState<ProjectCategory | "all">("all");
+  const [query, setQuery] = useState("");
+  const [page, setPage] = useState(1);
+
+  const filtered = useMemo(() => {
+    return projects.filter((project) => {
+      const matchesCategory =
+        category === "all" || project.category === category;
+      const matchesQuery =
+        !query ||
+        project.title.toLowerCase().includes(query.toLowerCase()) ||
+        project.stack.some((tech) =>
+          tech.toLowerCase().includes(query.toLowerCase()),
+        );
+      return matchesCategory && matchesQuery;
+    });
+  }, [projects, category, query]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const safePage = Math.min(page, totalPages);
+  const paginated = filtered.slice(
+    (safePage - 1) * PAGE_SIZE,
+    safePage * PAGE_SIZE,
+  );
+
+  return (
+    <div>
+      <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-wrap gap-2">
+          {CATEGORIES.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => {
+                setCategory(cat);
+                setPage(1);
+              }}
+              className={cn(
+                "rounded-full border px-4 py-2 text-sm font-medium transition-colors",
+                category === cat
+                  ? "border-transparent bg-[var(--accent)] text-[var(--accent-foreground)]"
+                  : "border-[var(--surface-border)] text-[var(--muted-foreground)] hover:text-[var(--foreground)]",
+              )}
+            >
+              {tp(`categories.${cat}`)}
+            </button>
+          ))}
+        </div>
+
+        <div className="relative w-full sm:w-64">
+          <Search className="pointer-events-none absolute start-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--muted-foreground)]" />
+          <Input
+            value={query}
+            onChange={(event) => {
+              setQuery(event.target.value);
+              setPage(1);
+            }}
+            placeholder={t("searchPlaceholder")}
+            className="ps-10 pe-4"
+          />
+        </div>
+      </div>
+
+      {paginated.length === 0 ? (
+        <EmptyState title={t("noResults")} description={tp("filterEmpty")} />
+      ) : (
+        <StaggerContainer
+          key={safePage}
+          animateOnMount
+          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {paginated.map((project) => (
+            <StaggerItem key={project.slug}>
+              <ProjectCard project={project} />
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
+      )}
+
+      {totalPages > 1 ? (
+        <div className="mt-12 flex items-center justify-center gap-2">
+          {Array.from({ length: totalPages }).map((_, index) => (
+            <Button
+              key={index}
+              variant={safePage === index + 1 ? "default" : "outline"}
+              size="sm"
+              onClick={() => setPage(index + 1)}
+              className="h-9 w-9 rounded-full p-0"
+            >
+              {index + 1}
+            </Button>
+          ))}
+        </div>
+      ) : null}
+    </div>
+  );
+}

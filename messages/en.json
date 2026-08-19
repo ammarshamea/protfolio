@@ -1,0 +1,373 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "timeline": "Timeline",
+    "skills": "Skills",
+    "techStack": "Tech Stack",
+    "services": "Services",
+    "experience": "Experience",
+    "blog": "Blog",
+    "openSource": "Open Source",
+    "uses": "Uses",
+    "setup": "Desk Setup",
+    "toolbox": "Toolbox",
+    "now": "Now",
+    "roadmap": "Roadmap",
+    "reading": "Reading",
+    "playground": "Playground",
+    "lab": "Lab",
+    "favorites": "Favorites",
+    "stats": "Stats",
+    "changelog": "Changelog",
+    "speaking": "Speaking",
+    "press": "Press",
+    "contact": "Contact",
+    "resume": "Resume",
+    "menu": "Menu",
+    "close": "Close",
+    "work": "Work",
+    "extras": "Extras",
+    "connect": "Connect"
+  },
+  "common": {
+    "viewAll": "View all",
+    "viewProject": "View project",
+    "viewCaseStudy": "View case study",
+    "liveDemo": "Live demo",
+    "sourceCode": "Source code",
+    "readMore": "Read more",
+    "backToHome": "Back to home",
+    "backToProjects": "Back to projects",
+    "backToBlog": "Back to blog",
+    "downloadResume": "Download résumé",
+    "printResume": "Print résumé",
+    "getInTouch": "Get in touch",
+    "sendMessage": "Send message",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied",
+    "scrollToTop": "Scroll to top",
+    "loading": "Loading",
+    "featured": "Featured",
+    "favorite": "Favorite",
+    "search": "Search",
+    "searchPlaceholder": "Search projects, pages, technologies...",
+    "noResults": "No results found",
+    "comingSoon": "Coming soon",
+    "wip": "Work in progress",
+    "readingTime": "{minutes} min read",
+    "toggleTheme": "Toggle theme",
+    "toggleLocale": "Switch language",
+    "recruiterMode": "Recruiter mode",
+    "commandPaletteHint": "Press",
+    "openCommandPalette": "Open command menu",
+    "pagesGroup": "Pages",
+    "commandsGroup": "Commands",
+    "externalGroup": "External links"
+  },
+  "footer": {
+    "tagline": "Build once. Scale forever.",
+    "quickLinks": "Quick links",
+    "connect": "Connect",
+    "rights": "All rights reserved.",
+    "sitemap": "Sitemap",
+    "apiDocs": "API Docs",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "backToTop": "Back to top"
+  },
+  "hero": {
+    "availabilityBadge": "Open for remote work",
+    "scrollHint": "Scroll to explore"
+  },
+  "contactForm": {
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "you@example.com",
+    "subjectPlaceholder": "What's this about?",
+    "messagePlaceholder": "Tell me about your project...",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent — I'll reply within 24 hours.",
+    "error": "Something went wrong. Please try WhatsApp or email directly.",
+    "validationRequired": "This field is required",
+    "validationEmail": "Enter a valid email address"
+  },
+  "notFound": {
+    "title": "This page took a wrong turn",
+    "description": "The route you're looking for doesn't exist — but here's a project you might like instead.",
+    "shortcutHint": "Tip: press G then H to jump home anytime.",
+    "cta": "Take me home"
+  },
+  "error": {
+    "title": "Something broke",
+    "description": "An unexpected error occurred while rendering this page.",
+    "retry": "Try again",
+    "home": "Go home"
+  },
+  "resume": {
+    "summary": "Summary",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Selected projects",
+    "downloadVCard": "Save contact (vCard)",
+    "printResume": "Print résumé",
+    "scanToView": "Scan to view this résumé online"
+  },
+  "shortcuts": {
+    "title": "Keyboard shortcuts",
+    "openPalette": "Open command palette",
+    "goHome": "Go to Home",
+    "goProjects": "Go to Projects",
+    "goAbout": "Go to About",
+    "showShortcuts": "Show this dialog"
+  },
+  "pages": {
+    "categories": {
+      "mobile": "Mobile",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "database": "Database",
+      "devops": "DevOps",
+      "design": "Design",
+      "ai": "AI",
+      "architecture": "Architecture"
+    },
+    "projects": {
+      "metaTitle": "Projects",
+      "metaDescription": "Real Flutter apps and full-stack platforms — restaurant ordering, delivery, transportation, and business tools shipped for real clients.",
+      "eyebrow": "{count}+ shipped",
+      "subtitle": "Real projects across restaurant ordering, delivery, transportation, retail, and automation — each with the full story: problem, architecture, challenges, and results.",
+      "srTitle": "All projects",
+      "filterEmpty": "Try a different category or search term.",
+      "categories": {
+        "all": "All",
+        "saas": "SaaS",
+        "mobile": "Mobile",
+        "web": "Web",
+        "agency": "Agency",
+        "automation": "Automation",
+        "package": "Packages"
+      },
+      "detail": {
+        "screenshotPending": "Screenshots coming soon — the case study below reflects the real, shipped product.",
+        "overview": "Overview",
+        "problem": "Problem",
+        "solution": "Solution",
+        "architecture": "Architecture",
+        "features": "Key features",
+        "challenges": "Challenges",
+        "lessonsLearned": "Lessons learned",
+        "futureImprovements": "Future improvements",
+        "results": "Results",
+        "role": "Role",
+        "duration": "Duration",
+        "year": "Year",
+        "stack": "Stack",
+        "related": "Related projects"
+      }
+    },
+    "experience": {
+      "metaTitle": "Experience",
+      "metaDescription": "Where I've worked and what I've shipped — roles, responsibilities, and achievements.",
+      "title": "Where I've worked",
+      "subtitle": "Roles, responsibilities, and outcomes — see the visual, scroll-driven version on the timeline page.",
+      "srTitle": "Work history",
+      "responsibilities": "Responsibilities",
+      "achievements": "Achievements"
+    },
+    "about": {
+      "metaTitle": "About",
+      "title": "About me",
+      "mission": "Mission",
+      "vision": "Vision",
+      "valuesEyebrow": "Values",
+      "valuesTitle": "What I optimize for",
+      "processEyebrow": "Process",
+      "processTitle": "How I work",
+      "funFactsEyebrow": "Off the clock",
+      "funFactsTitle": "A few fun facts",
+      "ctaTitle": "Want the full career story?",
+      "ctaDescription": "See the interactive timeline from my first Flutter app to Clyx Order's multi-tenant architecture."
+    },
+    "services": {
+      "metaTitle": "Services",
+      "metaDescription": "What I can build for you — Flutter apps, Laravel backends, full-stack platforms, and AI integration.",
+      "title": "What I can build for you",
+      "subtitle": "Six focused service areas, each backed by real shipped projects — not a generic freelancer menu.",
+      "srTitle": "Services"
+    },
+    "openSource": {
+      "metaTitle": "Open Source",
+      "metaDescription": "My public code and where it's headed — no inflated commit graphs, just the real state of it.",
+      "title": "Open source",
+      "subtitle": "Most of what I build is client work and can't be public — here's where my public code lives, and what I'm working toward opening up.",
+      "publicRepos": "Public repositories",
+      "publicReposDesc": "Personal experiments, early Flutter projects, and small tools live on GitHub — including a Starbucks UI clone from when I was first learning Flutter, still public and unedited.",
+      "viewGithub": "View GitHub profile",
+      "codebergMirror": "Codeberg mirror",
+      "codebergDesc": "I keep a presence on Codeberg as a non-corporate alternative for future open-source releases.",
+      "viewCodeberg": "View Codeberg profile",
+      "whatsNext": "What's next",
+      "whatsNextDesc": "Two concrete goals on the <roadmap>roadmap</roadmap>: publishing the shared Dart packages built for the Qareeb ecosystem as proper open-source releases, and contributing to an established open-source Flutter package. Both are in progress, not finished — this page will update honestly as they ship.",
+      "followers": "{count} follower on GitHub.",
+      "followersPlural": "{count} followers on GitHub.",
+      "featuredRepos": "Featured repositories",
+      "recentActivity": "Recent activity"
+    },
+    "skills": {
+      "metaTitle": "Skills",
+      "metaDescription": "Proficiency across mobile, backend, frontend, database, DevOps, design, and AI integration.",
+      "title": "Where I'm strongest",
+      "subtitle": "Proficiency reflects real project usage, not certifications — years of experience are tracked per technology on the tech stack page.",
+      "yearsSuffix": "+ yrs"
+    },
+    "techStack": {
+      "metaTitle": "Tech Stack",
+      "metaDescription": "The full technology encyclopedia — every tool, why I chose it, and which projects use it.",
+      "title": "The full stack, explained",
+      "subtitle": "Not just a list of logos — each technology links to why I chose it and which real projects use it.",
+      "yearsProjects": "{years}+ years · {count} project",
+      "yearsProjectsPlural": "{years}+ years · {count} projects",
+      "detail": {
+        "experience": "My experience",
+        "whyChosen": "Why I chose it",
+        "alternatives": "Alternatives considered",
+        "usedIn": "Used in",
+        "category": "Category",
+        "experienceLabel": "Experience",
+        "proficiency": "Proficiency",
+        "years": "{years}+ years"
+      }
+    },
+    "timeline": {
+      "metaTitle": "Timeline",
+      "metaDescription": "My career journey from a first Flutter app in 2024 to multi-tenant platform architecture in 2026.",
+      "title": "The journey so far",
+      "subtitle": "Two years, one consistent thread: shipping real software for real people, and getting a little better at it every time."
+    },
+    "stats": {
+      "metaTitle": "Stats",
+      "metaDescription": "Real, verifiable numbers — no inflated metrics.",
+      "title": "Stats, honestly",
+      "subtitle": "No line-of-code counters or inflated commit graphs — just numbers I can defend in an interview.",
+      "srTitle": "Summary",
+      "projectsDelivered": "Projects delivered",
+      "yearsExperience": "Years of experience",
+      "liveProducts": "Live products",
+      "clientsServed": "Clients served",
+      "topTech": "Most-used technologies",
+      "projectCount": "{count} project",
+      "projectCountPlural": "{count} projects"
+    },
+    "uses": {
+      "metaTitle": "Uses",
+      "metaDescription": "The daily software tools behind every project I ship.",
+      "title": "What I use",
+      "subtitle": "The software running on my machine every single day — see the hardware behind it on the desk setup page.",
+      "seeSetup": "See my desk setup"
+    },
+    "setup": {
+      "metaTitle": "Desk Setup",
+      "metaDescription": "The hardware behind my daily development work.",
+      "title": "Desk setup",
+      "subtitle": "The hardware behind the software — see the daily tools on the uses page.",
+      "categories": {
+        "device": "Device",
+        "monitor": "Display",
+        "keyboard": "Keyboard",
+        "mouse": "Mouse",
+        "microphone": "Microphone",
+        "camera": "Camera",
+        "extension": "Editor Extensions"
+      }
+    },
+    "changelog": {
+      "metaTitle": "Changelog",
+      "metaDescription": "What's changed on this site, version by version.",
+      "title": "Changelog",
+      "subtitle": "This site is treated like a real product — every meaningful change is logged here.",
+      "srTitle": "Version history"
+    },
+    "blog": {
+      "metaTitle": "Blog",
+      "metaDescription": "Notes on Flutter, Laravel, architecture, and AI integration from real client work.",
+      "title": "Notes from real projects",
+      "subtitle": "Architecture decisions and lessons pulled from client work — not generic tutorials.",
+      "srTitle": "Posts",
+      "emptyTitle": "No posts yet",
+      "emptyDescription": "Check back soon — the first posts are on the way."
+    },
+    "reading": {
+      "metaTitle": "Reading",
+      "metaDescription": "Books shaping how I think about architecture, systems, and craft.",
+      "title": "What I'm reading",
+      "subtitle": "Technical books that actually changed how I build software — not a generic recommendation list.",
+      "srTitle": "Books",
+      "status": {
+        "completed": "Completed",
+        "reading": "Currently reading",
+        "queued": "Queued"
+      }
+    },
+    "toolbox": {
+      "metaTitle": "Toolbox",
+      "metaDescription": "The full software toolkit behind every project I ship.",
+      "title": "Toolbox",
+      "subtitle": "Every piece of software involved in taking a project from idea to production.",
+      "categories": {
+        "ide": "IDEs & Editors",
+        "design": "Design",
+        "terminal": "Terminal",
+        "api": "API Tools",
+        "deployment": "Deployment",
+        "productivity": "Productivity"
+      }
+    },
+    "favorites": {
+      "metaTitle": "Favorites",
+      "metaDescription": "Tools, books, and channels I keep coming back to — not projects, just personal picks.",
+      "title": "Personal favorites",
+      "subtitle": "Tools, books, channels, and sites I genuinely rely on — not the curated project picks, those live on the projects favorites page.",
+      "categories": {
+        "tool": "Tools",
+        "book": "Books",
+        "youtube": "YouTube",
+        "podcast": "Podcasts",
+        "website": "Websites"
+      }
+    },
+    "lab": {
+      "metaTitle": "Lab",
+      "metaDescription": "Early-stage ideas and prototypes — work in progress, by design.",
+      "title": "Lab",
+      "subtitle": "Incomplete ideas and prototypes I'm actively poking at — some will become real projects, most won't, and that's the point.",
+      "srTitle": "Prototypes",
+      "startedAt": "Started {date}",
+      "status": {
+        "idea": "Idea",
+        "prototyping": "Prototyping",
+        "paused": "Paused"
+      }
+    },
+    "playground": {
+      "metaTitle": "Playground",
+      "metaDescription": "Small coding experiments — Flutter widgets, CSS effects, and AI tool demos.",
+      "title": "Playground",
+      "subtitle": "Coding experiments and small builds — not production projects, just curiosity.",
+      "srTitle": "Experiments",
+      "live": "Live",
+      "source": "Source",
+      "categories": {
+        "flutter": "Flutter",
+        "css": "CSS",
+        "ai": "AI",
+        "component": "Component"
+      }
+    }
+  }
+}

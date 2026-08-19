@@ -1,0 +1,44 @@
+[
+  {
+    "year": "2026",
+    "goals": [
+      {
+        "label": "Ship AI-powered analytics for Clyx Order's dashboard",
+        "done": false
+      },
+      {
+        "label": "Publish the Qareeb shared packages as proper open-source releases",
+        "done": false
+      },
+      {
+        "label": "Take on a fully international (non-Syrian) client project",
+        "done": false
+      },
+      {
+        "label": "Launch this portfolio with full bilingual content",
+        "done": true
+      },
+      {
+        "label": "Reach comfortable professional English communication",
+        "done": false
+      }
+    ]
+  },
+  {
+    "year": "2027",
+    "goals": [
+      {
+        "label": "Lead architecture on a platform serving multiple concurrent client brands",
+        "done": false
+      },
+      {
+        "label": "Contribute to an established open-source Flutter package",
+        "done": false
+      },
+      {
+        "label": "Mentor a junior developer through their first production app",
+        "done": false
+      }
+    ]
+  }
+]

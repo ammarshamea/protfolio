@@ -1,0 +1,40 @@
+{
+  "slug": "qareeb",
+  "title": "Qareeb",
+  "tagline": "Dual-app, location-based delivery platform with separate customer and driver (captain) experiences.",
+  "category": "mobile",
+  "featured": false,
+  "favorite": true,
+  "role": "Mobile Developer",
+  "duration": "3 months",
+  "year": "2025",
+  "overview": "Qareeb (\"nearby\" in Arabic) is an on-demand delivery platform built as two coordinated Flutter apps — one for customers placing requests, one for drivers (captains) fulfilling them — sharing a common set of packages for maps and data models.",
+  "problem": "Delivery requests needed real-time location matching between customers and nearby drivers, with two very different UI needs depending on whether you're requesting or fulfilling a delivery.",
+  "solution": "Rather than one app with role-switching, I built two focused Flutter apps sharing common packages: a maps package for location logic, a models package for shared data types, and supporting packages for UI elements used in both apps.",
+  "architecture": "BLoC-based state management in both apps, with shared Dart packages (map_qareeb, qareeb_models) published as git dependencies so location logic and data models stay consistent without duplicating code between the customer and captain codebases.",
+  "features": [
+    "Real-time location tracking and driver matching",
+    "Separate, purpose-built UI for customers versus drivers",
+    "Shared map and data-model packages to avoid logic drift between apps",
+    "Order/request lifecycle from creation to completion"
+  ],
+  "challenges": [
+    "Keeping two independently evolving apps consistent by extracting genuinely shared logic into packages instead of copy-pasting",
+    "Handling live location updates efficiently without draining battery or overloading the backend"
+  ],
+  "lessonsLearned": [
+    "Extracting shared packages early (models, maps) prevents the two apps from silently diverging as features get added independently"
+  ],
+  "futureImprovements": [
+    "In-app chat between customer and driver",
+    "Estimated arrival time based on live traffic data"
+  ],
+  "results": [
+    "Two coordinated production apps sharing a consistent location and data layer"
+  ],
+  "stack": ["Flutter", "BLoC", "Google Maps", "Geolocation"],
+  "githubUrl": "https://github.com/ammarshamea/map_qareeb",
+  "coverImage": "/projects/logos/qareeb_logo.svg",
+  "screenshotPending": false,
+  "gallery": []
+}

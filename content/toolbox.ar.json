@@ -1,0 +1,43 @@
+[
+  {
+    "category": "ide",
+    "name": "VS Code",
+    "description": "المحرر الأساسي لـ Flutter وLaravel وTypeScript وPython.",
+    "url": "https://code.visualstudio.com"
+  },
+  {
+    "category": "ide",
+    "name": "Android Studio",
+    "description": "يُستخدم لإدارة محاكي Flutter وتصحيح أخطاء Android الأصلية."
+  },
+  {
+    "category": "design",
+    "name": "Figma",
+    "description": "تصميم الواجهات ونماذج التدفقات الموجهة للعملاء."
+  },
+  {
+    "category": "terminal",
+    "name": "Windows Terminal",
+    "description": "الطرفية اليومية، بلوحات مقسّمة لتشغيل خوادم تطوير Flutter وLaravel جنبًا إلى جنب."
+  },
+  {
+    "category": "api",
+    "name": "Postman",
+    "description": "تصميم واختبار وتوثيق واجهة برمجية لكل خلفية Laravel أبنيها."
+  },
+  {
+    "category": "deployment",
+    "name": "Vercel",
+    "description": "منصة النشر لمواقع ولوحات تحكم Next.js وReact التسويقية."
+  },
+  {
+    "category": "deployment",
+    "name": "Docker",
+    "description": "حوسبة أنظمة متعددة الخدمات مثل NIVXTIME لنشر متسق."
+  },
+  {
+    "category": "productivity",
+    "name": "Notion",
+    "description": "تحديد نطاق المشاريع، ملاحظات العملاء، وتتبع خارطة الطريق الشخصية."
+  }
+]

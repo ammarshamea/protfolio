@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "multi-tenant-starter-kit",
+    "title": "Multi-tenant Laravel starter kit",
+    "description": "Extracting the multi-tenancy patterns from Clyx Order into a reusable Laravel starter kit for future restaurant/service platform clients.",
+    "status": "prototyping",
+    "startedAt": "2026-05"
+  },
+  {
+    "slug": "flutter-offline-sync",
+    "title": "Offline-first sync layer for Flutter",
+    "description": "Exploring a local-first data layer for field-service style apps (like Salam or Circle) that need to keep working with unreliable connectivity.",
+    "status": "idea",
+    "startedAt": "2026-06"
+  },
+  {
+    "slug": "ai-code-review-assistant",
+    "title": "AI-assisted code review checklist",
+    "description": "A prompt-engineered checklist tool for reviewing my own Flutter/Laravel pull requests against the clean architecture rules I try to follow.",
+    "status": "prototyping",
+    "startedAt": "2026-04"
+  }
+]

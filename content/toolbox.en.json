@@ -1,0 +1,43 @@
+[
+  {
+    "category": "ide",
+    "name": "VS Code",
+    "description": "Primary editor for Flutter, Laravel, TypeScript, and Python.",
+    "url": "https://code.visualstudio.com"
+  },
+  {
+    "category": "ide",
+    "name": "Android Studio",
+    "description": "Used for Flutter emulator management and native Android debugging."
+  },
+  {
+    "category": "design",
+    "name": "Figma",
+    "description": "UI design and client-facing flow mockups."
+  },
+  {
+    "category": "terminal",
+    "name": "Windows Terminal",
+    "description": "Daily terminal, split panes for running Flutter and Laravel dev servers side by side."
+  },
+  {
+    "category": "api",
+    "name": "Postman",
+    "description": "API design, testing, and documentation for every Laravel backend I build."
+  },
+  {
+    "category": "deployment",
+    "name": "Vercel",
+    "description": "Deployment target for Next.js and React marketing sites and dashboards."
+  },
+  {
+    "category": "deployment",
+    "name": "Docker",
+    "description": "Containerizing multi-service systems like NIVXTIME for consistent deployment."
+  },
+  {
+    "category": "productivity",
+    "name": "Notion",
+    "description": "Project scoping, client notes, and personal roadmap tracking."
+  }
+]

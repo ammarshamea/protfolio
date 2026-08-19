@@ -1,0 +1,11 @@
+{
+  "slug": "git",
+  "name": "Git",
+  "category": "devops",
+  "yearsOfExperience": 2,
+  "proficiency": 5,
+  "experience": "Every project I've shipped — client work and personal experiments alike — lives in Git, with shared Dart packages (like Qareeb's map and model packages) distributed as git dependencies across multiple app repos.",
+  "whyChosen": "Clean, reviewable commit history isn't optional on client work — it's how I hand off projects and how I keep my own long-running builds sane.",
+  "alternatives": [],
+  "projectSlugs": ["clyx-order", "qareeb", "nivxtime"]
+}

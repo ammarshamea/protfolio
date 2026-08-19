@@ -1,0 +1,11 @@
+{
+  "slug": "react",
+  "name": "React",
+  "category": "frontend",
+  "yearsOfExperience": 1,
+  "proficiency": 4,
+  "experience": "React powers the CLYX Agency site and the staff dashboard in NIVXTIME, where I needed a focused single-page application without the routing overhead of a full framework.",
+  "whyChosen": "For internal dashboards and single-page marketing sites, plain React with Vite keeps the build lean and the mental model simple.",
+  "alternatives": ["Vue", "Svelte"],
+  "projectSlugs": ["clyx-agency", "nivxtime"]
+}

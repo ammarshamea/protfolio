@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "shared-bloc-package",
+    "title": "Reusable BLoC state package",
+    "description": "An experiment in extracting common BLoC patterns (loading/error/data states) into a shared package to stop rewriting the same boilerplate across client apps.",
+    "category": "flutter",
+    "stack": ["Flutter", "Dart", "BLoC"]
+  },
+  {
+    "slug": "glassmorphic-widgets",
+    "title": "Glassmorphic Flutter widget kit",
+    "description": "A small set of reusable glass-effect cards and buttons for Flutter, built while designing the UI direction for this portfolio's mobile-equivalent components.",
+    "category": "flutter",
+    "stack": ["Flutter", "Dart"]
+  },
+  {
+    "slug": "whatsapp-order-bot",
+    "title": "WhatsApp order confirmation bot",
+    "description": "A small prototype extending the WhatsApp automation approach from NIVXTIME into a standalone, reusable order-confirmation flow.",
+    "category": "ai",
+    "stack": ["Node.js", "Evolution API"]
+  },
+  {
+    "slug": "css-aurora-background",
+    "title": "CSS aurora background generator",
+    "description": "A lightweight, dependency-free CSS technique for animated gradient-mesh backgrounds, used as the base for this site's hero section.",
+    "category": "css",
+    "stack": ["CSS", "JavaScript"]
+  }
+]

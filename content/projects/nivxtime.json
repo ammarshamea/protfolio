@@ -1,0 +1,43 @@
+{
+  "slug": "nivxtime",
+  "title": "NIVXTIME",
+  "tagline": "Full-stack entertainment venue platform: Flutter app, marketing site, admin dashboard, and WhatsApp automation.",
+  "category": "saas",
+  "featured": true,
+  "favorite": true,
+  "role": "Full Stack Developer",
+  "duration": "4 months",
+  "year": "2026",
+  "overview": "NIVXTIME is the most architecturally complete system I've built: a Flutter customer app, a Next.js marketing site, a Laravel API, a React admin dashboard, and a WhatsApp automation layer, all working together for an entertainment venue business.",
+  "problem": "The business needed customers to discover and book activities online, staff to manage bookings and inventory from a dashboard, and automated WhatsApp updates — without stitching together disconnected third-party tools.",
+  "solution": "I built the system as a coordinated monorepo: a Flutter app for customer bookings, a Next.js site for public marketing and discovery, a Laravel API as the single source of truth, a React dashboard for staff operations, and an Evolution API integration for automated WhatsApp notifications.",
+  "architecture": "Laravel API at the core, consumed by three separate frontends (Flutter, Next.js, React dashboard) so each interface stays focused on its audience instead of becoming a bloated all-in-one app. WhatsApp automation runs as a separate service triggered by backend events.",
+  "features": [
+    "Customer-facing Flutter app for browsing and booking activities",
+    "Public Next.js marketing site for discovery and information",
+    "Staff dashboard for managing bookings, inventory, and schedules",
+    "Automated WhatsApp notifications for booking confirmations and updates",
+    "Dockerized services for consistent deployment across environments"
+  ],
+  "challenges": [
+    "Keeping four separate applications (app, site, dashboard, automation) in sync against one evolving API contract",
+    "Integrating WhatsApp automation reliably without it becoming a single point of failure for bookings",
+    "Structuring the monorepo so each piece could be developed and deployed independently"
+  ],
+  "lessonsLearned": [
+    "A shared API contract, documented early, is what actually keeps a multi-frontend system from drifting apart",
+    "Automation layers (like WhatsApp) should degrade gracefully — the core booking flow has to work even if automation is down"
+  ],
+  "futureImprovements": [
+    "Shared TypeScript/Dart type definitions generated from a single API schema",
+    "Real-time booking availability using WebSockets instead of polling"
+  ],
+  "results": [
+    "A single coordinated system covering customer booking, staff operations, and automated communication"
+  ],
+  "stack": ["Flutter", "Next.js", "Laravel", "React", "Docker", "WhatsApp API"],
+  "githubUrl": "https://github.com/ammarshamea/playtime-landing-page",
+  "coverImage": "/projects/logos/playTime.svg",
+  "screenshotPending": false,
+  "gallery": []
+}

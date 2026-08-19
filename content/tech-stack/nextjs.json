@@ -1,0 +1,11 @@
+{
+  "slug": "nextjs",
+  "name": "Next.js",
+  "category": "frontend",
+  "yearsOfExperience": 1,
+  "proficiency": 4,
+  "experience": "I reach for Next.js whenever a project needs a web dashboard or a marketing site that has to actually rank in search — the Clyx Order admin dashboard, NIVXTIME's public site, and NAWA Holding's corporate site are all built on it.",
+  "whyChosen": "Server components and the App Router let me keep dashboards fast without hand-rolling data fetching patterns, and built-in SEO primitives matter for public-facing sites like NAWA's.",
+  "alternatives": ["Remix", "Vite + React Router"],
+  "projectSlugs": ["clyx-order", "nivxtime", "nawa-holding"]
+}

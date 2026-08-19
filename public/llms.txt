@@ -1,0 +1,39 @@
+# Ammar Shamea — Flutter Developer
+> I build Flutter apps and full-stack systems that businesses actually run on.
+
+## About
+Flutter and full-stack engineer with 2+ years building production mobile apps and web platforms for restaurants, delivery services, and small businesses across Syria and the region.
+
+## Expertise
+Dart, Flutter, Git, Tailwind CSS, AI Integration, BLoC, Figma, Google Maps & Geolocation
+
+## Projects
+- CLYX Agency: https://clyx.agency
+- Clyx Order: https://clyxorder.com/
+- Pureger: https://clyxorder.com/pureger
+- FoodyNez: https://foodynez.com/index.html
+
+## Case Studies
+- CLYX Agency: https://ammarshamea.dev/en/projects/clyx-agency
+- Clyx Order: https://ammarshamea.dev/en/projects/clyx-order
+- NAWA Holding: https://ammarshamea.dev/en/projects/nawa-holding
+- NIVXTIME: https://ammarshamea.dev/en/projects/nivxtime
+- Pureger: https://ammarshamea.dev/en/projects/pureger
+- Circle: https://ammarshamea.dev/en/projects/circle
+- FoodyNez: https://ammarshamea.dev/en/projects/foodynez
+- Qareeb: https://ammarshamea.dev/en/projects/qareeb
+- Safar: https://ammarshamea.dev/en/projects/safar
+- Salam: https://ammarshamea.dev/en/projects/salam
+- Mahdi: https://ammarshamea.dev/en/projects/mahdi
+- Sanasaa: https://ammarshamea.dev/en/projects/sanasaa
+- Tesaa: https://ammarshamea.dev/en/projects/tesaa
+
+## Contact
+Email: ammarshamea03@gmail.com
+GitHub: https://github.com/ammarshamea
+LinkedIn: https://www.linkedin.com/in/ammar-shamea-149952367
+Location: Damascus, Syria
+
+## Site
+Full site: https://ammarshamea.dev
+Sitemap: https://ammarshamea.dev/sitemap.xml

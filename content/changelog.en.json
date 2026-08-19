@@ -1,0 +1,12 @@
+[
+  {
+    "version": "1.0.0",
+    "date": "2026-07-06",
+    "changes": [
+      "Initial launch of the portfolio with full Phase 1 experience: home, about, projects, timeline, skills, tech stack, contact, and resume",
+      "Bilingual English/Arabic content with full RTL support",
+      "Dark, light, and high-contrast themes with a 4-color accent picker",
+      "14 real project case studies with authentic details — zero placeholder content"
+    ]
+  }
+]

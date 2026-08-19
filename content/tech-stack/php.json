@@ -1,0 +1,11 @@
+{
+  "slug": "php",
+  "name": "PHP",
+  "category": "backend",
+  "yearsOfExperience": 2,
+  "proficiency": 4,
+  "experience": "PHP underlies every Laravel API I've built, from the multi-tenant Clyx Order backend to smaller single-purpose APIs for booking and inventory apps.",
+  "whyChosen": "Paired with Laravel, PHP gives a fast path from a data model to a working, secure API — which is exactly what most of my client projects need.",
+  "alternatives": ["Node.js", "Python"],
+  "projectSlugs": ["clyx-order", "pureger", "mahdi", "sanasaa"]
+}

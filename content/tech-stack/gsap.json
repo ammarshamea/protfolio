@@ -1,0 +1,11 @@
+{
+  "slug": "gsap",
+  "name": "GSAP",
+  "category": "frontend",
+  "yearsOfExperience": 1,
+  "proficiency": 3,
+  "experience": "I used GSAP with ScrollTrigger to rebuild NAWA Holding's site with scroll-driven section reveals, after two earlier iterations felt static and generic.",
+  "whyChosen": "For scroll-linked animation specifically, GSAP's timeline control is more precise than CSS-only approaches, especially when paired with Lenis for smooth scrolling.",
+  "alternatives": ["Framer Motion", "CSS scroll-timeline"],
+  "projectSlugs": ["nawa-holding"]
+}

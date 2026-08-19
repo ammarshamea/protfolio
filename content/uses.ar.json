@@ -1,0 +1,37 @@
+[
+  {
+    "category": "المحرر",
+    "name": "Visual Studio Code",
+    "description": "مُهيّأ بإضافات Flutter وPHP Intelephense وESLint/Prettier."
+  },
+  {
+    "category": "الطرفية",
+    "name": "Windows Terminal + PowerShell",
+    "description": "الأداة اليومية لتشغيل خوادم التطوير وGit وأدوات سطر أوامر Flutter/Laravel."
+  },
+  {
+    "category": "التصميم",
+    "name": "Figma",
+    "description": "تدفقات الواجهة ونماذج العملاء قبل بدء التطوير."
+  },
+  {
+    "category": "اختبار الواجهات البرمجية",
+    "name": "Postman",
+    "description": "اختبار وتوثيق كل واجهة برمجية بـ Laravel قبل ربطها بـ Flutter."
+  },
+  {
+    "category": "التحكم بالإصدارات",
+    "name": "Git + GitHub",
+    "description": "جميع مشاريع العملاء والمشاريع الشخصية، بما فيها حزم Dart المشتركة الموزّعة كاعتماديات git."
+  },
+  {
+    "category": "التواصل",
+    "name": "WhatsApp Business",
+    "description": "القناة الأساسية للتواصل مع العملاء وتحديثات المشاريع."
+  },
+  {
+    "category": "المتصفح",
+    "name": "Google Chrome",
+    "description": "أدوات Chrome DevTools لتصحيح أخطاء بناءات Flutter web ومواقع Next.js."
+  }
+]

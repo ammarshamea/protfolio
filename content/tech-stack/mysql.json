@@ -1,0 +1,11 @@
+{
+  "slug": "mysql",
+  "name": "MySQL",
+  "category": "database",
+  "yearsOfExperience": 2,
+  "proficiency": 4,
+  "experience": "MySQL is the default database behind almost every Laravel API I've shipped, from the multi-tenant Clyx Order schema to simpler booking and inventory systems.",
+  "whyChosen": "Mature tooling, first-class Laravel/Eloquent support, and predictable behavior under the moderate scale my client projects actually operate at.",
+  "alternatives": ["PostgreSQL", "SQLite"],
+  "projectSlugs": ["clyx-order", "pureger", "mahdi", "sanasaa"]
+}

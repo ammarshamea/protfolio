@@ -1,0 +1,45 @@
+---
+title: "Designing a multi-tenant Laravel API for multiple restaurant brands"
+description: "How Clyx Order's backend serves multiple independent restaurant brands from one Laravel codebase, and the data model decisions that made it possible."
+date: "2026-05-18"
+tags: ["Laravel", "Architecture", "Multi-tenancy", "MySQL"]
+category: "Backend"
+---
+
+When Clyx Order started, it only needed to serve one restaurant. By the time Pureger came on board as a second brand on the same platform, it was clear the API couldn't keep assuming there was only ever one tenant in the database.
+
+## The problem with "just add a restaurant_id column"
+
+The naive fix is tempting: add a `restaurant_id` foreign key to every table and filter by it everywhere. It works for a demo. It falls apart fast once you have:
+
+- Menu items, categories, and modifiers that need to stay scoped to a single brand
+- Staff accounts that should never see another brand's orders, even by a stray query
+- Reporting and analytics that must aggregate per-tenant, not globally, by default
+
+Scattering `where('restaurant_id', $id)` across every controller is how you eventually leak one restaurant's order into another's dashboard. It's a matter of _when_, not _if_.
+
+## What I actually built
+
+Instead of relying on developer discipline to remember the filter every time, I moved tenant scoping into the model layer using Eloquent [global scopes](https://laravel.com/docs/eloquent#global-scopes):
+
+```php
+class Menu extends Model
+{
+    protected static function booted(): void
+    {
+        static::addGlobalScope(new TenantScope);
+    }
+}
+```
+
+The `TenantScope` resolves the current restaurant from the authenticated user's context (set during the auth middleware, based on the subdomain or the API token's associated tenant) and applies the constraint automatically to every query — including relationships loaded via `with()`. If a query somehow runs without a tenant context, it fails loudly instead of silently returning cross-tenant data.
+
+Every tenant-scoped table also carries a composite unique index on `(restaurant_id, slug)` rather than a bare `slug` unique constraint, so two restaurants can both have a menu item called "Classic Burger" without conflicting.
+
+## Where multi-tenancy stops
+
+Not everything needed to be tenant-aware. Payment provider configuration, platform-wide settings, and the admin panel used internally to onboard new restaurants live outside the tenant scope entirely, in their own set of tables with their own authorization rules. Trying to force a single tenancy pattern onto every table in the system would have made the genuinely global data harder to reason about, not easier.
+
+## What I'd do differently next time
+
+Row-level tenant scoping was the right call for Clyx Order's scale — a handful of restaurant brands sharing infrastructure, not hundreds of enterprise tenants. If the platform grows into needing to isolate tenants at the database level (separate schemas or databases per brand), the global-scope pattern at least means the application code already assumes tenant boundaries everywhere, which makes that migration a matter of changing _how_ the scope resolves data, not _whether_ every query respects it in the first place.

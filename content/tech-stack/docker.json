@@ -1,0 +1,14 @@
+{
+  "slug": "docker",
+  "name": "Docker",
+  "category": "devops",
+  "yearsOfExperience": 1,
+  "proficiency": 3,
+  "experience": "NIVXTIME's multi-service architecture (Flutter app, Next.js site, Laravel API, React dashboard, WhatsApp automation) is containerized so each service deploys consistently regardless of environment.",
+  "whyChosen": "When a project has multiple independently deployed services, Docker removes the 'works on my machine' problem before it starts.",
+  "alternatives": [
+    "Bare-metal deployment",
+    "Vercel/managed platforms per service"
+  ],
+  "projectSlugs": ["nivxtime"]
+}

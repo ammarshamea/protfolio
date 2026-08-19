@@ -1,0 +1,40 @@
+{
+  "slug": "pureger",
+  "title": "Pureger",
+  "tagline": "Burger restaurant brand running its ordering experience on the Clyx Order platform.",
+  "category": "web",
+  "featured": true,
+  "favorite": true,
+  "role": "Full Stack Developer",
+  "duration": "6 weeks",
+  "year": "2026",
+  "overview": "Pureger is a restaurant brand using Clyx Order's white-label ordering system for both its web ordering flow and dedicated Flutter app, giving it a branded ordering experience without building infrastructure from scratch.",
+  "problem": "Pureger needed a branded, commission-free way for customers to order online and through a mobile app, without the cost of building a custom backend from zero.",
+  "solution": "I configured Pureger as a tenant on the Clyx Order platform, built its branded web ordering flow, and adapted the shared Flutter app shell with Pureger's menu, pricing, and branch data.",
+  "architecture": "Runs on the shared Clyx Order Laravel API with tenant-scoped data, a dedicated web storefront at clyxorder.com/pureger, and a Flutter app instance pointing at the same backend with Pureger-specific theming.",
+  "features": [
+    "Branch selection with location-aware menu and delivery availability",
+    "Full cart, checkout, and order tracking flow",
+    "Branded storefront distinct from the base Clyx Order experience",
+    "Shared backend with other Clyx Order tenants, no duplicated infrastructure"
+  ],
+  "challenges": [
+    "Applying brand-specific theming on top of a shared codebase without forking the app",
+    "Coordinating menu structure so it fit both the generic platform schema and Pureger's actual product catalog"
+  ],
+  "lessonsLearned": [
+    "Building the first tenant on a multi-tenant platform is where you find every hardcoded assumption in the original design"
+  ],
+  "futureImprovements": [
+    "Loyalty and repeat-order incentives specific to the Pureger brand",
+    "In-app promotions tied to specific branches"
+  ],
+  "results": [
+    "Live ordering experience for a real restaurant brand, both on web and mobile"
+  ],
+  "stack": ["Flutter", "Laravel", "MySQL"],
+  "liveUrl": "https://clyxorder.com/pureger",
+  "coverImage": "/projects/logos/pureger.svg",
+  "screenshotPending": false,
+  "gallery": []
+}

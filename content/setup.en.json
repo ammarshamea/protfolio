@@ -1,0 +1,32 @@
+[
+  {
+    "category": "device",
+    "name": "Windows laptop",
+    "description": "Primary development machine for Flutter, Laravel, and web projects."
+  },
+  {
+    "category": "monitor",
+    "name": "External monitor",
+    "description": "Second display for keeping documentation, Postman, or a running app side-by-side with the editor."
+  },
+  {
+    "category": "keyboard",
+    "name": "Standard mechanical keyboard",
+    "description": "Daily typing for long coding sessions."
+  },
+  {
+    "category": "mouse",
+    "name": "Wired optical mouse",
+    "description": "Reliable, no-fuss pointing device for daily development work."
+  },
+  {
+    "category": "extension",
+    "name": "Flutter & Dart (VS Code)",
+    "description": "Core extensions for Flutter development, hot reload, and widget inspection."
+  },
+  {
+    "category": "extension",
+    "name": "PHP Intelephense",
+    "description": "Laravel and PHP autocomplete and static analysis."
+  }
+]

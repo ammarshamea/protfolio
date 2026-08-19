@@ -1,0 +1,11 @@
+{
+  "slug": "postgresql",
+  "name": "PostgreSQL",
+  "category": "database",
+  "yearsOfExperience": 1,
+  "proficiency": 3,
+  "experience": "I use PostgreSQL when relational integrity, constraints, and concurrent writes matter — especially for order flows and multi-table reporting.",
+  "whyChosen": "Strong support for constraints and concurrent access patterns suited a bot handling simultaneous orders and referral tracking.",
+  "alternatives": ["MySQL", "SQLite"],
+  "projectSlugs": []
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Clean Architecture",
+    "author": "Robert C. Martin",
+    "status": "completed",
+    "note": "The book behind most of how I structure Flutter and Laravel projects — separating business rules from frameworks and delivery mechanisms."
+  },
+  {
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "status": "reading",
+    "note": "Working through this to level up how I think about scaling Clyx Order's data layer beyond a single-region MySQL setup."
+  },
+  {
+    "title": "Refactoring",
+    "author": "Martin Fowler",
+    "status": "completed",
+    "note": "Changed how I approach cleaning up client codebases without rewriting them from scratch."
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "author": "David Thomas, Andrew Hunt",
+    "status": "queued",
+    "note": "Next up — recommended repeatedly by developers whose code quality I respect."
+  }
+]

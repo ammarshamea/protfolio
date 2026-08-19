@@ -1,0 +1,32 @@
+[
+  {
+    "category": "device",
+    "name": "لابتوب Windows",
+    "description": "جهاز التطوير الأساسي لمشاريع Flutter وLaravel والويب."
+  },
+  {
+    "category": "monitor",
+    "name": "شاشة خارجية",
+    "description": "شاشة ثانية لعرض التوثيق أو Postman أو تطبيق قيد التشغيل جنبًا إلى جنب مع المحرر."
+  },
+  {
+    "category": "keyboard",
+    "name": "لوحة مفاتيح ميكانيكية عادية",
+    "description": "للكتابة اليومية خلال جلسات البرمجة الطويلة."
+  },
+  {
+    "category": "mouse",
+    "name": "ماوس بصري سلكي",
+    "description": "جهاز تأشير موثوق وبسيط لعمل التطوير اليومي."
+  },
+  {
+    "category": "extension",
+    "name": "Flutter & Dart (VS Code)",
+    "description": "إضافات أساسية لتطوير Flutter، وإعادة التحميل الفوري، وفحص الودجات."
+  },
+  {
+    "category": "extension",
+    "name": "PHP Intelephense",
+    "description": "إكمال تلقائي وتحليل ثابت لـ Laravel وPHP."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "slug": "figma",
+  "name": "Figma",
+  "category": "design",
+  "yearsOfExperience": 2,
+  "proficiency": 4,
+  "experience": "I use Figma to design and validate UI flows before writing a single widget, especially for client apps where the owner needs to approve a look and feel before development starts.",
+  "whyChosen": "Fast iteration on layout and flow with a client, without the cost of building throwaway UI in code first.",
+  "alternatives": ["Adobe XD", "Sketch"],
+  "projectSlugs": []
+}

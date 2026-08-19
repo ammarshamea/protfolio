@@ -1,0 +1,37 @@
+[
+  {
+    "category": "Editor",
+    "name": "Visual Studio Code",
+    "description": "Configured with Flutter, PHP Intelephense, and ESLint/Prettier extensions."
+  },
+  {
+    "category": "Terminal",
+    "name": "Windows Terminal + PowerShell",
+    "description": "Daily driver for running dev servers, Git, and Flutter/Laravel CLIs."
+  },
+  {
+    "category": "Design",
+    "name": "Figma",
+    "description": "UI flows and client mockups before development starts."
+  },
+  {
+    "category": "API testing",
+    "name": "Postman",
+    "description": "Testing and documenting every Laravel API before Flutter integration."
+  },
+  {
+    "category": "Version control",
+    "name": "Git + GitHub",
+    "description": "All client and personal projects, including shared Dart packages distributed as git dependencies."
+  },
+  {
+    "category": "Communication",
+    "name": "WhatsApp Business",
+    "description": "Primary channel for client communication and project updates."
+  },
+  {
+    "category": "Browser",
+    "name": "Google Chrome",
+    "description": "Chrome DevTools for debugging Flutter web builds and Next.js sites."
+  }
+]

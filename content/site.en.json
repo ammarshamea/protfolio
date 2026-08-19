@@ -1,0 +1,114 @@
+{
+  "name": "Ammar Shamea",
+  "titles": [
+    "Flutter Developer",
+    "Mobile Application Developer",
+    "Full Stack Developer",
+    "Software Engineer",
+    "AI Integration Developer"
+  ],
+  "tagline": "I build Flutter apps and full-stack systems that businesses actually run on.",
+  "motto": "Build once. Scale forever.",
+  "location": "Damascus, Syria",
+  "bio": {
+    "short": "Flutter and full-stack engineer with 2+ years building production mobile apps and web platforms for restaurants, delivery services, and small businesses across Syria and the region.",
+    "long": [
+      "I'm Ammar Shamea, a software engineer based in Damascus, Syria. Over the past two years I've shipped Flutter apps and Laravel backends for real companies — not tutorials, not clones, but systems that process real orders, manage real drivers, and serve real customers every day.",
+      "My work sits at the intersection of mobile and backend: I design the Flutter client, build the Laravel or Next.js API behind it, and wire the two together with clean architecture that doesn't fall apart when a client asks for 'just one more feature' six months later. Clyx Order, a commission-free restaurant ordering platform I helped build, is a good example — it went from an idea to something restaurant owners in Saudi Arabia actually use to take orders.",
+      "I care about the things that don't show up in a demo video: separating business logic from UI with BLoC and clean architecture, writing APIs that don't break when the app scales, and picking boring, reliable technology over shiny technology. SOLID principles aren't something I recite in interviews — they're why I can still read code I wrote a year ago without wanting to rewrite it.",
+      "Lately I've been integrating AI into the products I build — from prompt-engineered assistants to automation bots — because the tools available now let a small team ship things that used to need a much bigger one. I'm still early in my career, but I'm deliberate about how I grow: every project has to teach me something I didn't know how to do before."
+    ]
+  },
+  "mission": "To build software that small and mid-sized businesses can depend on — fast, well-architected, and maintainable long after the first release.",
+  "vision": "To grow into an engineer who can take a product from a napkin sketch to a scaled platform, across mobile, backend, and AI — without needing to hand off any part of it.",
+  "values": [
+    {
+      "title": "Clean architecture over clever code",
+      "description": "I'd rather write something a new developer can understand in a week than something only I can maintain."
+    },
+    {
+      "title": "Ship, then iterate",
+      "description": "Perfect architecture with no users beats nothing. I ship working software early and refine it with real feedback."
+    },
+    {
+      "title": "Own the outcome",
+      "description": "If a feature breaks in production, it's my problem to fix — not just my code to write."
+    },
+    {
+      "title": "Learn in public projects",
+      "description": "Every project is a chance to pick up one new tool, pattern, or integration deliberately, not by accident."
+    }
+  ],
+  "philosophy": "Good software is boring in the best way — predictable, testable, and easy to change. I optimize for the developer who maintains this code in a year, which is usually me.",
+  "howIWork": {
+    "intro": "Every client engagement follows roughly the same shape, whether it's a two-week Flutter feature or a three-month platform build.",
+    "steps": [
+      {
+        "title": "Discovery call",
+        "description": "We talk through the goal, the users, technical constraints, and what success actually looks like — before any code gets written."
+      },
+      {
+        "title": "Architecture proposal",
+        "description": "I map out the stack, data model, and milestones, and flag trade-offs early so there are no surprises halfway through."
+      },
+      {
+        "title": "Iterative development",
+        "description": "Weekly (or more frequent) demos of working software, with clean, reviewable commits instead of a black box until 'done'."
+      },
+      {
+        "title": "Testing & optimization",
+        "description": "Before anything ships, I check performance, accessibility, and the edge cases that only show up once real users touch it."
+      },
+      {
+        "title": "Delivery & support",
+        "description": "Deployment, documentation, and a maintenance plan — so the handoff doesn't leave you stuck if I'm not available."
+      }
+    ]
+  },
+  "funFacts": [
+    "My first serious Flutter app was a Starbucks UI clone — it's still on my GitHub, warts and all.",
+    "I debug most confidently at night, which is also when most of Clyx Order's restaurant partners place their heaviest orders.",
+    "I've rebuilt the same authentication flow more times than I'd like to admit — each time a little cleaner.",
+    "I keep a running list of AI tools to try; most don't make the cut, but the ones that do change how I work."
+  ],
+  "contact": {
+    "email": "ammarshamea03@gmail.com",
+    "whatsapp": "+963957470371",
+    "location": "Damascus, Syria",
+    "timezone": "Asia/Damascus (UTC+3)",
+    "responseTime": "Within 24 hours on business days",
+    "availability": ["Open for remote work", "Open for freelance projects"],
+    "languages": [
+      { "name": "Arabic", "level": "Native" },
+      {
+        "name": "English",
+        "level": "Basic — comfortable with technical reading and written communication"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What kind of projects do you take on?",
+        "answer": "Mostly Flutter mobile apps and full-stack platforms that need a Laravel or Next.js backend behind them — restaurant ordering, delivery/logistics, business dashboards, and AI-integrated tools."
+      },
+      {
+        "question": "Do you work with international clients?",
+        "answer": "Yes — I work remotely and asynchronously, and I'm comfortable communicating in written English for technical scoping and updates."
+      },
+      {
+        "question": "How do you handle project pricing?",
+        "answer": "Depends on scope — fixed price for well-defined features, and milestone-based pricing for larger builds. I'll always give you a clear estimate before starting."
+      },
+      {
+        "question": "Can you maintain an existing codebase?",
+        "answer": "Yes. I regularly pick up existing Flutter or Laravel projects, audit the architecture, and either refactor incrementally or advise on what needs a rebuild."
+      }
+    ]
+  },
+  "socials": {
+    "github": "https://github.com/ammarshamea",
+    "codeberg": "https://codeberg.org/ammarshamea123",
+    "linkedin": "https://www.linkedin.com/in/ammar-shamea-149952367",
+    "whatsapp": "https://wa.me/963957470371",
+    "email": "mailto:ammarshamea03@gmail.com"
+  }
+}

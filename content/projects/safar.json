@@ -1,0 +1,37 @@
+{
+  "slug": "safar",
+  "title": "Safar",
+  "tagline": "Trip planning and travel booking app built in Flutter.",
+  "category": "mobile",
+  "featured": false,
+  "favorite": false,
+  "role": "Mobile Developer",
+  "duration": "5 weeks",
+  "year": "2025",
+  "overview": "Safar (\"travel\" in Arabic) is a trip planning app that lets users browse travel options and organize their bookings in one place.",
+  "problem": "Users planning trips were juggling multiple sources of information across chats and screenshots, with no single place to track bookings and itineraries.",
+  "solution": "A Flutter app centralizing trip browsing, booking details, and itinerary organization into a single, structured interface.",
+  "architecture": "Flutter app with local and remote data sources for trip options, structured around a clear itinerary model that groups bookings by trip.",
+  "features": [
+    "Trip browsing with structured details",
+    "Itinerary organization grouping related bookings",
+    "Clean, glanceable trip overview screens"
+  ],
+  "challenges": [
+    "Designing an itinerary data model flexible enough for different trip types without becoming overly complex"
+  ],
+  "lessonsLearned": [
+    "Travel apps live or die on how well they organize information under time pressure — clarity beats feature count"
+  ],
+  "futureImprovements": [
+    "Offline access to itineraries while traveling",
+    "Shared itineraries for group trips"
+  ],
+  "results": [
+    "Working trip planning app consolidating bookings into a single itinerary view"
+  ],
+  "stack": ["Flutter"],
+  "coverImage": "/projects/logos/safar_logo.png",
+  "screenshotPending": false,
+  "gallery": []
+}

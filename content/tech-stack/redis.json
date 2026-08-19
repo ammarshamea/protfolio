@@ -1,0 +1,11 @@
+{
+  "slug": "redis",
+  "name": "Redis",
+  "category": "database",
+  "yearsOfExperience": 1,
+  "proficiency": 3,
+  "experience": "I use Redis for session state, rate limiting, and short-lived cache layers where in-memory speed matters more than durability.",
+  "whyChosen": "Fast, simple key-value access is exactly what chat-session state and rate limiting need — no reason to reach for a heavier database for that layer.",
+  "alternatives": ["In-memory session store", "Memcached"],
+  "projectSlugs": []
+}

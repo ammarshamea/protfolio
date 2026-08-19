@@ -1,0 +1,11 @@
+{
+  "slug": "google-maps",
+  "name": "Google Maps & Geolocation",
+  "category": "mobile",
+  "yearsOfExperience": 1,
+  "proficiency": 4,
+  "experience": "Location is core to Qareeb and Salam — matching nearby drivers to requests, and tracking a school bus's live position for parents. I've built shared Dart packages to keep this logic consistent across apps.",
+  "whyChosen": "Google Maps' Flutter plugin combined with the Geolocator package covers everything from live tracking to distance calculations without needing a custom mapping stack.",
+  "alternatives": ["Mapbox", "OpenStreetMap"],
+  "projectSlugs": ["qareeb", "salam"]
+}

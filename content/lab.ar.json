@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "multi-tenant-starter-kit",
+    "title": "قالب بداية Laravel متعدد المستأجرين",
+    "description": "استخراج أنماط تعدد المستأجرين من Clyx Order إلى قالب بداية Laravel قابل لإعادة الاستخدام لعملاء منصات مطاعم/خدمات مستقبليين.",
+    "status": "prototyping",
+    "startedAt": "2026-05"
+  },
+  {
+    "slug": "flutter-offline-sync",
+    "title": "طبقة مزامنة تعمل دون اتصال لـ Flutter",
+    "description": "استكشاف طبقة بيانات محلية أولاً لتطبيقات من نوع الخدمة الميدانية (مثل Salam أو Circle) تحتاج للعمل باستمرار مع اتصال غير مستقر.",
+    "status": "idea",
+    "startedAt": "2026-06"
+  },
+  {
+    "slug": "ai-code-review-assistant",
+    "title": "قائمة مراجعة كود مدعومة بالذكاء الاصطناعي",
+    "description": "أداة قائمة مراجعة مبنية بهندسة الأوامر لمراجعة طلبات الدمج الخاصة بي في Flutter/Laravel وفق قواعد البنية النظيفة التي أحاول اتباعها.",
+    "status": "prototyping",
+    "startedAt": "2026-04"
+  }
+]

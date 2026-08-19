@@ -1,0 +1,70 @@
+[
+  {
+    "slug": "flutter-development",
+    "title": "Flutter App Development",
+    "description": "End-to-end Flutter apps for iOS and Android — from a Figma design or a rough idea through to a published, maintainable codebase.",
+    "icon": "smartphone",
+    "deliverables": [
+      "Clean architecture with BLoC-based state management",
+      "REST/GraphQL API integration",
+      "App store submission support",
+      "Post-launch maintenance plan"
+    ]
+  },
+  {
+    "slug": "backend-development",
+    "title": "Backend & API Development",
+    "description": "Laravel APIs designed to support mobile and web clients — authentication, data modeling, and multi-tenant architecture when the product needs to scale to multiple clients.",
+    "icon": "server",
+    "deliverables": [
+      "RESTful API design with Sanctum authentication",
+      "Database schema design (MySQL/PostgreSQL)",
+      "Multi-tenant architecture where applicable",
+      "API documentation"
+    ]
+  },
+  {
+    "slug": "full-stack-platforms",
+    "title": "Full-Stack Platform Builds",
+    "description": "Coordinated systems with a mobile app, web dashboard, and backend working together — the kind of build Clyx Order and NIVXTIME required.",
+    "icon": "layers",
+    "deliverables": [
+      "Flutter app + Laravel/Next.js backend + admin dashboard",
+      "Shared API contract across all clients",
+      "Deployment and environment setup"
+    ]
+  },
+  {
+    "slug": "ai-integration",
+    "title": "AI Integration",
+    "description": "Adding AI where it genuinely improves a product — automation bots, prompt-engineered assistants, and smarter matching or recommendation logic.",
+    "icon": "sparkles",
+    "deliverables": [
+      "AI API integration (OpenAI-compatible providers)",
+      "Prompt engineering and testing",
+      "Automation workflows (e.g. WhatsApp, Telegram)"
+    ]
+  },
+  {
+    "slug": "maintenance",
+    "title": "Maintenance & Refactoring",
+    "description": "Picking up an existing Flutter or Laravel codebase, auditing its architecture, and either refactoring incrementally or advising on a rebuild.",
+    "icon": "wrench",
+    "deliverables": [
+      "Codebase architecture audit",
+      "Incremental refactoring plan",
+      "Bug fixes and dependency upgrades"
+    ]
+  },
+  {
+    "slug": "technical-consulting",
+    "title": "Technical Consulting",
+    "description": "Scoping and architecture guidance before a project starts — stack choices, timeline estimation, and identifying risks early.",
+    "icon": "compass",
+    "deliverables": [
+      "Technical architecture proposal",
+      "Stack and tooling recommendations",
+      "Timeline and milestone planning"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "slug": "nawa-holding",
+  "title": "NAWA Holding",
+  "tagline": "Corporate web presence for a holding company, rebuilt through three iterations to reach a production-grade result.",
+  "category": "web",
+  "featured": false,
+  "favorite": false,
+  "role": "Frontend Developer",
+  "duration": "2 months across iterations",
+  "year": "2026",
+  "overview": "NAWA Holding's site went through three distinct builds — an early Vite/React prototype, a Next.js iteration to test structure, and a final production version with polished motion using GSAP and Lenis smooth scrolling.",
+  "problem": "The client needed a corporate site that felt as established as the holding company itself, but early iterations felt generic and lacked the smoothness expected from a modern corporate brand.",
+  "solution": "Rather than patch the first version, I rebuilt the site on Next.js with GSAP-driven scroll animations and Lenis for smooth scrolling, treating the earlier builds as throwaway prototypes to learn from.",
+  "architecture": "Next.js app router site with GSAP ScrollTrigger animations tied to section reveals, Lenis for inertia-based smooth scrolling, and a component structure carried over conceptually (but not literally) from the earlier prototypes.",
+  "features": [
+    "Scroll-driven section reveals using GSAP ScrollTrigger",
+    "Smooth, inertia-based scrolling via Lenis",
+    "Responsive corporate layout across devices",
+    "Structured content sections for company divisions and values"
+  ],
+  "challenges": [
+    "Recognizing early that the first two iterations weren't worth incrementally fixing, and rebuilding instead",
+    "Tuning GSAP animations so they felt premium without becoming distracting on a corporate site"
+  ],
+  "lessonsLearned": [
+    "Sometimes the fastest path to a good result is rebuilding from a clean slate rather than patching a fundamentally weak structure",
+    "Smooth scroll libraries like Lenis need careful tuning on lower-end devices to avoid feeling sluggish"
+  ],
+  "futureImprovements": [
+    "CMS integration so content updates don't require a redeploy",
+    "Multi-language support for regional offices"
+  ],
+  "results": [
+    "Production site reflecting the polish expected of an established holding company"
+  ],
+  "stack": ["Next.js", "GSAP", "Lenis", "Tailwind CSS"],
+  "githubUrl": "https://github.com/ammarshamea/nawa_production",
+  "coverImage": "/projects/logos/nawa_production.png",
+  "screenshotPending": false,
+  "gallery": []
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "tesaa",
+  "title": "Tesaa",
+  "tagline": "Lightweight point-of-sale and inventory app for small shop owners.",
+  "category": "mobile",
+  "featured": false,
+  "favorite": false,
+  "role": "Mobile Developer",
+  "duration": "4 weeks",
+  "year": "2024",
+  "overview": "Tesaa is a simple point-of-sale and inventory tool built for small shop owners who needed something faster to set up than full retail management software.",
+  "problem": "Small shop owners were tracking sales and stock manually, making it hard to know what was actually selling or when to restock.",
+  "solution": "A focused Flutter app covering quick sale entry, stock level tracking, and basic daily sales totals, with none of the overhead of enterprise POS systems.",
+  "architecture": "Flutter app with local persistence for products, stock levels, and sale records, built for fast entry during busy shop hours.",
+  "features": [
+    "Quick sale entry with running totals",
+    "Stock level tracking per product",
+    "Daily and weekly sales summaries"
+  ],
+  "challenges": [
+    "Keeping the sale-entry flow fast enough for real use during busy periods, not just usable in a demo"
+  ],
+  "lessonsLearned": [
+    "For daily-use business tools, speed of the core action (in this case, recording a sale) matters more than the breadth of features"
+  ],
+  "futureImprovements": [
+    "Barcode scanning for faster product lookup",
+    "Multi-device sync for shops with more than one till"
+  ],
+  "results": [
+    "Gave a small shop owner a faster, clearer way to track sales and stock"
+  ],
+  "stack": ["Flutter"],
+  "screenshotPending": true,
+  "gallery": []
+}

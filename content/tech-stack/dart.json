@@ -1,0 +1,11 @@
+{
+  "slug": "dart",
+  "name": "Dart",
+  "category": "mobile",
+  "yearsOfExperience": 2,
+  "proficiency": 5,
+  "experience": "Dart is the language behind every Flutter app I've shipped. I've also used it to build and publish shared packages (like the Qareeb maps and models packages) so logic stays consistent across multiple apps instead of being copy-pasted.",
+  "whyChosen": "Strong typing and null safety catch real bugs before runtime, and its tight integration with Flutter's widget tree keeps UI code predictable.",
+  "alternatives": ["Kotlin", "Swift"],
+  "projectSlugs": ["qareeb", "circle", "clyx-order"]
+}

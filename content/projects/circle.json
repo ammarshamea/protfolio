@@ -1,0 +1,39 @@
+{
+  "slug": "circle",
+  "title": "Circle",
+  "tagline": "Community service marketplace connecting requesters with providers through dual Flutter apps.",
+  "category": "mobile",
+  "featured": false,
+  "favorite": false,
+  "role": "Mobile Developer",
+  "duration": "2 months",
+  "year": "2025",
+  "overview": "Circle connects people who need small services done with providers (\"captains\") who can do them, following the same dual-app pattern as Qareeb but focused on general services rather than delivery specifically.",
+  "problem": "There was no structured way for people to request and offer small local services, with trust and coordination happening informally through word of mouth.",
+  "solution": "Two focused Flutter apps — one for requesting services, one for providers accepting and completing them — with a shared request/status lifecycle between them.",
+  "architecture": "BLoC-based Flutter apps with a request state machine shared conceptually between both apps, covering creation, acceptance, in-progress, and completion states.",
+  "features": [
+    "Service request creation with category and details",
+    "Provider-side browsing and acceptance of nearby requests",
+    "Status tracking through the full request lifecycle",
+    "Separate, role-specific interfaces for requesters and providers"
+  ],
+  "challenges": [
+    "Designing a request lifecycle general enough to cover many service types without becoming vague",
+    "Building trust signals into the flow so both sides felt confident engaging with strangers"
+  ],
+  "lessonsLearned": [
+    "General-purpose marketplace apps need clearer status communication than specialized ones, since users can't assume shared expectations"
+  ],
+  "futureImprovements": [
+    "Rating and review system for providers",
+    "In-app messaging between requester and provider"
+  ],
+  "results": [
+    "Working dual-app marketplace covering the full request-to-completion flow"
+  ],
+  "stack": ["Flutter", "BLoC"],
+  "coverImage": "/projects/logos/circle_logo.svg",
+  "screenshotPending": false,
+  "gallery": []
+}

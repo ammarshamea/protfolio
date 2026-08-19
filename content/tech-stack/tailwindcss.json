@@ -1,0 +1,11 @@
+{
+  "slug": "tailwindcss",
+  "name": "Tailwind CSS",
+  "category": "frontend",
+  "yearsOfExperience": 1,
+  "proficiency": 5,
+  "experience": "Tailwind is my default styling approach on every web project — it's fast to iterate with and keeps design tokens (spacing, color, radius) consistent without a separate CSS architecture to maintain.",
+  "whyChosen": "Utility classes plus a small set of design tokens get me to a polished, consistent UI faster than hand-written CSS or heavier component libraries.",
+  "alternatives": ["Styled Components", "CSS Modules"],
+  "projectSlugs": ["clyx-agency", "nawa-holding"]
+}

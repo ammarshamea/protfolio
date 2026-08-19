@@ -1,0 +1,31 @@
+---
+title: "Where AI actually helps in client projects (and where it doesn't)"
+description: "After wiring AI into several real products, here's an honest breakdown of where it earned its place and where it was a distraction."
+date: "2026-06-10"
+tags: ["AI Integration", "Automation", "Product"]
+category: "AI"
+---
+
+"Can we add AI to this?" comes up in almost every client conversation now. Sometimes it's the right question. Often it isn't. Here's what I've learned from actually shipping AI features instead of just discussing them.
+
+## Where it earned its place
+
+**WhatsApp order confirmation automation.** NIVXTIME needed a way to confirm orders with customers without a human manually messaging every one. A prompt-engineered assistant wired into the Evolution API handles the back-and-forth — parsing a customer's confirmation or change request in natural Arabic or English, and only escalating to a human when the message doesn't match an expected pattern with enough confidence. This isn't "AI for AI's sake" — it directly replaced a repetitive manual task with a clear success metric: fewer missed confirmations, faster response time.
+
+**Smarter matching logic.** For delivery and ride-matching style apps, a lightweight scoring model (not a full LLM — just weighted heuristics informed by patterns I'd seen work well) improved how quickly a driver got matched to a nearby request. It's a narrow, well-defined problem, which is exactly where machine-learning-adjacent approaches tend to outperform hardcoded rules.
+
+## Where it didn't
+
+**Chatbots bolted onto marketing sites.** I get asked for these often, and I usually push back. A chatbot on a portfolio or a small business site rarely answers questions better than three clear paragraphs of copy and a working contact form — and it adds a maintenance burden and a point of failure that a static page doesn't have. This site intentionally has no chatbot, for the same reason.
+
+**"AI-powered" features with no clear failure mode.** If a feature can't gracefully handle the AI provider being down, rate-limited, or simply wrong, it isn't ready to ship. Every AI integration I've built has an explicit fallback: the WhatsApp bot escalates to a human, the matching logic falls back to simple proximity sorting if the scoring service times out. AI as an enhancement layer over a working system is reliable. AI as the only path through a critical flow is not, yet.
+
+## The actual decision framework
+
+Before adding an AI feature to a client project now, I ask three questions:
+
+1. **Is the task well-defined enough that I can describe what "correct" looks like?** Vague tasks produce vague AI output.
+2. **What happens when it's wrong?** If there's no acceptable fallback, the feature isn't ready.
+3. **Would three sentences of good copy, or a simple form, solve this just as well?** If yes, that's usually the better engineering decision — not because AI isn't capable, but because the simpler solution is cheaper to maintain and easier to reason about when something breaks.
+
+AI integration is genuinely useful when it replaces a repetitive, well-scoped task with a clear success condition. It's a liability when it's added because it sounds impressive in a pitch deck.

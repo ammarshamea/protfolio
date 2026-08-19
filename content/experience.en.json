@@ -1,0 +1,42 @@
+[
+  {
+    "company": "CLYX",
+    "role": "Full Stack & Mobile Developer",
+    "startDate": "2026-01",
+    "year": "2026",
+    "responsibilities": [
+      "Building and maintaining the multi-tenant Clyx Order platform (Flutter app, Laravel API, Next.js dashboard)",
+      "Onboarding new restaurant tenants, including Pureger",
+      "Developing the CLYX Agency public website"
+    ],
+    "technologies": ["Flutter", "Laravel", "Next.js", "MySQL", "React"],
+    "achievements": [
+      "Shipped a commission-free ordering platform now used by real restaurant brands",
+      "Designed the multi-tenant data model supporting multiple restaurant brands on shared infrastructure"
+    ]
+  },
+  {
+    "company": "Independent / Freelance",
+    "role": "Flutter & Full Stack Developer",
+    "startDate": "2024-01",
+    "year": "2024-2026",
+    "responsibilities": [
+      "Delivering Flutter apps and Laravel/Python backends for small business and individual clients",
+      "Managing full project lifecycle from discovery call through delivery and support",
+      "Building shared packages and reusable architecture across related apps (e.g. the Qareeb ecosystem)"
+    ],
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Laravel",
+      "Python",
+      "PostgreSQL",
+      "MySQL"
+    ],
+    "achievements": [
+      "Delivered 12+ client mobile apps across booking, retail, delivery, transportation, and travel domains",
+      "Built and published shared Dart packages consumed across multiple production apps",
+      "Maintained a 100% project delivery record across all freelance engagements"
+    ]
+  }
+]

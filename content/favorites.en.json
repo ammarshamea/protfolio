@@ -1,0 +1,41 @@
+[
+  {
+    "category": "tool",
+    "name": "VS Code",
+    "description": "My daily editor for Flutter, Laravel, and this site — fast enough to stay out of the way.",
+    "url": "https://code.visualstudio.com"
+  },
+  {
+    "category": "tool",
+    "name": "Postman",
+    "description": "Where every Laravel API endpoint gets tested before a Flutter app ever calls it.",
+    "url": "https://www.postman.com"
+  },
+  {
+    "category": "tool",
+    "name": "Figma",
+    "description": "For validating UI flows with clients before writing a single widget."
+  },
+  {
+    "category": "website",
+    "name": "Flutter documentation",
+    "description": "Still the first place I check when a widget behaves unexpectedly.",
+    "url": "https://docs.flutter.dev"
+  },
+  {
+    "category": "website",
+    "name": "Laravel documentation",
+    "description": "Consistently well-written — rarely need a third-party tutorial to fill gaps.",
+    "url": "https://laravel.com/docs"
+  },
+  {
+    "category": "youtube",
+    "name": "Fireship",
+    "description": "Fast, dense explanations that respect my time when I need to learn a concept quickly."
+  },
+  {
+    "category": "podcast",
+    "name": "Syntax",
+    "description": "Good background listening for keeping up with the wider web ecosystem outside my daily stack."
+  }
+]

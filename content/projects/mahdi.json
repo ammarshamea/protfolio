@@ -1,0 +1,39 @@
+{
+  "slug": "mahdi",
+  "title": "Mahdi",
+  "tagline": "Service booking app connecting a local business with its customers, backed by a Laravel API.",
+  "category": "mobile",
+  "featured": false,
+  "favorite": false,
+  "role": "Mobile & Backend Developer",
+  "duration": "6 weeks",
+  "year": "2024",
+  "overview": "Mahdi is a service booking app I built early in my Flutter journey, pairing a Flutter client with a Laravel backend to let customers browse and book services from a local business.",
+  "problem": "The business was managing bookings manually through phone calls and messages, making it hard to track availability or avoid double-booking.",
+  "solution": "A Flutter app for browsing available services and time slots, backed by a Laravel API that manages availability, bookings, and basic customer records.",
+  "architecture": "Flutter app communicating with a Laravel REST API over authenticated endpoints, with a MySQL database modeling services, time slots, and bookings.",
+  "features": [
+    "Service catalog with availability by time slot",
+    "Booking flow with confirmation",
+    "Basic customer record management",
+    "Admin-side booking overview"
+  ],
+  "challenges": [
+    "Modeling availability and preventing double-bookings correctly at the database level",
+    "This was one of my earliest Flutter and Laravel integrations, so establishing clean API contracts took real iteration"
+  ],
+  "lessonsLearned": [
+    "Getting the booking/availability data model right from the start avoids a lot of downstream edge-case bugs"
+  ],
+  "futureImprovements": [
+    "Automated reminders for upcoming bookings",
+    "Calendar sync for the business owner"
+  ],
+  "results": [
+    "Replaced manual phone-based booking with a structured digital flow"
+  ],
+  "stack": ["Flutter", "Laravel", "MySQL"],
+  "coverImage": "/projects/logos/mahdi_logo.png",
+  "screenshotPending": false,
+  "gallery": []
+}

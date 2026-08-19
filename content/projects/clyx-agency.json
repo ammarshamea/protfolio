@@ -1,0 +1,41 @@
+{
+  "slug": "clyx-agency",
+  "title": "CLYX Agency",
+  "tagline": "Marketing and web development agency site presenting brand, product, and web work.",
+  "category": "agency",
+  "featured": true,
+  "favorite": false,
+  "role": "Frontend Developer",
+  "duration": "3 weeks",
+  "year": "2026",
+  "overview": "The public website for CLYX, the agency behind Clyx Order and related client work — built to present services, past projects, and a path to contact for new business.",
+  "problem": "CLYX needed a fast, credible web presence that reflected the same product quality as the platforms it builds, instead of a generic template site.",
+  "solution": "A React and Vite single-page site with Tailwind CSS, built for speed and clean section-based storytelling: services, selected work, and a direct contact path.",
+  "architecture": "Vite-powered React app with component-based sections, deployed as a static build for fast global delivery with no backend dependency.",
+  "features": [
+    "Service breakdown across web, mobile, and backend development",
+    "Project showcase linking to live client work",
+    "Responsive layout tuned for both desktop presentations and mobile visits",
+    "Contact flow routing directly to WhatsApp and email"
+  ],
+  "challenges": [
+    "Communicating technical credibility to a non-technical audience (restaurant and small business owners) without over-explaining the stack",
+    "Keeping the single-page build fast despite multiple image-heavy sections"
+  ],
+  "lessonsLearned": [
+    "A focused one-page site with a clear contact path converts better for local business clients than a multi-page corporate structure"
+  ],
+  "futureImprovements": [
+    "Case study pages for individual client projects",
+    "Lightweight CMS so non-technical team members can update project listings"
+  ],
+  "results": [
+    "Serves as the primary web presence and contact channel for new CLYX client work"
+  ],
+  "stack": ["React", "Vite", "TypeScript", "Tailwind CSS"],
+  "liveUrl": "https://clyx.agency",
+  "githubUrl": "https://github.com/ammarshamea/clyx_landing_page",
+  "coverImage": "/projects/logos/clyx-agency.png",
+  "screenshotPending": false,
+  "gallery": []
+}

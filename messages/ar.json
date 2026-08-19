@@ -1,0 +1,373 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "نبذة عني",
+    "projects": "المشاريع",
+    "timeline": "المسار الزمني",
+    "skills": "المهارات",
+    "techStack": "التقنيات",
+    "services": "الخدمات",
+    "experience": "الخبرات",
+    "blog": "المدونة",
+    "openSource": "المصادر المفتوحة",
+    "uses": "أدواتي",
+    "setup": "إعداد المكتب",
+    "toolbox": "صندوق الأدوات",
+    "now": "الآن",
+    "roadmap": "خطة المستقبل",
+    "reading": "قراءاتي",
+    "playground": "التجارب",
+    "lab": "المختبر",
+    "favorites": "المفضلة",
+    "stats": "الإحصائيات",
+    "changelog": "سجل التحديثات",
+    "speaking": "المحاضرات",
+    "press": "الإعلام",
+    "contact": "تواصل معي",
+    "resume": "السيرة الذاتية",
+    "menu": "القائمة",
+    "close": "إغلاق",
+    "work": "الأعمال",
+    "extras": "إضافات",
+    "connect": "تواصل"
+  },
+  "common": {
+    "viewAll": "عرض الكل",
+    "viewProject": "عرض المشروع",
+    "viewCaseStudy": "عرض دراسة الحالة",
+    "liveDemo": "معاينة حية",
+    "sourceCode": "الكود المصدري",
+    "readMore": "قراءة المزيد",
+    "backToHome": "العودة للرئيسية",
+    "backToProjects": "العودة للمشاريع",
+    "backToBlog": "العودة للمدونة",
+    "downloadResume": "تحميل السيرة الذاتية",
+    "printResume": "طباعة السيرة الذاتية",
+    "getInTouch": "تواصل معي",
+    "sendMessage": "إرسال الرسالة",
+    "copyEmail": "نسخ البريد الإلكتروني",
+    "emailCopied": "تم نسخ البريد",
+    "scrollToTop": "العودة للأعلى",
+    "loading": "جاري التحميل",
+    "featured": "مميز",
+    "favorite": "مفضل",
+    "search": "بحث",
+    "searchPlaceholder": "ابحث في المشاريع والصفحات والتقنيات...",
+    "noResults": "لا توجد نتائج",
+    "comingSoon": "قريباً",
+    "wip": "قيد التطوير",
+    "readingTime": "{minutes} دقيقة قراءة",
+    "toggleTheme": "تبديل المظهر",
+    "toggleLocale": "تبديل اللغة",
+    "recruiterMode": "وضع المُوظِّف",
+    "commandPaletteHint": "اضغط",
+    "openCommandPalette": "فتح قائمة الأوامر",
+    "pagesGroup": "الصفحات",
+    "commandsGroup": "الأوامر",
+    "externalGroup": "روابط خارجية"
+  },
+  "footer": {
+    "tagline": "ابنِ مرة واحدة. توسّع للأبد.",
+    "quickLinks": "روابط سريعة",
+    "connect": "تواصل",
+    "rights": "جميع الحقوق محفوظة.",
+    "sitemap": "خريطة الموقع",
+    "apiDocs": "وثائق API",
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الاستخدام",
+    "backToTop": "العودة للأعلى"
+  },
+  "hero": {
+    "availabilityBadge": "متاح للعمل عن بُعد",
+    "scrollHint": "مرر للاستكشاف"
+  },
+  "contactForm": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "subject": "الموضوع",
+    "message": "الرسالة",
+    "namePlaceholder": "اسمك",
+    "emailPlaceholder": "you@example.com",
+    "subjectPlaceholder": "عمَّ تريد الحديث؟",
+    "messagePlaceholder": "أخبرني عن مشروعك...",
+    "submit": "إرسال الرسالة",
+    "sending": "جاري الإرسال...",
+    "success": "تم إرسال الرسالة — سأرد خلال 24 ساعة.",
+    "error": "حدث خطأ ما. جرّب التواصل عبر واتساب أو البريد مباشرة.",
+    "validationRequired": "هذا الحقل مطلوب",
+    "validationEmail": "أدخل بريدًا إلكترونيًا صحيحًا"
+  },
+  "notFound": {
+    "title": "هذه الصفحة أخذت منعطفًا خاطئًا",
+    "description": "الصفحة التي تبحث عنها غير موجودة — لكن إليك مشروعًا قد يعجبك بدلاً منها.",
+    "shortcutHint": "نصيحة: اضغط G ثم H للانتقال للرئيسية في أي وقت.",
+    "cta": "خذني للرئيسية"
+  },
+  "error": {
+    "title": "حدث خطأ ما",
+    "description": "حدث خطأ غير متوقع أثناء عرض هذه الصفحة.",
+    "retry": "حاول مجددًا",
+    "home": "الذهاب للرئيسية"
+  },
+  "resume": {
+    "summary": "نبذة عامة",
+    "skills": "المهارات",
+    "experience": "الخبرات",
+    "projects": "مشاريع مختارة",
+    "downloadVCard": "حفظ جهة الاتصال (vCard)",
+    "printResume": "طباعة السيرة الذاتية",
+    "scanToView": "امسح الرمز لعرض هذه السيرة الذاتية عبر الإنترنت"
+  },
+  "shortcuts": {
+    "title": "اختصارات لوحة المفاتيح",
+    "openPalette": "فتح قائمة الأوامر",
+    "goHome": "الذهاب للرئيسية",
+    "goProjects": "الذهاب للمشاريع",
+    "goAbout": "الذهاب لنبذة عني",
+    "showShortcuts": "عرض هذه النافذة"
+  },
+  "pages": {
+    "categories": {
+      "mobile": "موبايل",
+      "backend": "خلفية برمجية",
+      "frontend": "واجهة أمامية",
+      "database": "قواعد بيانات",
+      "devops": "DevOps",
+      "design": "تصميم",
+      "ai": "ذكاء اصطناعي",
+      "architecture": "هندسة برمجية"
+    },
+    "projects": {
+      "metaTitle": "المشاريع",
+      "metaDescription": "تطبيقات Flutter ومنصات Full-Stack حقيقية — طلبات مطاعم، توصيل، نقل، وأدوات أعمال سلّمت لعملاء فعليين.",
+      "eyebrow": "{count}+ مشروع منشور",
+      "subtitle": "مشاريع حقيقية في طلبات المطاعم والتوصيل والنقل والتجزئة والأتمتة — كل مشروع مع القصة الكاملة: المشكلة، الهندسة، التحديات، والنتائج.",
+      "srTitle": "جميع المشاريع",
+      "filterEmpty": "جرّب فئة أو كلمة بحث مختلفة.",
+      "categories": {
+        "all": "الكل",
+        "saas": "SaaS",
+        "mobile": "موبايل",
+        "web": "ويب",
+        "agency": "وكالة",
+        "automation": "أتمتة",
+        "package": "حزم"
+      },
+      "detail": {
+        "screenshotPending": "لقطات الشاشة قريبًا — دراسة الحالة أدناه تعكس المنتج الفعلي المنشور.",
+        "overview": "نظرة عامة",
+        "problem": "المشكلة",
+        "solution": "الحل",
+        "architecture": "البنية",
+        "features": "الميزات الرئيسية",
+        "challenges": "التحديات",
+        "lessonsLearned": "دروس مستفادة",
+        "futureImprovements": "تحسينات مستقبلية",
+        "results": "النتائج",
+        "role": "الدور",
+        "duration": "المدة",
+        "year": "السنة",
+        "stack": "التقنيات",
+        "related": "مشاريع ذات صلة"
+      }
+    },
+    "experience": {
+      "metaTitle": "الخبرات",
+      "metaDescription": "أين عملت وماذا سلّمت — الأدوار والمسؤوليات والإنجازات.",
+      "title": "أين عملت",
+      "subtitle": "الأدوار والمسؤوليات والنتائج — شاهد النسخة المرئية التفاعلية في صفحة المسار الزمني.",
+      "srTitle": "سجل العمل",
+      "responsibilities": "المسؤوليات",
+      "achievements": "الإنجازات"
+    },
+    "about": {
+      "metaTitle": "نبذة عني",
+      "title": "نبذة عني",
+      "mission": "المهمة",
+      "vision": "الرؤية",
+      "valuesEyebrow": "القيم",
+      "valuesTitle": "ما أُحسّن من أجله",
+      "processEyebrow": "المنهجية",
+      "processTitle": "كيف أعمل",
+      "funFactsEyebrow": "خارج ساعات العمل",
+      "funFactsTitle": "حقائق سريعة",
+      "ctaTitle": "تريد القصة المهنية كاملة؟",
+      "ctaDescription": "شاهد المسار الزمني التفاعلي من أول تطبيق Flutter إلى بنية Clyx Order متعددة المستأجرين."
+    },
+    "services": {
+      "metaTitle": "الخدمات",
+      "metaDescription": "ما يمكنني بناؤه لك — تطبيقات Flutter، خلفيات Laravel، منصات Full-Stack، ودمج الذكاء الاصطناعي.",
+      "title": "ما يمكنني بناؤه لك",
+      "subtitle": "ست مجالات خدمة مركّزة، كل منها مدعومة بمشاريع منشورة حقيقية — وليس قائمة عامة لمستقل.",
+      "srTitle": "الخدمات"
+    },
+    "openSource": {
+      "metaTitle": "المصادر المفتوحة",
+      "metaDescription": "كودي العام وإلى أين يتجه — بدون أرقام مبالغ فيها، فقط الوضع الحقيقي.",
+      "title": "المصادر المفتوحة",
+      "subtitle": "معظم ما أبنيه عمل لعملاء ولا يمكن نشره — هنا يوجد كودي العام، وما أعمل على فتحه مستقبلًا.",
+      "publicRepos": "المستودعات العامة",
+      "publicReposDesc": "تجارب شخصية ومشاريع Flutter مبكرة وأدوات صغيرة على GitHub — بما فيها نسخة واجهة Starbucks منذ تعلّمي Flutter، ما زالت عامة دون تعديل.",
+      "viewGithub": "عرض ملف GitHub",
+      "codebergMirror": "مرآة Codeberg",
+      "codebergDesc": "أحتفظ بحضور على Codeberg كبديل غير مؤسسي لإصدارات المصادر المفتوحة المستقبلية.",
+      "viewCodeberg": "عرض ملف Codeberg",
+      "whatsNext": "ما التالي",
+      "whatsNextDesc": "هدفان محددان في <roadmap>خطة المستقبل</roadmap>: نشر حزم Dart المشتركة المبنية لمنظومة Qareeb كإصدارات مفتوحة المصدر، والمساهمة في حزمة Flutter مفتوحة المصدر راسخة. كلاهما قيد التقدم وليس منتهيًا — ستُحدَّث هذه الصفحة بصدق عند الإطلاق.",
+      "followers": "متابع واحد على GitHub.",
+      "followersPlural": "{count} متابع على GitHub.",
+      "featuredRepos": "مستودعات مميزة",
+      "recentActivity": "النشاط الأخير"
+    },
+    "skills": {
+      "metaTitle": "المهارات",
+      "metaDescription": "الكفاءة في الموبايل والخلفية البرمجية والواجهة الأمامية وقواعد البيانات وDevOps والتصميم ودمج الذكاء الاصطناعي.",
+      "title": "أقوى مجالاتي",
+      "subtitle": "الكفاءة تعكس الاستخدام الفعلي في المشاريع وليس الشهادات — سنوات الخبرة مُتتبَّعة لكل تقنية في صفحة التقنيات.",
+      "yearsSuffix": "+ سنة"
+    },
+    "techStack": {
+      "metaTitle": "التقنيات",
+      "metaDescription": "موسوعة التقنيات الكاملة — كل أداة، لماذا اخترتها، وأي مشاريع تستخدمها.",
+      "title": "المكدس التقني كاملاً",
+      "subtitle": "ليس مجرد قائمة شعارات — كل تقنية تربطك بسبب اختيارها والمشاريع الحقيقية التي تستخدمها.",
+      "yearsProjects": "{years}+ سنوات · {count} مشروع",
+      "yearsProjectsPlural": "{years}+ سنوات · {count} مشاريع",
+      "detail": {
+        "experience": "خبرتي",
+        "whyChosen": "لماذا اخترتها",
+        "alternatives": "بدائل درستها",
+        "usedIn": "مستخدمة في",
+        "category": "الفئة",
+        "experienceLabel": "الخبرة",
+        "proficiency": "الكفاءة",
+        "years": "{years}+ سنوات"
+      }
+    },
+    "timeline": {
+      "metaTitle": "المسار الزمني",
+      "metaDescription": "رحلتي المهنية من أول تطبيق Flutter في 2024 إلى بنية منصات متعددة المستأجرين في 2026.",
+      "title": "الرحلة حتى الآن",
+      "subtitle": "سنتان، وخيط واحد ثابت: بناء برمجيات حقيقية لأشخاص حقيقيين، والتحسّن قليلًا في كل مرة."
+    },
+    "stats": {
+      "metaTitle": "الإحصائيات",
+      "metaDescription": "أرقام حقيقية قابلة للتحقق — بدون مبالغة.",
+      "title": "إحصائيات بصدق",
+      "subtitle": "بدون عدادات أسطر كود أو رسوم commits مبالغ فيها — فقط أرقام أستطيع الدفاع عنها في مقابلة.",
+      "srTitle": "ملخص",
+      "projectsDelivered": "مشاريع مُسلَّمة",
+      "yearsExperience": "سنوات الخبرة",
+      "liveProducts": "منتجات حية",
+      "clientsServed": "عملاء تم خدمتهم",
+      "topTech": "أكثر التقنيات استخدامًا",
+      "projectCount": "{count} مشروع",
+      "projectCountPlural": "{count} مشاريع"
+    },
+    "uses": {
+      "metaTitle": "أدواتي",
+      "metaDescription": "البرمجيات اليومية التي أبني بها كل مشروع.",
+      "title": "ما أستخدمه",
+      "subtitle": "البرمجيات التي تعمل على جهازي كل يوم — شاهد العتاد في صفحة إعداد المكتب.",
+      "seeSetup": "شاهد إعداد مكتبي"
+    },
+    "setup": {
+      "metaTitle": "إعداد المكتب",
+      "metaDescription": "العتاد الذي يقف وراء عملي اليومي في التطوير.",
+      "title": "إعداد المكتب",
+      "subtitle": "العتاد وراء البرمجيات — شاهد الأدوات اليومية في صفحة أدواتي.",
+      "categories": {
+        "device": "الجهاز",
+        "monitor": "الشاشة",
+        "keyboard": "لوحة المفاتيح",
+        "mouse": "الفأرة",
+        "microphone": "الميكروفون",
+        "camera": "الكاميرا",
+        "extension": "إضافات المحرر"
+      }
+    },
+    "changelog": {
+      "metaTitle": "سجل التحديثات",
+      "metaDescription": "ما تغيّر في هذا الموقع، إصدارًا بإصدار.",
+      "title": "سجل التحديثات",
+      "subtitle": "يُعامل هذا الموقع كمنتج حقيقي — كل تغيير مهم يُسجَّل هنا.",
+      "srTitle": "سجل الإصدارات"
+    },
+    "blog": {
+      "metaTitle": "المدونة",
+      "metaDescription": "ملاحظات عن Flutter وLaravel والهندسة ودمج الذكاء الاصطناعي من عملاء حقيقيين.",
+      "title": "ملاحظات من مشاريع حقيقية",
+      "subtitle": "قرارات معمارية ودروس مستفادة من عمل العملاء — وليس دروسًا عامة.",
+      "srTitle": "المقالات",
+      "emptyTitle": "لا توجد مقالات بعد",
+      "emptyDescription": "عد قريبًا — أول المقالات في الطريق."
+    },
+    "reading": {
+      "metaTitle": "قراءاتي",
+      "metaDescription": "كتب شكّلت طريقة تفكيري في الهندسة والأنظمة والحرفة.",
+      "title": "ما أقرأه",
+      "subtitle": "كتب تقنية غيّرت فعلًا طريقة بنائي للبرمجيات — وليست قائمة توصيات عامة.",
+      "srTitle": "الكتب",
+      "status": {
+        "completed": "مكتمل",
+        "reading": "أقرأه الآن",
+        "queued": "في قائمة الانتظار"
+      }
+    },
+    "toolbox": {
+      "metaTitle": "صندوق الأدوات",
+      "metaDescription": "مجموعة البرمجيات الكاملة وراء كل مشروع أُسلِّمه.",
+      "title": "صندوق الأدوات",
+      "subtitle": "كل برنامج يشارك في نقل المشروع من فكرة إلى إنتاج.",
+      "categories": {
+        "ide": "بيئات التطوير والمحررات",
+        "design": "التصميم",
+        "terminal": "الطرفية",
+        "api": "أدوات API",
+        "deployment": "النشر",
+        "productivity": "الإنتاجية"
+      }
+    },
+    "favorites": {
+      "metaTitle": "المفضلة",
+      "metaDescription": "أدوات وكتب وقنوات أعود إليها دائمًا — ليست مشاريع، بل اختيارات شخصية.",
+      "title": "مفضلاتي الشخصية",
+      "subtitle": "أدوات وكتب وقنوات ومواقع أعتمد عليها فعلًا — أما المشاريع المفضلة فهي في صفحة مفضلات المشاريع.",
+      "categories": {
+        "tool": "أدوات",
+        "book": "كتب",
+        "youtube": "يوتيوب",
+        "podcast": "بودكاست",
+        "website": "مواقع"
+      }
+    },
+    "lab": {
+      "metaTitle": "المختبر",
+      "metaDescription": "أفكار مبكرة ونماذج أولية — قيد التطوير عن قصد.",
+      "title": "المختبر",
+      "subtitle": "أفكار ونماذج أولية غير مكتملة أعمل عليها — بعضها سيصبح مشروعًا حقيقيًا، ومعظمها لن يصبح، وهذا مقصود.",
+      "srTitle": "النماذج الأولية",
+      "startedAt": "بدأ في {date}",
+      "status": {
+        "idea": "فكرة",
+        "prototyping": "نموذج أولي",
+        "paused": "متوقف"
+      }
+    },
+    "playground": {
+      "metaTitle": "التجارب",
+      "metaDescription": "تجارب برمجية صغيرة — ودجات Flutter، تأثيرات CSS، وعروض أدوات الذكاء الاصطناعي.",
+      "title": "التجارب",
+      "subtitle": "تجارب برمجية وبناءات صغيرة — ليست مشاريع إنتاجية، بل فضول.",
+      "srTitle": "التجارب",
+      "live": "معاينة حية",
+      "source": "الكود المصدري",
+      "categories": {
+        "flutter": "Flutter",
+        "css": "CSS",
+        "ai": "ذكاء اصطناعي",
+        "component": "مكوّن"
+      }
+    }
+  }
+}

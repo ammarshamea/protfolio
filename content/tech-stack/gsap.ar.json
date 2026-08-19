@@ -1,0 +1,5 @@
+{
+  "experience": "استخدمت GSAP مع ScrollTrigger لإعادة بناء موقع NAWA Holding بتأثيرات كشف أقسام مرتبطة بالتمرير، بعد أن بدت نسختان سابقتان ثابتتين وعامتين.",
+  "whyChosen": "للحركة المرتبطة بالتمرير تحديدًا، يمنح GSAP تحكمًا أدق في الجدول الزمني من نهج CSS وحده، خصوصًا عند دمجه مع Lenis للتمرير السلس.",
+  "alternatives": ["Framer Motion", "CSS scroll-timeline"]
+}

@@ -1,0 +1,22 @@
+{
+  "heroStatus": "Building AI-powered features for Clyx Order · Refining multi-tenant architecture · Open for new freelance projects",
+  "updatedAt": "2026-07-01",
+  "items": [
+    {
+      "label": "Shipping Clyx Order features",
+      "detail": "Working on dashboard analytics and tenant onboarding flow for new restaurant brands."
+    },
+    {
+      "label": "Learning system design",
+      "detail": "Studying how to scale a multi-tenant Laravel API cleanly as more restaurant brands come on board."
+    },
+    {
+      "label": "Integrating AI into delivery workflows",
+      "detail": "Exploring prompt-engineered assistants and automation for client projects, not just as a portfolio feature."
+    },
+    {
+      "label": "Open for freelance work",
+      "detail": "Currently taking on new Flutter and full-stack projects — see the contact page for availability."
+    }
+  ]
+}

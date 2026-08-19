@@ -1,0 +1,32 @@
+[
+  {
+    "year": "2024",
+    "title": "Started Flutter development",
+    "description": "Began building Flutter apps in earnest, starting with UI clones and small utility apps to learn the widget model and state management fundamentals.",
+    "highlights": [
+      "Shipped first Flutter + Laravel app, Mahdi",
+      "Built Sanasaa and Tesaa for small local clients",
+      "Learned BLoC and clean architecture patterns"
+    ]
+  },
+  {
+    "year": "2025",
+    "title": "Full-stack systems and dual-app platforms",
+    "description": "Moved into more architecturally demanding work — dual-role apps sharing packages, Python automation, and directory products spanning mobile and web.",
+    "highlights": [
+      "Built the Qareeb ecosystem with shared Dart packages for maps and models",
+      "Shipped Salam, Circle, and Safar"
+    ]
+  },
+  {
+    "year": "2026",
+    "title": "AI integration and platform-scale delivery",
+    "description": "Took on Clyx Order's multi-tenant architecture, NIVXTIME's five-service system, and started integrating AI into delivery workflows.",
+    "highlights": [
+      "Shipped Clyx Order and onboarded Pureger as its first tenant",
+      "Built CLYX Agency's public site",
+      "Delivered NIVXTIME's Flutter app, Next.js site, Laravel API, dashboard, and WhatsApp automation",
+      "Started integrating AI tooling into client delivery workflows"
+    ]
+  }
+]

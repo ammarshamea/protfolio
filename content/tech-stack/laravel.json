@@ -1,0 +1,11 @@
+{
+  "slug": "laravel",
+  "name": "Laravel",
+  "category": "backend",
+  "yearsOfExperience": 2,
+  "proficiency": 4,
+  "experience": "Laravel is my default backend choice for client work — it powers the multi-tenant API behind Clyx Order and Pureger, as well as simpler booking and inventory systems like Mahdi and Sanasaa.",
+  "whyChosen": "Sanctum for API authentication, Eloquent for fast but disciplined data modeling, and a mature ecosystem mean I spend time on business logic instead of re-solving solved problems.",
+  "alternatives": ["Node.js/Express", "Django"],
+  "projectSlugs": ["clyx-order", "pureger", "mahdi", "sanasaa", "nivxtime"]
+}

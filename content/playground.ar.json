@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "shared-bloc-package",
+    "title": "حزمة حالة BLoC قابلة لإعادة الاستخدام",
+    "description": "تجربة لاستخراج أنماط BLoC المشتركة (حالات التحميل/الخطأ/البيانات) إلى حزمة مشتركة لإيقاف إعادة كتابة نفس الكود المتكرر عبر تطبيقات العملاء.",
+    "category": "flutter",
+    "stack": ["Flutter", "Dart", "BLoC"]
+  },
+  {
+    "slug": "glassmorphic-widgets",
+    "title": "مجموعة ودجات Flutter بتأثير زجاجي",
+    "description": "مجموعة صغيرة من البطاقات والأزرار بتأثير زجاجي قابلة لإعادة الاستخدام في Flutter، بُنيت أثناء تصميم توجه واجهة هذا الموقع لمكوناته المكافئة على الموبايل.",
+    "category": "flutter",
+    "stack": ["Flutter", "Dart"]
+  },
+  {
+    "slug": "whatsapp-order-bot",
+    "title": "بوت تأكيد طلبات عبر واتساب",
+    "description": "نموذج أولي صغير يوسّع منهج أتمتة واتساب من NIVXTIME إلى تدفق تأكيد طلب مستقل وقابل لإعادة الاستخدام.",
+    "category": "ai",
+    "stack": ["Node.js", "Evolution API"]
+  },
+  {
+    "slug": "css-aurora-background",
+    "title": "مولّد خلفية Aurora بـ CSS",
+    "description": "تقنية CSS خفيفة وبدون اعتماديات لخلفيات متدرجة متحركة، استُخدمت كأساس لقسم البطل في هذا الموقع.",
+    "category": "css",
+    "stack": ["CSS", "JavaScript"]
+  }
+]

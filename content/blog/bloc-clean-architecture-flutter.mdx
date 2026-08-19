@@ -1,0 +1,44 @@
+---
+title: "Why I still reach for BLoC in every client Flutter app"
+description: "BLoC has a reputation for being verbose. Here's why the separation it forces is worth the boilerplate on real client projects."
+date: "2026-03-02"
+tags: ["Flutter", "BLoC", "Clean Architecture", "Dart"]
+category: "Mobile"
+---
+
+Every time a new Flutter state management library gets popular, someone asks why I haven't switched off BLoC. The honest answer is that BLoC's verbosity is the feature, not the bug, once a project has more than one developer touching it or needs to survive six months of client feature requests.
+
+## The rule that matters more than the library
+
+The actual principle I care about is: **UI widgets should never call an API, a database, or a platform channel directly.** Whether that separation is enforced by BLoC, Riverpod, or something else is secondary. BLoC just makes it hard to accidentally violate that rule, because the pattern forces every state change through an event → state cycle instead of letting a `setState()` call quietly reach into a repository from inside a widget's `build()` method.
+
+A typical feature in a client app ends up structured like this:
+
+```
+lib/
+  features/
+    orders/
+      data/
+        order_repository.dart      // talks to the API
+      domain/
+        order.dart                 // plain Dart model, no Flutter imports
+      presentation/
+        order_bloc.dart            // events in, states out
+        order_screen.dart          // only reads state, dispatches events
+```
+
+The `domain` layer has zero Flutter imports. I can — and have — reused domain models and repository interfaces between a Flutter app and a lightweight CLI tool for the same client without touching a single widget.
+
+## Where this paid off on a real project
+
+Qareeb needed two nearly-identical apps: one for riders, one for passengers, sharing most of the booking and location logic but with different screens and different permission flows. Because the domain and data layers didn't know Flutter existed, both apps import the same internal package for booking logic. Bug fixes to the matching algorithm ship to both apps from one change, not two.
+
+That would have been much harder to keep in sync with a state-management approach that lets business logic live inside widget state.
+
+## The honest downside
+
+BLoC does mean more files and more boilerplate for simple screens — a static "About" page doesn't need an event and a state class. For those, I don't force BLoC; a plain `StatelessWidget` is correct. The pattern earns its cost on screens with real asynchronous state: loading, error, and data variants that need to be handled consistently, which is most of what a production client app actually does.
+
+## What I look for before reaching for it
+
+If a screen only reads static content, I skip BLoC entirely. The moment a screen needs to react to a stream, retry a failed request, or share state with a sibling screen, BLoC's ceremony stops feeling like overhead and starts feeling like the thing preventing a subtle bug three months later.

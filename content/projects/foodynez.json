@@ -1,0 +1,39 @@
+{
+  "slug": "foodynez",
+  "title": "FoodyNez",
+  "tagline": "Bilingual B2B site for a Syrian food and sauce distributor connecting with restaurant partners.",
+  "category": "web",
+  "featured": true,
+  "favorite": false,
+  "role": "Frontend Developer",
+  "duration": "2 weeks",
+  "year": "2025",
+  "overview": "FoodyNez distributes appetizers, sauces, and mayonnaise to restaurants and shops across Syria. The site introduces the company, its product line, and its restaurant partners, and recruits new distribution agents in target cities.",
+  "problem": "FoodyNez needed a professional bilingual (Arabic/English) web presence to support B2B outreach and agent recruitment, replacing word-of-mouth as the only channel for new partnerships.",
+  "solution": "A static bilingual site presenting the company mission, product categories, and a roster of restaurant partners, with a clear call-to-action for prospective distribution agents in named cities.",
+  "architecture": "Static HTML/CSS site with right-to-left Arabic layout as the primary language and an English toggle, optimized for fast loading on mobile connections common in the target market.",
+  "features": [
+    "Bilingual Arabic/English content with proper RTL layout",
+    "Partner showcase listing restaurant brands using FoodyNez products",
+    "Agent recruitment call-to-action targeting specific Syrian cities",
+    "Company mission and goals presented for B2B credibility"
+  ],
+  "challenges": [
+    "Building a correct RTL layout that still reads naturally when toggled to English",
+    "Keeping the site lightweight for users on slower mobile connections"
+  ],
+  "lessonsLearned": [
+    "RTL-first design (rather than RTL as an afterthought) produces a noticeably better Arabic reading experience"
+  ],
+  "futureImprovements": [
+    "Searchable product catalog with categories",
+    "Simple contact form instead of phone-only contact"
+  ],
+  "results": [
+    "Live bilingual web presence supporting ongoing partner and agent outreach"
+  ],
+  "stack": ["HTML", "CSS", "JavaScript"],
+  "liveUrl": "https://foodynez.com/index.html",
+  "screenshotPending": true,
+  "gallery": []
+}

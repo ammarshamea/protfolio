@@ -1,0 +1,69 @@
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { Star } from "lucide-react";
+import { Link } from "@/i18n/navigation";
+import { Button } from "@/components/ui/button";
+import { PageHeader } from "@/components/shared/page-header";
+import { Section } from "@/components/shared/section";
+import { ProjectsExplorer } from "@/components/projects/projects-explorer";
+import { getAllProjects } from "@/lib/content/projects";
+import { generatePageMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.projects" });
+  const metadata = generatePageMetadata({
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+    path: "/projects",
+    locale,
+  });
+  return {
+    ...metadata,
+    alternates: {
+      ...metadata.alternates,
+      types: { "application/rss+xml": "/feed/projects.xml" },
+    },
+  };
+}
+
+export default async function ProjectsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  const tp = await getTranslations({ locale, namespace: "pages.projects" });
+  const projects = getAllProjects(locale);
+
+  return (
+    <>
+      <PageHeader
+        eyebrow={tp("eyebrow", { count: projects.length })}
+        title={t("nav.projects")}
+        subtitle={tp("subtitle")}
+        breadcrumbs={[
+          { label: t("nav.home"), href: "/" },
+          { label: t("nav.projects") },
+        ]}
+      />
+      <Section>
+        <h2 className="sr-only">{tp("srTitle")}</h2>
+        <div className="mb-8 flex justify-end">
+          <Button variant="secondary" size="sm" asChild>
+            <Link href="/projects/favorites">
+              <Star className="h-3.5 w-3.5" />
+              {t("nav.favorites")}
+            </Link>
+          </Button>
+        </div>
+        <ProjectsExplorer projects={projects} />
+      </Section>
+    </>
+  );
+}

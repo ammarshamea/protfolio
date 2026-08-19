@@ -1,0 +1,41 @@
+[
+  {
+    "category": "tool",
+    "name": "VS Code",
+    "description": "محرري اليومي لـ Flutter وLaravel وهذا الموقع — سريع بما يكفي ليبقى بعيدًا عن طريقي.",
+    "url": "https://code.visualstudio.com"
+  },
+  {
+    "category": "tool",
+    "name": "Postman",
+    "description": "حيث تُختبر كل نقطة نهاية في واجهة Laravel البرمجية قبل أن يستدعيها أي تطبيق Flutter.",
+    "url": "https://www.postman.com"
+  },
+  {
+    "category": "tool",
+    "name": "Figma",
+    "description": "للتحقق من تدفقات الواجهة مع العملاء قبل كتابة ودجة واحدة."
+  },
+  {
+    "category": "website",
+    "name": "Flutter documentation",
+    "description": "لا يزال أول مكان أتحقق منه عندما تتصرف ودجة بشكل غير متوقع.",
+    "url": "https://docs.flutter.dev"
+  },
+  {
+    "category": "website",
+    "name": "Laravel documentation",
+    "description": "مكتوبة بجودة ثابتة — نادرًا ما أحتاج درسًا تعليميًا خارجيًا لتغطية أي فجوة.",
+    "url": "https://laravel.com/docs"
+  },
+  {
+    "category": "youtube",
+    "name": "Fireship",
+    "description": "شروحات سريعة ومكثّفة تحترم وقتي عندما أحتاج لتعلّم مفهوم بسرعة."
+  },
+  {
+    "category": "podcast",
+    "name": "Syntax",
+    "description": "استماع جيد في الخلفية لمتابعة نظام الويب الأوسع خارج تقنياتي اليومية."
+  }
+]

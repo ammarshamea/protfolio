@@ -1,0 +1,11 @@
+{
+  "slug": "bloc",
+  "name": "BLoC",
+  "category": "architecture",
+  "yearsOfExperience": 2,
+  "proficiency": 4,
+  "experience": "I use BLoC to keep business logic completely separate from widgets, which matters most on apps like Qareeb and Circle where two separate apps (customer and provider) need to share predictable state patterns without sharing UI code.",
+  "whyChosen": "The strict separation between events, state, and UI makes it much easier to hand off or revisit code months later — a direct extension of the clean architecture and SOLID principles I try to apply everywhere.",
+  "alternatives": ["Provider", "Riverpod", "GetX"],
+  "projectSlugs": ["clyx-order", "qareeb", "circle"]
+}

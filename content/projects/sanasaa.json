@@ -1,0 +1,39 @@
+{
+  "slug": "sanasaa",
+  "title": "Sanasaa",
+  "tagline": "Retail storefront app for browsing and ordering products, backed by a Laravel inventory system.",
+  "category": "mobile",
+  "featured": false,
+  "favorite": false,
+  "role": "Mobile & Backend Developer",
+  "duration": "5 weeks",
+  "year": "2024",
+  "overview": "Sanasaa is a retail app built to give a local store a digital storefront, with a Flutter client for browsing products and a Laravel backend managing inventory and orders.",
+  "problem": "The store had no online presence and relied entirely on in-person or word-of-mouth sales, limiting reach and making inventory tracking manual.",
+  "solution": "A Flutter storefront app for browsing categorized products with a Laravel API handling inventory, pricing, and order records.",
+  "architecture": "Flutter app consuming a Laravel REST API, with product and category data modeled for straightforward inventory management by non-technical staff.",
+  "features": [
+    "Categorized product catalog with search",
+    "Cart and order submission flow",
+    "Inventory tracking on the backend",
+    "Basic order history for repeat customers"
+  ],
+  "challenges": [
+    "Designing an inventory data model simple enough for non-technical staff to manage through the admin side",
+    "Handling product images efficiently on limited mobile data connections"
+  ],
+  "lessonsLearned": [
+    "For small retail clients, simplicity in the admin experience matters more than feature completeness"
+  ],
+  "futureImprovements": [
+    "Barcode scanning for faster inventory updates",
+    "Simple sales reporting for the store owner"
+  ],
+  "results": [
+    "Gave a local retail business its first digital ordering channel"
+  ],
+  "stack": ["Flutter", "Laravel", "MySQL"],
+  "coverImage": "/projects/logos/sanaseaa_logo.svg",
+  "screenshotPending": false,
+  "gallery": []
+}

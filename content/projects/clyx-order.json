@@ -1,0 +1,45 @@
+{
+  "slug": "clyx-order",
+  "title": "Clyx Order",
+  "tagline": "Commission-free restaurant ordering platform used by restaurant owners across Saudi Arabia.",
+  "category": "saas",
+  "featured": true,
+  "favorite": true,
+  "role": "Mobile & Backend Developer",
+  "duration": "5 months, ongoing",
+  "year": "2026",
+  "overview": "Clyx Order is a restaurant ordering platform built as an alternative to commission-heavy delivery marketplaces. Restaurants get their own branded ordering app and dashboard without paying a cut on every order.",
+  "problem": "Restaurant owners in Saudi Arabia were losing 15-30% of every order to third-party delivery marketplace commissions, with no ownership over their customer data or branding.",
+  "solution": "I helped build a white-label ordering system: a Flutter customer app, a Laravel API handling menus/orders/payments, and a Next.js admin dashboard restaurant owners use to manage their storefront — all without any per-order commission.",
+  "architecture": "Flutter app with BLoC for state management talks to a Laravel API secured with Sanctum. Orders, menu items, and branch data are modeled per-tenant so a single backend serves multiple restaurant brands (including Pureger). The Next.js dashboard consumes the same API for real-time order management.",
+  "features": [
+    "Branch selection with live menu and pricing per location",
+    "Cart and checkout flow with multiple payment methods",
+    "Order tracking from placement to delivery",
+    "Multi-tenant architecture so new restaurant brands onboard without new infrastructure",
+    "Owner dashboard for menu management, order history, and basic sales reporting"
+  ],
+  "challenges": [
+    "Designing a data model that cleanly supports multiple restaurant brands on shared infrastructure without leaking data between tenants",
+    "Keeping menu and price updates from the dashboard reflected instantly in the customer app",
+    "Handling order state transitions reliably across app, API, and dashboard simultaneously"
+  ],
+  "lessonsLearned": [
+    "Multi-tenancy decisions made early (even before a second tenant exists) save weeks of migration work later",
+    "Real-time order status is worth the extra plumbing — it's the single feature restaurant owners notice first"
+  ],
+  "futureImprovements": [
+    "Native push notifications for order status changes",
+    "Analytics dashboard with per-branch performance comparisons",
+    "Driver-facing app for in-house delivery fleets"
+  ],
+  "results": [
+    "Live in production serving real restaurant brands, including Pureger",
+    "Zero per-order commission model, compared to 15-30% on typical delivery marketplaces"
+  ],
+  "stack": ["Flutter", "BLoC", "Laravel", "Next.js", "MySQL", "Sanctum"],
+  "liveUrl": "https://clyxorder.com/",
+  "coverImage": "/projects/logos/clyx-order-logo.png",
+  "screenshotPending": false,
+  "gallery": []
+}

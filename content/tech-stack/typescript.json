@@ -1,0 +1,11 @@
+{
+  "slug": "typescript",
+  "name": "TypeScript",
+  "category": "frontend",
+  "yearsOfExperience": 1,
+  "proficiency": 4,
+  "experience": "I write TypeScript by default on every web project now — the CLYX Agency site, Clyx Order's dashboard, and this portfolio are all fully typed, including runtime validation with Zod for content and form data.",
+  "whyChosen": "Static types catch integration mistakes between frontend and API responses before they reach production, which matters a lot when a Laravel API is the source of truth.",
+  "alternatives": ["Plain JavaScript"],
+  "projectSlugs": ["clyx-agency", "clyx-order"]
+}

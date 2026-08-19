@@ -1,0 +1,22 @@
+{
+  "slug": "flutter",
+  "name": "Flutter",
+  "category": "mobile",
+  "yearsOfExperience": 2,
+  "proficiency": 5,
+  "experience": "Flutter is where I started and where most of my production work still lives. From my first Starbucks UI clone to shipping Clyx Order and a dozen client apps, I've used it to build everything from simple booking tools to dual-role marketplace apps with real-time location tracking.",
+  "whyChosen": "One codebase for iOS and Android matters a lot when you're delivering for small businesses on realistic budgets, and the widget model makes UI iteration fast without sacrificing native performance.",
+  "alternatives": ["React Native", "Native Android/iOS"],
+  "projectSlugs": [
+    "clyx-order",
+    "pureger",
+    "nivxtime",
+    "qareeb",
+    "mahdi",
+    "sanasaa",
+    "circle",
+    "salam",
+    "safar",
+    "tesaa"
+  ]
+}

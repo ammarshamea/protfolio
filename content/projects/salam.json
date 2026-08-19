@@ -1,0 +1,38 @@
+{
+  "slug": "salam",
+  "title": "Salam",
+  "tagline": "School transportation tracking app connecting students, parents, and drivers.",
+  "category": "mobile",
+  "featured": false,
+  "favorite": false,
+  "role": "Mobile Developer",
+  "duration": "2 months",
+  "year": "2025",
+  "overview": "Salam gives parents visibility into their child's school transportation, with separate experiences for students/parents and drivers, focused on trust and safety rather than just logistics.",
+  "problem": "Parents had no way to know where the school bus was or when their child had been picked up or dropped off, leading to daily uncertainty and phone calls to the school.",
+  "solution": "A student/parent-facing Flutter app showing live trip status and a driver-facing app for managing routes and confirming pickups/drop-offs, connected through a shared trip state.",
+  "architecture": "Flutter apps for both roles with live location sharing from the driver app and trip status updates surfaced to the parent app in near real time.",
+  "features": [
+    "Live trip tracking for parents",
+    "Pickup and drop-off confirmation from the driver side",
+    "Route and student roster management for drivers",
+    "Notifications for key trip events"
+  ],
+  "challenges": [
+    "Designing for a safety-critical use case where reliability mattered more than feature richness",
+    "Handling location updates in a way that balanced accuracy with battery life over a full school day"
+  ],
+  "lessonsLearned": [
+    "For safety-focused apps, the most valuable feature is often the simplest one done reliably — in this case, an accurate pickup/drop-off confirmation"
+  ],
+  "futureImprovements": [
+    "Push notifications for delays or route changes",
+    "Multi-child support for parents with more than one student on the same route"
+  ],
+  "results": [
+    "Gave parents real-time visibility into their child's transportation status"
+  ],
+  "stack": ["Flutter", "Google Maps", "Geolocation"],
+  "screenshotPending": true,
+  "gallery": []
+}

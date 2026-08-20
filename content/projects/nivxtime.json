@@ -35,9 +35,18 @@
   "results": [
     "A single coordinated system covering customer booking, staff operations, and automated communication"
   ],
-  "stack": ["Flutter", "Next.js", "Laravel", "React", "Docker", "WhatsApp API"],
+  "stack": [
+    "Flutter",
+    "Next.js",
+    "Laravel",
+    "React",
+    "Docker",
+    "WhatsApp API"
+  ],
   "githubUrl": "https://github.com/ammarshamea/playtime-landing-page",
-  "coverImage": "/projects/logos/playTime.svg",
+  "coverImage": "/projects/covers/nivxtime.png",
   "screenshotPending": false,
-  "gallery": []
+  "gallery": [
+    "/projects/covers/nivxtime.png"
+  ]
 }

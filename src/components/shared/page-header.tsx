@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import { ChevronRight } from "lucide-react";
+import { SectionLabel } from "@/components/shared/section";
 import { cn } from "@/lib/utils";
 
 interface Crumb {
@@ -27,11 +28,11 @@ export function PageHeader({
         className,
       )}
     >
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-[90rem] px-6 sm:px-10">
         {breadcrumbs && breadcrumbs.length > 0 ? (
           <nav
             aria-label="Breadcrumb"
-            className="mb-6 flex flex-wrap items-center gap-1.5 text-sm text-[var(--muted-foreground)]"
+            className="mb-8 flex flex-wrap items-center gap-1.5 text-sm text-[var(--muted-foreground)]"
           >
             {breadcrumbs.map((crumb, index) => (
               <span key={crumb.label} className="flex items-center gap-1.5">
@@ -57,16 +58,12 @@ export function PageHeader({
             ))}
           </nav>
         ) : null}
-        {eyebrow ? (
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[var(--accent-text)]">
-            {eyebrow}
-          </p>
-        ) : null}
-        <h1 className="text-4xl font-semibold tracking-tight font-[family-name:var(--font-display)] sm:text-5xl">
+        {eyebrow ? <SectionLabel label={eyebrow} className="mb-5" /> : null}
+        <h1 className="max-w-4xl text-[length:var(--text-display)] font-semibold leading-[1.02] tracking-tight font-[family-name:var(--font-display)]">
           {title}
         </h1>
         {subtitle ? (
-          <p className="mt-4 max-w-2xl text-lg text-[var(--muted-foreground)]">
+          <p className="mt-6 max-w-2xl text-[length:var(--text-body-lg)] text-[var(--muted-foreground)]">
             {subtitle}
           </p>
         ) : null}

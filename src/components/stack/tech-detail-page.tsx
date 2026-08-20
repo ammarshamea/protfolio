@@ -95,9 +95,9 @@ export async function TechDetailPage({
               <dt className="text-xs uppercase tracking-widest text-[var(--muted-foreground)]">
                 {td("proficiency")}
               </dt>
-              <dd className="mt-1 h-1.5 w-full overflow-hidden rounded-full bg-[var(--surface)]">
+              <dd className="mt-1 h-1.5 w-full overflow-hidden rounded-sm bg-[var(--muted)]">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-[var(--accent)] to-[var(--accent-secondary)]"
+                  className="h-full bg-[var(--accent)]"
                   style={{ width: `${(technology.proficiency / 5) * 100}%` }}
                 />
               </dd>

@@ -4,11 +4,11 @@ export function Logo() {
   return (
     <Link
       href="/"
-      className="flex items-center gap-2 text-lg font-semibold tracking-tight"
+      className="group flex items-center gap-2.5 text-[15px] font-medium tracking-tight text-[var(--foreground)]"
     >
       <span
         aria-hidden="true"
-        className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--accent)] to-[var(--accent-secondary)] font-[family-name:var(--font-display)] text-sm font-bold text-white"
+        className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--accent)] font-[family-name:var(--font-display)] text-[11px] font-semibold text-[var(--accent-foreground)]"
       >
         AS
       </span>

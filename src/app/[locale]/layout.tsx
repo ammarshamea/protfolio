@@ -45,8 +45,8 @@ export function generateStaticParams() {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#050816" },
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#07140f" },
+    { media: "(prefers-color-scheme: light)", color: "#f7faf8" },
   ],
   colorScheme: "dark light",
 };
@@ -127,6 +127,8 @@ export default async function LocaleLayout({
       dir={dir}
       suppressHydrationWarning
       className={`${inter.variable} ${sora.variable} ${notoSansArabic.variable}`}
+      data-accent="emerald"
+      data-scroll-behavior="smooth"
     >
       <body className="antialiased" suppressHydrationWarning>
         <PwaProvider>
@@ -137,7 +139,7 @@ export default async function LocaleLayout({
           <NextIntlClientProvider locale={locale}>
             <ThemeProvider
               attribute="data-theme"
-              defaultTheme="dark"
+              defaultTheme="light"
               themes={["light", "dark", "high-contrast"]}
               enableSystem={false}
               disableTransitionOnChange
@@ -145,7 +147,10 @@ export default async function LocaleLayout({
               <AccentProvider>
                 <TooltipProvider delayDuration={200}>
                   <RecruiterModeBar />
-                  <Header />
+                  <Header
+                    socials={site.socials}
+                    contactEmail={site.contact.email}
+                  />
                   <main id="main-content">{children}</main>
                   <Footer />
                   <ScrollToTop label={t("common.scrollToTop")} />

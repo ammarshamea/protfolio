@@ -24,5 +24,12 @@
     "مسح الباركود لتحديثات مخزون أسرع",
     "تقارير مبيعات بسيطة لصاحب المحل"
   ],
-  "results": ["أعطى نشاط تجزئة محلي أول قناة طلب رقمية له"]
+  "results": [
+    "أعطى نشاط تجزئة محلي أول قناة طلب رقمية له"
+  ],
+  "coverImage": "/projects/covers/sanasaa.png",
+  "screenshotPending": false,
+  "gallery": [
+    "/projects/covers/sanasaa.png"
+  ]
 }

@@ -32,10 +32,17 @@
   "results": [
     "Serves as the primary web presence and contact channel for new CLYX client work"
   ],
-  "stack": ["React", "Vite", "TypeScript", "Tailwind CSS"],
+  "stack": [
+    "React",
+    "Vite",
+    "TypeScript",
+    "Tailwind CSS"
+  ],
   "liveUrl": "https://clyx.agency",
   "githubUrl": "https://github.com/ammarshamea/clyx_landing_page",
-  "coverImage": "/projects/logos/clyx-agency.png",
+  "coverImage": "/projects/covers/clyx-agency.png",
   "screenshotPending": false,
-  "gallery": []
+  "gallery": [
+    "/projects/covers/clyx-agency.png"
+  ]
 }

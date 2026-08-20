@@ -13,7 +13,7 @@ export function InteractiveCareerTimeline({
   return (
     <div className="relative">
       <div
-        className="absolute bottom-4 start-4 top-4 w-px bg-gradient-to-b from-[var(--accent)] via-[var(--accent-secondary)] to-transparent sm:start-1/2"
+        className="absolute bottom-4 start-4 top-4 w-px bg-[var(--surface-border)] sm:start-1/2"
         aria-hidden="true"
       />
       <div className="space-y-16">

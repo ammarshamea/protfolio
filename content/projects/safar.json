@@ -30,8 +30,12 @@
   "results": [
     "Working trip planning app consolidating bookings into a single itinerary view"
   ],
-  "stack": ["Flutter"],
-  "coverImage": "/projects/logos/safar_logo.png",
+  "stack": [
+    "Flutter"
+  ],
+  "coverImage": "/projects/covers/safar.png",
   "screenshotPending": false,
-  "gallery": []
+  "gallery": [
+    "/projects/covers/safar.png"
+  ]
 }

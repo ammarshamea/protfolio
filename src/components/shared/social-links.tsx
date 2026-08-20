@@ -37,7 +37,7 @@ export function SocialLinks({
           rel={href.startsWith("http") ? "noreferrer" : undefined}
           aria-label={label}
           className={cn(
-            "flex items-center justify-center rounded-full border border-[var(--surface-border)] transition-all hover:border-[var(--accent)] hover:text-[var(--accent)] hover:-translate-y-0.5",
+            "flex items-center justify-center rounded-md border border-[var(--surface-border)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]",
             variant === "hero" ? "h-11 w-11" : "h-9 w-9",
           )}
         >

@@ -30,7 +30,12 @@
   "results": [
     "Gave a small shop owner a faster, clearer way to track sales and stock"
   ],
-  "stack": ["Flutter"],
-  "screenshotPending": true,
-  "gallery": []
+  "stack": [
+    "Flutter"
+  ],
+  "screenshotPending": false,
+  "gallery": [
+    "/projects/covers/tesaa.png"
+  ],
+  "coverImage": "/projects/covers/tesaa.png"
 }

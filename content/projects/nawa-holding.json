@@ -33,9 +33,16 @@
   "results": [
     "Production site reflecting the polish expected of an established holding company"
   ],
-  "stack": ["Next.js", "GSAP", "Lenis", "Tailwind CSS"],
+  "stack": [
+    "Next.js",
+    "GSAP",
+    "Lenis",
+    "Tailwind CSS"
+  ],
   "githubUrl": "https://github.com/ammarshamea/nawa_production",
-  "coverImage": "/projects/logos/nawa_production.png",
+  "coverImage": "/projects/covers/nawa-holding.png",
   "screenshotPending": false,
-  "gallery": []
+  "gallery": [
+    "/projects/covers/nawa-holding.png"
+  ]
 }

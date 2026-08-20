@@ -1,3 +1,6 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { GlassCard } from "@/components/shared/glass-card";
 import type { Technology } from "@/lib/schemas/tech";
@@ -7,6 +10,8 @@ export function FeaturedTechnologies({
 }: {
   technologies: Technology[];
 }) {
+  const ts = useTranslations("pages.skills");
+
   return (
     <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
       {technologies.map((tech) => (
@@ -17,7 +22,8 @@ export function FeaturedTechnologies({
           >
             <span className="text-sm font-medium">{tech.name}</span>
             <span className="text-xs text-[var(--muted-foreground)]">
-              {tech.yearsOfExperience}+ yrs
+              {tech.yearsOfExperience}
+              {ts("yearsSuffix")}
             </span>
           </GlassCard>
         </Link>

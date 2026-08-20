@@ -11,6 +11,11 @@ const paddingMap = {
   lg: "p-8",
 };
 
+/**
+ * Restrained bordered surface — deliberately flat, no blur/glow. Used where a
+ * contained surface genuinely helps (FAQ items, metadata panels, list rows),
+ * not as a default wrapper for everything.
+ */
 export function GlassCard({
   className,
   hover = true,
@@ -20,10 +25,9 @@ export function GlassCard({
   return (
     <div
       className={cn(
-        "glass rounded-2xl transition-all duration-300",
+        "rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] shadow-[var(--shadow-card)] transition-[border-color,background-color] duration-200",
         paddingMap[padding],
-        hover &&
-          "hover:-translate-y-1 hover:border-[var(--accent)]/40 hover:shadow-[0_20px_60px_-20px_var(--accent)]",
+        hover && "hover:border-[var(--foreground)]/25",
         className,
       )}
       {...props}

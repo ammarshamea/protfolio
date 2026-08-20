@@ -32,8 +32,13 @@
   "results": [
     "Working dual-app marketplace covering the full request-to-completion flow"
   ],
-  "stack": ["Flutter", "BLoC"],
-  "coverImage": "/projects/logos/circle_logo.svg",
+  "stack": [
+    "Flutter",
+    "BLoC"
+  ],
+  "coverImage": "/projects/covers/circle.png",
   "screenshotPending": false,
-  "gallery": []
+  "gallery": [
+    "/projects/covers/circle.png"
+  ]
 }

@@ -55,8 +55,11 @@ export function ProjectsExplorer({ projects }: { projects: Project[] }) {
 
   return (
     <div>
-      <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-wrap gap-2">
+      <div className="mb-12 flex flex-col gap-6 border-b border-[var(--surface-border)] pb-6 sm:flex-row sm:items-end sm:justify-between">
+        <nav
+          aria-label={tp("srTitle")}
+          className="flex flex-wrap gap-x-6 gap-y-2"
+        >
           {CATEGORIES.map((cat) => (
             <button
               key={cat}
@@ -65,16 +68,23 @@ export function ProjectsExplorer({ projects }: { projects: Project[] }) {
                 setPage(1);
               }}
               className={cn(
-                "rounded-full border px-4 py-2 text-sm font-medium transition-colors",
+                "relative pb-3 text-sm font-medium uppercase tracking-[0.06em] transition-colors",
                 category === cat
-                  ? "border-transparent bg-[var(--accent)] text-[var(--accent-foreground)]"
-                  : "border-[var(--surface-border)] text-[var(--muted-foreground)] hover:text-[var(--foreground)]",
+                  ? "text-[var(--foreground)]"
+                  : "text-[var(--muted-foreground)] hover:text-[var(--foreground)]",
               )}
             >
               {tp(`categories.${cat}`)}
+              <span
+                aria-hidden="true"
+                className={cn(
+                  "absolute inset-x-0 -bottom-px h-px origin-left bg-[var(--foreground)] transition-transform duration-300",
+                  category === cat ? "scale-x-100" : "scale-x-0",
+                )}
+              />
             </button>
           ))}
-        </div>
+        </nav>
 
         <div className="relative w-full sm:w-64">
           <Search className="pointer-events-none absolute start-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--muted-foreground)]" />
@@ -96,7 +106,7 @@ export function ProjectsExplorer({ projects }: { projects: Project[] }) {
         <StaggerContainer
           key={safePage}
           animateOnMount
-          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-6 sm:grid-cols-2"
         >
           {paginated.map((project) => (
             <StaggerItem key={project.slug}>
@@ -107,14 +117,14 @@ export function ProjectsExplorer({ projects }: { projects: Project[] }) {
       )}
 
       {totalPages > 1 ? (
-        <div className="mt-12 flex items-center justify-center gap-2">
+        <div className="mt-14 flex items-center justify-center gap-2">
           {Array.from({ length: totalPages }).map((_, index) => (
             <Button
               key={index}
               variant={safePage === index + 1 ? "default" : "outline"}
               size="sm"
               onClick={() => setPage(index + 1)}
-              className="h-9 w-9 rounded-full p-0"
+              className="h-9 w-9 rounded-[var(--radius-sm)] p-0"
             >
               {index + 1}
             </Button>

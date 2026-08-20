@@ -10,13 +10,13 @@ export function AvailabilityBadge({
   return (
     <div
       className={cn(
-        "glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium",
+        "inline-flex items-center gap-2 rounded-full border border-[var(--accent)]/20 bg-[var(--accent)]/8 px-3.5 py-1.5 text-sm font-medium text-[var(--accent)]",
         className,
       )}
     >
-      <span className="relative flex h-2 w-2">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--success)] opacity-75" />
-        <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--success)]" />
+      <span className="relative flex h-1.5 w-1.5">
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--success)] opacity-60" />
+        <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[var(--success)]" />
       </span>
       {label}
     </div>

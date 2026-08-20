@@ -1,10 +1,8 @@
+import { ArrowUp } from "lucide-react";
 import { getTranslations, getLocale } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
 import { Logo } from "./logo";
 import { SocialLinks } from "@/components/shared/social-links";
 import { getSiteContent } from "@/lib/content/site";
-import { footerNavGroups } from "@/lib/navigation";
-import { recruiterModeConfig } from "@/lib/recruiter-mode";
 
 export async function Footer() {
   const t = await getTranslations();
@@ -13,79 +11,29 @@ export async function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[var(--surface-border)]">
-      <div className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 lg:grid-cols-5">
-          <div className="col-span-2">
+    <footer className="border-t border-[var(--surface-border)] bg-[var(--surface)]">
+      <div className="mx-auto flex max-w-[90rem] flex-col gap-8 px-6 py-12 sm:px-10">
+        <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
+          <div>
             <Logo />
-            <p className="mt-4 max-w-xs text-sm text-[var(--muted-foreground)]">
+            <p className="mt-3 max-w-xs text-sm text-[var(--muted-foreground)]">
               {t("footer.tagline")}
             </p>
-            <SocialLinks
-              socials={site.socials}
-              variant="footer"
-              className="mt-6"
-            />
           </div>
-
-          {footerNavGroups.map((group) => (
-            <div key={group.titleKey}>
-              <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-[var(--muted-foreground)]">
-                {t(`nav.${group.titleKey}` as Parameters<typeof t>[0])}
-              </p>
-              <ul className="space-y-2.5">
-                {group.items.map((item) => (
-                  <li
-                    key={item.href}
-                    data-recruiter-hidden={
-                      recruiterModeConfig.hiddenRoutes.includes(item.key) ||
-                      undefined
-                    }
-                  >
-                    <Link
-                      href={item.href}
-                      className="text-sm text-[var(--muted-foreground)] transition-colors hover:text-[var(--accent)]"
-                    >
-                      {t(`nav.${item.key}` as Parameters<typeof t>[0])}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-[var(--surface-border)] pt-8 text-sm text-[var(--muted-foreground)] sm:flex-row">
-          <p>
-            &copy; {year} {site.name}. {t("footer.rights")}
-          </p>
-          <div className="flex items-center gap-6">
-            <Link
-              href="/sitemap-page"
-              className="transition-colors hover:text-[var(--accent)]"
+          <div className="flex items-center gap-4">
+            <SocialLinks socials={site.socials} variant="footer" />
+            <a
+              href="#top"
+              className="flex items-center gap-2 rounded-full border border-[var(--surface-border)] px-4 py-2.5 text-sm font-medium transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
             >
-              {t("footer.sitemap")}
-            </Link>
-            <Link
-              href="/api-docs"
-              className="transition-colors hover:text-[var(--accent)]"
-            >
-              {t("footer.apiDocs")}
-            </Link>
-            <Link
-              href="/privacy"
-              className="transition-colors hover:text-[var(--accent)]"
-            >
-              {t("footer.privacy")}
-            </Link>
-            <Link
-              href="/terms"
-              className="transition-colors hover:text-[var(--accent)]"
-            >
-              {t("footer.terms")}
-            </Link>
+              {t("footer.backToTop")}
+              <ArrowUp className="h-3.5 w-3.5" aria-hidden="true" />
+            </a>
           </div>
         </div>
+        <p className="border-t border-[var(--surface-border)] pt-6 text-sm text-[var(--muted-foreground)]">
+          &copy; {year} {site.name}. {t("footer.rights")}
+        </p>
       </div>
     </footer>
   );

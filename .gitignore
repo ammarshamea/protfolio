@@ -50,3 +50,14 @@ yarn-error.log*
 next-env.d.ts
 
 *storybook.log
+
+# intro generation cache (voice mp3 + ass)
+/scripts/.cache
+
+# generated / binary media (backed up to Google Drive — see README)
+/public/generated
+/public/videos
+/public/splash
+/public/projects/logos/*.png
+/public/projects/logos/*.jpg
+/public/projects/logos/*.jpeg

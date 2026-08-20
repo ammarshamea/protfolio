@@ -32,8 +32,14 @@
   "results": [
     "Replaced manual phone-based booking with a structured digital flow"
   ],
-  "stack": ["Flutter", "Laravel", "MySQL"],
-  "coverImage": "/projects/logos/mahdi_logo.png",
+  "stack": [
+    "Flutter",
+    "Laravel",
+    "MySQL"
+  ],
+  "coverImage": "/projects/covers/mahdi.png",
   "screenshotPending": false,
-  "gallery": []
+  "gallery": [
+    "/projects/covers/mahdi.png"
+  ]
 }

@@ -17,9 +17,8 @@ export function CTABlock({
     <GlassCard
       hover={false}
       padding="lg"
-      className={cn("relative overflow-hidden text-center", className)}
+      className={cn("text-center", className)}
     >
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_var(--accent)/12,_transparent_70%)]" />
       <h2 className="text-2xl font-semibold font-[family-name:var(--font-display)] sm:text-3xl">
         {title}
       </h2>

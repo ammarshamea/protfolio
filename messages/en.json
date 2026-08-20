@@ -79,7 +79,26 @@
   },
   "hero": {
     "availabilityBadge": "Open for remote work",
-    "scrollHint": "Scroll to explore"
+    "scrollHint": "Scroll to explore",
+    "brief": "I ship Flutter apps and full-stack platforms that restaurants, delivery services, and local businesses actually run on.",
+    "yearsExperience": "Years of experience",
+    "projectsDelivered": "Projects delivered",
+    "liveProducts": "Live products",
+    "mobileApps": "Mobile apps",
+    "introTitle": "Ammar Shamea",
+    "introSubtitle": "A short intro — Flutter apps and full-stack systems built for real businesses.",
+    "introPlay": "Play intro",
+    "introSkip": "Skip",
+    "introReplay": "Replay intro",
+    "introQuick": "Quick intro about me"
+  },
+  "home": {
+    "workEyebrow": "Selected Work",
+    "workTitle": "Recent builds, shipped and actually running.",
+    "capabilitiesEyebrow": "Capabilities",
+    "capabilitiesTitle": "What I actually build",
+    "experienceMore": "See the full timeline",
+    "contactHeadline": "Let's build something memorable."
   },
   "contactForm": {
     "name": "Name",

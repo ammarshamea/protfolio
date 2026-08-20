@@ -8,11 +8,11 @@ export type Accent = (typeof ACCENTS)[number];
 const STORAGE_KEY = "accent-color";
 
 export function useAccent() {
-  const [accent, setAccentState] = useState<Accent>("indigo");
+  const [accent, setAccentState] = useState<Accent>("emerald");
 
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY) as Accent | null;
-    const initial = stored && ACCENTS.includes(stored) ? stored : "indigo";
+    const initial = stored && ACCENTS.includes(stored) ? stored : "emerald";
     // localStorage isn't available during SSR, so the persisted accent can only be read post-mount.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setAccentState(initial);

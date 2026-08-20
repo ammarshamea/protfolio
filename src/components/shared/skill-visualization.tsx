@@ -40,13 +40,13 @@ export function SkillVisualization({
                     {ts("yearsSuffix")}
                   </span>
                 </div>
-                <div className="h-1.5 w-full overflow-hidden rounded-full bg-[var(--surface)]">
+                <div className="h-1.5 w-full overflow-hidden rounded-sm bg-[var(--muted)]">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: `${(tech.proficiency / 5) * 100}%` }}
                     viewport={viewportOnce}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className="h-full rounded-full bg-gradient-to-r from-[var(--accent)] to-[var(--accent-secondary)]"
+                    className="h-full bg-[var(--accent)]"
                   />
                 </div>
               </div>

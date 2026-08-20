@@ -32,8 +32,15 @@
   "results": [
     "Live bilingual web presence supporting ongoing partner and agent outreach"
   ],
-  "stack": ["HTML", "CSS", "JavaScript"],
+  "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
   "liveUrl": "https://foodynez.com/index.html",
-  "screenshotPending": true,
-  "gallery": []
+  "screenshotPending": false,
+  "gallery": [
+    "/projects/covers/foodynez.png"
+  ],
+  "coverImage": "/projects/covers/foodynez.png"
 }

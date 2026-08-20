@@ -5,43 +5,84 @@
 @custom-variant hc (&:where([data-theme="high-contrast"], [data-theme="high-contrast"] *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #0b0e14;
-  --surface: rgba(15, 23, 42, 0.04);
-  --surface-strong: rgba(15, 23, 42, 0.07);
-  --surface-border: rgba(15, 23, 42, 0.1);
-  --muted: #f1f5f9;
-  --muted-foreground: #52606d;
+  --background: #f7faf8;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-strong: #eef5f1;
+  --surface-border: #dce8e1;
+  --muted: #f1f6f3;
+  --muted-foreground: #475569;
 
-  --accent: #4f46e5;
+  --accent: #059669;
   --accent-foreground: #ffffff;
-  --accent-secondary: #7c3aed;
-  --accent-tertiary: #06b6d4;
-  /* Lightened variant for small text set directly on the page background — keeps AA contrast across all accent hues. */
+  --accent-secondary: #047857;
+  --accent-tertiary: #34d399;
   --accent-text: var(--accent);
 
   --success: #16a34a;
   --warning: #b45309;
   --danger: #dc2626;
 
-  --radius: 0.875rem;
+  --radius: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 14px 40px rgb(15 23 42 / 0.06);
   --font-display: var(--font-sora), "Sora", ui-sans-serif, sans-serif;
   --font-sans: var(--font-inter), "Inter", ui-sans-serif, sans-serif;
   --font-arabic:
     var(--font-noto-arabic), "Noto Sans Arabic", ui-sans-serif, sans-serif;
+
+  --ink: var(--background);
+  --ink-foreground: var(--foreground);
+  --ink-muted: var(--muted-foreground);
+  --ink-border: var(--surface-border);
+  --ink-surface: var(--surface);
+
+  --paper: var(--muted);
+  --paper-foreground: var(--foreground);
+  --paper-muted: var(--muted-foreground);
+  --paper-border: var(--surface-border);
+  --paper-surface: var(--surface);
+
+  --warm: color-mix(in srgb, var(--accent) 8%, var(--background));
+  --warm-foreground: var(--foreground);
+  --warm-muted: var(--muted-foreground);
+  --warm-border: var(--surface-border);
+  --warm-surface: var(--surface);
+
+  --signal-ink: var(--accent);
+  --signal-paper: var(--accent-secondary);
+
+  --text-display-xl: clamp(2.15rem, 1.55rem + 2.8vw, 3.75rem);
+  --text-display: clamp(1.85rem, 1.45rem + 1.6vw, 2.75rem);
+  --text-h1: clamp(1.6rem, 1.35rem + 1vw, 2.15rem);
+  --text-h2: clamp(1.35rem, 1.2rem + 0.6vw, 1.75rem);
+  --text-h3: clamp(1.15rem, 1.08rem + 0.3vw, 1.35rem);
+  --text-body-lg: clamp(1.02rem, 0.98rem + 0.2vw, 1.125rem);
+  --text-label: 0.75rem;
+
+  --space-section-open: clamp(4.5rem, 3.5rem + 3.5vw, 7.5rem);
+  --space-section-compact: clamp(3rem, 2.5rem + 1.5vw, 4.75rem);
+  --space-section-dense: clamp(1.75rem, 1.5rem + 0.8vw, 2.75rem);
+}
+
+[dir="rtl"] {
+  --font-display: var(--font-noto-arabic), "Noto Sans Arabic", ui-sans-serif, sans-serif;
 }
 
 [data-theme="dark"] {
-  --background: #050816;
-  --foreground: #ffffff;
-  --surface: rgba(255, 255, 255, 0.05);
-  --surface-strong: rgba(255, 255, 255, 0.08);
-  --surface-border: rgba(255, 255, 255, 0.1);
-  --muted: rgba(255, 255, 255, 0.06);
-  --muted-foreground: #94a3b8;
+  --background: #07140f;
+  --foreground: #f4faf7;
+  --surface: #0e1c17;
+  --surface-strong: #13241d;
+  --surface-border: #1f3a30;
+  --muted: #102019;
+  --muted-foreground: #9cb8ac;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.28), 0 18px 40px rgb(0 0 0 / 0.28);
 
   --accent-foreground: #ffffff;
-  --accent-text: color-mix(in srgb, var(--accent) 65%, white);
+  --accent-text: color-mix(in srgb, var(--accent) 80%, white);
   --success: #22c55e;
   --warning: #f59e0b;
   --danger: #ef4444;
@@ -66,22 +107,21 @@
   --danger: #f87171;
 }
 
-/* Accent color overrides — independent of theme, toggled via data-accent */
 [data-accent="blue"] {
-  --accent: #3b82f6;
-  --accent-secondary: #2563eb;
+  --accent: #2563eb;
+  --accent-secondary: #1d4ed8;
 }
 [data-accent="purple"] {
   --accent: #7c3aed;
-  --accent-secondary: #a855f7;
+  --accent-secondary: #6d28d9;
 }
 [data-accent="emerald"] {
-  --accent: #10b981;
-  --accent-secondary: #059669;
+  --accent: #059669;
+  --accent-secondary: #047857;
 }
 [data-accent="indigo"] {
   --accent: #4f46e5;
-  --accent-secondary: #7c3aed;
+  --accent-secondary: #4338ca;
 }
 
 @theme inline {
@@ -100,14 +140,54 @@
   --color-success: var(--success);
   --color-warning: var(--warning);
   --color-danger: var(--danger);
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-border: var(--ink-border);
+  --color-ink-surface: var(--ink-surface);
+  --color-paper: var(--paper);
+  --color-paper-foreground: var(--paper-foreground);
+  --color-paper-muted: var(--paper-muted);
+  --color-paper-border: var(--paper-border);
+  --color-paper-surface: var(--paper-surface);
+  --color-warm: var(--warm);
+  --color-warm-foreground: var(--warm-foreground);
+  --color-warm-muted: var(--warm-muted);
+  --color-warm-border: var(--warm-border);
+  --color-warm-surface: var(--warm-surface);
+  --color-signal-ink: var(--signal-ink);
+  --color-signal-paper: var(--signal-paper);
   --radius-md: var(--radius);
+  --radius-sm: var(--radius-sm);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
   --font-display: var(--font-display);
   --font-sans: var(--font-sans);
   --font-arabic: var(--font-arabic);
 }
 
+[data-atmosphere] {
+  --atmosphere-bg: var(--background);
+  --atmosphere-fg: var(--foreground);
+  --atmosphere-muted: var(--muted-foreground);
+  --atmosphere-border: var(--surface-border);
+  --atmosphere-surface: var(--surface);
+  --signal: var(--accent);
+  background: var(--atmosphere-bg);
+  color: var(--atmosphere-fg);
+}
+
+[data-atmosphere="paper"] {
+  --atmosphere-bg: var(--muted);
+}
+
+[data-atmosphere="warm"] {
+  --atmosphere-bg: color-mix(in srgb, var(--accent) 8%, var(--background));
+}
+
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -136,6 +216,12 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+main {
+  overflow-x: clip;
 }
 
 [dir="rtl"] body {
@@ -147,18 +233,10 @@ body {
   color: var(--accent-foreground);
 }
 
-/* Glassmorphism surface */
 .glass {
   background: var(--surface);
   border: 1px solid var(--surface-border);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-}
-
-[data-theme="high-contrast"] .glass {
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  background: var(--surface);
+  box-shadow: var(--shadow-card);
 }
 
 .kbd {
@@ -173,7 +251,6 @@ body {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 1.25;
-  box-shadow: inset 0 -1px 0 var(--surface-border);
 }
 
 [data-theme="dark"] .kbd {
@@ -186,15 +263,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(
-    135deg,
-    var(--accent),
-    var(--accent-secondary) 60%,
-    var(--accent-tertiary)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--accent-text);
 }
 
 .skip-link {

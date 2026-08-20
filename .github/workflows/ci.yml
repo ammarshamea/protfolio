@@ -5,6 +5,16 @@ on:
     branches: [main]
   pull_request:
 
+env:
+  NEXT_PUBLIC_SITE_URL: https://ammarshamea.dev
+  CONTACT_TO_EMAIL: ${{ secrets.CONTACT_TO_EMAIL }}
+  RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+  NEXT_PUBLIC_SENTRY_DSN: ${{ secrets.NEXT_PUBLIC_SENTRY_DSN }}
+  SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+  SENTRY_ORG: ${{ secrets.SENTRY_ORG }}
+  SENTRY_PROJECT: ${{ secrets.SENTRY_PROJECT }}
+  SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+
 jobs:
   lint:
     runs-on: ubuntu-latest

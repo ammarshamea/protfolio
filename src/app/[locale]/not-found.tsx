@@ -3,7 +3,6 @@ import { Compass } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { GlassCard } from "@/components/shared/glass-card";
-import { MagneticButton } from "@/components/motion/magnetic-button";
 import { BrandedImageFallback } from "@/components/shared/branded-image-fallback";
 import { getAllProjects } from "@/lib/content/projects";
 
@@ -20,7 +19,7 @@ export default async function LocaleNotFound() {
       <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent)]/10 text-[var(--accent)]">
         <Compass className="h-7 w-7" />
       </div>
-      <p className="font-[family-name:var(--font-display)] text-7xl font-bold text-gradient">
+      <p className="font-[family-name:var(--font-display)] text-7xl font-bold text-[var(--foreground)]">
         404
       </p>
       <h1 className="mt-4 text-2xl font-semibold font-[family-name:var(--font-display)] sm:text-3xl">
@@ -31,11 +30,9 @@ export default async function LocaleNotFound() {
         {t("shortcutHint")}
       </p>
 
-      <MagneticButton className="mt-8">
-        <Button size="lg" asChild>
-          <Link href="/">{t("cta")}</Link>
-        </Button>
-      </MagneticButton>
+      <Button size="lg" className="mt-8" asChild>
+        <Link href="/">{t("cta")}</Link>
+      </Button>
 
       {suggestion ? (
         <GlassCard

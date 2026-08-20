@@ -24,5 +24,12 @@
     "حوافز ولاء وطلبات متكررة خاصة بعلامة Pureger",
     "عروض داخل التطبيق مرتبطة بفروع محددة"
   ],
-  "results": ["تجربة طلب حية لعلامة مطعم حقيقية، عبر الويب والموبايل معًا"]
+  "results": [
+    "تجربة طلب حية لعلامة مطعم حقيقية، عبر الويب والموبايل معًا"
+  ],
+  "coverImage": "/projects/covers/pureger.png",
+  "screenshotPending": false,
+  "gallery": [
+    "/projects/covers/pureger.png"
+  ]
 }

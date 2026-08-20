@@ -16,7 +16,7 @@ export function ScrollToTop({ label }: { label: string }) {
           exit={{ opacity: 0, scale: 0.8 }}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label={label}
-          className="glass fixed bottom-6 right-6 z-30 flex h-11 w-11 items-center justify-center rounded-full text-[var(--foreground)] shadow-lg transition-colors hover:text-[var(--accent)] rtl:right-auto rtl:left-6"
+          className="fixed bottom-6 right-6 z-30 flex h-11 w-11 items-center justify-center rounded-lg border border-[var(--surface-border)] bg-[var(--surface)] text-[var(--foreground)] transition-colors hover:text-[var(--accent)] rtl:right-auto rtl:left-6"
         >
           <ArrowUp className="h-4 w-4" />
         </motion.button>

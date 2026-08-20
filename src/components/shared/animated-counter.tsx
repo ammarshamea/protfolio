@@ -32,12 +32,14 @@ export function AnimatedCounter({
   }, [isInView, value]);
 
   return (
-    <motion.div ref={ref} className="text-center">
-      <div className="text-4xl font-semibold font-[family-name:var(--font-display)] text-gradient sm:text-5xl">
+    <motion.div ref={ref}>
+      <div className="font-[family-name:var(--font-display)] text-[length:var(--text-display)] font-semibold leading-none tracking-tight">
         {count}
         {suffix}
       </div>
-      <p className="mt-2 text-sm text-[var(--muted-foreground)]">{label}</p>
+      <p className="mt-3 text-sm uppercase tracking-[0.1em] opacity-60">
+        {label}
+      </p>
     </motion.div>
   );
 }

@@ -79,7 +79,26 @@
   },
   "hero": {
     "availabilityBadge": "متاح للعمل عن بُعد",
-    "scrollHint": "مرر للاستكشاف"
+    "scrollHint": "مرر للاستكشاف",
+    "brief": "أبني تطبيقات Flutter ومنصات متكاملة تعتمد عليها المطاعم وخدمات التوصيل والشركات المحلية فعليًا في عملها.",
+    "yearsExperience": "سنوات الخبرة",
+    "projectsDelivered": "مشاريع مُسلَّمة",
+    "liveProducts": "منتجات حيّة",
+    "mobileApps": "تطبيقات موبايل",
+    "introTitle": "عمار شامية",
+    "introSubtitle": "مقدمة قصيرة — تطبيقات Flutter وأنظمة متكاملة لشركات حقيقية.",
+    "introPlay": "تشغيل المقدمة",
+    "introSkip": "تخطي",
+    "introReplay": "إعادة المقدمة",
+    "introQuick": "تعريف سريع عني"
+  },
+  "home": {
+    "workEyebrow": "أعمال مختارة",
+    "workTitle": "منتجات حقيقية، مبنية وتعمل فعليًا.",
+    "capabilitiesEyebrow": "الإمكانيات",
+    "capabilitiesTitle": "ما الذي أبنيه فعليًا",
+    "experienceMore": "شاهد المسار الزمني كاملاً",
+    "contactHeadline": "لنبنِ شيئًا لا يُنسى."
   },
   "contactForm": {
     "name": "الاسم",

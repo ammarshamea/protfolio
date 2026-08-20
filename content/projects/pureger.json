@@ -32,9 +32,15 @@
   "results": [
     "Live ordering experience for a real restaurant brand, both on web and mobile"
   ],
-  "stack": ["Flutter", "Laravel", "MySQL"],
+  "stack": [
+    "Flutter",
+    "Laravel",
+    "MySQL"
+  ],
   "liveUrl": "https://clyxorder.com/pureger",
-  "coverImage": "/projects/logos/pureger.svg",
+  "coverImage": "/projects/covers/pureger.png",
   "screenshotPending": false,
-  "gallery": []
+  "gallery": [
+    "/projects/covers/pureger.png"
+  ]
 }

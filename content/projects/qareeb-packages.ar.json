@@ -14,13 +14,22 @@
     "qarreb-drawable_text — أدوات رسم النص",
     "qarreb-image-multi-type — ودجة صور متعددة الأنواع"
   ],
-  "challenges": ["انحراف التسمية (qareeb مقابل qarreb) عبر حزم مبكرة"],
+  "challenges": [
+    "انحراف التسمية (qareeb مقابل qarreb) عبر حزم مبكرة"
+  ],
   "lessonsLearned": [
     "استخرج الحزم عندما يحتاج تطبيق ثانٍ نفس الودجة لا قبل ذلك"
   ],
-  "futureImprovements": ["إصدارات بأسلوب pub.dev وبادئة qareeb_* موحّدة"],
-  "results": ["أربع حزم Dart عامة بدل أربع دراسات محشوة"],
-  "coverImage": "/projects/covers/qareeb-packages.png",
+  "futureImprovements": [
+    "إصدارات بأسلوب pub.dev وبادئة qareeb_* موحّدة"
+  ],
+  "results": [
+    "أربع حزم Dart عامة بدل أربع دراسات محشوة"
+  ],
+  "coverImage": "/projects/covers/qareeb-packages.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/qareeb-packages.png"]
+  "gallery": [
+    "/projects/gallery/qareeb-packages/01-scene.webp",
+    "/projects/gallery/qareeb-packages/02-scene.webp"
+  ]
 }

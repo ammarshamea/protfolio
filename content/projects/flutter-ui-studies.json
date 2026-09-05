@@ -18,15 +18,27 @@
     "marvel — catalog-style UI study",
     "Auctions — bidding UI study"
   ],
-  "challenges": ["Leaving warts public"],
+  "challenges": [
+    "Leaving warts public"
+  ],
   "lessonsLearned": [
     "The first clone is part of the resume if you say what it is"
   ],
-  "futureImprovements": ["Do not rewrite them; date-stamp and leave them"],
-  "results": ["Three public study repos, one honest shelf"],
-  "stack": ["Flutter", "Dart"],
+  "futureImprovements": [
+    "Do not rewrite them; date-stamp and leave them"
+  ],
+  "results": [
+    "Three public study repos, one honest shelf"
+  ],
+  "stack": [
+    "Flutter",
+    "Dart"
+  ],
   "githubUrl": "https://github.com/ammarshamea/starbucks",
-  "coverImage": "/projects/covers/flutter-ui-studies.png",
+  "coverImage": "/projects/covers/flutter-ui-studies.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flutter-ui-studies.png"]
+  "gallery": [
+    "/projects/gallery/flutter-ui-studies/01-scene.webp",
+    "/projects/gallery/flutter-ui-studies/02-scene.webp"
+  ]
 }

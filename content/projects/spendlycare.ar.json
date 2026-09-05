@@ -8,12 +8,26 @@
   "problem": "تطبيق السلة مكان خاطئ لتتبع تكاليف الرعاية والإنفاق المتكرر.",
   "solution": "عميل سبندلي كير منفصل يحمل المهمة في الاسم.",
   "architecture": "تطبيق أندرويد بجافا على Codeberg.",
-  "features": ["عميل تتبع إنفاق/رعاية", "مصدر جافا عام"],
-  "challenges": ["عدم دمجه في هوم كارت لمجرد إطلاقهما في مايو 2026"],
-  "lessonsLearned": ["المهمة المطلوبة مفتاح تجميع أفضل من ختم Git"],
-  "futureImprovements": ["تصدير CSV بسيط إن استخدمه أحد للميزانية فعلًا"],
-  "results": ["عميل مالية/رعاية أندرويد عام على Codeberg"],
-  "coverImage": "/projects/covers/spendlycare.png",
+  "features": [
+    "عميل تتبع إنفاق/رعاية",
+    "مصدر جافا عام"
+  ],
+  "challenges": [
+    "عدم دمجه في هوم كارت لمجرد إطلاقهما في مايو 2026"
+  ],
+  "lessonsLearned": [
+    "المهمة المطلوبة مفتاح تجميع أفضل من ختم Git"
+  ],
+  "futureImprovements": [
+    "تصدير CSV بسيط إن استخدمه أحد للميزانية فعلًا"
+  ],
+  "results": [
+    "عميل مالية/رعاية أندرويد عام على Codeberg"
+  ],
+  "coverImage": "/projects/covers/spendlycare.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/spendlycare.png"]
+  "gallery": [
+    "/projects/gallery/spendlycare/01-scene.webp",
+    "/projects/gallery/spendlycare/02-scene.webp"
+  ]
 }

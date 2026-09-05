@@ -31,9 +31,16 @@
   "results": [
     "A documented, deployable gift-card bot with admin and user sides"
   ],
-  "stack": ["Python", "PostgreSQL", "Redis"],
+  "stack": [
+    "Python",
+    "PostgreSQL",
+    "Redis"
+  ],
   "githubUrl": "https://github.com/ammarshamea/cardbot",
-  "coverImage": "/projects/covers/cardbot.png",
+  "coverImage": "/projects/covers/cardbot.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/cardbot.png"]
+  "gallery": [
+    "/projects/gallery/cardbot/01-scene.webp",
+    "/projects/gallery/cardbot/02-scene.webp"
+  ]
 }

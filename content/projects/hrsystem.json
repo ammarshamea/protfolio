@@ -17,7 +17,9 @@
     "Employee-oriented screen structure",
     "Form-heavy internal UI practice"
   ],
-  "challenges": ["Not overselling a learning repo as a finished HRIS"],
+  "challenges": [
+    "Not overselling a learning repo as a finished HRIS"
+  ],
   "lessonsLearned": [
     "Domain models (employee vs product) change the UI more than the framework does"
   ],
@@ -27,9 +29,15 @@
   "results": [
     "Public Flutter HR experiment that sits beside later production apps"
   ],
-  "stack": ["Flutter", "Dart"],
+  "stack": [
+    "Flutter",
+    "Dart"
+  ],
   "githubUrl": "https://github.com/ammarshamea/hrsystem",
-  "coverImage": "/projects/covers/hrsystem.png",
+  "coverImage": "/projects/covers/hrsystem.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/hrsystem.png"]
+  "gallery": [
+    "/projects/gallery/hrsystem/01-scene.webp",
+    "/projects/gallery/hrsystem/02-scene.webp"
+  ]
 }

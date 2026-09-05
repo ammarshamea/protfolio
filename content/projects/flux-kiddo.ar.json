@@ -17,12 +17,19 @@
     "الإبقاء على واجهة خاصة بالتاجر دون تفريع يمنع تحديثات Fluxstore",
     "توضيح أن هذا تخصيص إنتاجي وليس منصة تجارة مبنية من الصفر"
   ],
-  "lessonsLearned": ["حدود السمة والوحدات أهم من إعادة كتابة داخل Fluxstore"],
-  "futureImprovements": ["مسار ترقية موثّق لإصدار Fluxstore التالي"],
+  "lessonsLearned": [
+    "حدود السمة والوحدات أهم من إعادة كتابة داخل Fluxstore"
+  ],
+  "futureImprovements": [
+    "مسار ترقية موثّق لإصدار Fluxstore التالي"
+  ],
   "results": [
     "واجهة أطفال بهوية التاجر يمكن تشغيلها على مكدس Fluxstore/Woo الحالي"
   ],
-  "coverImage": "/projects/covers/flux-kiddo.png",
+  "coverImage": "/projects/covers/flux-kiddo.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flux-kiddo.png"]
+  "gallery": [
+    "/projects/gallery/flux-kiddo/01-scene.webp",
+    "/projects/gallery/flux-kiddo/02-scene.webp"
+  ]
 }

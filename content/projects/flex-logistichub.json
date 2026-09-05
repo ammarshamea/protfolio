@@ -30,9 +30,16 @@
   "results": [
     "A dedicated logistics storefront repo the client can keep evolving"
   ],
-  "stack": ["Flutter", "Dart", "WooCommerce"],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "WooCommerce"
+  ],
   "githubUrl": "https://github.com/ammarshamea/flex-logistichub",
-  "coverImage": "/projects/covers/flex-logistichub.png",
+  "coverImage": "/projects/covers/flex-logistichub.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flex-logistichub.png"]
+  "gallery": [
+    "/projects/gallery/flex-logistichub/01-scene.webp",
+    "/projects/gallery/flex-logistichub/02-scene.webp"
+  ]
 }

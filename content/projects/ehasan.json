@@ -13,16 +13,31 @@
   "problem": "A community/charity-shaped mobile client needed a public repository that was not mixed into GitHub client work.",
   "solution": "Publish the Flutter app on Codeberg and list it as its own case study.",
   "architecture": "Flutter/Dart application. Details live in the Codeberg tree.",
-  "features": ["Flutter product client", "Public Codeberg source"],
-  "challenges": ["Sparse README — the repo is the source of truth"],
+  "features": [
+    "Flutter product client",
+    "Public Codeberg source"
+  ],
+  "challenges": [
+    "Sparse README — the repo is the source of truth"
+  ],
   "lessonsLearned": [
     "Name and forge location are part of how a product is found"
   ],
-  "futureImprovements": ["Add a short Arabic/English README in-repo"],
-  "results": ["Public Flutter client at codeberg.org/ammarshamea123/ehasan"],
-  "stack": ["Flutter", "Dart"],
+  "futureImprovements": [
+    "Add a short Arabic/English README in-repo"
+  ],
+  "results": [
+    "Public Flutter client at codeberg.org/ammarshamea123/ehasan"
+  ],
+  "stack": [
+    "Flutter",
+    "Dart"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/ehasan",
-  "coverImage": "/projects/covers/ehasan.png",
+  "coverImage": "/projects/covers/ehasan.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/ehasan.png"]
+  "gallery": [
+    "/projects/gallery/ehasan/01-scene.webp",
+    "/projects/gallery/ehasan/02-scene.webp"
+  ]
 }

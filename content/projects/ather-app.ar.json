@@ -8,12 +8,26 @@
   "problem": "الحاجة لموطن عام لعميل Flutter منتج لن يُرفع على GitHub.",
   "solution": "نشر تطبيق Flutter على Codeberg تحت ammarshamea123 ومعاملته كمدخل أعمال أساسي.",
   "architecture": "عميل جوّال Flutter/Dart. مصدر الحقيقة هو مستودع Codeberg.",
-  "features": ["بنية عميل منتج Flutter", "مصدر عام على Codeberg"],
-  "challenges": ["مواءمة قصتي Codeberg وGitHub دون تكرار كل مستودع"],
-  "lessonsLearned": ["منصة ثانية مفيدة إن نشرت عليها عملاء مكتملين فعلًا"],
-  "futureImprovements": ["ملف README بلقطات في مستودع Codeberg"],
-  "results": ["عميل Flutter عام على codeberg.org/ammarshamea123/ather_app"],
-  "coverImage": "/projects/covers/ather-app.png",
+  "features": [
+    "بنية عميل منتج Flutter",
+    "مصدر عام على Codeberg"
+  ],
+  "challenges": [
+    "مواءمة قصتي Codeberg وGitHub دون تكرار كل مستودع"
+  ],
+  "lessonsLearned": [
+    "منصة ثانية مفيدة إن نشرت عليها عملاء مكتملين فعلًا"
+  ],
+  "futureImprovements": [
+    "ملف README بلقطات في مستودع Codeberg"
+  ],
+  "results": [
+    "عميل Flutter عام على codeberg.org/ammarshamea123/ather_app"
+  ],
+  "coverImage": "/projects/covers/ather-app.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/ather-app.png"]
+  "gallery": [
+    "/projects/gallery/ather-app/01-scene.webp",
+    "/projects/gallery/ather-app/02-scene.webp"
+  ]
 }

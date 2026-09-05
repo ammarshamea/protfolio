@@ -12,7 +12,9 @@
     "بنية شاشات موجّهة للموظفين",
     "تمرين واجهة داخلية كثيفة النماذج"
   ],
-  "challenges": ["عدم المبالغة في تقديم مستودع تعلّم كنظام موارد بشرية مكتمل"],
+  "challenges": [
+    "عدم المبالغة في تقديم مستودع تعلّم كنظام موارد بشرية مكتمل"
+  ],
   "lessonsLearned": [
     "نماذج المجال (موظف مقابل منتج) تغيّر الواجهة أكثر مما يفعله الإطار"
   ],
@@ -22,7 +24,10 @@
   "results": [
     "تجربة Flutter عامة للموارد البشرية بجانب تطبيقات الإنتاج اللاحقة"
   ],
-  "coverImage": "/projects/covers/hrsystem.png",
+  "coverImage": "/projects/covers/hrsystem.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/hrsystem.png"]
+  "gallery": [
+    "/projects/gallery/hrsystem/01-scene.webp",
+    "/projects/gallery/hrsystem/02-scene.webp"
+  ]
 }

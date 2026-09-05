@@ -17,10 +17,19 @@
     "مخزون أكواد آمن حتى لا يُباع الرمز مرتين",
     "جلسات مشرف تمتد على عدة رسائل تيليجرام"
   ],
-  "lessonsLearned": ["مخطط حقيقي أفضل من حشو حالة الكتالوج في ذاكرة الدردشة"],
-  "futureImprovements": ["ويب هوك لبوابات الدفع إن طلبها تاجر حي"],
-  "results": ["بوت بطاقات هدايا موثّق وقابل للنشر بجانبي إدارة ومستخدم"],
-  "coverImage": "/projects/covers/cardbot.png",
+  "lessonsLearned": [
+    "مخطط حقيقي أفضل من حشو حالة الكتالوج في ذاكرة الدردشة"
+  ],
+  "futureImprovements": [
+    "ويب هوك لبوابات الدفع إن طلبها تاجر حي"
+  ],
+  "results": [
+    "بوت بطاقات هدايا موثّق وقابل للنشر بجانبي إدارة ومستخدم"
+  ],
+  "coverImage": "/projects/covers/cardbot.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/cardbot.png"]
+  "gallery": [
+    "/projects/gallery/cardbot/01-scene.webp",
+    "/projects/gallery/cardbot/02-scene.webp"
+  ]
 }

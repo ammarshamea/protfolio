@@ -8,12 +8,26 @@
   "problem": "احتجت عميل ملاحظات أكثر من قائمة درس، بينما سرب تطبيقات مهام شبه متطابقة لا يستحق كل منها دراسة حالة.",
   "solution": "إطلاق نوتلي كمنتج ملاحظات ووضع البقية تحت مختبر منظِّمات أندرويد.",
   "architecture": "تطبيق أندرويد بجافا. المستودعات الشقيقة من الحقبة والمنصة نفسها.",
-  "features": ["عميل ملاحظات أندرويد", "مصدر جافا عام على Codeberg"],
-  "challenges": ["اختيار تطبيق ملاحظات واحد لتمثيل عائلة تجارب"],
-  "lessonsLearned": ["كثافة المعرض مشكلة تصميم لا مشكلة Git"],
-  "futureImprovements": ["ربط دراسة مختبر المنظِّمات من هذه الصفحة"],
-  "results": ["منتج ملاحظات واحد ومختبر مجمّع بدل جدار توائم"],
-  "coverImage": "/projects/covers/notely.png",
+  "features": [
+    "عميل ملاحظات أندرويد",
+    "مصدر جافا عام على Codeberg"
+  ],
+  "challenges": [
+    "اختيار تطبيق ملاحظات واحد لتمثيل عائلة تجارب"
+  ],
+  "lessonsLearned": [
+    "كثافة المعرض مشكلة تصميم لا مشكلة Git"
+  ],
+  "futureImprovements": [
+    "ربط دراسة مختبر المنظِّمات من هذه الصفحة"
+  ],
+  "results": [
+    "منتج ملاحظات واحد ومختبر مجمّع بدل جدار توائم"
+  ],
+  "coverImage": "/projects/covers/notely.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/notely.png"]
+  "gallery": [
+    "/projects/gallery/notely/01-scene.webp",
+    "/projects/gallery/notely/02-scene.webp"
+  ]
 }

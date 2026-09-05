@@ -21,16 +21,25 @@
   "challenges": [
     "Not letting brand forks diverge past the point of merging Fluxstore updates"
   ],
-  "lessonsLearned": ["A named baseline repo makes client forks explainable"],
+  "lessonsLearned": [
+    "A named baseline repo makes client forks explainable"
+  ],
   "futureImprovements": [
     "A short upgrade checklist shared across Kiddo / LogisticHub / Sheone"
   ],
   "results": [
     "One baseline plus three brand storefronts instead of undocumented copies"
   ],
-  "stack": ["Flutter", "Dart", "WooCommerce"],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "WooCommerce"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/FluxStore",
-  "coverImage": "/projects/covers/fluxstore.png",
+  "coverImage": "/projects/covers/fluxstore.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/fluxstore.png"]
+  "gallery": [
+    "/projects/gallery/fluxstore/01-scene.webp",
+    "/projects/gallery/fluxstore/02-scene.webp"
+  ]
 }

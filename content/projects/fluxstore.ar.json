@@ -16,10 +16,19 @@
   "challenges": [
     "منع تفريعات العلامة من الابتعاد عن إمكانية دمج تحديثات Fluxstore"
   ],
-  "lessonsLearned": ["مستودع أساس مسمّى يجعل تفريعات العملاء قابلة للتفسير"],
-  "futureImprovements": ["قائمة ترقية قصيرة مشتركة بين كيدو ولوجستك هب وشيون"],
-  "results": ["أساس واحد وثلاث واجهات علامة بدل نسخ غير موثّقة"],
-  "coverImage": "/projects/covers/fluxstore.png",
+  "lessonsLearned": [
+    "مستودع أساس مسمّى يجعل تفريعات العملاء قابلة للتفسير"
+  ],
+  "futureImprovements": [
+    "قائمة ترقية قصيرة مشتركة بين كيدو ولوجستك هب وشيون"
+  ],
+  "results": [
+    "أساس واحد وثلاث واجهات علامة بدل نسخ غير موثّقة"
+  ],
+  "coverImage": "/projects/covers/fluxstore.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/fluxstore.png"]
+  "gallery": [
+    "/projects/gallery/fluxstore/01-scene.webp",
+    "/projects/gallery/fluxstore/02-scene.webp"
+  ]
 }

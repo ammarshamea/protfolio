@@ -8,12 +8,26 @@
   "problem": "الرغبة في عميل لعبة كثيف القواعد خارج مسار Flutter/Laravel.",
   "solution": "قاعدة شطرنج بـ C# منشورة على Codeberg.",
   "architecture": "مشروع لعبة C#. القواعد والواجهة في مستودع kingChess.",
-  "features": ["حلقة لعب شطرنج", "مصدر C# عام"],
-  "challenges": ["ترميز النقلات القانونية دون اعتماد محرّك ضخم"],
-  "lessonsLearned": ["أنظمة القواعد تخصّص مختلف عن تطبيقات CRUD"],
-  "futureImprovements": ["تصدير PGN إن أُعيد فتح المشروع"],
-  "results": ["مصدر عميل شطرنج قابل للعب على Codeberg"],
-  "coverImage": "/projects/covers/king-chess.png",
+  "features": [
+    "حلقة لعب شطرنج",
+    "مصدر C# عام"
+  ],
+  "challenges": [
+    "ترميز النقلات القانونية دون اعتماد محرّك ضخم"
+  ],
+  "lessonsLearned": [
+    "أنظمة القواعد تخصّص مختلف عن تطبيقات CRUD"
+  ],
+  "futureImprovements": [
+    "تصدير PGN إن أُعيد فتح المشروع"
+  ],
+  "results": [
+    "مصدر عميل شطرنج قابل للعب على Codeberg"
+  ],
+  "coverImage": "/projects/covers/king-chess.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/king-chess.png"]
+  "gallery": [
+    "/projects/gallery/king-chess/01-scene.webp",
+    "/projects/gallery/king-chess/02-scene.webp"
+  ]
 }

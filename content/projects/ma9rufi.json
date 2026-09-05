@@ -13,18 +13,31 @@
   "problem": "Local services need trust and categories that a generic classifieds list does not provide.",
   "solution": "A dedicated Android client named and structured for that domain.",
   "architecture": "Java Android application. Published 2026-05 on Codeberg.",
-  "features": ["Services-oriented Android client", "Public source on Codeberg"],
-  "challenges": ["Arabic product naming vs Latin repo slug (ma9rufi)"],
+  "features": [
+    "Services-oriented Android client",
+    "Public source on Codeberg"
+  ],
+  "challenges": [
+    "Arabic product naming vs Latin repo slug (ma9rufi)"
+  ],
   "lessonsLearned": [
     "The slug is part of the brand; 9-for-ع is a regional convention"
   ],
   "futureImprovements": [
     "Align copy with Circle/Qareeb marketplace language where it truly overlaps"
   ],
-  "results": ["Public Android services client on Codeberg"],
-  "stack": ["Java", "Android"],
+  "results": [
+    "Public Android services client on Codeberg"
+  ],
+  "stack": [
+    "Java",
+    "Android"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/ma9rufi",
-  "coverImage": "/projects/covers/ma9rufi.png",
+  "coverImage": "/projects/covers/ma9rufi.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/ma9rufi.png"]
+  "gallery": [
+    "/projects/gallery/ma9rufi/01-scene.webp",
+    "/projects/gallery/ma9rufi/02-scene.webp"
+  ]
 }

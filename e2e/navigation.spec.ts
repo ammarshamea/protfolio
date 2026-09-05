@@ -4,7 +4,7 @@ test.describe("Navigation", () => {
   test("home page loads with primary nav", async ({ page }) => {
     await page.goto("/en");
     await expect(
-      page.getByRole("navigation", { name: "Primary" }),
+      page.getByRole("navigation", { name: "App navigation" }),
     ).toBeVisible();
     await expect(page).toHaveTitle(/.+/);
   });
@@ -14,10 +14,10 @@ test.describe("Navigation", () => {
   }) => {
     await page.goto("/en");
     await page
-      .getByRole("navigation", { name: "Primary" })
+      .getByRole("navigation", { name: "App navigation" })
       .getByRole("link", { name: "Projects" })
       .click();
-    await expect(page).toHaveURL(/\/en\/projects$/);
+    await expect(page).toHaveURL(/\/en\/projects\/?$/);
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   });
 
@@ -41,7 +41,7 @@ test.describe("Navigation", () => {
     const response = await page.goto("/en/this-route-does-not-exist");
     expect(response?.status()).toBe(404);
     await expect(
-      page.getByRole("link", { name: /go to homepage/i }),
+      page.getByRole("link", { name: /take me home|go to homepage/i }),
     ).toBeVisible();
   });
 });

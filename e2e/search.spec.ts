@@ -5,6 +5,7 @@ test.describe("Command palette", () => {
     page,
   }) => {
     await page.goto("/en");
+    await page.getByRole("button", { name: "More" }).click();
     await page.getByRole("button", { name: "Open command menu" }).click();
 
     const input = page.getByPlaceholder(

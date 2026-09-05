@@ -22,16 +22,16 @@ export function ProjectCard({
   return (
     <article
       className={cn(
-        "flex h-full min-w-0 flex-col overflow-hidden rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] shadow-[var(--shadow-card)]",
-        featuredLayout && "lg:flex-row",
+        "flex h-full min-w-0 flex-col border-b border-[var(--surface-border)] pb-8",
+        featuredLayout && "lg:flex-row lg:gap-10 lg:border-b-0 lg:pb-0",
       )}
     >
       <Link
         href={`/projects/${project.slug}`}
         className={cn(
-          "group relative block overflow-hidden",
+          "group relative block overflow-hidden border border-[var(--surface-border)]",
           featuredLayout
-            ? "aspect-[16/10] lg:aspect-auto lg:min-h-full lg:w-[48%] lg:shrink-0"
+            ? "aspect-[16/10] lg:aspect-auto lg:min-h-full lg:w-[58%] lg:shrink-0"
             : "aspect-[16/10]",
         )}
       >
@@ -41,21 +41,26 @@ export function ProjectCard({
           className="absolute inset-0 h-full w-full"
           sizes={
             featuredLayout
-              ? "(max-width: 1024px) 100vw, 42vw"
+              ? "(max-width: 1024px) 100vw, 55vw"
               : "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           }
         />
-        <span className="absolute start-4 top-4 rounded-full bg-[var(--surface)]/95 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-[var(--accent)]">
+        <span className="absolute start-4 top-4 border border-[var(--surface-border)] bg-[var(--background)]/90 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.08em] text-[var(--accent-text)]">
           {tp(`categories.${project.category}`)}
         </span>
       </Link>
 
-      <div className="flex min-w-0 flex-1 flex-col gap-4 p-5 sm:p-6">
+      <div
+        className={cn(
+          "flex min-w-0 flex-1 flex-col gap-4 pt-5",
+          featuredLayout && "lg:justify-center lg:pt-0",
+        )}
+      >
         <div className="flex items-start justify-between gap-3">
-          <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold leading-snug">
+          <h3 className="font-[family-name:var(--font-display)] text-[length:var(--text-h3)] font-semibold leading-[1.05] tracking-tight text-[var(--cream,#ffeec8)]">
             <Link
               href={`/projects/${project.slug}`}
-              className="hover:text-[var(--accent)]"
+              className="hover:text-[var(--accent-text)]"
             >
               {project.title}
             </Link>
@@ -85,7 +90,7 @@ export function ProjectCard({
         <div className="mt-auto flex flex-wrap items-center gap-4 pt-1 text-sm font-medium">
           <Link
             href={`/projects/${project.slug}`}
-            className="text-[var(--accent)] hover:underline"
+            className="text-[var(--accent-text)] hover:underline"
           >
             {t("viewCaseStudy")}
           </Link>
@@ -94,14 +99,14 @@ export function ProjectCard({
               href={project.liveUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 hover:text-[var(--accent)]"
+              className="inline-flex items-center gap-1.5 hover:text-[var(--accent-text)]"
             >
               <ExternalLink className="h-3.5 w-3.5" />
               {t("liveDemo")}
             </a>
           ) : null}
           {project.featured ? (
-            <span className="ms-auto text-[11px] uppercase tracking-[0.08em] text-[var(--accent)]">
+            <span className="ms-auto text-[11px] uppercase tracking-[0.08em] text-[var(--accent-text)]">
               {t("featured")}
             </span>
           ) : null}

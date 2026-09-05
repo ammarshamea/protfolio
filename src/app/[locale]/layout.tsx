@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Sora, Noto_Sans_Arabic } from "next/font/google";
+import { fontArabic, fontDisplay, fontSans } from "@/lib/fonts";
 import { PwaProvider } from "@/components/providers/pwa-provider";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -22,32 +22,14 @@ import { getServices } from "@/lib/content/misc";
 import { personJsonLd, websiteJsonLd, SITE_URL } from "@/lib/seo";
 import "../globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const sora = Sora({
-  subsets: ["latin"],
-  variable: "--font-sora",
-  display: "swap",
-});
-
-const notoSansArabic = Noto_Sans_Arabic({
-  subsets: ["arabic"],
-  variable: "--font-noto-arabic",
-  display: "swap",
-});
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#07140f" },
-    { media: "(prefers-color-scheme: light)", color: "#f7faf8" },
+    { media: "(prefers-color-scheme: dark)", color: "#12100E" },
+    { media: "(prefers-color-scheme: light)", color: "#FFFBF2" },
   ],
   colorScheme: "dark light",
 };
@@ -132,8 +114,8 @@ export default async function LocaleLayout({
       lang={locale}
       dir={dir}
       suppressHydrationWarning
-      className={`${inter.variable} ${sora.variable} ${notoSansArabic.variable}`}
-      data-accent="emerald"
+      className={`${fontDisplay.variable} ${fontSans.variable} ${fontArabic.variable}`}
+      data-accent="gold"
       data-scroll-behavior="smooth"
     >
       <body className="antialiased" suppressHydrationWarning>
@@ -145,7 +127,7 @@ export default async function LocaleLayout({
           <NextIntlClientProvider locale={locale}>
             <ThemeProvider
               attribute="data-theme"
-              defaultTheme="light"
+              defaultTheme="dark"
               themes={["light", "dark", "high-contrast"]}
               enableSystem={false}
               disableTransitionOnChange

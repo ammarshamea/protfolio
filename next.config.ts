@@ -20,7 +20,6 @@ const nextConfig: NextConfig = {
         assetPrefix: "/protfolio",
         trailingSlash: true,
         images: {
-          unoptimized: true,
           loader: "custom" as const,
           loaderFile: "./src/lib/image-loader.ts",
         },

@@ -7,9 +7,6 @@ test("theme toggle cycles through light, dark, and high-contrast", async ({
   const toggle = page.getByRole("button", { name: "Toggle theme" });
   const html = page.locator("html");
 
-  await expect(html).toHaveAttribute("data-theme", "light");
-
-  await toggle.click();
   await expect(html).toHaveAttribute("data-theme", "dark");
 
   await toggle.click();
@@ -17,4 +14,7 @@ test("theme toggle cycles through light, dark, and high-contrast", async ({
 
   await toggle.click();
   await expect(html).toHaveAttribute("data-theme", "light");
+
+  await toggle.click();
+  await expect(html).toHaveAttribute("data-theme", "dark");
 });

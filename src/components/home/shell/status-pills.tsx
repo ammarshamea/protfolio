@@ -20,7 +20,7 @@ export function StatusPills({
   return (
     <div className="flex flex-wrap items-center gap-3">
       <AvailabilityBadge label={availabilityLabel} />
-      <span className="inline-flex items-center gap-2 rounded-full border border-[var(--surface-border)] bg-[var(--surface)] px-3.5 py-1.5 text-sm text-[var(--muted-foreground)]">
+      <span className="inline-flex items-center gap-2 rounded-[var(--radius)] border border-[var(--surface-border)] px-3.5 py-1.5 text-sm text-[var(--muted-foreground)]">
         <Clock className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
         {timezone}
       </span>
@@ -28,7 +28,7 @@ export function StatusPills({
         href={whatsappHref}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-4 py-1.5 text-sm font-medium text-[var(--accent-foreground)] transition-[filter] hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]"
+        className="inline-flex items-center gap-2 rounded-[var(--radius)] bg-[var(--accent)] px-4 py-1.5 text-sm font-medium text-[var(--accent-foreground)] transition-[filter] hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]"
       >
         <FaWhatsapp className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
         {whatsappLabel}

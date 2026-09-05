@@ -1,20 +1,9 @@
-import { Caveat } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-// Latin-only handwritten accent for the English eyebrow line. Arabic never uses a
-// script/cursive substitute font — real Arabic script already reads as handwritten
-// and a foreign "script" font would break letterforms, so AR gets a bold accent
-// line in the site's own Arabic font instead.
-const caveat = Caveat({
-  subsets: ["latin"],
-  weight: ["600"],
-  variable: "--font-script",
-});
-
 /**
- * Hero name lockup: a short handwritten-feeling eyebrow line above the full,
- * un-split name/title. The name is rendered as one text node (no per-character
- * spans) so screen readers announce it normally and Arabic ligatures never break.
+ * Hero name lockup: italic Fraunces eyebrow over the full, un-split name.
+ * The name is one text node so screen readers announce it normally and Arabic
+ * ligatures never break. EN only gets tight negative tracking.
  */
 export function ScriptHeading({
   eyebrow,
@@ -33,21 +22,21 @@ export function ScriptHeading({
     <div>
       <p
         className={cn(
-          "text-[var(--accent)]",
-          size === "hero" ? "text-xl sm:text-2xl" : "text-lg sm:text-xl",
-          isArabic
-            ? "font-[family-name:var(--font-arabic)] font-bold"
-            : cn(caveat.className, "tracking-wide"),
+          "font-[family-name:var(--font-display)] italic text-[var(--accent-text)]",
+          size === "hero" ? "text-lg sm:text-xl" : "text-base sm:text-lg",
+          isArabic &&
+            "not-italic font-[family-name:var(--font-ar)] font-semibold",
         )}
       >
         {eyebrow}
       </p>
       <h1
         className={cn(
-          "mt-2 text-balance font-[family-name:var(--font-display)] font-semibold tracking-tight",
+          "mt-3 text-balance font-[family-name:var(--font-display)] font-semibold text-[var(--cream,#ffeec8)]",
           size === "hero"
-            ? "text-[length:var(--text-display-xl)]"
-            : "text-[length:var(--text-display)] leading-[1.02]",
+            ? "text-[length:var(--text-display-xl)] leading-[0.86]"
+            : "text-[length:var(--text-display)] leading-[0.94]",
+          isArabic ? "tracking-normal" : "tracking-[-0.045em]",
         )}
       >
         {name}

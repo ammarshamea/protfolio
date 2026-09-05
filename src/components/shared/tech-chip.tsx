@@ -11,7 +11,7 @@ export function TechChip({
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1.5 rounded-full bg-[var(--muted)] px-2.5 py-1 text-[11px] font-medium text-[var(--muted-foreground)]",
+        "inline-flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--surface-border)] px-2.5 py-1 text-[11px] font-medium text-[var(--muted-foreground)]",
         className,
       )}
     >

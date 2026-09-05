@@ -77,7 +77,7 @@ function CinematicSplash({
 
   return (
     <motion.div
-      className="fixed inset-0 z-[80] flex items-end justify-start overflow-hidden bg-[#07140f] text-white"
+      className="fixed inset-0 z-[80] flex items-end justify-start overflow-hidden bg-[#12100E] text-[#FFFBF2]"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.55, ease: EASE_PREMIUM }}
@@ -113,22 +113,22 @@ function CinematicSplash({
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-black/35" />
 
       <div className="relative z-10 flex w-full flex-col gap-5 px-6 pb-28 pt-10 sm:px-10 sm:pb-16">
-        <p className="text-[11px] font-medium uppercase text-white/70">
+        <p className="font-[family-name:var(--font-display)] text-[11px] font-medium uppercase italic text-[#E4C98A]">
           {t("eyebrow")}
         </p>
         <div>
-          <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-display)] font-semibold leading-[1.05]">
+          <h2 className="font-[family-name:var(--font-display)] text-[length:var(--text-display)] font-semibold leading-[0.9] tracking-tight text-[#FFEEC8]">
             {t("introTitle")}
           </h2>
-          <p className="mt-3 max-w-xl text-[length:var(--text-body-lg)] text-white/80">
+          <p className="mt-3 max-w-xl text-[length:var(--text-body-lg)] text-[#FFEEC8]/75">
             {t("introSubtitle")}
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
           <Button
             size="lg"
-            variant="secondary"
-            className="pointer-events-auto"
+            variant="outline"
+            className="pointer-events-auto border-[#FFEEC8]/35 bg-transparent text-[#FFEEC8]"
             onClick={finish}
           >
             {t("introSkip")}

@@ -23,7 +23,7 @@ export function IdentityIntro({
       </div>
       <div className="min-w-0 lg:col-span-8">
         <FadeIn>
-          <p className="font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold tracking-tight">
+          <p className="font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold leading-[0.95] tracking-tight text-[var(--cream,#ffeec8)]">
             {statement}
           </p>
         </FadeIn>

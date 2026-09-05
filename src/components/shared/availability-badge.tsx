@@ -10,7 +10,7 @@ export function AvailabilityBadge({
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-2 rounded-full border border-[var(--accent)]/20 bg-[var(--accent)]/8 px-3.5 py-1.5 text-sm font-medium text-[var(--accent)]",
+        "inline-flex items-center gap-2 rounded-[var(--radius)] border border-[var(--surface-border)] px-3.5 py-1.5 text-sm font-medium text-[var(--accent-text)]",
         className,
       )}
     >

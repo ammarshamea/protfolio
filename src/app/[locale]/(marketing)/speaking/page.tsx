@@ -36,6 +36,7 @@ export default async function SpeakingPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={t("nav.speaking")}
         title={ts("title")}
         subtitle={ts("subtitle")}

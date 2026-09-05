@@ -1,0 +1,32 @@
+{
+  "slug": "flutter-ui-studies",
+  "title": "Flutter UI studies",
+  "tagline": "Starbucks clone, Marvel UI, and Auctions — early Flutter screens kept public on purpose.",
+  "category": "package",
+  "listing": "open-source",
+  "featured": false,
+  "favorite": false,
+  "role": "Flutter Developer",
+  "duration": "Studies",
+  "year": "2025",
+  "overview": "The Starbucks UI clone (still mentioned in fun facts), plus marvel and Auctions. Learning screens, not client products — grouped so they stay visible without pretending they are Clyx.",
+  "problem": "Early clones are embarrassing to hide and dishonest to feature as case studies.",
+  "solution": "One open-source studies card with three public GitHub repos.",
+  "architecture": "Independent Flutter apps: starbucks, marvel, Auctions.",
+  "features": [
+    "starbucks — first serious Flutter UI",
+    "marvel — catalog-style UI study",
+    "Auctions — bidding UI study"
+  ],
+  "challenges": ["Leaving warts public"],
+  "lessonsLearned": [
+    "The first clone is part of the resume if you say what it is"
+  ],
+  "futureImprovements": ["Do not rewrite them; date-stamp and leave them"],
+  "results": ["Three public study repos, one honest shelf"],
+  "stack": ["Flutter", "Dart"],
+  "githubUrl": "https://github.com/ammarshamea/starbucks",
+  "coverImage": "/projects/covers/flutter-ui-studies.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/flutter-ui-studies.png"]
+}

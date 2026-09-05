@@ -1,0 +1,19 @@
+{
+  "slug": "techpeak",
+  "title": "تيك بيك",
+  "tagline": "مستودع C++ عام صغير — تمرين أنظمة لا دراسة Flutter.",
+  "role": "مهندس برمجيات",
+  "duration": "دراسة",
+  "overview": "تيك بيك مستودع C++ عام من أسبوع استنساخات Flutter المبكرة. مكانه رف المصدر المفتوح.",
+  "problem": "الحاجة لأثر عام خارج Dart دون نفخ شبكة المشاريع.",
+  "solution": "إدراج تيك بيك كعنصر حزمة/مختبر مع رابط المستودع.",
+  "architecture": "مشروع C++ على GitHub (ammarshamea/techpeak).",
+  "features": ["مصدر C++ عام"],
+  "challenges": ["شبه غياب لـ README"],
+  "lessonsLearned": ["ملفات README الفارغة أفضل من أرقام مخترعة"],
+  "futureImprovements": ["إضافة وصف من ثلاثة أسطر في المستودع"],
+  "results": ["مستودع تمرين C++ عام مربوط من صفحة المصدر المفتوح"],
+  "coverImage": "/projects/covers/techpeak.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/techpeak.png"]
+}

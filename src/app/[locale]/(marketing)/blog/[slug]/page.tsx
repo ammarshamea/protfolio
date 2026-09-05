@@ -20,6 +20,8 @@ export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: {
@@ -52,6 +54,7 @@ export default async function BlogPostPage({
     <>
       <ReadingProgressBar />
       <PageHeader
+        locale={locale}
         eyebrow={`${post.category} · ${t("common.readingTime", { minutes: post.readingTime })}`}
         title={post.title}
         subtitle={post.description}

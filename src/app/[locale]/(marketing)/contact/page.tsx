@@ -49,6 +49,7 @@ export default async function ContactPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={t("nav.contact")}
         title={tc("title")}
         subtitle={tc("subtitle")}

@@ -1,0 +1,19 @@
+{
+  "slug": "king-chess",
+  "title": "كينغ تشس",
+  "tagline": "عميل شطرنج بـ C# — حلقة لعب مكتملة لا عرض رسوم تعليمي.",
+  "role": "مهندس برمجيات",
+  "duration": "3 أسابيع",
+  "overview": "كينغ تشس مشروع شطرنج بـ C# على Codeberg. يُدرج كمنتج لأنه لعبة كاملة لا حزمة أدوات Dart.",
+  "problem": "الرغبة في عميل لعبة كثيف القواعد خارج مسار Flutter/Laravel.",
+  "solution": "قاعدة شطرنج بـ C# منشورة على Codeberg.",
+  "architecture": "مشروع لعبة C#. القواعد والواجهة في مستودع kingChess.",
+  "features": ["حلقة لعب شطرنج", "مصدر C# عام"],
+  "challenges": ["ترميز النقلات القانونية دون اعتماد محرّك ضخم"],
+  "lessonsLearned": ["أنظمة القواعد تخصّص مختلف عن تطبيقات CRUD"],
+  "futureImprovements": ["تصدير PGN إن أُعيد فتح المشروع"],
+  "results": ["مصدر عميل شطرنج قابل للعب على Codeberg"],
+  "coverImage": "/projects/covers/king-chess.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/king-chess.png"]
+}

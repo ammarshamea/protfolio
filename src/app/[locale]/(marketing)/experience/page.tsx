@@ -36,6 +36,7 @@ export default async function ExperiencePage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.experience")} · ${experience.length}`}
         title={te("title")}
         subtitle={te("subtitle")}

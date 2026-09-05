@@ -1,0 +1,19 @@
+{
+  "slug": "ehasan",
+  "title": "إحسان",
+  "tagline": "تطبيق Flutter على Codeberg لعميل منتج خيري/مجتمعي.",
+  "role": "مطوّر Flutter",
+  "duration": "6 أسابيع",
+  "overview": "إحسان عميل منتج Flutter نُشر على Codeberg أواخر 2025. الاسم من الإحسان/العمل الخيري؛ الشجرة العامة هي تطبيق Dart نفسه.",
+  "problem": "عميل جوّال بطابع مجتمعي/خيري احتاج مستودعًا عامًا غير مخلوط بعمل عملاء GitHub.",
+  "solution": "نشر تطبيق Flutter على Codeberg وإدراجه كدراسة حالة مستقلة.",
+  "architecture": "تطبيق Flutter/Dart. التفاصيل في شجرة Codeberg.",
+  "features": ["عميل منتج Flutter", "مصدر عام على Codeberg"],
+  "challenges": ["README مقتضب — المستودع هو مصدر الحقيقة"],
+  "lessonsLearned": ["الاسم ومكان الاستضافة جزء من كيفية إيجاد المنتج"],
+  "futureImprovements": ["إضافة README قصير عربي/إنجليزي في المستودع"],
+  "results": ["عميل Flutter عام على codeberg.org/ammarshamea123/ehasan"],
+  "coverImage": "/projects/covers/ehasan.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/ehasan.png"]
+}

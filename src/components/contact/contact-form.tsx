@@ -30,7 +30,24 @@ export function ContactForm() {
 
   async function onSubmit(values: ContactFormValues) {
     setStatus("idle");
+    const staticHost = process.env.NEXT_PUBLIC_STATIC_EXPORT === "true";
     try {
+      if (staticHost) {
+        const subject = encodeURIComponent(
+          values.subject || `Portfolio contact — ${values.name}`,
+        );
+        const body = encodeURIComponent(
+          `${values.message}\n\n— ${values.name}\n${values.email}`,
+        );
+        window.open(
+          `mailto:ammarshamea03@gmail.com?subject=${subject}&body=${body}`,
+          "_self",
+        );
+        trackEvent({ type: "cta_click", label: "contact_form_mailto" });
+        setStatus("success");
+        reset();
+        return;
+      }
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

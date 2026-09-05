@@ -1,0 +1,53 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Park server-only routes
+        run: node scripts/prepare-pages-export.mjs
+      - name: Static export
+        env:
+          GITHUB_PAGES: "true"
+          NEXT_PUBLIC_STATIC_EXPORT: "true"
+          NEXT_PUBLIC_BASE_PATH: /protfolio
+          NEXT_PUBLIC_SITE_URL: https://ammarshamea.github.io/protfolio
+        run: npm run build
+      - name: Disable Jekyll and add locale entry
+        run: |
+          touch out/.nojekyll
+          printf '%s\n' '<!doctype html><meta http-equiv="refresh" content="0;url=/protfolio/en/"><link rel="canonical" href="/protfolio/en/">' > out/index.html
+          cp out/en/404.html out/404.html 2>/dev/null || true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

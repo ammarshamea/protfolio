@@ -9,7 +9,10 @@ import { SerwistProvider } from "@serwist/turbopack/react";
  * Only enable Serwist in production builds.
  */
 export function PwaProvider({ children }: { children: React.ReactNode }) {
-  if (process.env.NODE_ENV !== "production") {
+  if (
+    process.env.NODE_ENV !== "production" ||
+    process.env.NEXT_PUBLIC_STATIC_EXPORT === "true"
+  ) {
     return children;
   }
 

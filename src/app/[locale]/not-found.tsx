@@ -1,18 +1,12 @@
-import { getTranslations, getLocale } from "next-intl/server";
+"use client";
+
+import { useTranslations } from "next-intl";
 import { Compass } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { GlassCard } from "@/components/shared/glass-card";
-import { BrandedImageFallback } from "@/components/shared/branded-image-fallback";
-import { getAllProjects } from "@/lib/content/projects";
 
-export default async function LocaleNotFound() {
-  const t = await getTranslations("notFound");
-  const locale = await getLocale();
-  const projects = getAllProjects(locale);
-  // A different suggestion per request is intentional here — this route is never statically cached.
-  // eslint-disable-next-line react-hooks/purity
-  const suggestion = projects[Math.floor(Math.random() * projects.length)];
+export default function LocaleNotFound() {
+  const t = useTranslations("notFound");
 
   return (
     <div className="mx-auto flex min-h-[80vh] max-w-2xl flex-col items-center justify-center px-6 py-20 text-center">
@@ -33,25 +27,6 @@ export default async function LocaleNotFound() {
       <Button size="lg" className="mt-8" asChild>
         <Link href="/">{t("cta")}</Link>
       </Button>
-
-      {suggestion ? (
-        <GlassCard
-          padding="sm"
-          className="mt-16 w-full max-w-sm text-left rtl:text-right"
-        >
-          <Link href={`/projects/${suggestion.slug}`} className="block">
-            <BrandedImageFallback
-              title={suggestion.title}
-              stack={suggestion.stack}
-              className="aspect-[16/9]"
-            />
-            <p className="mt-4 text-sm font-medium">{suggestion.title}</p>
-            <p className="text-xs text-[var(--muted-foreground)]">
-              {suggestion.tagline}
-            </p>
-          </Link>
-        </GlassCard>
-      ) : null}
     </div>
   );
 }

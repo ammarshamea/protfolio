@@ -41,6 +41,7 @@ export default async function ApiDocsPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={ta("eyebrow")}
         title={ta("title")}
         subtitle={ta("subtitle")}

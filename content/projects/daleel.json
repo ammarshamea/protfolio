@@ -1,0 +1,30 @@
+{
+  "slug": "daleel",
+  "title": "Daleel",
+  "tagline": "TypeScript backend for a directory-style product — API first, mobile clients later.",
+  "category": "web",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Backend Developer",
+  "duration": "5 weeks",
+  "year": "2026",
+  "overview": "Daleel is the TypeScript API for a directory (daleel) product. The public Codeberg repo is the backend; clients can sit on top without copying business rules.",
+  "problem": "Directory apps fail when every client reimplements search, listing, and auth.",
+  "solution": "A dedicated TypeScript backend that owns those rules.",
+  "architecture": "TypeScript service on Codeberg (daleel_backend). HTTP API consumed by future or sibling clients.",
+  "features": ["Directory API surface", "TypeScript service layout"],
+  "challenges": ["Designing listings without a public front-end yet"],
+  "lessonsLearned": [
+    "An API-only repo is still a product if something real will call it"
+  ],
+  "futureImprovements": [
+    "Pair a thin Next.js or Flutter client when the directory content is ready"
+  ],
+  "results": ["Public TypeScript backend for the Daleel directory line"],
+  "stack": ["TypeScript"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/daleel_backend",
+  "coverImage": "/projects/covers/daleel.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/daleel.png"]
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "ma9rufi",
+  "title": "Ma9rufi",
+  "tagline": "Java Android client for a local-services / ma'ruf style product.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Android Developer",
+  "duration": "4 weeks",
+  "year": "2026",
+  "overview": "Ma9rufi (معروفي) is a Java Android app on Codeberg aimed at local-good / services discovery — a different domain from Listarf's generic listings.",
+  "problem": "Local services need trust and categories that a generic classifieds list does not provide.",
+  "solution": "A dedicated Android client named and structured for that domain.",
+  "architecture": "Java Android application. Published 2026-05 on Codeberg.",
+  "features": ["Services-oriented Android client", "Public source on Codeberg"],
+  "challenges": ["Arabic product naming vs Latin repo slug (ma9rufi)"],
+  "lessonsLearned": [
+    "The slug is part of the brand; 9-for-ع is a regional convention"
+  ],
+  "futureImprovements": [
+    "Align copy with Circle/Qareeb marketplace language where it truly overlaps"
+  ],
+  "results": ["Public Android services client on Codeberg"],
+  "stack": ["Java", "Android"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/ma9rufi",
+  "coverImage": "/projects/covers/ma9rufi.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/ma9rufi.png"]
+}

@@ -88,7 +88,10 @@ export async function generateMetadata({
       description: site.bio.short,
       images: [
         {
-          url: `/og?title=${encodeURIComponent(`${site.name} — ${site.titles[0]}`)}`,
+          url:
+            process.env.NEXT_PUBLIC_STATIC_EXPORT === "true"
+              ? "/images/ammar-portrait.png"
+              : `/og?title=${encodeURIComponent(`${site.name} — ${site.titles[0]}`)}`,
           width: 1200,
           height: 630,
           alt: site.name,
@@ -150,9 +153,9 @@ export default async function LocaleLayout({
               <AccentProvider>
                 <TooltipProvider delayDuration={200}>
                   <RecruiterModeBar />
-                  <SiteDock />
+                  <SiteDock locale={locale} />
                   <main id="main-content">{children}</main>
-                  <Footer />
+                  <Footer locale={locale} />
                   <CommandPalette
                     items={searchItems}
                     socials={site.socials}

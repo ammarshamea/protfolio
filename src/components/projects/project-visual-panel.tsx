@@ -15,17 +15,14 @@ export function ProjectVisualPanel({
 }) {
   return (
     <div
-      className={cn(
-        "relative overflow-hidden bg-[var(--muted)]",
-        className,
-      )}
+      className={cn("relative overflow-hidden bg-[var(--muted)]", className)}
     >
       {project.coverImage ? (
         <Image
           src={project.coverImage}
           alt={project.title}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-700 ease-out motion-safe:group-hover:scale-[1.035]"
           sizes={sizes}
           priority={priority}
         />

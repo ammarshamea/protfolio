@@ -5,6 +5,9 @@
  */
 const GITHUB_USER = "ammarshamea";
 const GITHUB_API = "https://api.github.com";
+const STATIC_EXPORT =
+  process.env.GITHUB_PAGES === "true" ||
+  process.env.NEXT_PUBLIC_STATIC_EXPORT === "true";
 
 export interface GithubRepo {
   name: string;
@@ -47,7 +50,9 @@ async function githubFetch<T>(url: string, init?: RequestInit): Promise<T> {
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
       ...init?.headers,
     },
-    next: { revalidate: 3600 },
+    ...(STATIC_EXPORT
+      ? { cache: "force-cache" as const }
+      : { next: { revalidate: 3600 } }),
   });
   if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
   return res.json() as Promise<T>;
@@ -143,7 +148,9 @@ async function fetchPinnedRepos(): Promise<GithubRepo[]> {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ query, variables: { login: GITHUB_USER } }),
-      next: { revalidate: 3600 },
+      ...(STATIC_EXPORT
+        ? { cache: "force-cache" as const }
+        : { next: { revalidate: 3600 } }),
     });
     if (!res.ok) throw new Error(`GitHub GraphQL error: ${res.status}`);
     const json = (await res.json()) as PinnedItemsResponse;

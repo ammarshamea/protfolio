@@ -1,5 +1,16 @@
 [
   {
+    "version": "1.1.0",
+    "date": "2026-09-05",
+    "changes": [
+      "First-paint fix: above-fold sections no longer wait for scroll to appear",
+      "Headline metrics now come from one computed source (hero, stats strip, projects, /stats)",
+      "GitHub and Codeberg showcase added; tiny Dart/Java labs grouped under open source",
+      "Cinematic homepage intro (skippable, remembered, reduced-motion skip)",
+      "GitHub Pages static export workflow"
+    ]
+  },
+  {
     "version": "1.0.0",
     "date": "2026-07-06",
     "changes": [

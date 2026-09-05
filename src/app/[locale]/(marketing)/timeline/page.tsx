@@ -34,6 +34,7 @@ export default async function TimelinePage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.timeline")} · ${timeline.length}`}
         title={pt("title")}
         subtitle={pt("subtitle")}

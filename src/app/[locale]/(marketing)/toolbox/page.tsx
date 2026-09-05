@@ -47,6 +47,7 @@ export default async function ToolboxPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.toolbox")} · ${items.length}`}
         title={tt("title")}
         subtitle={tt("subtitle")}

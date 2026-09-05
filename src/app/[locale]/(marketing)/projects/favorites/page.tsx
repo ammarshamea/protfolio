@@ -44,6 +44,7 @@ export default async function FavoriteProjectsPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={t("nav.favorites")}
         title={tf("title")}
         subtitle={tf("subtitle")}

@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button";
 import { PageHeader } from "@/components/shared/page-header";
 import { Section } from "@/components/shared/section";
 import { ProjectsExplorer } from "@/components/projects/projects-explorer";
-import { getAllProjects } from "@/lib/content/projects";
+import { getShowcaseProjects } from "@/lib/content/projects";
+import { getPortfolioMetrics } from "@/lib/content/metrics";
 import { generatePageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -39,12 +40,14 @@ export default async function ProjectsPage({
   const { locale } = await params;
   const t = await getTranslations({ locale });
   const tp = await getTranslations({ locale, namespace: "pages.projects" });
-  const projects = getAllProjects(locale);
+  const projects = getShowcaseProjects(locale);
+  const metrics = getPortfolioMetrics(locale);
 
   return (
     <>
       <PageHeader
-        eyebrow={tp("eyebrow", { count: projects.length })}
+        locale={locale}
+        eyebrow={tp("eyebrow", { count: metrics.projectsDelivered })}
         title={t("nav.projects")}
         subtitle={tp("subtitle")}
         breadcrumbs={[

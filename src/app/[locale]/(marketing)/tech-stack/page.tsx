@@ -9,7 +9,10 @@ import {
   StaggerItem,
 } from "@/components/motion/stagger-children";
 import { TechIcon } from "@/components/shared/tech-icon";
-import { getAllTechnologies, getTechDomainSummary } from "@/lib/content/tech-stack";
+import {
+  getAllTechnologies,
+  getTechDomainSummary,
+} from "@/lib/content/tech-stack";
 import { generatePageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -42,6 +45,7 @@ export default async function TechStackPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.techStack")} · ${technologies.length}`}
         title={tt("title")}
         subtitle={tt("subtitle")}

@@ -1,0 +1,29 @@
+{
+  "slug": "bmm",
+  "title": "BMM",
+  "tagline": "Static HTML site for a BMM brief — public, small, and honest about its scope.",
+  "category": "web",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Frontend Developer",
+  "duration": "1 week",
+  "year": "2025",
+  "overview": "BMM is a small public HTML site (with a related BMM_HW homework repo). It is a web-fundamentals artifact, not a product platform.",
+  "problem": "Needed a shareable static page for a course/homework brief without a JS framework.",
+  "solution": "Hand-authored HTML/CSS in a public repo, plus the homework companion.",
+  "architecture": "Static HTML documents. No build step.",
+  "features": [
+    "Static semantic markup",
+    "Simple multi-page homework structure"
+  ],
+  "challenges": ["Keeping the portfolio listing honest about scale"],
+  "lessonsLearned": ["Not every public repo needs a twelve-section case study"],
+  "futureImprovements": ["Leave it as a fundamentals snapshot"],
+  "results": ["Public static site still available on GitHub"],
+  "stack": ["HTML", "CSS"],
+  "githubUrl": "https://github.com/ammarshamea/BMM",
+  "coverImage": "/projects/covers/bmm.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/bmm.png"]
+}

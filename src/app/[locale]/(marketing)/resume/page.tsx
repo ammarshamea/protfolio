@@ -48,6 +48,7 @@ export default async function ResumePage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={t("nav.resume")}
         title={site.name}
         subtitle={site.titles.join(" · ")}

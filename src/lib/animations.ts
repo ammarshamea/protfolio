@@ -55,7 +55,7 @@ export const heroContainer: Variants = {
 };
 
 export const heroItem: Variants = {
-  hidden: { opacity: 0, y: 18 },
+  hidden: { opacity: 1, y: 18 },
   visible: {
     opacity: 1,
     y: 0,
@@ -64,7 +64,7 @@ export const heroItem: Variants = {
 };
 
 export const heroMedia: Variants = {
-  hidden: { opacity: 0, scale: 0.97, y: 12 },
+  hidden: { opacity: 1, scale: 0.985, y: 10 },
   visible: {
     opacity: 1,
     scale: 1,
@@ -74,8 +74,13 @@ export const heroMedia: Variants = {
 };
 
 /**
- * Positive bottom margin expands the intersection root, so reveals start
- * ~120px BEFORE the element scrolls into view and are already settled by the
- * time the user sees them — no blank sections waiting for a scroll event.
+ * Generous positive margin so below-fold reveals start before the element
+ * reaches the viewport. Above-fold content must NOT rely on this alone —
+ * FadeIn / StaggerContainer keep first paint visible and only hide elements
+ * that layout measurement proves are well below the fold.
  */
-export const viewportOnce = { once: true, margin: "0px 0px 120px 0px" };
+export const viewportOnce = {
+  once: true,
+  amount: 0 as const,
+  margin: "25% 0px 25% 0px",
+};

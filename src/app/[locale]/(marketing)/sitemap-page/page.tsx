@@ -34,6 +34,7 @@ export default async function SitemapPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={t("footer.sitemap")}
         title={ts("title")}
         subtitle={ts("subtitle")}

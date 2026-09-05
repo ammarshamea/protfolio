@@ -1,0 +1,23 @@
+{
+  "slug": "daleel",
+  "title": "دليل",
+  "tagline": "خلفية TypeScript لمنتج دليل — الواجهة أولًا ثم عملاء الجوّال.",
+  "role": "مطوّر خلفية",
+  "duration": "5 أسابيع",
+  "overview": "دليل واجهة TypeScript لمنتج دليل. مستودع Codeberg العام هو الخلفية؛ يمكن للعملاء الجلوس فوقها دون نسخ قواعد العمل.",
+  "problem": "تطبيقات الدليل تفشل عندما يعيد كل عميل تنفيذ البحث والإدراج والمصادقة.",
+  "solution": "خلفية TypeScript مخصّصة تملك تلك القواعد.",
+  "architecture": "خدمة TypeScript على Codeberg (daleel_backend). واجهة HTTP يستهلكها عملاء لاحقون أو أشقاء.",
+  "features": ["سطح واجهة دليل", "تخطيط خدمة TypeScript"],
+  "challenges": ["تصميم الإدراجات دون واجهة عامة بعد"],
+  "lessonsLearned": [
+    "مستودع واجهة فقط ما زال منتجًا إن كان شيء حقيقي سيستدعيه"
+  ],
+  "futureImprovements": [
+    "إقران عميل Next.js أو Flutter رقيق عندما يصبح محتوى الدليل جاهزًا"
+  ],
+  "results": ["خلفية TypeScript عامة لخط دليل"],
+  "coverImage": "/projects/covers/daleel.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/daleel.png"]
+}

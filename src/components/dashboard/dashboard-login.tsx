@@ -3,7 +3,7 @@ import { GlassCard } from "@/components/shared/glass-card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { authenticateDashboard } from "@/app/(private)/actions";
+import { authenticateDashboard } from "@/lib/dashboard-auth";
 
 export function DashboardLogin({ error }: { error?: boolean }) {
   return (

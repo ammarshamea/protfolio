@@ -12,6 +12,8 @@ export function generateStaticParams() {
   return getAllTechSlugs().map((slug) => ({ slug }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: {
@@ -47,6 +49,7 @@ export default async function TechStackDetailPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.techStack")} · ${technology.projectSlugs.length}`}
         title={technology.name}
         breadcrumbs={[

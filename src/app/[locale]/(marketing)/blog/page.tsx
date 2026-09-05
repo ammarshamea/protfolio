@@ -48,6 +48,7 @@ export default async function BlogPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.blog")} · ${posts.length}`}
         title={tb("title")}
         subtitle={tb("subtitle")}

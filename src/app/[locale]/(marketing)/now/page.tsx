@@ -40,6 +40,7 @@ export default async function NowPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={t("nav.now")}
         title={now.heroStatus}
         subtitle={tn("updated", { date: updated })}

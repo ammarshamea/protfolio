@@ -36,6 +36,7 @@ export default async function ChangelogPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.changelog")} · ${entries.length}`}
         title={tc("title")}
         subtitle={tc("subtitle")}

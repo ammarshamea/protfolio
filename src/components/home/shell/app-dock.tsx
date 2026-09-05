@@ -2,7 +2,13 @@
 
 import { useState } from "react";
 import type { LucideIcon } from "lucide-react";
-import { Home, Layers, FolderKanban, FileText, MessageCircle } from "lucide-react";
+import {
+  Home,
+  Layers,
+  FolderKanban,
+  FileText,
+  MessageCircle,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -84,7 +90,7 @@ export function AppDock({ fastCv }: { fastCv?: FastCvContent }) {
     <>
       <nav
         aria-label={t("ariaLabel")}
-        className="fixed inset-x-0 bottom-3 z-40 flex justify-center px-2 sm:bottom-6 sm:px-4"
+        className="fixed inset-x-0 bottom-[max(0.65rem,env(safe-area-inset-bottom))] z-40 flex justify-center px-2 sm:bottom-[max(1.25rem,env(safe-area-inset-bottom))] sm:px-4"
       >
         <div className="flex max-w-[calc(100vw-0.5rem)] items-center gap-0.5 overflow-x-auto rounded-full border border-[var(--surface-border)] bg-[var(--surface)]/95 p-1 shadow-[var(--shadow-card)] backdrop-blur-md sm:p-1.5">
           {START_LINKS.map((item) => (
@@ -111,8 +117,13 @@ export function AppDock({ fastCv }: { fastCv?: FastCvContent }) {
               )}
             >
               {fastCvActive ? <ActivePill /> : null}
-              <FileText className="relative h-[18px] w-[18px] shrink-0" aria-hidden="true" />
-              <span className="relative sr-only sm:not-sr-only">{t("fastCv")}</span>
+              <FileText
+                className="relative h-[18px] w-[18px] shrink-0"
+                aria-hidden="true"
+              />
+              <span className="relative sr-only sm:not-sr-only">
+                {t("fastCv")}
+              </span>
             </button>
           ) : (
             <Link
@@ -127,8 +138,13 @@ export function AppDock({ fastCv }: { fastCv?: FastCvContent }) {
               )}
             >
               {fastCvActive ? <ActivePill /> : null}
-              <FileText className="relative h-[18px] w-[18px] shrink-0" aria-hidden="true" />
-              <span className="relative sr-only sm:not-sr-only">{t("fastCv")}</span>
+              <FileText
+                className="relative h-[18px] w-[18px] shrink-0"
+                aria-hidden="true"
+              />
+              <span className="relative sr-only sm:not-sr-only">
+                {t("fastCv")}
+              </span>
             </Link>
           )}
 
@@ -190,7 +206,10 @@ function DockLinkItem({
       )}
     >
       {active ? <ActivePill /> : null}
-      <Icon className="relative h-[18px] w-[18px] shrink-0" aria-hidden="true" />
+      <Icon
+        className="relative h-[18px] w-[18px] shrink-0"
+        aria-hidden="true"
+      />
       <span className="relative sr-only sm:not-sr-only">{label}</span>
     </Link>
   );

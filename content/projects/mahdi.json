@@ -32,14 +32,9 @@
   "results": [
     "Replaced manual phone-based booking with a structured digital flow"
   ],
-  "stack": [
-    "Flutter",
-    "Laravel",
-    "MySQL"
-  ],
+  "stack": ["Flutter", "Laravel", "MySQL"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/mahdi",
   "coverImage": "/projects/covers/mahdi.png",
   "screenshotPending": false,
-  "gallery": [
-    "/projects/covers/mahdi.png"
-  ]
+  "gallery": ["/projects/covers/mahdi.png"]
 }

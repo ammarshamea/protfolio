@@ -1,0 +1,26 @@
+{
+  "slug": "qareeb-packages",
+  "title": "حزم فلاتر لقريب",
+  "tagline": "حزم Dart مشتركة من منظومة قريب: نماذج، مساعدات خرائط، نص قابل للرسم، صور متعددة الأنواع.",
+  "role": "مؤلف حزم",
+  "duration": "مستمر",
+  "overview": "مكتبات Dart صغيرة استُخرجت من قريب حتى لا يملك كل من تطبيقي الراكب/السائق نسخة من النماذج وودجات الخريطة والنص القابل للرسم والصور متعددة الأنواع. مجمّعة هنا بدل أربع دراسات ضعيفة.",
+  "problem": "نماذج وودجات صور/نص منسوخة عبر تطبيقات قريب انحرفت عن التزامن.",
+  "solution": "نشر qareeb_models وmap_qareeb وqarreb-drawable_text وqarreb-image-multi-type كمستودعات مستقلة.",
+  "architecture": "أربع حزم Dart صغيرة على GitHub تحت ammarshamea. تستهلكها عملاء قريب Flutter.",
+  "features": [
+    "qareeb_models — نماذج مجال مشتركة",
+    "map_qareeb — مساعدات خرائط",
+    "qarreb-drawable_text — أدوات رسم النص",
+    "qarreb-image-multi-type — ودجة صور متعددة الأنواع"
+  ],
+  "challenges": ["انحراف التسمية (qareeb مقابل qarreb) عبر حزم مبكرة"],
+  "lessonsLearned": [
+    "استخرج الحزم عندما يحتاج تطبيق ثانٍ نفس الودجة لا قبل ذلك"
+  ],
+  "futureImprovements": ["إصدارات بأسلوب pub.dev وبادئة qareeb_* موحّدة"],
+  "results": ["أربع حزم Dart عامة بدل أربع دراسات محشوة"],
+  "coverImage": "/projects/covers/qareeb-packages.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/qareeb-packages.png"]
+}

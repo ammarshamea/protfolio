@@ -9,11 +9,27 @@ const withBundleAnalyzer = createBundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
 
+const isGithubPages = process.env.GITHUB_PAGES === "true";
+
 const nextConfig: NextConfig = {
   allowedDevOrigins: ["*.trycloudflare.com"],
-  images: {
-    formats: ["image/avif", "image/webp"],
-  },
+  ...(isGithubPages
+    ? {
+        output: "export" as const,
+        basePath: "/protfolio",
+        assetPrefix: "/protfolio",
+        trailingSlash: true,
+        images: {
+          unoptimized: true,
+          loader: "custom" as const,
+          loaderFile: "./src/lib/image-loader.ts",
+        },
+      }
+    : {
+        images: {
+          formats: ["image/avif", "image/webp"],
+        },
+      }),
   experimental: {
     optimizePackageImports: [
       "lucide-react",
@@ -23,26 +39,39 @@ const nextConfig: NextConfig = {
     ],
     inlineCss: true,
   },
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          { key: "X-Content-Type-Options", value: "nosniff" },
-          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-        ],
-      },
-    ];
-  },
+  ...(!isGithubPages
+    ? {
+        async headers() {
+          return [
+            {
+              source: "/:path*",
+              headers: [
+                {
+                  key: "X-Content-Type-Options",
+                  value: "nosniff",
+                },
+                {
+                  key: "Referrer-Policy",
+                  value: "strict-origin-when-cross-origin",
+                },
+              ],
+            },
+          ];
+        },
+      }
+    : {}),
 };
 
-export default withSentryConfig(
-  withSerwist(withBundleAnalyzer(withNextIntl(nextConfig))),
-  {
-    org: process.env.SENTRY_ORG,
-    project: process.env.SENTRY_PROJECT,
-    authToken: process.env.SENTRY_AUTH_TOKEN,
-    silent: !process.env.CI,
-    widenClientFileUpload: true,
-  },
-);
+const withIntl = withNextIntl(nextConfig);
+
+const config = isGithubPages
+  ? withIntl
+  : withSentryConfig(withSerwist(withBundleAnalyzer(withIntl)), {
+      org: process.env.SENTRY_ORG,
+      project: process.env.SENTRY_PROJECT,
+      authToken: process.env.SENTRY_AUTH_TOKEN,
+      silent: !process.env.CI,
+      widenClientFileUpload: true,
+    });
+
+export default config;

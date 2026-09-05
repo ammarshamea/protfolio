@@ -1,0 +1,38 @@
+{
+  "slug": "nawa-real-estate",
+  "title": "NAWA Real Estate",
+  "tagline": "Next.js listing site for NAWA's real-estate inventory, distinct from the holding-company brochure.",
+  "category": "web",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Frontend Developer",
+  "duration": "4 weeks",
+  "year": "2026",
+  "overview": "NAWA Real Estate is the property-listing sibling of the NAWA Holding site: filters, property cards, and a catalog structure instead of a corporate story.",
+  "problem": "The holding-company site could not carry a searchable inventory without turning into a cluttered brochure.",
+  "solution": "A dedicated Next.js app for listings so the holding site stays institutional and this one stays operational.",
+  "architecture": "Next.js App Router front-end with structured listing data and card/filter UI. Kept in its own repo from nawa-holding and nawa_production.",
+  "features": [
+    "Property cards with key facts",
+    "Filterable listing index",
+    "Brand-aligned layout shared conceptually with the holding site"
+  ],
+  "challenges": [
+    "Deciding what belongs on the holding site versus the inventory app"
+  ],
+  "lessonsLearned": [
+    "Two focused sites beat one page that tries to sell the company and every unit at once"
+  ],
+  "futureImprovements": [
+    "CMS-backed listing ingest so agents can update inventory without a deploy"
+  ],
+  "results": [
+    "A dedicated listings surface next to the live NAWA production site"
+  ],
+  "stack": ["Next.js", "TypeScript", "Tailwind CSS"],
+  "githubUrl": "https://github.com/ammarshamea/nawarealestate",
+  "coverImage": "/projects/covers/nawa-real-estate.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/nawa-real-estate.png"]
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "fluxstore",
+  "title": "فلاكس ستور",
+  "tagline": "أساس Fluxstore Multi Vendor مع تخصيصات manager-fluxstore لإدارة البائعين.",
+  "role": "مطوّر Flutter",
+  "duration": "شهران",
+  "overview": "فلاكس ستور على Codeberg هو الأساس المشترك لـ Multi Vendor الذي أخصّصه لكيدو ولوجستك هب وشيون. مستودع manager-fluxstore على GitHub يحمل عمل إدارة البائعين فوق ذلك الخط.",
+  "problem": "ثلاث علامات احتاجت نفس محرّك التجارة دون ثلاثة تفريعات غير مرتبطة للدفع.",
+  "solution": "الإبقاء على شجرة FluxStore أساسًا ثم طبقات مستودعات العلامة وتخصيص المدير.",
+  "architecture": "عميل تجارة Flutter Fluxstore + تطبيق مدير اختياري. مستودعات العلامة (flux-kiddo وflex-*) تغطي السمة وبنية المعلومات.",
+  "features": [
+    "أساس دفع متعدد البائعين مشترك",
+    "تخصيصات مدير البائع",
+    "طبقات علامة في مستودعات شقيقة"
+  ],
+  "challenges": [
+    "منع تفريعات العلامة من الابتعاد عن إمكانية دمج تحديثات Fluxstore"
+  ],
+  "lessonsLearned": ["مستودع أساس مسمّى يجعل تفريعات العملاء قابلة للتفسير"],
+  "futureImprovements": ["قائمة ترقية قصيرة مشتركة بين كيدو ولوجستك هب وشيون"],
+  "results": ["أساس واحد وثلاث واجهات علامة بدل نسخ غير موثّقة"],
+  "coverImage": "/projects/covers/fluxstore.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/fluxstore.png"]
+}

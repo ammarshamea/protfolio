@@ -12,7 +12,8 @@ export function absoluteUrl(path: string) {
   const normalized = (path.startsWith("/") ? path : `/${path}`)
     .replace(/\/+/g, "/")
     .replace(/(.)\/$/, "$1");
-  return `${SITE_URL}${normalized}`;
+  const origin = SITE_URL.replace(/\/$/, "");
+  return `${origin}${normalized}`;
 }
 
 export function generatePageMetadata({
@@ -30,8 +31,12 @@ export function generatePageMetadata({
 }): Metadata {
   const url = absoluteUrl(`/${locale}${path}`);
   const ogImage = ogImagePath
-    ? absoluteUrl(ogImagePath)
-    : absoluteUrl(`/og?title=${encodeURIComponent(title)}`);
+    ? ogImagePath.startsWith("http")
+      ? ogImagePath
+      : absoluteUrl(ogImagePath)
+    : process.env.NEXT_PUBLIC_STATIC_EXPORT === "true"
+      ? absoluteUrl("/images/ammar-portrait.png")
+      : absoluteUrl(`/og?title=${encodeURIComponent(title)}`);
 
   return {
     title,

@@ -5,7 +5,7 @@ import { MessageCircle } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Section, SectionLabel } from "@/components/shared/section";
-import { IntroPlayer } from "@/components/home/intro-splash";
+import { IntroGate, IntroPlayer } from "@/components/home/intro-splash";
 import { CurrentStatus } from "@/components/home/current-status";
 import { StatsPreview } from "@/components/home/stats-preview";
 import { IdentityIntro } from "@/components/home/identity-intro";
@@ -22,8 +22,9 @@ import {
   HeroMedia,
 } from "@/components/home/hero-entrance";
 import { getSiteContent } from "@/lib/content/site";
-import { getAllProjects, getFeaturedProjects } from "@/lib/content/projects";
-import { getNow, getStats, getServices, getTimeline } from "@/lib/content/misc";
+import { getFeaturedProjects } from "@/lib/content/projects";
+import { getPortfolioMetrics } from "@/lib/content/metrics";
+import { getNow, getServices, getTimeline } from "@/lib/content/misc";
 import { generatePageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -50,18 +51,20 @@ export default async function HomePage({
   const t = await getTranslations({ locale });
   const th = await getTranslations({ locale, namespace: "home" });
   const site = getSiteContent(locale);
-  const allProjects = getAllProjects(locale);
+  const metrics = getPortfolioMetrics(locale);
   const featuredProjects = getFeaturedProjects(locale);
   const now = getNow(locale);
-  const stats = getStats();
   const services = getServices(locale);
   const timeline = getTimeline(locale);
   const whatsappHref = `${site.socials.whatsapp}?text=${encodeURIComponent(t("hero.whatsappMessage"))}`;
 
   return (
-    <>
-      <section id="top" className="relative overflow-x-clip pb-6 pt-16 sm:pt-20">
-        <div className="mx-auto grid max-w-[90rem] items-center gap-10 px-6 py-10 sm:px-10 lg:grid-cols-2 lg:gap-16 lg:py-16">
+    <IntroGate locale={locale}>
+      <section
+        id="top"
+        className="relative overflow-x-clip pb-[calc(var(--dock-space)+1rem)] pt-10 sm:pb-6 sm:pt-20"
+      >
+        <div className="mx-auto grid max-w-[90rem] items-center gap-8 px-6 py-5 sm:px-10 sm:py-10 lg:grid-cols-2 lg:gap-16 lg:py-16">
           <HeroEntrance className="min-w-0">
             <HeroItem>
               <ScriptHeading
@@ -76,22 +79,31 @@ export default async function HomePage({
               </p>
             </HeroItem>
             <HeroItem>
-              <p className="mt-6 max-w-xl text-[length:var(--text-body-lg)] leading-relaxed text-[var(--muted-foreground)]">
+              <p className="mt-4 max-w-xl text-[length:var(--text-body-lg)] leading-relaxed text-[var(--muted-foreground)] sm:mt-6">
                 {site.bio.short}
               </p>
             </HeroItem>
-            <HeroItem className="mt-6">
-              <StatusPills
-                availabilityLabel={t("hero.availabilityBadge")}
-                timezone={site.contact.timezone}
-                whatsappHref={whatsappHref}
-                whatsappLabel={t("hero.whatsappCta")}
-              />
+            <HeroItem className="mt-4 lg:hidden">
+              <dl className="flex flex-wrap gap-3">
+                <div className="rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] px-3.5 py-2">
+                  <dd className="text-base font-semibold tabular-nums">
+                    {metrics.projectsDelivered}+
+                  </dd>
+                  <dt className="text-[11px] text-[var(--muted-foreground)]">
+                    {t("hero.projectsDelivered")}
+                  </dt>
+                </div>
+                <div className="rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] px-3.5 py-2">
+                  <dd className="text-base font-semibold tabular-nums">
+                    {metrics.liveProducts}
+                  </dd>
+                  <dt className="text-[11px] text-[var(--muted-foreground)]">
+                    {t("hero.liveProducts")}
+                  </dt>
+                </div>
+              </dl>
             </HeroItem>
-            <HeroItem className="mt-3">
-              <CurrentStatus status={now.heroStatus} />
-            </HeroItem>
-            <HeroItem className="mt-8">
+            <HeroItem className="mt-5 sm:mt-8">
               <div className="flex flex-wrap gap-3">
                 <Button size="lg" variant="outline" asChild>
                   <Link href="/contact">
@@ -102,6 +114,17 @@ export default async function HomePage({
                 <IntroPlayer locale={locale} label={t("hero.introQuick")} />
               </div>
             </HeroItem>
+            <HeroItem className="mt-4 sm:mt-6">
+              <StatusPills
+                availabilityLabel={t("hero.availabilityBadge")}
+                timezone={site.contact.timezone}
+                whatsappHref={whatsappHref}
+                whatsappLabel={t("hero.whatsappCta")}
+              />
+            </HeroItem>
+            <HeroItem className="mt-3">
+              <CurrentStatus status={now.heroStatus} />
+            </HeroItem>
           </HeroEntrance>
 
           <HeroMedia className="relative min-w-0">
@@ -110,11 +133,11 @@ export default async function HomePage({
               alt={site.name}
               stats={[
                 {
-                  value: `${allProjects.length}+`,
+                  value: `${metrics.projectsDelivered}+`,
                   label: t("hero.projectsDelivered"),
                 },
                 {
-                  value: `${allProjects.filter((p) => p.liveUrl).length}`,
+                  value: `${metrics.liveProducts}`,
                   label: t("hero.liveProducts"),
                 },
               ]}
@@ -138,12 +161,16 @@ export default async function HomePage({
           eyebrow={th("workEyebrow")}
           title={th("workTitle")}
           viewAllLabel={t("common.viewAll")}
-          viewAllCount={allProjects.length}
+          viewAllCount={metrics.projectsDelivered}
         />
       </Section>
 
       <Section rhythm="open">
-        <SectionLabel index={3} label={th("capabilitiesEyebrow")} className="mb-4" />
+        <SectionLabel
+          index={3}
+          label={th("capabilitiesEyebrow")}
+          className="mb-4"
+        />
         <h2 className="mb-10 max-w-xl font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold tracking-tight">
           {th("capabilitiesTitle")}
         </h2>
@@ -154,22 +181,22 @@ export default async function HomePage({
         <StatsPreview
           stats={[
             {
-              value: Number.parseInt(stats.yearsExperience, 10) || 2,
+              value: metrics.yearsExperience,
               suffix: "+",
               label: t("hero.yearsExperience"),
             },
             {
-              value: allProjects.length,
+              value: metrics.projectsDelivered,
               suffix: "+",
               label: t("hero.projectsDelivered"),
             },
             {
-              value: allProjects.filter((p) => p.liveUrl).length,
+              value: metrics.liveProducts,
               suffix: "",
               label: t("hero.liveProducts"),
             },
             {
-              value: allProjects.filter((p) => p.category === "mobile").length,
+              value: metrics.mobileApps,
               suffix: "+",
               label: t("hero.mobileApps"),
             },
@@ -225,7 +252,6 @@ export default async function HomePage({
           socials={site.socials}
         />
       </Section>
-
-    </>
+    </IntroGate>
   );
 }

@@ -33,6 +33,7 @@ export default async function TermsPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={tt("eyebrow")}
         title={tt("title")}
         subtitle={tt("updated")}

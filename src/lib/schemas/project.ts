@@ -34,6 +34,12 @@ export const projectSchema = z.object({
   coverImage: z.string().optional(),
   gallery: z.array(z.string()).default([]),
   screenshotPending: z.boolean().default(false),
+  /**
+   * `showcase` = case-study cards and headline metrics.
+   * `open-source` = packages / tiny libs listed on /open-source, not counted
+   * as shipped products.
+   */
+  listing: z.enum(["showcase", "open-source"]).default("showcase"),
 });
 
 export type Project = z.infer<typeof projectSchema>;

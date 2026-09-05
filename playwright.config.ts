@@ -18,7 +18,17 @@ export default defineConfig({
     baseURL: BASE_URL,
     trace: "on-first-retry",
     screenshot: "only-on-failure",
+    storageState: {
+      cookies: [],
+      origins: [
+        {
+          origin: BASE_URL,
+          localStorage: [{ name: "intro-played-v2", value: "1" }],
+        },
+      ],
+    },
   },
+  testIgnore: process.env.CI ? /visual-regression/ : undefined,
   projects: [
     {
       name: "chromium",

@@ -1,0 +1,32 @@
+{
+  "slug": "ather-app",
+  "title": "Ather",
+  "tagline": "Flutter client on Codeberg — a product-shaped mobile app kept outside GitHub.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Flutter Developer",
+  "duration": "2 months",
+  "year": "2026",
+  "overview": "Ather is a Dart/Flutter app published on Codeberg. It sits with Safar and Mahdi as product clients I keep in the public Codeberg account.",
+  "problem": "Needed a public home for a Flutter product client that was not going on GitHub.",
+  "solution": "Ship the Flutter app on Codeberg under ammarshamea123 and treat it as a first-class portfolio entry.",
+  "architecture": "Flutter/Dart mobile client. Source of truth is the Codeberg repository.",
+  "features": ["Flutter product client structure", "Public source on Codeberg"],
+  "challenges": [
+    "Keeping Codeberg and GitHub stories aligned without duplicating every repo"
+  ],
+  "lessonsLearned": [
+    "A second forge is useful if you actually publish finished clients there"
+  ],
+  "futureImprovements": ["README with screenshots in the Codeberg repo"],
+  "results": [
+    "Public Flutter product client available at codeberg.org/ammarshamea123/ather_app"
+  ],
+  "stack": ["Flutter", "Dart"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/ather_app",
+  "coverImage": "/projects/covers/ather-app.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/ather-app.png"]
+}

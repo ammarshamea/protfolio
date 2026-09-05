@@ -24,12 +24,13 @@
     "محادثة داخل التطبيق بين العميل والسائق",
     "وقت وصول متوقع بالاعتماد على بيانات حركة مرور لحظية"
   ],
-  "results": [
-    "تطبيقان إنتاجيان منسّقان يتشاركان طبقة موقع وبيانات متسقة"
-  ],
-  "coverImage": "/projects/covers/qareeb.png",
+  "results": ["تطبيقان إنتاجيان منسّقان يتشاركان طبقة موقع وبيانات متسقة"],
+  "coverImage": "/projects/covers/qareeb.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/qareeb.png"
+    "/projects/covers/qareeb.webp",
+    "/projects/gallery/qareeb/01-brief.webp",
+    "/projects/gallery/qareeb/02-stack.webp",
+    "/projects/gallery/qareeb/03-scope.webp"
   ]
 }

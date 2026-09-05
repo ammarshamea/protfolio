@@ -25,7 +25,12 @@
   "results": ["Visitors see a lab, not a fake 9-product streak"],
   "stack": ["Java", "Android"],
   "githubUrl": "https://codeberg.org/ammarshamea123/TaskMate",
-  "coverImage": "/projects/covers/android-organizer-lab.png",
+  "coverImage": "/projects/covers/android-organizer-lab.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/android-organizer-lab.png"]
+  "gallery": [
+    "/projects/covers/android-organizer-lab.webp",
+    "/projects/gallery/android-organizer-lab/01-brief.webp",
+    "/projects/gallery/android-organizer-lab/02-stack.webp",
+    "/projects/gallery/android-organizer-lab/03-scope.webp"
+  ]
 }

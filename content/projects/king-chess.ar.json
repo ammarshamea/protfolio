@@ -13,7 +13,12 @@
   "lessonsLearned": ["أنظمة القواعد تخصّص مختلف عن تطبيقات CRUD"],
   "futureImprovements": ["تصدير PGN إن أُعيد فتح المشروع"],
   "results": ["مصدر عميل شطرنج قابل للعب على Codeberg"],
-  "coverImage": "/projects/covers/king-chess.png",
+  "coverImage": "/projects/covers/king-chess.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/king-chess.png"]
+  "gallery": [
+    "/projects/covers/king-chess.webp",
+    "/projects/gallery/king-chess/01-brief.webp",
+    "/projects/gallery/king-chess/02-stack.webp",
+    "/projects/gallery/king-chess/03-scope.webp"
+  ]
 }

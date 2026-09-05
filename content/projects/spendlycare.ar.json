@@ -13,7 +13,12 @@
   "lessonsLearned": ["المهمة المطلوبة مفتاح تجميع أفضل من ختم Git"],
   "futureImprovements": ["تصدير CSV بسيط إن استخدمه أحد للميزانية فعلًا"],
   "results": ["عميل مالية/رعاية أندرويد عام على Codeberg"],
-  "coverImage": "/projects/covers/spendlycare.png",
+  "coverImage": "/projects/covers/spendlycare.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/spendlycare.png"]
+  "gallery": [
+    "/projects/covers/spendlycare.webp",
+    "/projects/gallery/spendlycare/01-brief.webp",
+    "/projects/gallery/spendlycare/02-stack.webp",
+    "/projects/gallery/spendlycare/03-scope.webp"
+  ]
 }

@@ -13,7 +13,12 @@
   "lessonsLearned": ["منصة ثانية مفيدة إن نشرت عليها عملاء مكتملين فعلًا"],
   "futureImprovements": ["ملف README بلقطات في مستودع Codeberg"],
   "results": ["عميل Flutter عام على codeberg.org/ammarshamea123/ather_app"],
-  "coverImage": "/projects/covers/ather-app.png",
+  "coverImage": "/projects/covers/ather-app.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/ather-app.png"]
+  "gallery": [
+    "/projects/covers/ather-app.webp",
+    "/projects/gallery/ather-app/01-brief.webp",
+    "/projects/gallery/ather-app/02-stack.webp",
+    "/projects/gallery/ather-app/03-scope.webp"
+  ]
 }

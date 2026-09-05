@@ -15,7 +15,12 @@
     "روابط عميقة بين التطبيقات الثلاثة إن بقيت حزمًا منفصلة"
   ],
   "results": ["منتج تسوق واحد ومستودعين رفيقين بدل ثلاث دراسات رقيقة"],
-  "coverImage": "/projects/covers/homecart.png",
+  "coverImage": "/projects/covers/homecart.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/homecart.png"]
+  "gallery": [
+    "/projects/covers/homecart.webp",
+    "/projects/gallery/homecart/01-brief.webp",
+    "/projects/gallery/homecart/02-stack.webp",
+    "/projects/gallery/homecart/03-scope.webp"
+  ]
 }

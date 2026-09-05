@@ -29,7 +29,12 @@
   ],
   "stack": ["Flutter", "Dart"],
   "githubUrl": "https://github.com/ammarshamea/hrsystem",
-  "coverImage": "/projects/covers/hrsystem.png",
+  "coverImage": "/projects/covers/hrsystem.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/hrsystem.png"]
+  "gallery": [
+    "/projects/covers/hrsystem.webp",
+    "/projects/gallery/hrsystem/01-brief.webp",
+    "/projects/gallery/hrsystem/02-stack.webp",
+    "/projects/gallery/hrsystem/03-scope.webp"
+  ]
 }

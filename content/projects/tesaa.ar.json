@@ -22,12 +22,13 @@
     "مسح الباركود لبحث أسرع عن المنتجات",
     "مزامنة متعددة الأجهزة للمحلات التي لديها أكثر من صندوق دفع واحد"
   ],
-  "results": [
-    "أعطى صاحب محل صغير طريقة أسرع وأوضح لتتبع المبيعات والمخزون"
-  ],
-  "coverImage": "/projects/covers/tesaa.png",
+  "results": ["أعطى صاحب محل صغير طريقة أسرع وأوضح لتتبع المبيعات والمخزون"],
+  "coverImage": "/projects/covers/tesaa.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/tesaa.png"
+    "/projects/covers/tesaa.webp",
+    "/projects/gallery/tesaa/01-brief.webp",
+    "/projects/gallery/tesaa/02-stack.webp",
+    "/projects/gallery/tesaa/03-scope.webp"
   ]
 }

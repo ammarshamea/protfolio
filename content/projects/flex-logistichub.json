@@ -32,7 +32,12 @@
   ],
   "stack": ["Flutter", "Dart", "WooCommerce"],
   "githubUrl": "https://github.com/ammarshamea/flex-logistichub",
-  "coverImage": "/projects/covers/flex-logistichub.png",
+  "coverImage": "/projects/covers/flex-logistichub.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flex-logistichub.png"]
+  "gallery": [
+    "/projects/covers/flex-logistichub.webp",
+    "/projects/gallery/flex-logistichub/01-brief.webp",
+    "/projects/gallery/flex-logistichub/02-stack.webp",
+    "/projects/gallery/flex-logistichub/03-scope.webp"
+  ]
 }

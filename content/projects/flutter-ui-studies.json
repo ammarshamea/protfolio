@@ -26,7 +26,12 @@
   "results": ["Three public study repos, one honest shelf"],
   "stack": ["Flutter", "Dart"],
   "githubUrl": "https://github.com/ammarshamea/starbucks",
-  "coverImage": "/projects/covers/flutter-ui-studies.png",
+  "coverImage": "/projects/covers/flutter-ui-studies.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flutter-ui-studies.png"]
+  "gallery": [
+    "/projects/covers/flutter-ui-studies.webp",
+    "/projects/gallery/flutter-ui-studies/01-brief.webp",
+    "/projects/gallery/flutter-ui-studies/02-stack.webp",
+    "/projects/gallery/flutter-ui-studies/03-scope.webp"
+  ]
 }

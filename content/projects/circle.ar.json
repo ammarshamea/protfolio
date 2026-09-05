@@ -24,12 +24,13 @@
     "نظام تقييم ومراجعات لمقدمي الخدمة",
     "مراسلة داخل التطبيق بين طالب الخدمة ومقدمها"
   ],
-  "results": [
-    "سوق تطبيقين مزدوج يعمل بشكل كامل ويغطي دورة الطلب حتى الإكمال"
-  ],
-  "coverImage": "/projects/covers/circle.png",
+  "results": ["سوق تطبيقين مزدوج يعمل بشكل كامل ويغطي دورة الطلب حتى الإكمال"],
+  "coverImage": "/projects/covers/circle.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/circle.png"
+    "/projects/covers/circle.webp",
+    "/projects/gallery/circle/01-brief.webp",
+    "/projects/gallery/circle/02-stack.webp",
+    "/projects/gallery/circle/03-scope.webp"
   ]
 }

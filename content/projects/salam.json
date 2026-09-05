@@ -32,14 +32,13 @@
   "results": [
     "Gave parents real-time visibility into their child's transportation status"
   ],
-  "stack": [
-    "Flutter",
-    "Google Maps",
-    "Geolocation"
-  ],
+  "stack": ["Flutter", "Google Maps", "Geolocation"],
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/salam.png"
+    "/projects/covers/salam.webp",
+    "/projects/gallery/salam/01-brief.webp",
+    "/projects/gallery/salam/02-stack.webp",
+    "/projects/gallery/salam/03-scope.webp"
   ],
-  "coverImage": "/projects/covers/salam.png"
+  "coverImage": "/projects/covers/salam.webp"
 }

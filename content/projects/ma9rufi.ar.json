@@ -15,7 +15,12 @@
     "مواءمة النصوص مع لغة سوق سيركل/قريب حيث يتداخل المجال حقًا"
   ],
   "results": ["عميل خدمات أندرويد عام على Codeberg"],
-  "coverImage": "/projects/covers/ma9rufi.png",
+  "coverImage": "/projects/covers/ma9rufi.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/ma9rufi.png"]
+  "gallery": [
+    "/projects/covers/ma9rufi.webp",
+    "/projects/gallery/ma9rufi/01-brief.webp",
+    "/projects/gallery/ma9rufi/02-stack.webp",
+    "/projects/gallery/ma9rufi/03-scope.webp"
+  ]
 }

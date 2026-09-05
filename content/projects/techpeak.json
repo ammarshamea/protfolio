@@ -20,7 +20,12 @@
   "results": ["Public C++ practice repo linked from the open-source page"],
   "stack": ["C++"],
   "githubUrl": "https://github.com/ammarshamea/techpeak",
-  "coverImage": "/projects/covers/techpeak.png",
+  "coverImage": "/projects/covers/techpeak.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/techpeak.png"]
+  "gallery": [
+    "/projects/covers/techpeak.webp",
+    "/projects/gallery/techpeak/01-brief.webp",
+    "/projects/gallery/techpeak/02-stack.webp",
+    "/projects/gallery/techpeak/03-scope.webp"
+  ]
 }

@@ -26,7 +26,12 @@
   "results": ["Public Android finance/care client on Codeberg"],
   "stack": ["Java", "Android"],
   "githubUrl": "https://codeberg.org/ammarshamea123/SpendlyCare",
-  "coverImage": "/projects/covers/spendlycare.png",
+  "coverImage": "/projects/covers/spendlycare.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/spendlycare.png"]
+  "gallery": [
+    "/projects/covers/spendlycare.webp",
+    "/projects/gallery/spendlycare/01-brief.webp",
+    "/projects/gallery/spendlycare/02-stack.webp",
+    "/projects/gallery/spendlycare/03-scope.webp"
+  ]
 }

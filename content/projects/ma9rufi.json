@@ -24,7 +24,12 @@
   "results": ["Public Android services client on Codeberg"],
   "stack": ["Java", "Android"],
   "githubUrl": "https://codeberg.org/ammarshamea123/ma9rufi",
-  "coverImage": "/projects/covers/ma9rufi.png",
+  "coverImage": "/projects/covers/ma9rufi.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/ma9rufi.png"]
+  "gallery": [
+    "/projects/covers/ma9rufi.webp",
+    "/projects/gallery/ma9rufi/01-brief.webp",
+    "/projects/gallery/ma9rufi/02-stack.webp",
+    "/projects/gallery/ma9rufi/03-scope.webp"
+  ]
 }

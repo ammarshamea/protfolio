@@ -20,7 +20,12 @@
   "results": ["Public helper package grouped with other Dart utilities"],
   "stack": ["Flutter", "Dart"],
   "githubUrl": "https://codeberg.org/ammarshamea123/flutter_smart_image",
-  "coverImage": "/projects/covers/flutter-smart-image.png",
+  "coverImage": "/projects/covers/flutter-smart-image.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flutter-smart-image.png"]
+  "gallery": [
+    "/projects/covers/flutter-smart-image.webp",
+    "/projects/gallery/flutter-smart-image/01-brief.webp",
+    "/projects/gallery/flutter-smart-image/02-stack.webp",
+    "/projects/gallery/flutter-smart-image/03-scope.webp"
+  ]
 }

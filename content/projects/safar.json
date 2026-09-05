@@ -32,7 +32,12 @@
   ],
   "stack": ["Flutter"],
   "githubUrl": "https://codeberg.org/ammarshamea123/safar",
-  "coverImage": "/projects/covers/safar.png",
+  "coverImage": "/projects/covers/safar.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/safar.png"]
+  "gallery": [
+    "/projects/covers/safar.webp",
+    "/projects/gallery/safar/01-brief.webp",
+    "/projects/gallery/safar/02-stack.webp",
+    "/projects/gallery/safar/03-scope.webp"
+  ]
 }

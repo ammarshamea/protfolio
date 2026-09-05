@@ -20,7 +20,12 @@
   "lessonsLearned": ["مخطط حقيقي أفضل من حشو حالة الكتالوج في ذاكرة الدردشة"],
   "futureImprovements": ["ويب هوك لبوابات الدفع إن طلبها تاجر حي"],
   "results": ["بوت بطاقات هدايا موثّق وقابل للنشر بجانبي إدارة ومستخدم"],
-  "coverImage": "/projects/covers/cardbot.png",
+  "coverImage": "/projects/covers/cardbot.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/cardbot.png"]
+  "gallery": [
+    "/projects/covers/cardbot.webp",
+    "/projects/gallery/cardbot/01-brief.webp",
+    "/projects/gallery/cardbot/02-stack.webp",
+    "/projects/gallery/cardbot/03-scope.webp"
+  ]
 }

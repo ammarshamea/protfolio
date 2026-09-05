@@ -24,12 +24,13 @@
     "تذكيرات تلقائية للحجوزات القادمة",
     "مزامنة تقويم لصاحب النشاط التجاري"
   ],
-  "results": [
-    "استبدل الحجز اليدوي عبر الهاتف بتدفق رقمي منظم"
-  ],
-  "coverImage": "/projects/covers/mahdi.png",
+  "results": ["استبدل الحجز اليدوي عبر الهاتف بتدفق رقمي منظم"],
+  "coverImage": "/projects/covers/mahdi.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/mahdi.png"
+    "/projects/covers/mahdi.webp",
+    "/projects/gallery/mahdi/01-brief.webp",
+    "/projects/gallery/mahdi/02-stack.webp",
+    "/projects/gallery/mahdi/03-scope.webp"
   ]
 }

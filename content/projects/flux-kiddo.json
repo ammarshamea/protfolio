@@ -33,7 +33,12 @@
   ],
   "stack": ["Flutter", "Dart", "WooCommerce"],
   "githubUrl": "https://github.com/ammarshamea/flux-kiddo",
-  "coverImage": "/projects/covers/flux-kiddo.png",
+  "coverImage": "/projects/covers/flux-kiddo.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flux-kiddo.png"]
+  "gallery": [
+    "/projects/covers/flux-kiddo.webp",
+    "/projects/gallery/flux-kiddo/01-brief.webp",
+    "/projects/gallery/flux-kiddo/02-stack.webp",
+    "/projects/gallery/flux-kiddo/03-scope.webp"
+  ]
 }

@@ -32,7 +32,12 @@
   ],
   "stack": ["Flutter", "Dart", "WooCommerce"],
   "githubUrl": "https://github.com/ammarshamea/flex-sheone",
-  "coverImage": "/projects/covers/flex-sheone.png",
+  "coverImage": "/projects/covers/flex-sheone.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flex-sheone.png"]
+  "gallery": [
+    "/projects/covers/flex-sheone.webp",
+    "/projects/gallery/flex-sheone/01-brief.webp",
+    "/projects/gallery/flex-sheone/02-stack.webp",
+    "/projects/gallery/flex-sheone/03-scope.webp"
+  ]
 }

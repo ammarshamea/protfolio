@@ -13,7 +13,12 @@
   "lessonsLearned": ["الاسم ومكان الاستضافة جزء من كيفية إيجاد المنتج"],
   "futureImprovements": ["إضافة README قصير عربي/إنجليزي في المستودع"],
   "results": ["عميل Flutter عام على codeberg.org/ammarshamea123/ehasan"],
-  "coverImage": "/projects/covers/ehasan.png",
+  "coverImage": "/projects/covers/ehasan.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/ehasan.png"]
+  "gallery": [
+    "/projects/covers/ehasan.webp",
+    "/projects/gallery/ehasan/01-brief.webp",
+    "/projects/gallery/ehasan/02-stack.webp",
+    "/projects/gallery/ehasan/03-scope.webp"
+  ]
 }

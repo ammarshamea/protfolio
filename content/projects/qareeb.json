@@ -32,16 +32,14 @@
   "results": [
     "Two coordinated production apps sharing a consistent location and data layer"
   ],
-  "stack": [
-    "Flutter",
-    "BLoC",
-    "Google Maps",
-    "Geolocation"
-  ],
+  "stack": ["Flutter", "BLoC", "Google Maps", "Geolocation"],
   "githubUrl": "https://github.com/ammarshamea/map_qareeb",
-  "coverImage": "/projects/covers/qareeb.png",
+  "coverImage": "/projects/covers/qareeb.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/qareeb.png"
+    "/projects/covers/qareeb.webp",
+    "/projects/gallery/qareeb/01-brief.webp",
+    "/projects/gallery/qareeb/02-stack.webp",
+    "/projects/gallery/qareeb/03-scope.webp"
   ]
 }

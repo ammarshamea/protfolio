@@ -29,7 +29,12 @@
   "results": ["Four public Dart packages instead of four padded case studies"],
   "stack": ["Dart", "Flutter"],
   "githubUrl": "https://github.com/ammarshamea/qareeb_models",
-  "coverImage": "/projects/covers/qareeb-packages.png",
+  "coverImage": "/projects/covers/qareeb-packages.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/qareeb-packages.png"]
+  "gallery": [
+    "/projects/covers/qareeb-packages.webp",
+    "/projects/gallery/qareeb-packages/01-brief.webp",
+    "/projects/gallery/qareeb-packages/02-stack.webp",
+    "/projects/gallery/qareeb-packages/03-scope.webp"
+  ]
 }

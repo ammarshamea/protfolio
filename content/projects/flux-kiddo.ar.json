@@ -22,7 +22,12 @@
   "results": [
     "واجهة أطفال بهوية التاجر يمكن تشغيلها على مكدس Fluxstore/Woo الحالي"
   ],
-  "coverImage": "/projects/covers/flux-kiddo.png",
+  "coverImage": "/projects/covers/flux-kiddo.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flux-kiddo.png"]
+  "gallery": [
+    "/projects/covers/flux-kiddo.webp",
+    "/projects/gallery/flux-kiddo/01-brief.webp",
+    "/projects/gallery/flux-kiddo/02-stack.webp",
+    "/projects/gallery/flux-kiddo/03-scope.webp"
+  ]
 }

@@ -22,7 +22,12 @@
   "results": ["Public Android listings client on Codeberg"],
   "stack": ["Java", "Android"],
   "githubUrl": "https://codeberg.org/ammarshamea123/listarf",
-  "coverImage": "/projects/covers/listarf.png",
+  "coverImage": "/projects/covers/listarf.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/listarf.png"]
+  "gallery": [
+    "/projects/covers/listarf.webp",
+    "/projects/gallery/listarf/01-brief.webp",
+    "/projects/gallery/listarf/02-stack.webp",
+    "/projects/gallery/listarf/03-scope.webp"
+  ]
 }

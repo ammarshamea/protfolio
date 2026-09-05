@@ -22,7 +22,12 @@
   "results": ["Public Flutter client at codeberg.org/ammarshamea123/ehasan"],
   "stack": ["Flutter", "Dart"],
   "githubUrl": "https://codeberg.org/ammarshamea123/ehasan",
-  "coverImage": "/projects/covers/ehasan.png",
+  "coverImage": "/projects/covers/ehasan.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/ehasan.png"]
+  "gallery": [
+    "/projects/covers/ehasan.webp",
+    "/projects/gallery/ehasan/01-brief.webp",
+    "/projects/gallery/ehasan/02-stack.webp",
+    "/projects/gallery/ehasan/03-scope.webp"
+  ]
 }

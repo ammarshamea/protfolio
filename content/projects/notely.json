@@ -26,7 +26,12 @@
   ],
   "stack": ["Java", "Android"],
   "githubUrl": "https://codeberg.org/ammarshamea123/Notely",
-  "coverImage": "/projects/covers/notely.png",
+  "coverImage": "/projects/covers/notely.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/notely.png"]
+  "gallery": [
+    "/projects/covers/notely.webp",
+    "/projects/gallery/notely/01-brief.webp",
+    "/projects/gallery/notely/02-stack.webp",
+    "/projects/gallery/notely/03-scope.webp"
+  ]
 }

@@ -24,12 +24,13 @@
     "إشعارات فورية للتأخير أو تغييرات المسار",
     "دعم أكثر من طفل لأولياء الأمور الذين لديهم أكثر من طالب على المسار نفسه"
   ],
-  "results": [
-    "أعطى أولياء الأمور رؤية لحظية لحالة تنقل أطفالهم"
-  ],
-  "coverImage": "/projects/covers/salam.png",
+  "results": ["أعطى أولياء الأمور رؤية لحظية لحالة تنقل أطفالهم"],
+  "coverImage": "/projects/covers/salam.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/salam.png"
+    "/projects/covers/salam.webp",
+    "/projects/gallery/salam/01-brief.webp",
+    "/projects/gallery/salam/02-stack.webp",
+    "/projects/gallery/salam/03-scope.webp"
   ]
 }

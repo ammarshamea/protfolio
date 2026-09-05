@@ -17,7 +17,12 @@
   "lessonsLearned": ["الاستنساخ الأول جزء من السيرة إن قلت ما هو"],
   "futureImprovements": ["لا تُعد كتابتها؛ أرِّخها واتركها"],
   "results": ["ثلاثة مستودعات دراسة عامة ورف صادق واحد"],
-  "coverImage": "/projects/covers/flutter-ui-studies.png",
+  "coverImage": "/projects/covers/flutter-ui-studies.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flutter-ui-studies.png"]
+  "gallery": [
+    "/projects/covers/flutter-ui-studies.webp",
+    "/projects/gallery/flutter-ui-studies/01-brief.webp",
+    "/projects/gallery/flutter-ui-studies/02-stack.webp",
+    "/projects/gallery/flutter-ui-studies/03-scope.webp"
+  ]
 }

@@ -13,7 +13,12 @@
   "lessonsLearned": ["صفحات المختبر موجودة حتى تبقى صفحات المنتج حادة"],
   "futureImprovements": ["اختيار منظِّم واحد وإكماله وأرشفة البقية"],
   "results": ["الزائر يرى مختبرًا لا سلسلة تسعة منتجات زائفة"],
-  "coverImage": "/projects/covers/android-organizer-lab.png",
+  "coverImage": "/projects/covers/android-organizer-lab.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/android-organizer-lab.png"]
+  "gallery": [
+    "/projects/covers/android-organizer-lab.webp",
+    "/projects/gallery/android-organizer-lab/01-brief.webp",
+    "/projects/gallery/android-organizer-lab/02-stack.webp",
+    "/projects/gallery/android-organizer-lab/03-scope.webp"
+  ]
 }

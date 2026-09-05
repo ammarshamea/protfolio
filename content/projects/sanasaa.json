@@ -34,7 +34,12 @@
   ],
   "stack": ["Flutter", "Laravel", "MySQL"],
   "githubUrl": "https://codeberg.org/ammarshamea123/sanasaa-ui",
-  "coverImage": "/projects/covers/sanasaa.png",
+  "coverImage": "/projects/covers/sanasaa.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/sanasaa.png"]
+  "gallery": [
+    "/projects/covers/sanasaa.webp",
+    "/projects/gallery/sanasaa/01-brief.webp",
+    "/projects/gallery/sanasaa/02-stack.webp",
+    "/projects/gallery/sanasaa/03-scope.webp"
+  ]
 }

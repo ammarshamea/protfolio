@@ -20,7 +20,12 @@
   "results": ["Playable chess client source on Codeberg"],
   "stack": ["C#"],
   "githubUrl": "https://codeberg.org/ammarshamea123/kingChess",
-  "coverImage": "/projects/covers/king-chess.png",
+  "coverImage": "/projects/covers/king-chess.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/king-chess.png"]
+  "gallery": [
+    "/projects/covers/king-chess.webp",
+    "/projects/gallery/king-chess/01-brief.webp",
+    "/projects/gallery/king-chess/02-stack.webp",
+    "/projects/gallery/king-chess/03-scope.webp"
+  ]
 }

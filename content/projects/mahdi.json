@@ -34,7 +34,12 @@
   ],
   "stack": ["Flutter", "Laravel", "MySQL"],
   "githubUrl": "https://codeberg.org/ammarshamea123/mahdi",
-  "coverImage": "/projects/covers/mahdi.png",
+  "coverImage": "/projects/covers/mahdi.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/mahdi.png"]
+  "gallery": [
+    "/projects/covers/mahdi.webp",
+    "/projects/gallery/mahdi/01-brief.webp",
+    "/projects/gallery/mahdi/02-stack.webp",
+    "/projects/gallery/mahdi/03-scope.webp"
+  ]
 }

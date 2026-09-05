@@ -13,7 +13,12 @@
   "lessonsLearned": ["ملفات README الفارغة أفضل من أرقام مخترعة"],
   "futureImprovements": ["إضافة وصف من ثلاثة أسطر في المستودع"],
   "results": ["مستودع تمرين C++ عام مربوط من صفحة المصدر المفتوح"],
-  "coverImage": "/projects/covers/techpeak.png",
+  "coverImage": "/projects/covers/techpeak.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/techpeak.png"]
+  "gallery": [
+    "/projects/covers/techpeak.webp",
+    "/projects/gallery/techpeak/01-brief.webp",
+    "/projects/gallery/techpeak/02-stack.webp",
+    "/projects/gallery/techpeak/03-scope.webp"
+  ]
 }

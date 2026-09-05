@@ -17,7 +17,12 @@
     "إقران عميل Next.js أو Flutter رقيق عندما يصبح محتوى الدليل جاهزًا"
   ],
   "results": ["خلفية TypeScript عامة لخط دليل"],
-  "coverImage": "/projects/covers/daleel.png",
+  "coverImage": "/projects/covers/daleel.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/daleel.png"]
+  "gallery": [
+    "/projects/covers/daleel.webp",
+    "/projects/gallery/daleel/01-brief.webp",
+    "/projects/gallery/daleel/02-stack.webp",
+    "/projects/gallery/daleel/03-scope.webp"
+  ]
 }

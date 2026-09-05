@@ -22,12 +22,13 @@
     "الوصول لخطط الرحلة دون اتصال بالإنترنت أثناء السفر",
     "خطط رحلة مشتركة للرحلات الجماعية"
   ],
-  "results": [
-    "تطبيق تخطيط رحلات فعّال يجمّع الحجوزات في عرض خطة رحلة واحد"
-  ],
-  "coverImage": "/projects/covers/safar.png",
+  "results": ["تطبيق تخطيط رحلات فعّال يجمّع الحجوزات في عرض خطة رحلة واحد"],
+  "coverImage": "/projects/covers/safar.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/safar.png"
+    "/projects/covers/safar.webp",
+    "/projects/gallery/safar/01-brief.webp",
+    "/projects/gallery/safar/02-stack.webp",
+    "/projects/gallery/safar/03-scope.webp"
   ]
 }

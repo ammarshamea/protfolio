@@ -30,7 +30,12 @@
   ],
   "stack": ["Flutter", "Dart", "WooCommerce"],
   "githubUrl": "https://codeberg.org/ammarshamea123/FluxStore",
-  "coverImage": "/projects/covers/fluxstore.png",
+  "coverImage": "/projects/covers/fluxstore.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/fluxstore.png"]
+  "gallery": [
+    "/projects/covers/fluxstore.webp",
+    "/projects/gallery/fluxstore/01-brief.webp",
+    "/projects/gallery/fluxstore/02-stack.webp",
+    "/projects/gallery/fluxstore/03-scope.webp"
+  ]
 }

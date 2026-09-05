@@ -10,6 +10,7 @@
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
+    "covers:branded": "node scripts/generate-branded-project-covers.mjs",
     "generate:llms": "node scripts/generate-llms-txt.mjs",
     "generate:hero-video": "node scripts/generate-hero-video.mjs",
     "elevenlabs:auth": "node scripts/elevenlabs-login.mjs --open",

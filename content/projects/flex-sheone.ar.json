@@ -21,7 +21,12 @@
     "وحدات هبوط بأسلوب lookbook إذا نمت الإسقاطات الموسمية"
   ],
   "results": ["واجهة شيون للإنتاج منفصلة عن بقية مستودعات Flex"],
-  "coverImage": "/projects/covers/flex-sheone.png",
+  "coverImage": "/projects/covers/flex-sheone.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flex-sheone.png"]
+  "gallery": [
+    "/projects/covers/flex-sheone.webp",
+    "/projects/gallery/flex-sheone/01-brief.webp",
+    "/projects/gallery/flex-sheone/02-stack.webp",
+    "/projects/gallery/flex-sheone/03-scope.webp"
+  ]
 }

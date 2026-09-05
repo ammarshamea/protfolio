@@ -28,9 +28,9 @@ export default function OfflinePage() {
             connection.
           </p>
           {/* This route has no locale/router context, so a plain anchor is deliberate. */}
-          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          {}
           <a
-            href="/en"
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/en`}
             style={{
               display: "inline-block",
               marginTop: "1.5rem",

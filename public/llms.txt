@@ -15,16 +15,40 @@ Dart, Flutter, Git, Tailwind CSS, AI Integration, BLoC, Figma, Google Maps & Geo
 - FoodyNez: https://foodynez.com/index.html
 
 ## Case Studies
+- Ather: https://ammarshamea.dev/en/projects/ather-app
+- CensusPro: https://ammarshamea.dev/en/projects/censuspro
 - CLYX Agency: https://ammarshamea.dev/en/projects/clyx-agency
 - Clyx Order: https://ammarshamea.dev/en/projects/clyx-order
+- Daleel: https://ammarshamea.dev/en/projects/daleel
+- Flex LogisticHub: https://ammarshamea.dev/en/projects/flex-logistichub
+- Flex Sheone: https://ammarshamea.dev/en/projects/flex-sheone
+- Flux Kiddo: https://ammarshamea.dev/en/projects/flux-kiddo
+- FluxStore: https://ammarshamea.dev/en/projects/fluxstore
+- HomeCart: https://ammarshamea.dev/en/projects/homecart
+- Listarf: https://ammarshamea.dev/en/projects/listarf
+- Ma9rufi: https://ammarshamea.dev/en/projects/ma9rufi
 - NAWA Holding: https://ammarshamea.dev/en/projects/nawa-holding
+- NAWA Real Estate: https://ammarshamea.dev/en/projects/nawa-real-estate
 - NIVXTIME: https://ammarshamea.dev/en/projects/nivxtime
 - Pureger: https://ammarshamea.dev/en/projects/pureger
+- SpendlyCare: https://ammarshamea.dev/en/projects/spendlycare
+- Android organizer lab: https://ammarshamea.dev/en/projects/android-organizer-lab
+- BMM: https://ammarshamea.dev/en/projects/bmm
+- Cardbot: https://ammarshamea.dev/en/projects/cardbot
 - Circle: https://ammarshamea.dev/en/projects/circle
+- Ehasan: https://ammarshamea.dev/en/projects/ehasan
+- flutter_smart_image: https://ammarshamea.dev/en/projects/flutter-smart-image
+- Flutter UI studies: https://ammarshamea.dev/en/projects/flutter-ui-studies
 - FoodyNez: https://ammarshamea.dev/en/projects/foodynez
+- HR System: https://ammarshamea.dev/en/projects/hrsystem
+- King Chess: https://ammarshamea.dev/en/projects/king-chess
+- Notely: https://ammarshamea.dev/en/projects/notely
+- Qareeb Flutter packages: https://ammarshamea.dev/en/projects/qareeb-packages
 - Qareeb: https://ammarshamea.dev/en/projects/qareeb
 - Safar: https://ammarshamea.dev/en/projects/safar
 - Salam: https://ammarshamea.dev/en/projects/salam
+- Techpeak: https://ammarshamea.dev/en/projects/techpeak
+- Web motion & media lab: https://ammarshamea.dev/en/projects/web-motion-lab
 - Mahdi: https://ammarshamea.dev/en/projects/mahdi
 - Sanasaa: https://ammarshamea.dev/en/projects/sanasaa
 - Tesaa: https://ammarshamea.dev/en/projects/tesaa

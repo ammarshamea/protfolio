@@ -1,4 +1,6 @@
-import { getLocale } from "next-intl/server";
+"use client";
+
+import { useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ChevronRight } from "lucide-react";
 import { ScriptHeading } from "@/components/home/shell/script-heading";
@@ -9,7 +11,7 @@ interface Crumb {
   href?: string;
 }
 
-export async function PageHeader({
+export function PageHeader({
   eyebrow,
   title,
   subtitle,
@@ -22,7 +24,7 @@ export async function PageHeader({
   breadcrumbs?: Crumb[];
   className?: string;
 }) {
-  const locale = await getLocale();
+  const locale = useLocale();
 
   return (
     <header
@@ -39,7 +41,10 @@ export async function PageHeader({
             className="mb-6 flex flex-wrap items-center gap-1.5 text-sm text-[var(--muted-foreground)]"
           >
             {breadcrumbs.map((crumb, index) => (
-              <span key={`${crumb.label}-${index}`} className="flex items-center gap-1.5">
+              <span
+                key={`${crumb.label}-${index}`}
+                className="flex items-center gap-1.5"
+              >
                 {crumb.href ? (
                   <Link
                     href={crumb.href}
@@ -48,7 +53,9 @@ export async function PageHeader({
                     {crumb.label}
                   </Link>
                 ) : (
-                  <span className="text-[var(--foreground)]">{crumb.label}</span>
+                  <span className="text-[var(--foreground)]">
+                    {crumb.label}
+                  </span>
                 )}
                 {index < breadcrumbs.length - 1 ? (
                   <ChevronRight

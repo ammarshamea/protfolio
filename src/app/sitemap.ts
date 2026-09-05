@@ -5,6 +5,8 @@ import { getAllTechSlugs } from "@/lib/content/tech-stack";
 import { getAllPosts } from "@/lib/content/blog";
 import { SITE_URL } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 /** Static routes that currently have a page implemented. Extend as new pages ship. */
 const builtStaticPaths: { path: string; priority: number }[] = [
   { path: "/", priority: 1 },

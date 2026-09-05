@@ -1,13 +1,12 @@
-import { getTranslations, getLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "./logo";
 import { SocialLinks } from "@/components/shared/social-links";
 import { getSiteContent } from "@/lib/content/site";
 import { footerNavGroups } from "@/lib/navigation";
 
-export async function Footer() {
-  const t = await getTranslations();
-  const locale = await getLocale();
+export async function Footer({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale });
   const site = getSiteContent(locale);
   const year = new Date().getFullYear();
 

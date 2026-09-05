@@ -62,9 +62,9 @@ export default async function HomePage({
     <IntroGate locale={locale}>
       <section
         id="top"
-        className="relative overflow-x-clip pb-6 pt-16 sm:pt-20"
+        className="relative overflow-x-clip pb-[calc(var(--dock-space)+1rem)] pt-10 sm:pb-6 sm:pt-20"
       >
-        <div className="mx-auto grid max-w-[90rem] items-center gap-10 px-6 py-10 sm:px-10 lg:grid-cols-2 lg:gap-16 lg:py-16">
+        <div className="mx-auto grid max-w-[90rem] items-center gap-8 px-6 py-5 sm:px-10 sm:py-10 lg:grid-cols-2 lg:gap-16 lg:py-16">
           <HeroEntrance className="min-w-0">
             <HeroItem>
               <ScriptHeading
@@ -79,11 +79,31 @@ export default async function HomePage({
               </p>
             </HeroItem>
             <HeroItem>
-              <p className="mt-6 max-w-xl text-[length:var(--text-body-lg)] leading-relaxed text-[var(--muted-foreground)]">
+              <p className="mt-4 max-w-xl text-[length:var(--text-body-lg)] leading-relaxed text-[var(--muted-foreground)] sm:mt-6">
                 {site.bio.short}
               </p>
             </HeroItem>
-            <HeroItem className="mt-6">
+            <HeroItem className="mt-4 lg:hidden">
+              <dl className="flex flex-wrap gap-3">
+                <div className="rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] px-3.5 py-2">
+                  <dd className="text-base font-semibold tabular-nums">
+                    {metrics.projectsDelivered}+
+                  </dd>
+                  <dt className="text-[11px] text-[var(--muted-foreground)]">
+                    {t("hero.projectsDelivered")}
+                  </dt>
+                </div>
+                <div className="rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] px-3.5 py-2">
+                  <dd className="text-base font-semibold tabular-nums">
+                    {metrics.liveProducts}
+                  </dd>
+                  <dt className="text-[11px] text-[var(--muted-foreground)]">
+                    {t("hero.liveProducts")}
+                  </dt>
+                </div>
+              </dl>
+            </HeroItem>
+            <HeroItem className="mt-4 sm:mt-6">
               <StatusPills
                 availabilityLabel={t("hero.availabilityBadge")}
                 timezone={site.contact.timezone}
@@ -94,7 +114,7 @@ export default async function HomePage({
             <HeroItem className="mt-3">
               <CurrentStatus status={now.heroStatus} />
             </HeroItem>
-            <HeroItem className="mt-8">
+            <HeroItem className="mt-5 sm:mt-8">
               <div className="flex flex-wrap gap-3">
                 <Button size="lg" variant="outline" asChild>
                   <Link href="/contact">

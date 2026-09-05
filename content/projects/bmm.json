@@ -17,13 +17,32 @@
     "Static semantic markup",
     "Simple multi-page homework structure"
   ],
-  "challenges": ["Keeping the portfolio listing honest about scale"],
-  "lessonsLearned": ["Not every public repo needs a twelve-section case study"],
-  "futureImprovements": ["Leave it as a fundamentals snapshot"],
-  "results": ["Public static site still available on GitHub"],
-  "stack": ["HTML", "CSS"],
+  "challenges": [
+    "Keeping the portfolio listing honest about scale"
+  ],
+  "lessonsLearned": [
+    "Not every public repo needs a twelve-section case study"
+  ],
+  "futureImprovements": [
+    "Leave it as a fundamentals snapshot"
+  ],
+  "results": [
+    "Public static site still available on GitHub"
+  ],
+  "stack": [
+    "HTML",
+    "CSS"
+  ],
   "githubUrl": "https://github.com/ammarshamea/BMM",
-  "coverImage": "/projects/covers/bmm.png",
+  "coverImage": "/projects/covers/bmm.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/bmm.png"]
+  "gallery": [
+    "/projects/covers/bmm.webp",
+    "/projects/gallery/bmm/01-desktop.webp",
+    "/projects/gallery/bmm/02-desktop.webp",
+    "/projects/gallery/bmm/03-mobile.webp",
+    "/projects/gallery/bmm/04-mobile.webp",
+    "/projects/gallery/bmm/05-mobile.webp"
+  ],
+  "liveUrl": "https://ammarshamea.github.io/BMM/"
 }

@@ -28,10 +28,16 @@
   "results": [
     "موقع إنتاجي يعكس المستوى المتوقع من شركة قابضة راسخة"
   ],
-  "coverImage": "/projects/covers/nawa-holding.png",
+  "coverImage": "/projects/covers/nawa-holding.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/nawa-holding.png",
-    "/projects/covers/nawa-holding-work.png"
+    "/projects/covers/nawa-holding.webp",
+    "/projects/gallery/nawa-holding/01-desktop.webp",
+    "/projects/gallery/nawa-holding/02-desktop.webp",
+    "/projects/gallery/nawa-holding/03-mobile.webp",
+    "/projects/gallery/nawa-holding/04-mobile.webp",
+    "/projects/gallery/nawa-holding/05-mobile.webp",
+    "/projects/gallery/nawa-holding/06-desktop.webp",
+    "/projects/gallery/nawa-holding/07-desktop.webp"
   ]
 }

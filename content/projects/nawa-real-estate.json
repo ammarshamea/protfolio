@@ -30,9 +30,21 @@
   "results": [
     "A dedicated listings surface next to the live NAWA production site"
   ],
-  "stack": ["Next.js", "TypeScript", "Tailwind CSS"],
+  "stack": [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS"
+  ],
   "githubUrl": "https://github.com/ammarshamea/nawarealestate",
-  "coverImage": "/projects/covers/nawa-real-estate.png",
+  "coverImage": "/projects/covers/nawa-real-estate.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/nawa-real-estate.png"]
+  "gallery": [
+    "/projects/covers/nawa-real-estate.webp",
+    "/projects/gallery/nawa-real-estate/01-desktop.webp",
+    "/projects/gallery/nawa-real-estate/02-desktop.webp",
+    "/projects/gallery/nawa-real-estate/03-mobile.webp",
+    "/projects/gallery/nawa-real-estate/04-mobile.webp",
+    "/projects/gallery/nawa-real-estate/05-mobile.webp"
+  ],
+  "liveUrl": "https://ammarshamea.github.io/nawarealestate/"
 }

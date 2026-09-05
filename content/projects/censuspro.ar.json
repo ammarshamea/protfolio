@@ -13,13 +13,24 @@
     "واجهة Laravel للسجلات والتحكم بالوصول",
     "رفيق بايثون لخطوط المعالجة"
   ],
-  "challenges": ["إبقاء ثلاثة مستودعات متوافقة دون مونوريبو"],
+  "challenges": [
+    "إبقاء ثلاثة مستودعات متوافقة دون مونوريبو"
+  ],
   "lessonsLearned": [
     "حدود اللغات مقبولة إذا كانت عقد الواجهة هو السطح المشترك الوحيد"
   ],
-  "futureImprovements": ["مواصفة OpenAPI مشتركة في مستودعي Laravel والواجهة"],
-  "results": ["مكدس إحصاء بثلاثة مستودعات عامة بدل كتلة خاصة واحدة"],
-  "coverImage": "/projects/covers/censuspro.png",
+  "futureImprovements": [
+    "مواصفة OpenAPI مشتركة في مستودعي Laravel والواجهة"
+  ],
+  "results": [
+    "مكدس إحصاء بثلاثة مستودعات عامة بدل كتلة خاصة واحدة"
+  ],
+  "coverImage": "/projects/covers/censuspro.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/censuspro.png"]
+  "gallery": [
+    "/projects/covers/censuspro.webp",
+    "/projects/gallery/censuspro/01-desktop.webp",
+    "/projects/gallery/censuspro/02-mobile.webp",
+    "/projects/gallery/censuspro/03-mobile.webp"
+  ]
 }

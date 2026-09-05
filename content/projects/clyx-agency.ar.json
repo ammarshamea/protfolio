@@ -27,10 +27,15 @@
   "results": [
     "يشكّل الحضور الرقمي الأساسي وقناة التواصل لأعمال CLYX الجديدة مع العملاء"
   ],
-  "coverImage": "/projects/covers/clyx-agency.png",
+  "coverImage": "/projects/covers/clyx-agency.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/clyx-agency.png",
-    "/projects/covers/clyx-agency-work.png"
+    "/projects/covers/clyx-agency.webp",
+    "/projects/gallery/clyx-agency/01-desktop.webp",
+    "/projects/gallery/clyx-agency/02-desktop.webp",
+    "/projects/gallery/clyx-agency/03-desktop.webp",
+    "/projects/gallery/clyx-agency/04-mobile.webp",
+    "/projects/gallery/clyx-agency/05-mobile.webp",
+    "/projects/gallery/clyx-agency/06-mobile.webp"
   ]
 }

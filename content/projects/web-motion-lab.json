@@ -13,14 +13,36 @@
   "problem": "HTML studies are real practice and a bad fit for flagship case studies.",
   "solution": "One open-source card with VisualLearningHub as the door.",
   "architecture": "Static HTML repos on Codeberg.",
-  "features": ["Five public HTML experiments", "Single portfolio shelf"],
-  "challenges": ["Titles that sound like products but are studies"],
-  "lessonsLearned": ["Naming is not a shipping certificate"],
-  "futureImprovements": ["Pick one experiment to promote if it ever ships"],
-  "results": ["Lab shelf instead of five empty galleries"],
-  "stack": ["HTML", "CSS", "JavaScript"],
+  "features": [
+    "Five public HTML experiments",
+    "Single portfolio shelf"
+  ],
+  "challenges": [
+    "Titles that sound like products but are studies"
+  ],
+  "lessonsLearned": [
+    "Naming is not a shipping certificate"
+  ],
+  "futureImprovements": [
+    "Pick one experiment to promote if it ever ships"
+  ],
+  "results": [
+    "Lab shelf instead of five empty galleries"
+  ],
+  "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/VisualLearningHub",
-  "coverImage": "/projects/covers/web-motion-lab.png",
+  "coverImage": "/projects/covers/web-motion-lab.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/web-motion-lab.png"]
+  "gallery": [
+    "/projects/covers/web-motion-lab.webp",
+    "/projects/gallery/web-motion-lab/01-desktop.webp",
+    "/projects/gallery/web-motion-lab/02-desktop.webp",
+    "/projects/gallery/web-motion-lab/03-mobile.webp",
+    "/projects/gallery/web-motion-lab/04-mobile.webp",
+    "/projects/gallery/web-motion-lab/05-mobile.webp"
+  ]
 }

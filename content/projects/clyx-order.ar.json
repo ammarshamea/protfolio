@@ -32,10 +32,17 @@
     "تعمل فعليًا في الإنتاج وتخدم علامات مطاعم حقيقية، بما فيها Pureger",
     "نموذج بدون عمولة على الطلب مقارنة بـ 15-30% في منصات التوصيل التقليدية"
   ],
-  "coverImage": "/projects/covers/clyx-order.png",
+  "coverImage": "/projects/covers/clyx-order.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/clyx-order.png",
-    "/projects/covers/clyx-order-more.png"
+    "/projects/covers/clyx-order.webp",
+    "/projects/gallery/clyx-order/01-desktop.webp",
+    "/projects/gallery/clyx-order/02-desktop.webp",
+    "/projects/gallery/clyx-order/03-desktop.webp",
+    "/projects/gallery/clyx-order/04-desktop.webp",
+    "/projects/gallery/clyx-order/05-mobile.webp",
+    "/projects/gallery/clyx-order/06-mobile.webp",
+    "/projects/gallery/clyx-order/07-mobile.webp",
+    "/projects/gallery/clyx-order/08-mobile.webp"
   ]
 }

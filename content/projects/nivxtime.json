@@ -44,9 +44,15 @@
     "WhatsApp API"
   ],
   "githubUrl": "https://github.com/ammarshamea/playtime-landing-page",
-  "coverImage": "/projects/covers/nivxtime.png",
+  "coverImage": "/projects/covers/nivxtime.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/nivxtime.png"
+    "/projects/covers/nivxtime.webp",
+    "/projects/gallery/nivxtime/01-desktop.webp",
+    "/projects/gallery/nivxtime/02-desktop.webp",
+    "/projects/gallery/nivxtime/03-mobile.webp",
+    "/projects/gallery/nivxtime/04-mobile.webp",
+    "/projects/gallery/nivxtime/05-mobile.webp",
+    "/projects/gallery/nivxtime/06-mobile.webp"
   ]
 }

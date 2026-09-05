@@ -40,8 +40,15 @@
   "liveUrl": "https://foodynez.com/index.html",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/foodynez.png",
-    "/projects/covers/foodynez-products.png"
+    "/projects/covers/foodynez.webp",
+    "/projects/gallery/foodynez/01-desktop.webp",
+    "/projects/gallery/foodynez/02-desktop.webp",
+    "/projects/gallery/foodynez/03-desktop.webp",
+    "/projects/gallery/foodynez/04-desktop.webp",
+    "/projects/gallery/foodynez/05-mobile.webp",
+    "/projects/gallery/foodynez/06-mobile.webp",
+    "/projects/gallery/foodynez/07-mobile.webp",
+    "/projects/gallery/foodynez/08-mobile.webp"
   ],
-  "coverImage": "/projects/covers/foodynez.png"
+  "coverImage": "/projects/covers/foodynez.webp"
 }

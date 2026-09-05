@@ -30,9 +30,19 @@
   "results": [
     "Public, inspectable three-repo census stack instead of a private monolith"
   ],
-  "stack": ["JavaScript", "Laravel", "PHP", "Python"],
+  "stack": [
+    "JavaScript",
+    "Laravel",
+    "PHP",
+    "Python"
+  ],
   "githubUrl": "https://github.com/ammarshamea/censuspro-frontend",
-  "coverImage": "/projects/covers/censuspro.png",
+  "coverImage": "/projects/covers/censuspro.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/censuspro.png"]
+  "gallery": [
+    "/projects/covers/censuspro.webp",
+    "/projects/gallery/censuspro/01-desktop.webp",
+    "/projects/gallery/censuspro/02-mobile.webp",
+    "/projects/gallery/censuspro/03-mobile.webp"
+  ]
 }

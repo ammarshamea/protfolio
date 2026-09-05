@@ -8,12 +8,30 @@
   "problem": "دراسات HTML تمرين حقيقي وملاءمة سيئة لدراسات الحالة الرائدة.",
   "solution": "بطاقة مصدر مفتوح واحدة ومدخلها VisualLearningHub.",
   "architecture": "مستودعات HTML ثابتة على Codeberg.",
-  "features": ["خمس تجارب HTML عامة", "رف معرض واحد"],
-  "challenges": ["عناوين تبدو كمنتجات وهي دراسات"],
-  "lessonsLearned": ["التسمية ليست شهادة إطلاق"],
-  "futureImprovements": ["اختيار تجربة واحدة للترقية إن أُطلقت يومًا"],
-  "results": ["رف مختبر بدل خمس معارض فارغة"],
-  "coverImage": "/projects/covers/web-motion-lab.png",
+  "features": [
+    "خمس تجارب HTML عامة",
+    "رف معرض واحد"
+  ],
+  "challenges": [
+    "عناوين تبدو كمنتجات وهي دراسات"
+  ],
+  "lessonsLearned": [
+    "التسمية ليست شهادة إطلاق"
+  ],
+  "futureImprovements": [
+    "اختيار تجربة واحدة للترقية إن أُطلقت يومًا"
+  ],
+  "results": [
+    "رف مختبر بدل خمس معارض فارغة"
+  ],
+  "coverImage": "/projects/covers/web-motion-lab.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/web-motion-lab.png"]
+  "gallery": [
+    "/projects/covers/web-motion-lab.webp",
+    "/projects/gallery/web-motion-lab/01-desktop.webp",
+    "/projects/gallery/web-motion-lab/02-desktop.webp",
+    "/projects/gallery/web-motion-lab/03-mobile.webp",
+    "/projects/gallery/web-motion-lab/04-mobile.webp",
+    "/projects/gallery/web-motion-lab/05-mobile.webp"
+  ]
 }

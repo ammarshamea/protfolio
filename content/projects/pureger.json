@@ -38,10 +38,17 @@
     "MySQL"
   ],
   "liveUrl": "https://clyxorder.com/pureger",
-  "coverImage": "/projects/covers/pureger.png",
+  "coverImage": "/projects/covers/pureger.webp",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/pureger.png",
-    "/projects/covers/pureger-more.png"
+    "/projects/covers/pureger.webp",
+    "/projects/gallery/pureger/01-desktop.webp",
+    "/projects/gallery/pureger/02-desktop.webp",
+    "/projects/gallery/pureger/03-desktop.webp",
+    "/projects/gallery/pureger/04-desktop.webp",
+    "/projects/gallery/pureger/05-mobile.webp",
+    "/projects/gallery/pureger/06-mobile.webp",
+    "/projects/gallery/pureger/07-mobile.webp",
+    "/projects/gallery/pureger/08-mobile.webp"
   ]
 }

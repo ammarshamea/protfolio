@@ -8,12 +8,30 @@
   "problem": "الحاجة لصفحة ثابتة قابلة للمشاركة لواجب بلا إطار جافاسكربت.",
   "solution": "HTML/CSS مكتوب يدويًا في مستودع عام مع رفيق الواجب.",
   "architecture": "وثائق HTML ثابتة. بلا خطوة بناء.",
-  "features": ["ترميز دلالي ثابت", "بنية واجب متعددة الصفحات بسيطة"],
-  "challenges": ["الإبقاء على قائمة الأعمال صادقة بشأن الحجم"],
-  "lessonsLearned": ["ليس كل مستودع عام يحتاج دراسة حالة من اثني عشر قسمًا"],
-  "futureImprovements": ["إبقاؤه لقطة لأساسيات الويب"],
-  "results": ["موقع ثابت عام ما زال على GitHub"],
-  "coverImage": "/projects/covers/bmm.png",
+  "features": [
+    "ترميز دلالي ثابت",
+    "بنية واجب متعددة الصفحات بسيطة"
+  ],
+  "challenges": [
+    "الإبقاء على قائمة الأعمال صادقة بشأن الحجم"
+  ],
+  "lessonsLearned": [
+    "ليس كل مستودع عام يحتاج دراسة حالة من اثني عشر قسمًا"
+  ],
+  "futureImprovements": [
+    "إبقاؤه لقطة لأساسيات الويب"
+  ],
+  "results": [
+    "موقع ثابت عام ما زال على GitHub"
+  ],
+  "coverImage": "/projects/covers/bmm.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/bmm.png"]
+  "gallery": [
+    "/projects/covers/bmm.webp",
+    "/projects/gallery/bmm/01-desktop.webp",
+    "/projects/gallery/bmm/02-desktop.webp",
+    "/projects/gallery/bmm/03-mobile.webp",
+    "/projects/gallery/bmm/04-mobile.webp",
+    "/projects/gallery/bmm/05-mobile.webp"
+  ]
 }

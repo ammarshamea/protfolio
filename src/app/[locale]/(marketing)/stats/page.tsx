@@ -62,6 +62,7 @@ export default async function StatsPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={t("nav.stats")}
         title={ts("title")}
         subtitle={ts("subtitle")}

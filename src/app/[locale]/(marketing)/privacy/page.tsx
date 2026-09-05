@@ -33,6 +33,7 @@ export default async function PrivacyPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={tp("eyebrow")}
         title={tp("title")}
         subtitle={tp("updated")}

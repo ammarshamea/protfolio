@@ -44,6 +44,7 @@ export default async function PlaygroundPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.playground")} · ${items.length}`}
         title={tp("title")}
         subtitle={tp("subtitle")}

@@ -37,6 +37,7 @@ export default async function UsesPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.uses")} · ${items.length}`}
         title={tu("title")}
         subtitle={tu("subtitle")}

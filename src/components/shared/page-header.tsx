@@ -1,6 +1,3 @@
-"use client";
-
-import { useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ChevronRight } from "lucide-react";
 import { ScriptHeading } from "@/components/home/shell/script-heading";
@@ -12,20 +9,20 @@ interface Crumb {
 }
 
 export function PageHeader({
+  locale,
   eyebrow,
   title,
   subtitle,
   breadcrumbs,
   className,
 }: {
+  locale: string;
   eyebrow?: string;
   title: string;
   subtitle?: string;
   breadcrumbs?: Crumb[];
   className?: string;
 }) {
-  const locale = useLocale();
-
   return (
     <header
       id="page"

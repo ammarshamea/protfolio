@@ -44,6 +44,7 @@ export default async function OpenSourcePage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={
           githubProfile
             ? `${t("nav.openSource")} · ${githubProfile.followers}`

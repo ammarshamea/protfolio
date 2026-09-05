@@ -36,6 +36,7 @@ export default async function RoadmapPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={t("nav.roadmap")}
         title={tr("title")}
         subtitle={tr("subtitle")}

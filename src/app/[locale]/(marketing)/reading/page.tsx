@@ -49,6 +49,7 @@ export default async function ReadingPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.reading")} · ${books.length}`}
         title={tr("title")}
         subtitle={tr("subtitle")}

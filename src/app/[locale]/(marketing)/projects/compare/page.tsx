@@ -35,6 +35,7 @@ export default async function CompareProjectsPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={tc("eyebrow")}
         title={tc("title")}
         subtitle={tc("subtitle")}

@@ -36,6 +36,7 @@ export default async function PressPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={t("nav.press")}
         title={tp("title")}
         subtitle={tp("subtitle")}

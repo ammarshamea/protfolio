@@ -49,6 +49,7 @@ export default async function TechStackDetailPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.techStack")} · ${technology.projectSlugs.length}`}
         title={technology.name}
         breadcrumbs={[

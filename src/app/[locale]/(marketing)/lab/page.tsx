@@ -40,6 +40,7 @@ export default async function LabPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.lab")} · ${items.length}`}
         title={tl("title")}
         subtitle={tl("subtitle")}

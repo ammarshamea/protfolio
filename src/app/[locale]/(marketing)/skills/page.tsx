@@ -34,6 +34,7 @@ export default async function SkillsPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.skills")} · ${technologies.length}`}
         title={ts("title")}
         subtitle={ts("subtitle")}

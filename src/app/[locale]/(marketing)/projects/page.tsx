@@ -46,6 +46,7 @@ export default async function ProjectsPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={tp("eyebrow", { count: metrics.projectsDelivered })}
         title={t("nav.projects")}
         subtitle={tp("subtitle")}

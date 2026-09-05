@@ -48,6 +48,7 @@ export default async function SetupPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.setup")} · ${items.length}`}
         title={ts("title")}
         subtitle={ts("subtitle")}

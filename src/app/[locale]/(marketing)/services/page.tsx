@@ -59,6 +59,7 @@ export default async function ServicesPage({
   return (
     <>
       <PageHeader
+        locale={locale}
         eyebrow={`${t("nav.services")} · ${services.length}`}
         title={ts("title")}
         subtitle={ts("subtitle")}

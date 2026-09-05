@@ -13,10 +13,11 @@ import { useAccentContext } from "@/components/providers/accent-provider";
 import { cn } from "@/lib/utils";
 
 const ACCENT_SWATCHES: Record<string, string> = {
+  gold: "#C4A36A",
+  emerald: "#10b981",
   indigo: "#4f46e5",
   blue: "#3b82f6",
   purple: "#7c3aed",
-  emerald: "#10b981",
 };
 
 export function AccentPicker({ label }: { label: string }) {

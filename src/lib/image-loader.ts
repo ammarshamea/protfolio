@@ -1,8 +1,15 @@
 /**
- * Custom loader so `next/image` keeps working on a static GitHub Pages
- * export (no optimization server) and still prefixes `basePath`.
+ * Custom loader for static GitHub Pages (no image optimizer).
+ * Prefixes `basePath` and includes `w` so next/image treats the loader
+ * as implemented (unoptimized:true would skip this and 404 under /protfolio).
  */
-export default function imageLoader({ src }: { src: string }) {
+export default function imageLoader({
+  src,
+  width,
+}: {
+  src: string;
+  width: number;
+}) {
   if (
     src.startsWith("http://") ||
     src.startsWith("https://") ||
@@ -12,9 +19,9 @@ export default function imageLoader({ src }: { src: string }) {
   }
   const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const normalized = src.startsWith("/") ? src : `/${src}`;
-  if (!base) return normalized;
-  if (normalized === base || normalized.startsWith(`${base}/`)) {
-    return normalized;
-  }
-  return `${base}${normalized}`;
+  const prefixed =
+    !base || normalized === base || normalized.startsWith(`${base}/`)
+      ? normalized
+      : `${base}${normalized}`;
+  return `${prefixed}${prefixed.includes("?") ? "&" : "?"}w=${width}`;
 }

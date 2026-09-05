@@ -62,10 +62,10 @@ export default async function HomePage({
     <IntroGate locale={locale}>
       <section
         id="top"
-        className="relative overflow-x-clip pb-[calc(var(--dock-space)+1rem)] pt-10 sm:pb-6 sm:pt-20"
+        className="relative overflow-x-clip pb-[calc(var(--dock-space)+1rem)] pt-12 sm:pb-8 sm:pt-24"
       >
-        <div className="mx-auto grid max-w-[90rem] items-center gap-8 px-6 py-5 sm:px-10 sm:py-10 lg:grid-cols-2 lg:gap-16 lg:py-16">
-          <HeroEntrance className="min-w-0">
+        <div className="mx-auto grid max-w-[90rem] items-end gap-10 px-6 py-5 sm:px-10 sm:py-10 lg:grid-cols-12 lg:gap-16 lg:py-20">
+          <HeroEntrance className="min-w-0 lg:col-span-7">
             <HeroItem>
               <ScriptHeading
                 eyebrow={t("hero.eyebrow")}
@@ -74,8 +74,15 @@ export default async function HomePage({
               />
             </HeroItem>
             <HeroItem>
-              <p className="mt-3 text-[length:var(--text-h3)] font-medium text-[var(--muted-foreground)]">
-                {site.titles[0]} · {site.titles[2]}
+              <p className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-h3)] italic leading-snug text-[var(--cream,#ffeec8)]">
+                {site.titles[0]}
+                <span
+                  className="mx-2 text-[var(--accent-text)]"
+                  aria-hidden="true"
+                >
+                  /
+                </span>
+                {site.titles[2]}
               </p>
             </HeroItem>
             <HeroItem>
@@ -85,16 +92,16 @@ export default async function HomePage({
             </HeroItem>
             <HeroItem className="mt-4 lg:hidden">
               <dl className="flex flex-wrap gap-3">
-                <div className="rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] px-3.5 py-2">
-                  <dd className="text-base font-semibold tabular-nums">
+                <div className="border-s-2 border-[var(--accent)] ps-3.5">
+                  <dd className="font-[family-name:var(--font-display)] text-lg font-semibold tabular-nums text-[var(--cream,#ffeec8)]">
                     {metrics.projectsDelivered}+
                   </dd>
                   <dt className="text-[11px] text-[var(--muted-foreground)]">
                     {t("hero.projectsDelivered")}
                   </dt>
                 </div>
-                <div className="rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] px-3.5 py-2">
-                  <dd className="text-base font-semibold tabular-nums">
+                <div className="border-s-2 border-[var(--surface-border)] ps-3.5">
+                  <dd className="font-[family-name:var(--font-display)] text-lg font-semibold tabular-nums text-[var(--cream,#ffeec8)]">
                     {metrics.liveProducts}
                   </dd>
                   <dt className="text-[11px] text-[var(--muted-foreground)]">
@@ -127,7 +134,7 @@ export default async function HomePage({
             </HeroItem>
           </HeroEntrance>
 
-          <HeroMedia className="relative min-w-0">
+          <HeroMedia className="relative min-w-0 lg:col-span-5">
             <FramedPortrait
               src={site.portrait}
               alt={site.name}
@@ -171,7 +178,7 @@ export default async function HomePage({
           label={th("capabilitiesEyebrow")}
           className="mb-4"
         />
-        <h2 className="mb-10 max-w-xl font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold tracking-tight">
+        <h2 className="mb-10 max-w-xl font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold leading-[0.95] tracking-tight text-[var(--cream,#ffeec8)]">
           {th("capabilitiesTitle")}
         </h2>
         <Capabilities services={services} />
@@ -208,7 +215,7 @@ export default async function HomePage({
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="min-w-0 lg:col-span-5">
             <SectionLabel index={4} label={t("nav.about")} className="mb-5" />
-            <p className="font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold tracking-tight">
+            <p className="font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold leading-[0.95] tracking-tight text-[var(--cream,#ffeec8)]">
               {site.mission}
             </p>
             <p className="mt-5 max-w-[42rem] text-[length:var(--text-body-lg)] leading-relaxed text-[var(--muted-foreground)]">
@@ -218,7 +225,7 @@ export default async function HomePage({
               <Link href="/about">{t("common.readMore")}</Link>
             </Button>
           </div>
-          <div className="relative min-w-0 overflow-hidden rounded-[var(--radius-xl)] border border-[var(--surface-border)] shadow-[var(--shadow-card)] lg:col-span-7">
+          <div className="relative min-w-0 overflow-hidden border border-[var(--surface-border)] lg:col-span-7">
             <div className="relative aspect-[16/10]">
               <Image
                 src={site.portrait}

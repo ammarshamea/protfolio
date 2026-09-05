@@ -29,19 +29,19 @@ export function ContactCta({
   socials: SiteSocials;
 }) {
   return (
-    <div className="overflow-hidden rounded-[var(--radius-xl)] border border-[var(--surface-border)] bg-[var(--surface)] p-8 shadow-[var(--shadow-card)] sm:p-12">
+    <div className="border-t border-[var(--surface-border)] pt-2">
       <SectionLabel index={6} label={eyebrow} className="mb-5" />
-      <h2 className="max-w-2xl font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold tracking-tight">
+      <h2 className="max-w-2xl font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold leading-[0.95] tracking-tight text-[var(--cream,#ffeec8)]">
         {headline}
       </h2>
 
-      <div className="mt-8 flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+      <div className="mt-10 flex flex-col gap-8 border-t border-[var(--surface-border)] pt-8 sm:flex-row sm:items-end sm:justify-between">
         <div className="flex flex-col gap-1.5 text-sm text-[var(--muted-foreground)]">
           <span>{location}</span>
           <span>{availability}</span>
           <a
             href={`mailto:${email}`}
-            className="font-medium text-[var(--accent)] hover:underline"
+            className="font-medium text-[var(--accent-text)] hover:underline"
           >
             {email}
           </a>

@@ -18,7 +18,7 @@ export function Logo({
         alt=""
         width={32}
         height={32}
-        className="h-8 w-8 rounded-lg object-cover object-[center_18%]"
+        className="h-8 w-8 rounded-[var(--radius)] object-cover object-[center_18%]"
       />
       <span className="font-[family-name:var(--font-display)] max-sm:sr-only">
         {name}

@@ -1,18 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Sora } from "next/font/google";
 import Link from "next/link";
+import { fontArabic, fontDisplay, fontSans } from "@/lib/fonts";
 import "../globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-const sora = Sora({
-  subsets: ["latin"],
-  variable: "--font-sora",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   robots: { index: false, follow: false },
@@ -27,7 +16,7 @@ export default function PrivateLayout({
     <html
       lang="en"
       data-theme="dark"
-      className={`${inter.variable} ${sora.variable}`}
+      className={`${fontDisplay.variable} ${fontSans.variable} ${fontArabic.variable}`}
     >
       <body className="antialiased">
         <header className="border-b border-[var(--surface-border)] bg-[var(--surface)] px-6 py-4">

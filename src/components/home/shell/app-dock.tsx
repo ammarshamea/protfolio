@@ -38,7 +38,7 @@ const END_LINKS: DockLink[] = [
 ];
 
 const itemClass =
-  "relative flex items-center gap-2 rounded-full px-2 py-2 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--surface)] sm:px-3.5 sm:py-2.5";
+  "relative flex items-center gap-2 rounded-[var(--radius)] px-2 py-2 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] sm:px-3.5 sm:py-2.5";
 
 export interface FastCvContent {
   name: string;
@@ -60,7 +60,8 @@ function isDockActive(pathname: string, href: string) {
 /** Sliding active pill — one shared layoutId so it glides between dock items. */
 function ActivePill() {
   const reduced = useReducedMotion();
-  const pillClass = "absolute inset-0 rounded-full bg-[var(--accent)]/10";
+  const pillClass =
+    "absolute inset-0 rounded-[var(--radius)] bg-[var(--accent)]/12";
   if (reduced) {
     return <span aria-hidden="true" className={pillClass} />;
   }
@@ -92,7 +93,7 @@ export function AppDock({ fastCv }: { fastCv?: FastCvContent }) {
         aria-label={t("ariaLabel")}
         className="fixed inset-x-0 bottom-[max(0.65rem,env(safe-area-inset-bottom))] z-40 flex justify-center px-2 sm:bottom-[max(1.25rem,env(safe-area-inset-bottom))] sm:px-4"
       >
-        <div className="flex max-w-[calc(100vw-0.5rem)] items-center gap-0.5 overflow-x-auto rounded-full border border-[var(--surface-border)] bg-[var(--surface)]/95 p-1 shadow-[var(--shadow-card)] backdrop-blur-md sm:p-1.5">
+        <div className="flex max-w-[calc(100vw-0.5rem)] items-center gap-0.5 overflow-x-auto rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--background)]/92 p-1 sm:p-1.5">
           {START_LINKS.map((item) => (
             <DockLinkItem
               key={item.key}

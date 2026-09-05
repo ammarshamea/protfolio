@@ -97,7 +97,7 @@ export default async function ProjectDetailPage({
             label={tp(`categories.${project.category}`)}
             className="mb-6"
           />
-          <h1 className="max-w-4xl text-balance font-[family-name:var(--font-display)] text-[length:var(--text-display)] font-semibold leading-[1.02] tracking-tight">
+          <h1 className="max-w-4xl text-balance font-[family-name:var(--font-display)] text-[length:var(--text-display)] font-semibold leading-[0.9] tracking-tight text-[var(--cream,#ffeec8)]">
             {project.title}
           </h1>
           <p className="mt-6 max-w-2xl text-[length:var(--text-body-lg)] text-[var(--muted-foreground)]">
@@ -146,7 +146,7 @@ export default async function ProjectDetailPage({
             project={project}
             priority
             sizes="(max-width: 768px) 100vw, 90rem"
-            className="aspect-[16/10] overflow-hidden rounded-[var(--radius-xl)] border border-[var(--surface-border)] shadow-[var(--shadow-card)] sm:aspect-[21/9]"
+            className="aspect-[16/10] overflow-hidden border border-[var(--surface-border)] sm:aspect-[21/9]"
           />
           {project.screenshotPending ? (
             <p className="mt-3 text-xs text-[var(--muted-foreground)]">
@@ -197,7 +197,7 @@ export default async function ProjectDetailPage({
             {project.gallery.map((image) => (
               <div
                 key={image}
-                className="relative aspect-[4/3] overflow-hidden rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--muted)]"
+                className="relative aspect-[4/3] overflow-hidden border border-[var(--surface-border)] bg-[var(--muted)]"
               >
                 <Image
                   src={image}
@@ -215,7 +215,7 @@ export default async function ProjectDetailPage({
       {firstResult ? (
         <Section atmosphere="warm" rhythm="compact">
           <SectionLabel label={td("results")} className="mb-6" />
-          <p className="max-w-3xl font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold leading-[1.1] tracking-tight">
+          <p className="max-w-3xl font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold leading-[1.05] tracking-tight text-[var(--cream,#ffeec8)]">
             {firstResult}
           </p>
           {restResults.length > 0 ? (
@@ -230,7 +230,7 @@ export default async function ProjectDetailPage({
         <Section rhythm="open">
           <Link
             href={`/projects/${nextProject.slug}`}
-            className="group grid overflow-hidden rounded-[var(--radius-xl)] border border-[var(--surface-border)] bg-[var(--surface)] shadow-[var(--shadow-card)] lg:grid-cols-2"
+            className="group grid overflow-hidden border border-[var(--surface-border)] lg:grid-cols-2"
           >
             <div className="relative aspect-[16/10] min-w-0">
               <ProjectVisualPanel
@@ -243,7 +243,7 @@ export default async function ProjectDetailPage({
               <p className="text-sm font-semibold uppercase tracking-[0.12em] text-[var(--accent)]">
                 {t("common.viewProject")}
               </p>
-              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold tracking-tight">
+              <h2 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-h1)] font-semibold leading-[0.95] tracking-tight text-[var(--cream,#ffeec8)]">
                 {nextProject.title}
               </h2>
               <p className="mt-4 max-w-lg text-[var(--muted-foreground)]">

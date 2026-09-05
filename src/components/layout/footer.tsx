@@ -11,7 +11,7 @@ export async function Footer({ locale }: { locale: string }) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[var(--surface-border)] bg-[var(--surface)] pb-[calc(var(--dock-space)+1.75rem)]">
+    <footer className="border-t border-[var(--surface-border)] bg-[var(--background)] pb-[calc(var(--dock-space)+1.75rem)]">
       <div className="mx-auto flex max-w-[90rem] flex-col gap-10 px-6 py-12 sm:px-10">
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row">
           <div className="max-w-sm">
@@ -28,7 +28,7 @@ export async function Footer({ locale }: { locale: string }) {
           <div className="grid w-full gap-8 sm:grid-cols-2 lg:w-auto lg:grid-cols-4 lg:gap-10">
             {footerNavGroups.map((group) => (
               <div key={group.titleKey}>
-                <p className="mb-3 text-[11px] font-semibold uppercase text-[var(--accent)]">
+                <p className="mb-3 font-[family-name:var(--font-display)] text-[11px] font-semibold uppercase italic text-[var(--accent-text)]">
                   {t(`nav.${group.titleKey}` as Parameters<typeof t>[0])}
                 </p>
                 <ul className="space-y-2">

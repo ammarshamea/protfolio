@@ -21,11 +21,7 @@ export function FramedPortrait({
 }) {
   return (
     <div className="relative pb-8 sm:pb-10">
-      <div
-        aria-hidden="true"
-        className="absolute -inset-4 rounded-[2rem] bg-[var(--accent)]/10 blur-3xl sm:-inset-8"
-      />
-      <div className="relative overflow-hidden rounded-[var(--radius-xl)] border border-[var(--surface-border)] shadow-[var(--shadow-card)]">
+      <div className="relative overflow-hidden rounded-[var(--radius-lg)] border border-[var(--surface-border)]">
         <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5]">
           <Image
             src={src}
@@ -43,9 +39,9 @@ export function FramedPortrait({
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="flex items-center gap-2 rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)]/95 px-4 py-2.5 shadow-[var(--shadow-card)] backdrop-blur-md"
+              className="flex items-center gap-2 border border-[var(--surface-border)] bg-[var(--background)] px-4 py-2.5"
             >
-              <dd className="text-base font-semibold tabular-nums text-[var(--foreground)]">
+              <dd className="font-[family-name:var(--font-display)] text-base font-semibold tabular-nums text-[var(--cream,#ffeec8)]">
                 {stat.value}
               </dd>
               <dt className="text-xs text-[var(--muted-foreground)]">

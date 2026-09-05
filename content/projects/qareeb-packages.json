@@ -19,17 +19,27 @@
     "qarreb-drawable_text — text drawing utilities",
     "qarreb-image-multi-type — multi-type image widget"
   ],
-  "challenges": ["Naming drift (qareeb vs qarreb) across early package repos"],
+  "challenges": [
+    "Naming drift (qareeb vs qarreb) across early package repos"
+  ],
   "lessonsLearned": [
     "Extract packages when a second app needs the same widget, not before"
   ],
   "futureImprovements": [
     "pub.dev-style versioning and a single qareeb_* naming prefix"
   ],
-  "results": ["Four public Dart packages instead of four padded case studies"],
-  "stack": ["Dart", "Flutter"],
+  "results": [
+    "Four public Dart packages instead of four padded case studies"
+  ],
+  "stack": [
+    "Dart",
+    "Flutter"
+  ],
   "githubUrl": "https://github.com/ammarshamea/qareeb_models",
-  "coverImage": "/projects/covers/qareeb-packages.png",
+  "coverImage": "/projects/covers/qareeb-packages.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/qareeb-packages.png"]
+  "gallery": [
+    "/projects/gallery/qareeb-packages/01-scene.webp",
+    "/projects/gallery/qareeb-packages/02-scene.webp"
+  ]
 }

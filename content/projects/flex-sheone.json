@@ -30,9 +30,16 @@
   "results": [
     "Production Sheone mobile storefront separated from the other Flex client repos"
   ],
-  "stack": ["Flutter", "Dart", "WooCommerce"],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "WooCommerce"
+  ],
   "githubUrl": "https://github.com/ammarshamea/flex-sheone",
-  "coverImage": "/projects/covers/flex-sheone.png",
+  "coverImage": "/projects/covers/flex-sheone.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flex-sheone.png"]
+  "gallery": [
+    "/projects/gallery/flex-sheone/01-scene.webp",
+    "/projects/gallery/flex-sheone/02-scene.webp"
+  ]
 }

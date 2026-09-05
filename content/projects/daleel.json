@@ -13,18 +13,30 @@
   "problem": "Directory apps fail when every client reimplements search, listing, and auth.",
   "solution": "A dedicated TypeScript backend that owns those rules.",
   "architecture": "TypeScript service on Codeberg (daleel_backend). HTTP API consumed by future or sibling clients.",
-  "features": ["Directory API surface", "TypeScript service layout"],
-  "challenges": ["Designing listings without a public front-end yet"],
+  "features": [
+    "Directory API surface",
+    "TypeScript service layout"
+  ],
+  "challenges": [
+    "Designing listings without a public front-end yet"
+  ],
   "lessonsLearned": [
     "An API-only repo is still a product if something real will call it"
   ],
   "futureImprovements": [
     "Pair a thin Next.js or Flutter client when the directory content is ready"
   ],
-  "results": ["Public TypeScript backend for the Daleel directory line"],
-  "stack": ["TypeScript"],
+  "results": [
+    "Public TypeScript backend for the Daleel directory line"
+  ],
+  "stack": [
+    "TypeScript"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/daleel_backend",
-  "coverImage": "/projects/covers/daleel.png",
+  "coverImage": "/projects/covers/daleel.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/daleel.png"]
+  "gallery": [
+    "/projects/gallery/daleel/01-scene.webp",
+    "/projects/gallery/daleel/02-scene.webp"
+  ]
 }

@@ -8,12 +8,26 @@
   "problem": "تسعة تطبيقات إنتاجية شبه متطابقة تُضعف العمل المُسلَّم فعلًا.",
   "solution": "مدخل مختبر مفتوح واحد يربط العائلة، وTaskMate كرابط ممثل.",
   "architecture": "مستودعات أندرويد بجافا مستقلة على Codeberg تحت ammarshamea123.",
-  "features": ["تسع تجارب منظِّمات عامة", "تجميع صادق بدل دراسات منفوخة"],
-  "challenges": ["تسمية عشرة تطبيقات في أسبوع بلا نظام تصميم مشترك"],
-  "lessonsLearned": ["صفحات المختبر موجودة حتى تبقى صفحات المنتج حادة"],
-  "futureImprovements": ["اختيار منظِّم واحد وإكماله وأرشفة البقية"],
-  "results": ["الزائر يرى مختبرًا لا سلسلة تسعة منتجات زائفة"],
-  "coverImage": "/projects/covers/android-organizer-lab.png",
+  "features": [
+    "تسع تجارب منظِّمات عامة",
+    "تجميع صادق بدل دراسات منفوخة"
+  ],
+  "challenges": [
+    "تسمية عشرة تطبيقات في أسبوع بلا نظام تصميم مشترك"
+  ],
+  "lessonsLearned": [
+    "صفحات المختبر موجودة حتى تبقى صفحات المنتج حادة"
+  ],
+  "futureImprovements": [
+    "اختيار منظِّم واحد وإكماله وأرشفة البقية"
+  ],
+  "results": [
+    "الزائر يرى مختبرًا لا سلسلة تسعة منتجات زائفة"
+  ],
+  "coverImage": "/projects/covers/android-organizer-lab.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/android-organizer-lab.png"]
+  "gallery": [
+    "/projects/gallery/android-organizer-lab/01-scene.webp",
+    "/projects/gallery/android-organizer-lab/02-scene.webp"
+  ]
 }

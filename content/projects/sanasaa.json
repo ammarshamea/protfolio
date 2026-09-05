@@ -32,9 +32,16 @@
   "results": [
     "Gave a local retail business its first digital ordering channel"
   ],
-  "stack": ["Flutter", "Laravel", "MySQL"],
+  "stack": [
+    "Flutter",
+    "Laravel",
+    "MySQL"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/sanasaa-ui",
   "coverImage": "/projects/covers/sanasaa.png",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/sanasaa.png"]
+  "gallery": [
+    "/projects/gallery/sanasaa/01-scene.webp",
+    "/projects/gallery/sanasaa/02-scene.webp"
+  ]
 }

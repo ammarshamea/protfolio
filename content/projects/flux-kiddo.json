@@ -31,9 +31,16 @@
   "results": [
     "Shipped a branded kids storefront the merchant can operate from the existing Fluxstore/Woo stack"
   ],
-  "stack": ["Flutter", "Dart", "WooCommerce"],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "WooCommerce"
+  ],
   "githubUrl": "https://github.com/ammarshamea/flux-kiddo",
-  "coverImage": "/projects/covers/flux-kiddo.png",
+  "coverImage": "/projects/covers/flux-kiddo.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flux-kiddo.png"]
+  "gallery": [
+    "/projects/gallery/flux-kiddo/01-scene.webp",
+    "/projects/gallery/flux-kiddo/02-scene.webp"
+  ]
 }

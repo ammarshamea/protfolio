@@ -8,12 +8,26 @@
   "problem": "عميل جوّال بطابع مجتمعي/خيري احتاج مستودعًا عامًا غير مخلوط بعمل عملاء GitHub.",
   "solution": "نشر تطبيق Flutter على Codeberg وإدراجه كدراسة حالة مستقلة.",
   "architecture": "تطبيق Flutter/Dart. التفاصيل في شجرة Codeberg.",
-  "features": ["عميل منتج Flutter", "مصدر عام على Codeberg"],
-  "challenges": ["README مقتضب — المستودع هو مصدر الحقيقة"],
-  "lessonsLearned": ["الاسم ومكان الاستضافة جزء من كيفية إيجاد المنتج"],
-  "futureImprovements": ["إضافة README قصير عربي/إنجليزي في المستودع"],
-  "results": ["عميل Flutter عام على codeberg.org/ammarshamea123/ehasan"],
-  "coverImage": "/projects/covers/ehasan.png",
+  "features": [
+    "عميل منتج Flutter",
+    "مصدر عام على Codeberg"
+  ],
+  "challenges": [
+    "README مقتضب — المستودع هو مصدر الحقيقة"
+  ],
+  "lessonsLearned": [
+    "الاسم ومكان الاستضافة جزء من كيفية إيجاد المنتج"
+  ],
+  "futureImprovements": [
+    "إضافة README قصير عربي/إنجليزي في المستودع"
+  ],
+  "results": [
+    "عميل Flutter عام على codeberg.org/ammarshamea123/ehasan"
+  ],
+  "coverImage": "/projects/covers/ehasan.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/ehasan.png"]
+  "gallery": [
+    "/projects/gallery/ehasan/01-scene.webp",
+    "/projects/gallery/ehasan/02-scene.webp"
+  ]
 }

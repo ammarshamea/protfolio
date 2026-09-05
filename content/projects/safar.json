@@ -30,9 +30,14 @@
   "results": [
     "Working trip planning app consolidating bookings into a single itinerary view"
   ],
-  "stack": ["Flutter"],
+  "stack": [
+    "Flutter"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/safar",
   "coverImage": "/projects/covers/safar.png",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/safar.png"]
+  "gallery": [
+    "/projects/gallery/safar/01-scene.webp",
+    "/projects/gallery/safar/02-scene.webp"
+  ]
 }

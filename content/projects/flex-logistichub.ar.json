@@ -13,13 +13,22 @@
     "أدوات بائع من Fluxstore مشذّبة لمسار المركز",
     "عمود دفع مشترك مع ثيم خاص بالعميل"
   ],
-  "challenges": ["إعادة تزيين قالب موجّه للموضة ليثق به المشغّلون"],
+  "challenges": [
+    "إعادة تزيين قالب موجّه للموضة ليثق به المشغّلون"
+  ],
   "lessonsLearned": [
     "تغيير بنية المعلومات أهم من تغيير الألوان فقط في كتالوجات الأعمال"
   ],
-  "futureImprovements": ["واجهات أسعار شحن أعمق إن كشفت إضافات Woo عنها بوضوح"],
-  "results": ["مستودع واجهة لوجستية يمكن للعميل تطويره باستمرار"],
-  "coverImage": "/projects/covers/flex-logistichub.png",
+  "futureImprovements": [
+    "واجهات أسعار شحن أعمق إن كشفت إضافات Woo عنها بوضوح"
+  ],
+  "results": [
+    "مستودع واجهة لوجستية يمكن للعميل تطويره باستمرار"
+  ],
+  "coverImage": "/projects/covers/flex-logistichub.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flex-logistichub.png"]
+  "gallery": [
+    "/projects/gallery/flex-logistichub/01-scene.webp",
+    "/projects/gallery/flex-logistichub/02-scene.webp"
+  ]
 }

@@ -17,17 +17,27 @@
     "Home shopping Android client",
     "Companion basket and purchases repos"
   ],
-  "challenges": ["Deciding which repo is the product vs a screen"],
-  "lessonsLearned": ["Group by user job, not by repository birthday"],
+  "challenges": [
+    "Deciding which repo is the product vs a screen"
+  ],
+  "lessonsLearned": [
+    "Group by user job, not by repository birthday"
+  ],
   "futureImprovements": [
     "Deep links between the three apps if they stay separate APKs"
   ],
   "results": [
     "One shopping product with two named companion repos instead of three thin case studies"
   ],
-  "stack": ["Java", "Android"],
+  "stack": [
+    "Java",
+    "Android"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/HOMECART",
-  "coverImage": "/projects/covers/homecart.png",
+  "coverImage": "/projects/covers/homecart.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/homecart.png"]
+  "gallery": [
+    "/projects/gallery/homecart/01-scene.webp",
+    "/projects/gallery/homecart/02-scene.webp"
+  ]
 }

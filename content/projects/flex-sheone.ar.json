@@ -13,15 +13,22 @@
     "تصفح تصنيفات يناسب الأزياء",
     "تخصيصات إدارة البائع لفريق العلامة"
   ],
-  "challenges": ["مطابقة كثافة هوية الأزياء دون كسر دفع Fluxstore"],
+  "challenges": [
+    "مطابقة كثافة هوية الأزياء دون كسر دفع Fluxstore"
+  ],
   "lessonsLearned": [
     "أبقِ الدفع قياسيًا؛ أنفق ميزانية التصميم على الكتالوج ولحظات العلامة"
   ],
   "futureImprovements": [
     "وحدات هبوط بأسلوب lookbook إذا نمت الإسقاطات الموسمية"
   ],
-  "results": ["واجهة شيون للإنتاج منفصلة عن بقية مستودعات Flex"],
-  "coverImage": "/projects/covers/flex-sheone.png",
+  "results": [
+    "واجهة شيون للإنتاج منفصلة عن بقية مستودعات Flex"
+  ],
+  "coverImage": "/projects/covers/flex-sheone.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flex-sheone.png"]
+  "gallery": [
+    "/projects/gallery/flex-sheone/01-scene.webp",
+    "/projects/gallery/flex-sheone/02-scene.webp"
+  ]
 }

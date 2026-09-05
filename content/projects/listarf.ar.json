@@ -8,14 +8,26 @@
   "problem": "الحاجة لعميل أندرويد كائنه الأساسي إعلان لا مهمة أو ملاحظة.",
   "solution": "تطبيق ليستارف مخصّص بدل تمديد نوتلي أو نسخة مهام.",
   "architecture": "مشروع أندرويد بجافا على Codeberg.",
-  "features": ["واجهة أندرويد موجّهة للإعلانات", "مصدر جافا عام"],
-  "challenges": ["إبقاء تجربة القوائم مختلفة عن تطبيقات مختبر المنظِّمات"],
+  "features": [
+    "واجهة أندرويد موجّهة للإعلانات",
+    "مصدر جافا عام"
+  ],
+  "challenges": [
+    "إبقاء تجربة القوائم مختلفة عن تطبيقات مختبر المنظِّمات"
+  ],
   "lessonsLearned": [
     "الإعلانات والمهام تبدوان متشابهتين في الشجرة ومختلفتين تمامًا في الاستخدام"
   ],
-  "futureImprovements": ["الربط مع دليل إن طابقت واجهة الدليل"],
-  "results": ["عميل قوائم أندرويد عام على Codeberg"],
-  "coverImage": "/projects/covers/listarf.png",
+  "futureImprovements": [
+    "الربط مع دليل إن طابقت واجهة الدليل"
+  ],
+  "results": [
+    "عميل قوائم أندرويد عام على Codeberg"
+  ],
+  "coverImage": "/projects/covers/listarf.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/listarf.png"]
+  "gallery": [
+    "/projects/gallery/listarf/01-scene.webp",
+    "/projects/gallery/listarf/02-scene.webp"
+  ]
 }

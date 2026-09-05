@@ -13,14 +13,31 @@
   "problem": "Repeated image-loading glue across Flutter screens.",
   "solution": "A dedicated helper repo.",
   "architecture": "Small library on Codeberg (HTML/Dart mix in the tree).",
-  "features": ["Reusable image helper", "Public Codeberg source"],
-  "challenges": ["Resisting the urge to write a full case study for a helper"],
-  "lessonsLearned": ["Open-source listing is the right shelf for utilities"],
-  "futureImprovements": ["Add a one-page usage example"],
-  "results": ["Public helper package grouped with other Dart utilities"],
-  "stack": ["Flutter", "Dart"],
+  "features": [
+    "Reusable image helper",
+    "Public Codeberg source"
+  ],
+  "challenges": [
+    "Resisting the urge to write a full case study for a helper"
+  ],
+  "lessonsLearned": [
+    "Open-source listing is the right shelf for utilities"
+  ],
+  "futureImprovements": [
+    "Add a one-page usage example"
+  ],
+  "results": [
+    "Public helper package grouped with other Dart utilities"
+  ],
+  "stack": [
+    "Flutter",
+    "Dart"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/flutter_smart_image",
-  "coverImage": "/projects/covers/flutter-smart-image.png",
+  "coverImage": "/projects/covers/flutter-smart-image.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/flutter-smart-image.png"]
+  "gallery": [
+    "/projects/gallery/flutter-smart-image/01-scene.webp",
+    "/projects/gallery/flutter-smart-image/02-scene.webp"
+  ]
 }

@@ -13,14 +13,29 @@
   "problem": "Needed a non-Dart public artifact without inflating the projects grid.",
   "solution": "List Techpeak as a package/lab item with a repo link.",
   "architecture": "C++ project on GitHub (ammarshamea/techpeak).",
-  "features": ["Public C++ source"],
-  "challenges": ["Almost no README"],
-  "lessonsLearned": ["Empty READMEs still beat invented metrics"],
-  "futureImprovements": ["Add a three-line description in the repo"],
-  "results": ["Public C++ practice repo linked from the open-source page"],
-  "stack": ["C++"],
+  "features": [
+    "Public C++ source"
+  ],
+  "challenges": [
+    "Almost no README"
+  ],
+  "lessonsLearned": [
+    "Empty READMEs still beat invented metrics"
+  ],
+  "futureImprovements": [
+    "Add a three-line description in the repo"
+  ],
+  "results": [
+    "Public C++ practice repo linked from the open-source page"
+  ],
+  "stack": [
+    "C++"
+  ],
   "githubUrl": "https://github.com/ammarshamea/techpeak",
-  "coverImage": "/projects/covers/techpeak.png",
+  "coverImage": "/projects/covers/techpeak.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/techpeak.png"]
+  "gallery": [
+    "/projects/gallery/techpeak/01-scene.webp",
+    "/projects/gallery/techpeak/02-scene.webp"
+  ]
 }

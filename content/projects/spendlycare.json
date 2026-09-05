@@ -13,7 +13,10 @@
   "problem": "A shopping cart app is the wrong place to track recurring care costs and spend.",
   "solution": "A separate SpendlyCare client with that job in the name.",
   "architecture": "Java Android application on Codeberg.",
-  "features": ["Spend/care tracking client", "Public Java source"],
+  "features": [
+    "Spend/care tracking client",
+    "Public Java source"
+  ],
   "challenges": [
     "Not collapsing it into HomeCart just because both launched in May 2026"
   ],
@@ -23,10 +26,18 @@
   "futureImprovements": [
     "Export a simple CSV if anyone actually budgets with it"
   ],
-  "results": ["Public Android finance/care client on Codeberg"],
-  "stack": ["Java", "Android"],
+  "results": [
+    "Public Android finance/care client on Codeberg"
+  ],
+  "stack": [
+    "Java",
+    "Android"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/SpendlyCare",
-  "coverImage": "/projects/covers/spendlycare.png",
+  "coverImage": "/projects/covers/spendlycare.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/spendlycare.png"]
+  "gallery": [
+    "/projects/gallery/spendlycare/01-scene.webp",
+    "/projects/gallery/spendlycare/02-scene.webp"
+  ]
 }

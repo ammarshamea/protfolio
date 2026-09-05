@@ -8,16 +8,26 @@
   "problem": "تطبيقات الدليل تفشل عندما يعيد كل عميل تنفيذ البحث والإدراج والمصادقة.",
   "solution": "خلفية TypeScript مخصّصة تملك تلك القواعد.",
   "architecture": "خدمة TypeScript على Codeberg (daleel_backend). واجهة HTTP يستهلكها عملاء لاحقون أو أشقاء.",
-  "features": ["سطح واجهة دليل", "تخطيط خدمة TypeScript"],
-  "challenges": ["تصميم الإدراجات دون واجهة عامة بعد"],
+  "features": [
+    "سطح واجهة دليل",
+    "تخطيط خدمة TypeScript"
+  ],
+  "challenges": [
+    "تصميم الإدراجات دون واجهة عامة بعد"
+  ],
   "lessonsLearned": [
     "مستودع واجهة فقط ما زال منتجًا إن كان شيء حقيقي سيستدعيه"
   ],
   "futureImprovements": [
     "إقران عميل Next.js أو Flutter رقيق عندما يصبح محتوى الدليل جاهزًا"
   ],
-  "results": ["خلفية TypeScript عامة لخط دليل"],
-  "coverImage": "/projects/covers/daleel.png",
+  "results": [
+    "خلفية TypeScript عامة لخط دليل"
+  ],
+  "coverImage": "/projects/covers/daleel.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/daleel.png"]
+  "gallery": [
+    "/projects/gallery/daleel/01-scene.webp",
+    "/projects/gallery/daleel/02-scene.webp"
+  ]
 }

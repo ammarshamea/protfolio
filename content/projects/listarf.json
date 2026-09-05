@@ -13,16 +13,31 @@
   "problem": "Needed an Android client whose primary object is a listing, not a task or a note.",
   "solution": "A dedicated Listarf app rather than stretching Notely or a to-do clone.",
   "architecture": "Java Android project on Codeberg.",
-  "features": ["Listing-oriented Android UI", "Public Java source"],
-  "challenges": ["Keeping list UX distinct from the organizer-lab apps"],
+  "features": [
+    "Listing-oriented Android UI",
+    "Public Java source"
+  ],
+  "challenges": [
+    "Keeping list UX distinct from the organizer-lab apps"
+  ],
   "lessonsLearned": [
     "Listings and tasks look similar in a file tree and nothing alike in use"
   ],
-  "futureImprovements": ["Wire to Daleel if the directory API matches"],
-  "results": ["Public Android listings client on Codeberg"],
-  "stack": ["Java", "Android"],
+  "futureImprovements": [
+    "Wire to Daleel if the directory API matches"
+  ],
+  "results": [
+    "Public Android listings client on Codeberg"
+  ],
+  "stack": [
+    "Java",
+    "Android"
+  ],
   "githubUrl": "https://codeberg.org/ammarshamea123/listarf",
-  "coverImage": "/projects/covers/listarf.png",
+  "coverImage": "/projects/covers/listarf.webp",
   "screenshotPending": false,
-  "gallery": ["/projects/covers/listarf.png"]
+  "gallery": [
+    "/projects/gallery/listarf/01-scene.webp",
+    "/projects/gallery/listarf/02-scene.webp"
+  ]
 }

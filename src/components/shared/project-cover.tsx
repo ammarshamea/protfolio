@@ -30,7 +30,7 @@ export function ProjectCover({
         src={coverImage}
         alt={title}
         fill
-        className="object-contain p-6"
+        className="object-cover"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>

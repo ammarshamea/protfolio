@@ -15,7 +15,7 @@ export default async function LocaleNotFound() {
   const suggestion = projects[Math.floor(Math.random() * projects.length)];
 
   return (
-    <div className="mx-auto flex min-h-[80vh] max-w-2xl flex-col items-center justify-center px-6 py-32 text-center">
+    <div className="mx-auto flex min-h-[80vh] max-w-2xl flex-col items-center justify-center px-6 py-20 text-center">
       <div className="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent)]/10 text-[var(--accent)]">
         <Compass className="h-7 w-7" />
       </div>

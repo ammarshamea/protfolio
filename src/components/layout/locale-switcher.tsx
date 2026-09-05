@@ -17,6 +17,7 @@ export function LocaleSwitcher({ label }: { label: string }) {
       variant="ghost"
       size="sm"
       aria-label={`${label}: ${nextLocale.toUpperCase()}`}
+      className="h-9 px-2.5 sm:px-4"
       onClick={() =>
         router.replace(
           // @ts-expect-error - dynamic pathname is valid at runtime

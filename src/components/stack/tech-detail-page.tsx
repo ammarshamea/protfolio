@@ -2,6 +2,7 @@ import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { GlassCard } from "@/components/shared/glass-card";
 import { ProjectCover } from "@/components/shared/project-cover";
+import { TechIcon } from "@/components/shared/tech-icon";
 import type { Technology } from "@/lib/schemas/tech";
 import type { Project } from "@/lib/schemas/project";
 
@@ -76,6 +77,9 @@ export async function TechDetailPage({
 
       <aside>
         <GlassCard hover={false}>
+          <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[var(--radius)] bg-[var(--muted)] text-[var(--foreground)]">
+            <TechIcon name={technology.slug} className="h-7 w-7" />
+          </div>
           <dl className="space-y-4 text-sm">
             <div>
               <dt className="text-xs uppercase tracking-widest text-[var(--muted-foreground)]">

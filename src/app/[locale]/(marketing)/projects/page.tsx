@@ -54,12 +54,15 @@ export default async function ProjectsPage({
       />
       <Section>
         <h2 className="sr-only">{tp("srTitle")}</h2>
-        <div className="mb-8 flex justify-end">
+        <div className="mb-8 flex flex-wrap justify-end gap-3">
           <Button variant="secondary" size="sm" asChild>
             <Link href="/projects/favorites">
               <Star className="h-3.5 w-3.5" />
               {t("nav.favorites")}
             </Link>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
+            <Link href="/projects/compare">{t("pages.compare.eyebrow")}</Link>
           </Button>
         </div>
         <ProjectsExplorer projects={projects} />

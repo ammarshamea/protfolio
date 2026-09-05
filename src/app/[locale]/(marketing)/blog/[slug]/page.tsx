@@ -52,7 +52,7 @@ export default async function BlogPostPage({
     <>
       <ReadingProgressBar />
       <PageHeader
-        eyebrow={post.category}
+        eyebrow={`${post.category} · ${t("common.readingTime", { minutes: post.readingTime })}`}
         title={post.title}
         subtitle={post.description}
         breadcrumbs={[
@@ -61,7 +61,7 @@ export default async function BlogPostPage({
           { label: post.title },
         ]}
       />
-      <Section className="py-14 sm:py-16">
+      <Section rhythm="compact">
         <div className="mx-auto max-w-2xl">
           <div className="mb-8 flex flex-wrap items-center gap-3 text-sm text-[var(--muted-foreground)]">
             <time dateTime={post.date}>

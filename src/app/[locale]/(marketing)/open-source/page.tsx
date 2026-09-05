@@ -41,7 +41,11 @@ export default async function OpenSourcePage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.openSource")}
+        eyebrow={
+          githubProfile
+            ? `${t("nav.openSource")} · ${githubProfile.followers}`
+            : t("nav.openSource")
+        }
         title={to("title")}
         subtitle={to("subtitle")}
         breadcrumbs={[

@@ -36,7 +36,7 @@ export default async function ExperiencePage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.experience")}
+        eyebrow={`${t("nav.experience")} · ${experience.length}`}
         title={te("title")}
         subtitle={te("subtitle")}
         breadcrumbs={[
@@ -63,7 +63,7 @@ export default async function ExperiencePage({
                 </p>
 
                 <div className="mt-4">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-[var(--muted-foreground)]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--muted-foreground)]">
                     {te("responsibilities")}
                   </p>
                   <ul className="mt-2 space-y-1.5">
@@ -80,7 +80,7 @@ export default async function ExperiencePage({
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-[var(--muted-foreground)]">
+                  <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--muted-foreground)]">
                     {te("achievements")}
                   </p>
                   <ul className="mt-2 space-y-1.5">

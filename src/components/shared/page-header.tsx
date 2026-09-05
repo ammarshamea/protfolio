@@ -1,6 +1,7 @@
+import { getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { ChevronRight } from "lucide-react";
-import { SectionLabel } from "@/components/shared/section";
+import { ScriptHeading } from "@/components/home/shell/script-heading";
 import { cn } from "@/lib/utils";
 
 interface Crumb {
@@ -8,7 +9,7 @@ interface Crumb {
   href?: string;
 }
 
-export function PageHeader({
+export async function PageHeader({
   eyebrow,
   title,
   subtitle,
@@ -21,10 +22,13 @@ export function PageHeader({
   breadcrumbs?: Crumb[];
   className?: string;
 }) {
+  const locale = await getLocale();
+
   return (
     <header
+      id="page"
       className={cn(
-        "border-b border-[var(--surface-border)] pb-14 pt-32 sm:pt-40",
+        "border-b border-[var(--surface-border)] pb-12 pt-16 sm:pb-14 sm:pt-20",
         className,
       )}
     >
@@ -32,10 +36,10 @@ export function PageHeader({
         {breadcrumbs && breadcrumbs.length > 0 ? (
           <nav
             aria-label="Breadcrumb"
-            className="mb-8 flex flex-wrap items-center gap-1.5 text-sm text-[var(--muted-foreground)]"
+            className="mb-6 flex flex-wrap items-center gap-1.5 text-sm text-[var(--muted-foreground)]"
           >
             {breadcrumbs.map((crumb, index) => (
-              <span key={crumb.label} className="flex items-center gap-1.5">
+              <span key={`${crumb.label}-${index}`} className="flex items-center gap-1.5">
                 {crumb.href ? (
                   <Link
                     href={crumb.href}
@@ -44,9 +48,7 @@ export function PageHeader({
                     {crumb.label}
                   </Link>
                 ) : (
-                  <span className="text-[var(--foreground)]">
-                    {crumb.label}
-                  </span>
+                  <span className="text-[var(--foreground)]">{crumb.label}</span>
                 )}
                 {index < breadcrumbs.length - 1 ? (
                   <ChevronRight
@@ -58,12 +60,20 @@ export function PageHeader({
             ))}
           </nav>
         ) : null}
-        {eyebrow ? <SectionLabel label={eyebrow} className="mb-5" /> : null}
-        <h1 className="max-w-4xl text-[length:var(--text-display)] font-semibold leading-[1.02] tracking-tight font-[family-name:var(--font-display)]">
-          {title}
-        </h1>
+        {eyebrow ? (
+          <ScriptHeading
+            eyebrow={eyebrow}
+            name={title}
+            locale={locale}
+            size="page"
+          />
+        ) : (
+          <h1 className="max-w-4xl text-balance font-[family-name:var(--font-display)] text-[length:var(--text-display)] font-semibold leading-[1.02] tracking-tight">
+            {title}
+          </h1>
+        )}
         {subtitle ? (
-          <p className="mt-6 max-w-2xl text-[length:var(--text-body-lg)] text-[var(--muted-foreground)]">
+          <p className="mt-5 max-w-2xl text-[length:var(--text-body-lg)] text-[var(--muted-foreground)]">
             {subtitle}
           </p>
         ) : null}

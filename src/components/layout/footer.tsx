@@ -1,8 +1,9 @@
-import { ArrowUp } from "lucide-react";
 import { getTranslations, getLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { Logo } from "./logo";
 import { SocialLinks } from "@/components/shared/social-links";
 import { getSiteContent } from "@/lib/content/site";
+import { footerNavGroups } from "@/lib/navigation";
 
 export async function Footer() {
   const t = await getTranslations();
@@ -11,29 +12,58 @@ export async function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[var(--surface-border)] bg-[var(--surface)]">
-      <div className="mx-auto flex max-w-[90rem] flex-col gap-8 px-6 py-12 sm:px-10">
-        <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
-          <div>
-            <Logo />
-            <p className="mt-3 max-w-xs text-sm text-[var(--muted-foreground)]">
+    <footer className="border-t border-[var(--surface-border)] bg-[var(--surface)] pb-28 sm:pb-32">
+      <div className="mx-auto flex max-w-[90rem] flex-col gap-10 px-6 py-12 sm:px-10">
+        <div className="flex flex-col items-start justify-between gap-8 lg:flex-row">
+          <div className="max-w-sm">
+            <Logo portrait={site.portrait} name={site.name} />
+            <p className="mt-3 text-sm text-[var(--muted-foreground)]">
               {t("footer.tagline")}
             </p>
+            <SocialLinks
+              socials={site.socials}
+              variant="footer"
+              className="mt-5"
+            />
           </div>
-          <div className="flex items-center gap-4">
-            <SocialLinks socials={site.socials} variant="footer" />
-            <a
-              href="#top"
-              className="flex items-center gap-2 rounded-full border border-[var(--surface-border)] px-4 py-2.5 text-sm font-medium transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
-            >
-              {t("footer.backToTop")}
-              <ArrowUp className="h-3.5 w-3.5" aria-hidden="true" />
-            </a>
+          <div className="grid w-full gap-8 sm:grid-cols-2 lg:w-auto lg:grid-cols-4 lg:gap-10">
+            {footerNavGroups.map((group) => (
+              <div key={group.titleKey}>
+                <p className="mb-3 text-[11px] font-semibold uppercase text-[var(--accent)]">
+                  {t(`nav.${group.titleKey}` as Parameters<typeof t>[0])}
+                </p>
+                <ul className="space-y-2">
+                  {group.items.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="text-sm text-[var(--muted-foreground)] transition-colors hover:text-[var(--foreground)]"
+                      >
+                        {t(`nav.${item.key}` as Parameters<typeof t>[0])}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
-        <p className="border-t border-[var(--surface-border)] pt-6 text-sm text-[var(--muted-foreground)]">
-          &copy; {year} {site.name}. {t("footer.rights")}
-        </p>
+        <div className="flex flex-col gap-3 border-t border-[var(--surface-border)] pt-6 text-sm text-[var(--muted-foreground)] sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            &copy; {year} {site.name}. {t("footer.rights")}
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <Link href="/privacy" className="hover:text-[var(--foreground)]">
+              {t("footer.privacy")}
+            </Link>
+            <Link href="/terms" className="hover:text-[var(--foreground)]">
+              {t("footer.terms")}
+            </Link>
+            <Link href="/sitemap-page" className="hover:text-[var(--foreground)]">
+              {t("footer.sitemap")}
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );

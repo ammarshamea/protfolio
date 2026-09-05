@@ -25,9 +25,10 @@ export function GlassCard({
   return (
     <div
       className={cn(
-        "rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] shadow-[var(--shadow-card)] transition-[border-color,background-color] duration-200",
+        "rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] shadow-[var(--shadow-card)] transition-[border-color,background-color,transform] duration-200",
         paddingMap[padding],
-        hover && "hover:border-[var(--foreground)]/25",
+        hover &&
+          "hover:border-[var(--foreground)]/25 motion-safe:hover:-translate-y-0.5",
         className,
       )}
       {...props}

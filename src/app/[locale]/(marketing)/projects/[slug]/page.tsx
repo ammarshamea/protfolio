@@ -14,6 +14,7 @@ import {
   CaseStudyList,
 } from "@/components/projects/case-study-section";
 import { ProjectCard } from "@/components/projects/project-card";
+import { TechChipList } from "@/components/shared/tech-chip";
 import {
   StaggerContainer,
   StaggerItem,
@@ -87,14 +88,14 @@ export default async function ProjectDetailPage({
     <>
       <TrackOnMount event={{ type: "project_view", label: project.slug }} />
 
-      <header className="border-b border-[var(--surface-border)] pb-14 pt-32 sm:pt-40">
+      <header className="border-b border-[var(--surface-border)] pb-12 pt-16 sm:pb-14 sm:pt-20">
         <div className="mx-auto max-w-[90rem] px-6 sm:px-10">
           <SectionLabel
             index={number}
             label={tp(`categories.${project.category}`)}
             className="mb-6"
           />
-          <h1 className="max-w-4xl font-[family-name:var(--font-display)] text-[length:var(--text-display)] font-semibold leading-[1.02] tracking-tight">
+          <h1 className="max-w-4xl text-balance font-[family-name:var(--font-display)] text-[length:var(--text-display)] font-semibold leading-[1.02] tracking-tight">
             {project.title}
           </h1>
           <p className="mt-6 max-w-2xl text-[length:var(--text-body-lg)] text-[var(--muted-foreground)]">
@@ -110,6 +111,7 @@ export default async function ProjectDetailPage({
                 { label: td("stack"), value: project.stack.join(" · ") },
               ]}
             />
+            <TechChipList items={project.stack} />
             <div className="flex flex-wrap gap-3">
               {project.liveUrl ? (
                 <Button asChild>

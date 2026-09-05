@@ -52,6 +52,11 @@ export function Header({
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // The home page replaces this header with the bottom AppDock, so its own real
+  // routes (/, /tech-stack, /projects, /contact) stay crawlable without a heavy
+  // top bar competing with the hero for attention.
+  if (pathname === "/") return null;
+
   return (
     <header
       className={cn(

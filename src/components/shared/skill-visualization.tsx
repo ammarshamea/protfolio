@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { viewportOnce } from "@/lib/animations";
+import { TechIcon } from "@/components/shared/tech-icon";
 import type { Technology } from "@/lib/schemas/tech";
 
 export function SkillVisualization({
@@ -34,7 +35,10 @@ export function SkillVisualization({
             {items.map((tech) => (
               <div key={tech.slug}>
                 <div className="mb-1.5 flex items-center justify-between text-sm">
-                  <span className="font-medium">{tech.name}</span>
+                  <span className="inline-flex items-center gap-2 font-medium">
+                    <TechIcon name={tech.slug} className="h-4 w-4" />
+                    {tech.name}
+                  </span>
                   <span className="text-[var(--muted-foreground)]">
                     {tech.yearsOfExperience}
                     {ts("yearsSuffix")}

@@ -46,7 +46,7 @@ export default async function FavoritesPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.favorites")}
+        eyebrow={`${t("nav.favorites")} · ${favorites.length}`}
         title={tf("title")}
         subtitle={tf("subtitle")}
         breadcrumbs={[

@@ -49,7 +49,7 @@ export default async function ReadingPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.reading")}
+        eyebrow={`${t("nav.reading")} · ${books.length}`}
         title={tr("title")}
         subtitle={tr("subtitle")}
         breadcrumbs={[

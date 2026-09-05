@@ -1,19 +1,27 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 
-export function Logo() {
+export function Logo({
+  portrait = "/images/ammar-portrait.png",
+  name = "Ammar Shamea",
+}: {
+  portrait?: string;
+  name?: string;
+}) {
   return (
     <Link
       href="/"
       className="group flex items-center gap-2.5 text-[15px] font-medium tracking-tight text-[var(--foreground)]"
     >
-      <span
-        aria-hidden="true"
-        className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--accent)] font-[family-name:var(--font-display)] text-[11px] font-semibold text-[var(--accent-foreground)]"
-      >
-        AS
-      </span>
+      <Image
+        src={portrait}
+        alt=""
+        width={32}
+        height={32}
+        className="h-8 w-8 rounded-lg object-cover object-[center_18%]"
+      />
       <span className="font-[family-name:var(--font-display)] max-sm:sr-only">
-        Ammar Shamea
+        {name}
       </span>
     </Link>
   );

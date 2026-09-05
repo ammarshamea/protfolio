@@ -14,9 +14,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.press" });
   return generatePageMetadata({
-    title: "Press",
-    description: "Media mentions and features.",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
     path: "/press",
     locale,
   });
@@ -29,14 +30,15 @@ export default async function PressPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
+  const tp = await getTranslations({ locale, namespace: "pages.press" });
   const mentions = getPress(locale);
 
   return (
     <>
       <PageHeader
         eyebrow={t("nav.press")}
-        title="Press"
-        subtitle="Media mentions and features — updated as they happen."
+        title={tp("title")}
+        subtitle={tp("subtitle")}
         breadcrumbs={[
           { label: t("nav.home"), href: "/" },
           { label: t("nav.press") },
@@ -46,8 +48,8 @@ export default async function PressPage({
         {mentions.length === 0 ? (
           <EmptyState
             icon={Newspaper}
-            title="No press mentions yet"
-            description="Nothing to show here yet — I'd rather leave this empty than pad it with anything that isn't real."
+            title={tp("emptyTitle")}
+            description={tp("emptyDescription")}
           />
         ) : (
           <ul className="mx-auto max-w-2xl space-y-4">

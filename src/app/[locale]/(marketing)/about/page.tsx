@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Section, SectionLabel } from "@/components/shared/section";
 import { FadeIn } from "@/components/motion/fade-in";
 import { ValuesGrid } from "@/components/about/values-grid";
 import { HowIWork } from "@/components/about/how-i-work";
+import { ScriptHeading } from "@/components/home/shell/script-heading";
+import { FramedPortrait } from "@/components/home/shell/framed-portrait";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { getSiteContent } from "@/lib/content/site";
@@ -38,29 +39,22 @@ export default async function AboutPage({
 
   return (
     <>
-      <header className="border-b border-[var(--surface-border)] pb-16 pt-32 sm:pt-40">
+      <header className="border-b border-[var(--surface-border)] pb-14 pt-16 sm:pt-20">
         <div className="mx-auto max-w-[90rem] px-6 sm:px-10">
-          <SectionLabel label={t("nav.about")} className="mb-6" />
           <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
             <div className="min-w-0 lg:col-span-6">
-              <h1 className="font-[family-name:var(--font-display)] text-[length:var(--text-display)] font-semibold tracking-tight">
-                {site.motto}
-              </h1>
+              <ScriptHeading
+                eyebrow={t("nav.about")}
+                name={site.motto}
+                locale={locale}
+                size="page"
+              />
               <p className="mt-6 max-w-xl text-[length:var(--text-body-lg)] leading-relaxed text-[var(--muted-foreground)]">
                 {site.philosophy}
               </p>
             </div>
-            <div className="relative min-w-0 overflow-hidden rounded-[var(--radius-xl)] border border-[var(--surface-border)] shadow-[var(--shadow-card)] lg:col-span-6">
-              <div className="relative aspect-[4/5] sm:aspect-[5/4]">
-                <Image
-                  src="/images/about-portrait.png"
-                  alt={site.name}
-                  fill
-                  priority
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 45vw"
-                />
-              </div>
+            <div className="min-w-0 lg:col-span-6">
+              <FramedPortrait src={site.portrait} alt={site.name} />
             </div>
           </div>
         </div>

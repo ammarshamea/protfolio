@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { ExternalLink } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { ProjectVisualPanel } from "./project-visual-panel";
+import { TechChipList } from "@/components/shared/tech-chip";
 import { cn } from "@/lib/utils";
 import type { Project } from "@/lib/schemas/project";
 
@@ -77,16 +78,7 @@ export function ProjectCard({
             <dd className="mt-1 font-medium">{project.duration}</dd>
           </div>
         </dl>
-        <ul className="flex flex-wrap gap-1.5">
-          {project.stack.slice(0, 5).map((tech) => (
-            <li
-              key={tech}
-              className="rounded-full bg-[var(--muted)] px-2.5 py-1 text-[11px] font-medium text-[var(--muted-foreground)]"
-            >
-              {tech}
-            </li>
-          ))}
-        </ul>
+        <TechChipList items={project.stack} limit={5} />
         <div className="mt-auto flex flex-wrap items-center gap-4 pt-1 text-sm font-medium">
           <Link
             href={`/projects/${project.slug}`}

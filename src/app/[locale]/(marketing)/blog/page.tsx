@@ -48,7 +48,7 @@ export default async function BlogPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.blog")}
+        eyebrow={`${t("nav.blog")} · ${posts.length}`}
         title={tb("title")}
         subtitle={tb("subtitle")}
         breadcrumbs={[

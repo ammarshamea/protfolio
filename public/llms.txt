@@ -10,6 +10,7 @@ Dart, Flutter, Git, Tailwind CSS, AI Integration, BLoC, Figma, Google Maps & Geo
 ## Projects
 - CLYX Agency: https://clyx.agency
 - Clyx Order: https://clyxorder.com/
+- NAWA Holding: https://ammarshamea.github.io/nawa_production/
 - Pureger: https://clyxorder.com/pureger
 - FoodyNez: https://foodynez.com/index.html
 

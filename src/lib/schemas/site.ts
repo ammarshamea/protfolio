@@ -2,6 +2,7 @@ import { z } from "zod";
 
 export const siteContentSchema = z.object({
   name: z.string(),
+  portrait: z.string(),
   titles: z.array(z.string()),
   tagline: z.string(),
   motto: z.string(),

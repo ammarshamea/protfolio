@@ -71,6 +71,26 @@
   --font-display: var(--font-noto-arabic), "Noto Sans Arabic", ui-sans-serif, sans-serif;
 }
 
+/*
+ * Arabic never gets the wide "eyebrow label" tracking used on Latin uppercase
+ * text — added letter-spacing visually disconnects joined Arabic letterforms
+ * (the exact "letters fall apart" flaw this rebuild is fixing). Scoped to the
+ * positive/wide tracking utilities only; tracking-tight on headings is left
+ * alone since negative tracking doesn't break Arabic joining.
+ */
+[dir="rtl"] .tracking-wide,
+[dir="rtl"] .tracking-wider,
+[dir="rtl"] .tracking-widest,
+[dir="rtl"] .tracking-\[0\.06em\],
+[dir="rtl"] .tracking-\[0\.08em\],
+[dir="rtl"] .tracking-\[0\.1em\],
+[dir="rtl"] .tracking-\[0\.12em\],
+[dir="rtl"] .tracking-\[0\.14em\],
+[dir="rtl"] .tracking-\[0\.15em\],
+[dir="rtl"] .tracking-\[0\.2em\] {
+  letter-spacing: normal;
+}
+
 [data-theme="dark"] {
   --background: #07140f;
   --foreground: #f4faf7;
@@ -268,17 +288,19 @@ main {
 
 .skip-link {
   position: absolute;
-  left: -9999px;
+  /* Logical (not physical) offset: a physical `left: -9999px` overflows the
+     opposite direction in `dir="rtl"` documents and inflates scrollWidth. */
+  inset-inline-start: -9999px;
   top: 0;
   z-index: 100;
   padding: 0.75rem 1.25rem;
   background: var(--accent);
   color: var(--accent-foreground);
-  border-radius: 0 0 0.5rem 0;
+  border-end-end-radius: 0.5rem;
 }
 
 .skip-link:focus {
-  left: 0;
+  inset-inline-start: 0;
 }
 
 :focus-visible {

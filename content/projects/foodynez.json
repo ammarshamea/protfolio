@@ -40,7 +40,8 @@
   "liveUrl": "https://foodynez.com/index.html",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/foodynez.png"
+    "/projects/covers/foodynez.png",
+    "/projects/covers/foodynez-products.png"
   ],
   "coverImage": "/projects/covers/foodynez.png"
 }

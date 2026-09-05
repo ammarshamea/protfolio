@@ -47,7 +47,7 @@ export default async function TechStackDetailPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.techStack")}
+        eyebrow={`${t("nav.techStack")} · ${technology.projectSlugs.length}`}
         title={technology.name}
         breadcrumbs={[
           { label: t("nav.home"), href: "/" },

@@ -48,7 +48,7 @@ export default async function SetupPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.setup")}
+        eyebrow={`${t("nav.setup")} · ${items.length}`}
         title={ts("title")}
         subtitle={ts("subtitle")}
         breadcrumbs={[

@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { TechChip } from "./tech-chip";
 
 export function BrandedImageFallback({
   title,
@@ -21,12 +22,11 @@ export function BrandedImageFallback({
       </p>
       <div className="flex flex-wrap justify-center gap-2">
         {stack.slice(0, 4).map((tech) => (
-          <span
+          <TechChip
             key={tech}
-            className="rounded-md border border-[var(--surface-border)] bg-[var(--surface)] px-3 py-1 text-xs font-medium text-[var(--muted-foreground)]"
-          >
-            {tech}
-          </span>
+            name={tech}
+            className="rounded-md border border-[var(--surface-border)] bg-[var(--surface)] px-3 py-1 text-xs"
+          />
         ))}
       </div>
     </div>

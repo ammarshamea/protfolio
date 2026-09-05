@@ -44,7 +44,7 @@ export default async function PlaygroundPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.playground")}
+        eyebrow={`${t("nav.playground")} · ${items.length}`}
         title={tp("title")}
         subtitle={tp("subtitle")}
         breadcrumbs={[

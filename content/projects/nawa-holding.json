@@ -39,10 +39,12 @@
     "Lenis",
     "Tailwind CSS"
   ],
+  "liveUrl": "https://ammarshamea.github.io/nawa_production/",
   "githubUrl": "https://github.com/ammarshamea/nawa_production",
   "coverImage": "/projects/covers/nawa-holding.png",
   "screenshotPending": false,
   "gallery": [
-    "/projects/covers/nawa-holding.png"
+    "/projects/covers/nawa-holding.png",
+    "/projects/covers/nawa-holding-work.png"
   ]
 }

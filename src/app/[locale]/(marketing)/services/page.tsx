@@ -59,7 +59,7 @@ export default async function ServicesPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.services")}
+        eyebrow={`${t("nav.services")} · ${services.length}`}
         title={ts("title")}
         subtitle={ts("subtitle")}
         breadcrumbs={[
@@ -104,7 +104,7 @@ export default async function ServicesPage({
           })}
         </StaggerContainer>
 
-        <div className="mt-14 flex justify-center">
+        <div className="mt-14 flex flex-wrap justify-center gap-3">
           <Button asChild size="lg">
             <Link href="/contact">{t("common.getInTouch")}</Link>
           </Button>

@@ -51,3 +51,31 @@ export function getTechnologiesByCategory(
 export function getAllTechSlugs(): string[] {
   return loadBase().map((t) => t.slug);
 }
+
+export interface TechDomainSummary {
+  category: Technology["category"];
+  count: number;
+}
+
+/**
+ * Groups the real tech-stack content into domains with a real count per group,
+ * computed via a single `reduce`. Every place that shows "N technologies" per
+ * domain (the Fast CV summary, the /tech-stack overview) calls this same
+ * function so the numbers never drift apart on different pages.
+ */
+export function getTechDomainSummary(locale: string = "en"): TechDomainSummary[] {
+  const counts = getAllTechnologies(locale).reduce<Record<string, number>>(
+    (acc, tech) => {
+      acc[tech.category] = (acc[tech.category] ?? 0) + 1;
+      return acc;
+    },
+    {},
+  );
+
+  return Object.entries(counts)
+    .map(([category, count]) => ({
+      category: category as Technology["category"],
+      count,
+    }))
+    .sort((a, b) => b.count - a.count);
+}

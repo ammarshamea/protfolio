@@ -34,7 +34,7 @@ export default async function SkillsPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.skills")}
+        eyebrow={`${t("nav.skills")} · ${technologies.length}`}
         title={ts("title")}
         subtitle={ts("subtitle")}
         breadcrumbs={[

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import type { SiteContent } from "@/lib/schemas/site";
 import type { Project } from "@/lib/schemas/project";
 import type { BlogPost } from "@/lib/schemas/blog";
+import type { Technology } from "@/lib/schemas/tech";
+import type { ServiceItem } from "@/lib/schemas/misc";
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://ammarshamea.dev";
@@ -59,11 +61,19 @@ export function generatePageMetadata({
   };
 }
 
-export function personJsonLd(site: SiteContent) {
+export function personJsonLd(
+  site: SiteContent,
+  options?: { technologies?: Technology[]; services?: ServiceItem[] },
+) {
+  const technologies = options?.technologies ?? [];
+  const services = options?.services ?? [];
+  const languages = site.contact.languages.map((language) => language.name);
+
   return {
     "@context": "https://schema.org",
     "@type": "Person",
     name: site.name,
+    image: absoluteUrl(site.portrait),
     jobTitle: site.titles[0],
     description: site.bio.short,
     url: SITE_URL,
@@ -73,8 +83,43 @@ export function personJsonLd(site: SiteContent) {
       addressLocality: "Damascus",
       addressCountry: "SY",
     },
-    sameAs: [site.socials.github, site.socials.codeberg, site.socials.linkedin],
-    knowsAbout: site.titles,
+    // Real profile/contact surfaces only — no invented awards or profile links.
+    sameAs: [
+      site.socials.github,
+      site.socials.codeberg,
+      site.socials.linkedin,
+      site.socials.whatsapp,
+    ],
+    // Derived from the same tech-stack content the site renders, plus the
+    // person's own titles — never a hand-typed, drift-prone list.
+    knowsAbout: [
+      ...site.titles,
+      ...technologies.map((technology) => technology.name),
+    ],
+    knowsLanguage: languages,
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      email: site.contact.email,
+      availableLanguage: languages,
+    },
+    ...(services.length > 0
+      ? {
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Services",
+            itemListElement: services.map((service, index) => ({
+              "@type": "Offer",
+              position: index + 1,
+              itemOffered: {
+                "@type": "Service",
+                name: service.title,
+                description: service.description,
+              },
+            })),
+          },
+        }
+      : {}),
   };
 }
 

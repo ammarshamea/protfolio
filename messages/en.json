@@ -48,6 +48,7 @@
     "copyEmail": "Copy email",
     "emailCopied": "Email copied",
     "scrollToTop": "Scroll to top",
+    "skipToContent": "Skip to content",
     "loading": "Loading",
     "featured": "Featured",
     "favorite": "Favorite",
@@ -78,7 +79,10 @@
     "backToTop": "Back to top"
   },
   "hero": {
+    "eyebrow": "From idea to production",
     "availabilityBadge": "Open for remote work",
+    "whatsappCta": "Chat on WhatsApp",
+    "whatsappMessage": "Hi Ammar — I saw your portfolio and would like to talk about a project.",
     "scrollHint": "Scroll to explore",
     "brief": "I ship Flutter apps and full-stack platforms that restaurants, delivery services, and local businesses actually run on.",
     "yearsExperience": "Years of experience",
@@ -99,6 +103,27 @@
     "capabilitiesTitle": "What I actually build",
     "experienceMore": "See the full timeline",
     "contactHeadline": "Let's build something memorable."
+  },
+  "dock": {
+    "ariaLabel": "App navigation",
+    "home": "Home",
+    "stack": "Stack",
+    "projects": "Projects",
+    "fastCv": "Fast CV",
+    "contact": "Contact",
+    "openFastCv": "Open fast CV summary",
+    "more": "More",
+    "moreTitle": "More pages",
+    "moreDescription": "The rest of the site — every destination is a real page you can share.",
+    "accent": "Accent color"
+  },
+  "fastCv": {
+    "title": "Fast CV",
+    "summaryLabel": "Summary",
+    "stackLabel": "Stack, by domain",
+    "projectsLabel": "Selected projects",
+    "viewFullResume": "View full résumé",
+    "chatWhatsapp": "Chat on WhatsApp"
   },
   "contactForm": {
     "name": "Name",
@@ -252,6 +277,10 @@
       "subtitle": "Not just a list of logos — each technology links to why I chose it and which real projects use it.",
       "yearsProjects": "{years}+ years · {count} project",
       "yearsProjectsPlural": "{years}+ years · {count} projects",
+      "yearsExploring": "{years}+ years · exploring, not in production yet",
+      "domainOverview": "Domains at a glance",
+      "domainCount": "{count} technology",
+      "domainCountPlural": "{count} technologies",
       "detail": {
         "experience": "My experience",
         "whyChosen": "Why I chose it",
@@ -387,6 +416,110 @@
         "ai": "AI",
         "component": "Component"
       }
+    },
+    "contact": {
+      "metaTitle": "Contact",
+      "metaDescription": "Get in touch about a Flutter app, full-stack platform, or AI integration project.",
+      "title": "Let's talk about the work",
+      "subtitle": "WhatsApp is the fastest path. The form works too — I reply within a business day.",
+      "faqTitle": "Frequently asked questions",
+      "whatsappHint": "Prefer messaging first? WhatsApp usually gets the fastest reply across the time-zone difference.",
+      "whatsappCta": "Chat on WhatsApp"
+    },
+    "now": {
+      "metaTitle": "Now",
+      "metaDescription": "What I'm currently focused on — shipping, learning, and building.",
+      "updated": "Last updated {date}",
+      "srTitle": "Current focus"
+    },
+    "roadmap": {
+      "metaTitle": "Roadmap",
+      "metaDescription": "Where I'm headed next — real, trackable goals with honest progress.",
+      "title": "What's next",
+      "subtitle": "Concrete goals I track myself against — not a vague list of aspirations.",
+      "completed": "completed",
+      "notCompleted": "not yet completed"
+    },
+    "speaking": {
+      "metaTitle": "Speaking",
+      "metaDescription": "Talks and community sessions.",
+      "title": "Speaking",
+      "subtitle": "Talks, workshops, and community sessions — this page grows as engagements happen.",
+      "emptyTitle": "No talks yet",
+      "emptyDescription": "I haven't given any public talks yet, but I'm open to speaking about Flutter, Laravel, and multi-tenant architecture — get in touch if you're organizing something.",
+      "viewTalk": "Watch / view slides"
+    },
+    "press": {
+      "metaTitle": "Press",
+      "metaDescription": "Media mentions and features.",
+      "title": "Press",
+      "subtitle": "Media mentions and features — updated as they happen.",
+      "emptyTitle": "No press mentions yet",
+      "emptyDescription": "Nothing to show here yet — I'd rather leave this empty than pad it with anything that isn't real."
+    },
+    "sitemap": {
+      "metaTitle": "Sitemap",
+      "metaDescription": "Every page on this site, organized in one place.",
+      "title": "Every page, in one place",
+      "subtitle": "A human-readable map of the site — for the XML version, see /sitemap.xml.",
+      "srTitle": "Site sections"
+    },
+    "apiDocs": {
+      "metaTitle": "API Docs",
+      "metaDescription": "Public API routes backing this portfolio — OpenAPI 3.0 spec available at /api/docs.",
+      "eyebrow": "Developer",
+      "title": "API documentation",
+      "subtitle": "Public routes backing this site. The machine-readable OpenAPI 3.0 spec lives at /api/docs."
+    },
+    "favoritesProjects": {
+      "metaTitle": "Favorite Projects",
+      "metaDescription": "The projects I'm most proud of — picked for the problems they solved, not just the tech stack.",
+      "title": "Favorite projects",
+      "subtitle": "Not necessarily the biggest projects — the ones where the architecture, the problem, or the outcome made me proud of the work.",
+      "srTitle": "Favorite projects"
+    },
+    "compare": {
+      "metaTitle": "Compare Projects",
+      "metaDescription": "Compare two projects side by side — stack, features, duration, and results.",
+      "eyebrow": "Compare",
+      "title": "Project comparison",
+      "subtitle": "Pick any two projects to compare their stack, features, and outcomes side by side.",
+      "emptyTitle": "Not enough projects",
+      "emptyDescription": "Add more projects to compare."
+    },
+    "privacy": {
+      "metaTitle": "Privacy Policy",
+      "metaDescription": "What data this site collects and how it's used.",
+      "eyebrow": "Legal",
+      "title": "Privacy Policy",
+      "updated": "Last updated July 6, 2026",
+      "intro": "This site is a personal portfolio for {name}. It collects very little data, and this page explains exactly what and why.",
+      "formTitle": "Contact form",
+      "formBody": "If you use the contact form, the name, email address, and message you submit are sent directly to my email inbox so I can reply. This data is not stored in a database on this site, not sold, and not shared with third parties beyond the email delivery provider used to send the message.",
+      "cookiesTitle": "Cookies and local storage",
+      "cookiesBody": "This site stores your theme (dark, light, or high contrast) and accent color choice in your browser's local storage so your preference persists between visits. No tracking or advertising cookies are used.",
+      "hostingTitle": "Hosting and analytics",
+      "hostingBody": "This site is hosted on Vercel, which may process standard server logs (such as IP address and request metadata) as part of serving the site. Any analytics added in the future will be privacy-respecting and will not track you across other websites.",
+      "contactTitle": "Contact",
+      "contactBody": "Questions about this policy can be sent to"
+    },
+    "terms": {
+      "metaTitle": "Terms of Service",
+      "metaDescription": "Terms for using this site and its content.",
+      "eyebrow": "Legal",
+      "title": "Terms of Service",
+      "updated": "Last updated July 6, 2026",
+      "intro": "This site is a personal portfolio for {name}. By using it, you agree to the following terms.",
+      "contentTitle": "Content",
+      "contentBody": "All project descriptions, case studies, and written content on this site reflect my own real work and experience. Project names, client names, and outcomes described are accurate to the best of my knowledge. Logos, screenshots, and brand references belong to their respective owners and are used here only to illustrate work delivered.",
+      "warrantyTitle": "No warranty",
+      "warrantyBody": "This site is provided as-is, without warranties of any kind. While I aim for accuracy and keep this site well-maintained, I don't guarantee it will be error-free or available at all times.",
+      "ipTitle": "Intellectual property",
+      "ipBody": "The design, code, and written content of this site are my own work and may not be copied or reused without permission, unless explicitly published as open source.",
+      "freelanceTitle": "Freelance engagements",
+      "freelanceBody": "Contacting me through this site does not create a client relationship or contractual obligation. Any paid work is governed by a separate agreement made directly between us before work begins.",
+      "contactTitle": "Contact",
+      "contactBody": "Questions about these terms can be sent to"
     }
   }
 }

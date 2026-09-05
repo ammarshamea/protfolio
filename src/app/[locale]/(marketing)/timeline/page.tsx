@@ -34,7 +34,7 @@ export default async function TimelinePage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.timeline")}
+        eyebrow={`${t("nav.timeline")} · ${timeline.length}`}
         title={pt("title")}
         subtitle={pt("subtitle")}
         breadcrumbs={[

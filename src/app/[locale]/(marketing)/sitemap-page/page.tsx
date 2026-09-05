@@ -13,9 +13,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.sitemap" });
   return generatePageMetadata({
-    title: "Sitemap",
-    description: "Every page on this site, organized in one place.",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
     path: "/sitemap-page",
     locale,
   });
@@ -28,23 +29,24 @@ export default async function SitemapPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
+  const ts = await getTranslations({ locale, namespace: "pages.sitemap" });
 
   return (
     <>
       <PageHeader
-        eyebrow="Sitemap"
-        title="Every page, in one place"
-        subtitle="A human-readable map of the site — for the XML version, see /sitemap.xml."
+        eyebrow={t("footer.sitemap")}
+        title={ts("title")}
+        subtitle={ts("subtitle")}
         breadcrumbs={[
           { label: t("nav.home"), href: "/" },
-          { label: "Sitemap" },
+          { label: t("footer.sitemap") },
         ]}
       />
       <Section>
-        <h2 className="sr-only">Site sections</h2>
+        <h2 className="sr-only">{ts("srTitle")}</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <GlassCard hover={false}>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-widest text-[var(--muted-foreground)]">
+            <h3 className="mb-4 text-sm font-semibold text-[var(--muted-foreground)]">
               {t("nav.home")}
             </h3>
             <ul className="space-y-2.5 text-sm">
@@ -57,7 +59,7 @@ export default async function SitemapPage({
           </GlassCard>
           {footerNavGroups.map((group) => (
             <GlassCard key={group.titleKey} hover={false}>
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-widest text-[var(--muted-foreground)]">
+              <h3 className="mb-4 text-sm font-semibold text-[var(--muted-foreground)]">
                 {t(`nav.${group.titleKey}` as Parameters<typeof t>[0])}
               </h3>
               <ul className="space-y-2.5 text-sm">

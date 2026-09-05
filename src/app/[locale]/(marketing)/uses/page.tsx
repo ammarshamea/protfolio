@@ -37,7 +37,7 @@ export default async function UsesPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.uses")}
+        eyebrow={`${t("nav.uses")} · ${items.length}`}
         title={tu("title")}
         subtitle={tu("subtitle")}
         breadcrumbs={[

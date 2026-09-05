@@ -16,10 +16,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({
+    locale,
+    namespace: "pages.favoritesProjects",
+  });
   return generatePageMetadata({
-    title: "Favorite Projects",
-    description:
-      "The projects I'm most proud of — picked for the problems they solved, not just the tech stack.",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
     path: "/projects/favorites",
     locale,
   });
@@ -32,14 +35,18 @@ export default async function FavoriteProjectsPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
+  const tf = await getTranslations({
+    locale,
+    namespace: "pages.favoritesProjects",
+  });
   const projects = getFavoriteProjects(locale);
 
   return (
     <>
       <PageHeader
         eyebrow={t("nav.favorites")}
-        title="Favorite projects"
-        subtitle="Not necessarily the biggest projects — the ones where the architecture, the problem, or the outcome made me proud of the work."
+        title={tf("title")}
+        subtitle={tf("subtitle")}
         breadcrumbs={[
           { label: t("nav.home"), href: "/" },
           { label: t("nav.projects"), href: "/projects" },
@@ -47,7 +54,7 @@ export default async function FavoriteProjectsPage({
         ]}
       />
       <Section>
-        <h2 className="sr-only">Favorite projects</h2>
+        <h2 className="sr-only">{tf("srTitle")}</h2>
         <StaggerContainer className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <StaggerItem key={project.slug}>

@@ -26,10 +26,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.contact" });
   return generatePageMetadata({
-    title: "Contact",
-    description:
-      "Get in touch about a Flutter app, full-stack platform, or AI integration project.",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
     path: "/contact",
     locale,
   });
@@ -42,14 +42,16 @@ export default async function ContactPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
+  const tc = await getTranslations({ locale, namespace: "pages.contact" });
   const site = getSiteContent(locale);
+  const whatsappHref = `${site.socials.whatsapp}?text=${encodeURIComponent(t("hero.whatsappMessage"))}`;
 
   return (
     <>
       <PageHeader
         eyebrow={t("nav.contact")}
-        title={t("common.getInTouch")}
-        subtitle={site.contact.availability.join(" · ")}
+        title={tc("title")}
+        subtitle={tc("subtitle")}
         breadcrumbs={[
           { label: t("nav.home"), href: "/" },
           { label: t("nav.contact") },
@@ -84,22 +86,22 @@ export default async function ContactPage({
               </div>
 
               <div className="mt-6 flex flex-wrap gap-3 border-t border-[var(--surface-border)] pt-6">
+                <Button asChild>
+                  <TrackedLink
+                    label="whatsapp"
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaWhatsapp className="h-4 w-4" />
+                    {tc("whatsappCta")}
+                  </TrackedLink>
+                </Button>
                 <CopyButton
                   value={site.contact.email}
                   label={t("common.copyEmail")}
                   copiedLabel={t("common.emailCopied")}
                 />
-                <Button variant="secondary" size="sm" asChild>
-                  <TrackedLink
-                    label="whatsapp"
-                    href={site.socials.whatsapp}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaWhatsapp className="h-4 w-4" />
-                    WhatsApp
-                  </TrackedLink>
-                </Button>
               </div>
 
               <SocialLinks socials={site.socials} className="mt-6" />
@@ -108,8 +110,7 @@ export default async function ContactPage({
             <GlassCard hover={false} className="flex items-start gap-3">
               <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]" />
               <p className="text-sm text-[var(--muted-foreground)]">
-                Prefer messaging first? WhatsApp usually gets the fastest
-                response given the time zone difference.
+                {tc("whatsappHint")}
               </p>
             </GlassCard>
           </div>
@@ -117,8 +118,8 @@ export default async function ContactPage({
       </Section>
 
       <Section className="border-t border-[var(--surface-border)]">
-        <h2 className="mb-8 text-2xl font-semibold font-[family-name:var(--font-display)]">
-          Frequently asked questions
+        <h2 className="mb-8 font-[family-name:var(--font-display)] text-2xl font-semibold">
+          {tc("faqTitle")}
         </h2>
         <Accordion type="single" collapsible className="mx-auto max-w-3xl">
           {site.contact.faq.map((faq) => (

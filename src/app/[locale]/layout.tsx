@@ -8,16 +8,17 @@ import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { AccentProvider } from "@/components/providers/accent-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { RecruiterModeBar } from "@/components/layout/recruiter-mode-bar";
-import { ScrollToTop } from "@/components/layout/scroll-to-top";
+import { SiteDock } from "@/components/layout/site-dock";
 import { CommandPalette } from "@/components/search/command-palette";
 import { JsonLd } from "@/components/shared/json-ld";
 import { AnalyticsTracker } from "@/components/shared/analytics-tracker";
 import { AnalyticsProviders } from "@/components/shared/analytics-providers";
 import { buildSearchIndex } from "@/lib/search-index";
 import { getSiteContent } from "@/lib/content/site";
+import { getAllTechnologies } from "@/lib/content/tech-stack";
+import { getServices } from "@/lib/content/misc";
 import { personJsonLd, websiteJsonLd, SITE_URL } from "@/lib/seo";
 import "../globals.css";
 
@@ -119,6 +120,8 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale });
   const site = getSiteContent(locale);
   const searchItems = buildSearchIndex(locale);
+  const technologies = getAllTechnologies(locale);
+  const services = getServices(locale);
   const dir = locale === "ar" ? "rtl" : "ltr";
 
   return (
@@ -134,7 +137,7 @@ export default async function LocaleLayout({
         <PwaProvider>
           <AnalyticsTracker />
           <a href="#main-content" className="skip-link">
-            {t("common.backToHome")}
+            {t("common.skipToContent")}
           </a>
           <NextIntlClientProvider locale={locale}>
             <ThemeProvider
@@ -147,13 +150,9 @@ export default async function LocaleLayout({
               <AccentProvider>
                 <TooltipProvider delayDuration={200}>
                   <RecruiterModeBar />
-                  <Header
-                    socials={site.socials}
-                    contactEmail={site.contact.email}
-                  />
+                  <SiteDock />
                   <main id="main-content">{children}</main>
                   <Footer />
-                  <ScrollToTop label={t("common.scrollToTop")} />
                   <CommandPalette
                     items={searchItems}
                     socials={site.socials}
@@ -163,7 +162,7 @@ export default async function LocaleLayout({
               </AccentProvider>
             </ThemeProvider>
           </NextIntlClientProvider>
-          <JsonLd data={personJsonLd(site)} />
+          <JsonLd data={personJsonLd(site, { technologies, services })} />
           <JsonLd data={websiteJsonLd()} />
           <AnalyticsProviders />
         </PwaProvider>

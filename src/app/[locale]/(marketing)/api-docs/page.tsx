@@ -13,10 +13,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.apiDocs" });
   return generatePageMetadata({
-    title: "API Docs",
-    description:
-      "Public API routes backing this portfolio — OpenAPI 3.0 spec available at /api/docs.",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
     path: "/api-docs",
     locale,
   });
@@ -34,18 +34,19 @@ export default async function ApiDocsPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
+  const ta = await getTranslations({ locale, namespace: "pages.apiDocs" });
   const spec = getOpenApiSpec();
   const entries = Object.entries(spec.paths);
 
   return (
     <>
       <PageHeader
-        eyebrow="Developer"
-        title="API documentation"
-        subtitle="Public routes backing this site. The machine-readable OpenAPI 3.0 spec lives at /api/docs."
+        eyebrow={ta("eyebrow")}
+        title={ta("title")}
+        subtitle={ta("subtitle")}
         breadcrumbs={[
           { label: t("nav.home"), href: "/" },
-          { label: "API Docs" },
+          { label: t("footer.apiDocs") },
         ]}
       />
       <Section>

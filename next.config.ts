@@ -10,6 +10,7 @@ const withBundleAnalyzer = createBundleAnalyzer({
 });
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ["*.trycloudflare.com"],
   images: {
     formats: ["image/avif", "image/webp"],
   },

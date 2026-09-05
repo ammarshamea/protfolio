@@ -40,7 +40,7 @@ export default async function LabPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.lab")}
+        eyebrow={`${t("nav.lab")} · ${items.length}`}
         title={tl("title")}
         subtitle={tl("subtitle")}
         breadcrumbs={[

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import { FileDown, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Section, SectionLabel } from "@/components/shared/section";
@@ -13,8 +13,14 @@ import { SelectedWork } from "@/components/home/selected-work";
 import { Capabilities } from "@/components/home/capabilities";
 import { ExperienceTeaser } from "@/components/home/experience-teaser";
 import { ContactCta } from "@/components/home/contact-cta";
-import { AvailabilityBadge } from "@/components/shared/availability-badge";
-import { FadeIn } from "@/components/motion/fade-in";
+import { ScriptHeading } from "@/components/home/shell/script-heading";
+import { StatusPills } from "@/components/home/shell/status-pills";
+import { FramedPortrait } from "@/components/home/shell/framed-portrait";
+import {
+  HeroEntrance,
+  HeroItem,
+  HeroMedia,
+} from "@/components/home/hero-entrance";
 import { getSiteContent } from "@/lib/content/site";
 import { getAllProjects, getFeaturedProjects } from "@/lib/content/projects";
 import { getNow, getStats, getServices, getTimeline } from "@/lib/content/misc";
@@ -50,66 +56,70 @@ export default async function HomePage({
   const stats = getStats();
   const services = getServices(locale);
   const timeline = getTimeline(locale);
+  const whatsappHref = `${site.socials.whatsapp}?text=${encodeURIComponent(t("hero.whatsappMessage"))}`;
 
   return (
     <>
-      <section id="top" className="relative overflow-x-clip pt-28 sm:pt-32">
+      <section id="top" className="relative overflow-x-clip pb-6 pt-16 sm:pt-20">
         <div className="mx-auto grid max-w-[90rem] items-center gap-10 px-6 py-10 sm:px-10 lg:grid-cols-2 lg:gap-16 lg:py-16">
-          <FadeIn className="min-w-0">
-            <AvailabilityBadge label={t("hero.availabilityBadge")} />
-            <p className="mt-6 text-sm font-medium text-[var(--accent)]">
-              {site.location}
-            </p>
-            <h1 className="mt-3 font-[family-name:var(--font-display)] text-[length:var(--text-display-xl)] font-semibold tracking-tight">
-              {site.name}
-            </h1>
-            <p className="mt-3 text-[length:var(--text-h3)] font-medium text-[var(--muted-foreground)]">
-              {site.titles[0]} · {site.titles[2]}
-            </p>
-            <p className="mt-6 max-w-xl text-[length:var(--text-body-lg)] leading-relaxed text-[var(--muted-foreground)]">
-              {site.bio.short}
-            </p>
-            <div className="mt-5">
+          <HeroEntrance className="min-w-0">
+            <HeroItem>
+              <ScriptHeading
+                eyebrow={t("hero.eyebrow")}
+                name={site.name}
+                locale={locale}
+              />
+            </HeroItem>
+            <HeroItem>
+              <p className="mt-3 text-[length:var(--text-h3)] font-medium text-[var(--muted-foreground)]">
+                {site.titles[0]} · {site.titles[2]}
+              </p>
+            </HeroItem>
+            <HeroItem>
+              <p className="mt-6 max-w-xl text-[length:var(--text-body-lg)] leading-relaxed text-[var(--muted-foreground)]">
+                {site.bio.short}
+              </p>
+            </HeroItem>
+            <HeroItem className="mt-6">
+              <StatusPills
+                availabilityLabel={t("hero.availabilityBadge")}
+                timezone={site.contact.timezone}
+                whatsappHref={whatsappHref}
+                whatsappLabel={t("hero.whatsappCta")}
+              />
+            </HeroItem>
+            <HeroItem className="mt-3">
               <CurrentStatus status={now.heroStatus} />
-            </div>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button size="lg" asChild>
-                <Link href="/contact">
-                  <MessageCircle className="h-4 w-4" />
-                  {t("common.getInTouch")}
-                </Link>
-              </Button>
-              <IntroPlayer locale={locale} label={t("hero.introQuick")} />
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/projects">{t("nav.projects")}</Link>
-              </Button>
-              <Button size="lg" variant="ghost" asChild>
-                <Link href="/resume">
-                  <FileDown className="h-4 w-4" />
-                  {t("common.downloadResume")}
-                </Link>
-              </Button>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.08} className="relative min-w-0">
-            <div
-              aria-hidden="true"
-              className="absolute -inset-8 rounded-[2rem] bg-[var(--accent)]/10 blur-3xl"
-            />
-            <div className="relative overflow-hidden rounded-[var(--radius-xl)] border border-[var(--surface-border)] shadow-[var(--shadow-card)]">
-              <div className="relative aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5]">
-                <Image
-                  src="/images/hero-studio.png"
-                  alt={site.name}
-                  fill
-                  priority
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 40vw"
-                />
+            </HeroItem>
+            <HeroItem className="mt-8">
+              <div className="flex flex-wrap gap-3">
+                <Button size="lg" variant="outline" asChild>
+                  <Link href="/contact">
+                    <MessageCircle className="h-4 w-4" />
+                    {t("common.getInTouch")}
+                  </Link>
+                </Button>
+                <IntroPlayer locale={locale} label={t("hero.introQuick")} />
               </div>
-            </div>
-          </FadeIn>
+            </HeroItem>
+          </HeroEntrance>
+
+          <HeroMedia className="relative min-w-0">
+            <FramedPortrait
+              src={site.portrait}
+              alt={site.name}
+              stats={[
+                {
+                  value: `${allProjects.length}+`,
+                  label: t("hero.projectsDelivered"),
+                },
+                {
+                  value: `${allProjects.filter((p) => p.liveUrl).length}`,
+                  label: t("hero.liveProducts"),
+                },
+              ]}
+            />
+          </HeroMedia>
         </div>
       </section>
 
@@ -184,10 +194,10 @@ export default async function HomePage({
           <div className="relative min-w-0 overflow-hidden rounded-[var(--radius-xl)] border border-[var(--surface-border)] shadow-[var(--shadow-card)] lg:col-span-7">
             <div className="relative aspect-[16/10]">
               <Image
-                src="/images/about-portrait.png"
+                src={site.portrait}
                 alt={site.name}
                 fill
-                className="object-cover"
+                className="object-cover object-[center_18%]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
@@ -215,6 +225,7 @@ export default async function HomePage({
           socials={site.socials}
         />
       </Section>
+
     </>
   );
 }

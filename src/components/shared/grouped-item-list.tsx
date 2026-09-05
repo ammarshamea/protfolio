@@ -1,5 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import { GlassCard } from "@/components/shared/glass-card";
+import { TechIcon } from "@/components/shared/tech-icon";
 import {
   StaggerContainer,
   StaggerItem,
@@ -38,6 +39,9 @@ export function GroupedItemList({
             {groupItems.map((item) => (
               <StaggerItem key={item.name}>
                 <GlassCard className={item.url ? "group h-full" : "h-full"}>
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-[var(--radius-sm)] bg-[var(--muted)] text-[var(--foreground)]">
+                    <TechIcon name={item.name} className="h-5 w-5" />
+                  </div>
                   {item.url ? (
                     <a
                       href={item.url}

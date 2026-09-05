@@ -36,7 +36,7 @@ export default async function ChangelogPage({
   return (
     <>
       <PageHeader
-        eyebrow={t("nav.changelog")}
+        eyebrow={`${t("nav.changelog")} · ${entries.length}`}
         title={tc("title")}
         subtitle={tc("subtitle")}
         breadcrumbs={[

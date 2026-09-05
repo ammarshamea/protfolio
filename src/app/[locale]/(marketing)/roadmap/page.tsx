@@ -14,10 +14,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.roadmap" });
   return generatePageMetadata({
-    title: "Roadmap",
-    description:
-      "Where I'm headed next — real, trackable goals with honest progress.",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
     path: "/roadmap",
     locale,
   });
@@ -30,14 +30,15 @@ export default async function RoadmapPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
+  const tr = await getTranslations({ locale, namespace: "pages.roadmap" });
   const roadmap = getRoadmap(locale);
 
   return (
     <>
       <PageHeader
         eyebrow={t("nav.roadmap")}
-        title="What's next"
-        subtitle="Concrete goals I'm tracking myself against — not a vague list of aspirations."
+        title={tr("title")}
+        subtitle={tr("subtitle")}
         breadcrumbs={[
           { label: t("nav.home"), href: "/" },
           { label: t("nav.roadmap") },
@@ -47,7 +48,7 @@ export default async function RoadmapPage({
         <div className="mx-auto max-w-2xl space-y-10">
           {roadmap.map((year, index) => (
             <FadeIn key={year.year} delay={index * 0.1}>
-              <h2 className="mb-4 text-2xl font-semibold font-[family-name:var(--font-display)]">
+              <h2 className="mb-4 font-[family-name:var(--font-display)] text-2xl font-semibold">
                 {year.year}
               </h2>
               <GlassCard hover={false}>
@@ -78,7 +79,7 @@ export default async function RoadmapPage({
                         {goal.label}
                         <span className="sr-only">
                           {" "}
-                          — {goal.done ? "completed" : "not yet completed"}
+                          — {goal.done ? tr("completed") : tr("notCompleted")}
                         </span>
                       </span>
                     </li>

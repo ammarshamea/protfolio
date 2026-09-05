@@ -4,6 +4,7 @@ import { Briefcase, Calendar, Globe, Users } from "lucide-react";
 import { PageHeader } from "@/components/shared/page-header";
 import { Section } from "@/components/shared/section";
 import { GlassCard } from "@/components/shared/glass-card";
+import { TechIcon } from "@/components/shared/tech-icon";
 import { FadeIn } from "@/components/motion/fade-in";
 import { getAllProjects } from "@/lib/content/projects";
 import { getFeaturedTechnologies } from "@/lib/content/tech-stack";
@@ -93,13 +94,18 @@ export default async function StatsPage({
         </div>
 
         <div className="mt-14">
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-widest text-[var(--muted-foreground)]">
+          <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.12em] text-[var(--muted-foreground)]">
             {ts("topTech")}
           </h2>
           <div className="grid gap-4 sm:grid-cols-3">
             {topTech.map((tech) => (
               <GlassCard key={tech.slug} hover={false}>
-                <p className="font-semibold">{tech.name}</p>
+                <div className="flex items-center gap-3">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-[var(--radius-sm)] bg-[var(--muted)] text-[var(--foreground)]">
+                    <TechIcon name={tech.slug} className="h-5 w-5" />
+                  </span>
+                  <p className="font-semibold">{tech.name}</p>
+                </div>
                 <p className="mt-1 text-sm text-[var(--muted-foreground)]">
                   {tech.projectSlugs.length === 1
                     ? ts("projectCount", { count: tech.projectSlugs.length })

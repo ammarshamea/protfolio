@@ -14,9 +14,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.speaking" });
   return generatePageMetadata({
-    title: "Speaking",
-    description: "Talks and community sessions.",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
     path: "/speaking",
     locale,
   });
@@ -29,14 +30,15 @@ export default async function SpeakingPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
+  const ts = await getTranslations({ locale, namespace: "pages.speaking" });
   const talks = getSpeaking(locale);
 
   return (
     <>
       <PageHeader
         eyebrow={t("nav.speaking")}
-        title="Speaking"
-        subtitle="Talks, workshops, and community sessions — this page grows as engagements happen."
+        title={ts("title")}
+        subtitle={ts("subtitle")}
         breadcrumbs={[
           { label: t("nav.home"), href: "/" },
           { label: t("nav.speaking") },
@@ -46,8 +48,8 @@ export default async function SpeakingPage({
         {talks.length === 0 ? (
           <EmptyState
             icon={Mic}
-            title="No talks yet"
-            description="I haven't given any public talks yet, but I'm open to speaking about Flutter, Laravel, and multi-tenant architecture — get in touch if you're organizing something."
+            title={ts("emptyTitle")}
+            description={ts("emptyDescription")}
           />
         ) : (
           <ul className="mx-auto max-w-2xl space-y-4">
@@ -65,7 +67,7 @@ export default async function SpeakingPage({
                       rel="noreferrer"
                       className="mt-2 inline-block text-sm font-medium text-[var(--accent-text)] hover:underline"
                     >
-                      Watch / view slides
+                      {ts("viewTalk")}
                     </a>
                   ) : null}
                 </GlassCard>

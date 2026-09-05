@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { PageHeader } from "@/components/shared/page-header";
@@ -21,9 +22,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale });
   const site = getSiteContent(locale);
   return generatePageMetadata({
-    title: "Résumé",
+    title: t("nav.resume"),
     description: site.bio.short,
     path: "/resume",
     locale,
@@ -137,6 +139,15 @@ export default async function ResumePage({
             </GlassCard>
 
             <GlassCard hover={false}>
+              <div className="mb-5 flex justify-center">
+                <Image
+                  src={site.portrait}
+                  alt={site.name}
+                  width={96}
+                  height={96}
+                  className="h-24 w-24 rounded-full object-cover object-[center_18%] ring-2 ring-[var(--surface-border)]"
+                />
+              </div>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-center gap-3">
                   <Mail className="h-4 w-4 text-[var(--accent)]" />{" "}

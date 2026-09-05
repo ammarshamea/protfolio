@@ -21,7 +21,7 @@ export default function LocaleError({
   }, [error]);
 
   return (
-    <div className="mx-auto flex min-h-[70vh] max-w-lg items-center justify-center px-6 py-32">
+    <div className="mx-auto flex min-h-[70vh] max-w-lg items-center justify-center px-6 py-20">
       <GlassCard hover={false} padding="lg" className="w-full text-center">
         <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-[var(--danger)]/10 text-[var(--danger)]">
           <AlertTriangle className="h-6 w-6" />

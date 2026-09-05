@@ -3,9 +3,15 @@
 import { ArrowUp } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useScrollTop } from "@/hooks/use-scroll-top";
+import { usePathname } from "@/i18n/navigation";
 
 export function ScrollToTop({ label }: { label: string }) {
   const visible = useScrollTop();
+  const pathname = usePathname();
+
+  // The home page's AppDock already has a Home link and owns the bottom-right
+  // corner on mobile widths, so skip this to avoid overlapping it there.
+  if (pathname === "/") return null;
 
   return (
     <AnimatePresence>

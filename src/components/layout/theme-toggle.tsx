@@ -47,6 +47,7 @@ export function ThemeToggle({ label }: { label: string }) {
           size="icon"
           onClick={handleClick}
           aria-label={label}
+          className="h-9 w-9 sm:h-10 sm:w-10"
         >
           <Icon className="h-[18px] w-[18px]" aria-hidden="true" />
         </Button>

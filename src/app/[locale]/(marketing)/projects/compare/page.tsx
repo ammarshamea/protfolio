@@ -14,10 +14,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pages.compare" });
   return generatePageMetadata({
-    title: "Compare Projects",
-    description:
-      "Compare two projects side by side — stack, features, duration, and results.",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
     path: "/projects/compare",
     locale,
   });
@@ -33,6 +33,7 @@ export default async function CompareProjectsPage({
   const { locale } = await params;
   const { a, b } = await searchParams;
   const t = await getTranslations({ locale });
+  const tc = await getTranslations({ locale, namespace: "pages.compare" });
   const projects = getAllProjects(locale);
 
   const projectA = projects.find((p) => p.slug === a) ?? projects[0];
@@ -41,13 +42,13 @@ export default async function CompareProjectsPage({
   return (
     <>
       <PageHeader
-        eyebrow="Compare"
-        title="Project comparison"
-        subtitle="Pick any two projects to compare their stack, features, and outcomes side by side."
+        eyebrow={tc("eyebrow")}
+        title={tc("title")}
+        subtitle={tc("subtitle")}
         breadcrumbs={[
           { label: t("nav.home"), href: "/" },
           { label: t("nav.projects"), href: "/projects" },
-          { label: "Compare" },
+          { label: tc("eyebrow") },
         ]}
       />
       <Section>
@@ -60,8 +61,8 @@ export default async function CompareProjectsPage({
           <ProjectComparison projectA={projectA} projectB={projectB} />
         ) : (
           <EmptyState
-            title="Not enough projects"
-            description="Add more projects to compare."
+            title={tc("emptyTitle")}
+            description={tc("emptyDescription")}
           />
         )}
       </Section>

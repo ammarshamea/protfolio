@@ -103,17 +103,6 @@ export default async function HomePage({
                 </div>
               </dl>
             </HeroItem>
-            <HeroItem className="mt-4 sm:mt-6">
-              <StatusPills
-                availabilityLabel={t("hero.availabilityBadge")}
-                timezone={site.contact.timezone}
-                whatsappHref={whatsappHref}
-                whatsappLabel={t("hero.whatsappCta")}
-              />
-            </HeroItem>
-            <HeroItem className="mt-3">
-              <CurrentStatus status={now.heroStatus} />
-            </HeroItem>
             <HeroItem className="mt-5 sm:mt-8">
               <div className="flex flex-wrap gap-3">
                 <Button size="lg" variant="outline" asChild>
@@ -124,6 +113,17 @@ export default async function HomePage({
                 </Button>
                 <IntroPlayer locale={locale} label={t("hero.introQuick")} />
               </div>
+            </HeroItem>
+            <HeroItem className="mt-4 sm:mt-6">
+              <StatusPills
+                availabilityLabel={t("hero.availabilityBadge")}
+                timezone={site.contact.timezone}
+                whatsappHref={whatsappHref}
+                whatsappLabel={t("hero.whatsappCta")}
+              />
+            </HeroItem>
+            <HeroItem className="mt-3">
+              <CurrentStatus status={now.heroStatus} />
             </HeroItem>
           </HeroEntrance>
 

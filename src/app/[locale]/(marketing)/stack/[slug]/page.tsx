@@ -12,6 +12,8 @@ export function generateStaticParams() {
   return getAllTechSlugs().map((slug) => ({ slug }));
 }
 
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: {

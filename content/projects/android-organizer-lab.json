@@ -1,0 +1,31 @@
+{
+  "slug": "android-organizer-lab",
+  "title": "Android organizer lab",
+  "tagline": "TaskMate, Taskora, TaskZen, Priorio, PlanFlow, MyAgenda, SmartDay, SmartDailyOrganizer, FlowNote — one shelf, not nine case studies.",
+  "category": "package",
+  "listing": "open-source",
+  "featured": false,
+  "favorite": false,
+  "role": "Android Developer",
+  "duration": "Lab series",
+  "year": "2025",
+  "overview": "A cluster of Java Android organizer experiments published the same day on Codeberg. Grouped so the portfolio does not pretend each to-do clone is a flagship product. Notely and King Chess stay separate because they are different jobs.",
+  "problem": "Nine near-identical productivity apps would dilute real shipped work.",
+  "solution": "One open-source lab entry linking the family, with TaskMate as the representative URL.",
+  "architecture": "Independent Java Android repos on Codeberg under ammarshamea123.",
+  "features": [
+    "Nine public organizer experiments",
+    "Honest grouping instead of inflated case studies"
+  ],
+  "challenges": [
+    "Naming a dozen apps in one week without a shared design system"
+  ],
+  "lessonsLearned": ["Lab pages exist so product pages can stay sharp"],
+  "futureImprovements": ["Pick one organizer and finish it; archive the rest"],
+  "results": ["Visitors see a lab, not a fake 9-product streak"],
+  "stack": ["Java", "Android"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/TaskMate",
+  "coverImage": "/projects/covers/android-organizer-lab.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/android-organizer-lab.png"]
+}

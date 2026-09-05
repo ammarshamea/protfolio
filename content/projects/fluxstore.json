@@ -1,0 +1,36 @@
+{
+  "slug": "fluxstore",
+  "title": "FluxStore",
+  "tagline": "Base Fluxstore Multi Vendor checkout plus the manager-fluxstore vendor-admin customizations.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Flutter Developer",
+  "duration": "2 months",
+  "year": "2026",
+  "overview": "FluxStore on Codeberg is the shared Multi Vendor baseline I customize for Kiddo, LogisticHub, and Sheone. The GitHub manager-fluxstore repo holds vendor-admin work on top of that line.",
+  "problem": "Three client brands needed the same commerce engine without three unrelated forks of checkout.",
+  "solution": "Keep a baseline FluxStore tree, then layer brand repos and a manager customization.",
+  "architecture": "Fluxstore Flutter commerce client + optional manager app. Brand repos (flux-kiddo, flex-*) overlay theme and IA.",
+  "features": [
+    "Shared multi-vendor checkout baseline",
+    "Vendor manager customizations",
+    "Brand overlays in sibling repos"
+  ],
+  "challenges": [
+    "Not letting brand forks diverge past the point of merging Fluxstore updates"
+  ],
+  "lessonsLearned": ["A named baseline repo makes client forks explainable"],
+  "futureImprovements": [
+    "A short upgrade checklist shared across Kiddo / LogisticHub / Sheone"
+  ],
+  "results": [
+    "One baseline plus three brand storefronts instead of undocumented copies"
+  ],
+  "stack": ["Flutter", "Dart", "WooCommerce"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/FluxStore",
+  "coverImage": "/projects/covers/fluxstore.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/fluxstore.png"]
+}

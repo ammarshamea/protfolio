@@ -256,6 +256,7 @@
       "codebergMirror": "Codeberg mirror",
       "codebergDesc": "I keep a presence on Codeberg as a non-corporate alternative for future open-source releases.",
       "viewCodeberg": "View Codeberg profile",
+      "curatedTitle": "Curated public work",
       "whatsNext": "What's next",
       "whatsNextDesc": "Two concrete goals on the <roadmap>roadmap</roadmap>: publishing the shared Dart packages built for the Qareeb ecosystem as proper open-source releases, and contributing to an established open-source Flutter package. Both are in progress, not finished — this page will update honestly as they ship.",
       "followers": "{count} follower on GitHub.",

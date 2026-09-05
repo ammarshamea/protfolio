@@ -1,0 +1,35 @@
+{
+  "slug": "qareeb-packages",
+  "title": "Qareeb Flutter packages",
+  "tagline": "Shared Dart packages from the Qareeb ecosystem: models, map helpers, drawable text, multi-type images.",
+  "category": "package",
+  "listing": "open-source",
+  "featured": false,
+  "favorite": false,
+  "role": "Package Author",
+  "duration": "Ongoing",
+  "year": "2025",
+  "overview": "Tiny Dart libraries extracted from Qareeb so the rider/driver apps do not each own a copy of models, map widgets, drawable text, and multi-type images. Grouped here instead of four weak case studies.",
+  "problem": "Copy-pasted models and image/text widgets across Qareeb apps drifted out of sync.",
+  "solution": "Publish qareeb_models, map_qareeb, qarreb-drawable_text, and qarreb-image-multi-type as their own repos.",
+  "architecture": "Four small Dart packages on GitHub under ammarshamea. Consumed by the Qareeb Flutter clients.",
+  "features": [
+    "qareeb_models — shared domain models",
+    "map_qareeb — map helpers",
+    "qarreb-drawable_text — text drawing utilities",
+    "qarreb-image-multi-type — multi-type image widget"
+  ],
+  "challenges": ["Naming drift (qareeb vs qarreb) across early package repos"],
+  "lessonsLearned": [
+    "Extract packages when a second app needs the same widget, not before"
+  ],
+  "futureImprovements": [
+    "pub.dev-style versioning and a single qareeb_* naming prefix"
+  ],
+  "results": ["Four public Dart packages instead of four padded case studies"],
+  "stack": ["Dart", "Flutter"],
+  "githubUrl": "https://github.com/ammarshamea/qareeb_models",
+  "coverImage": "/projects/covers/qareeb-packages.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/qareeb-packages.png"]
+}

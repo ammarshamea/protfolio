@@ -1,0 +1,32 @@
+{
+  "slug": "notely",
+  "title": "Notely",
+  "tagline": "Android notes app (Java) — the product face of a larger organizer-app series.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Android Developer",
+  "duration": "3 weeks",
+  "year": "2025",
+  "overview": "Notely is a Java Android notes app. Related organizers (FlowNote, TaskMate, and others) are grouped as an open-source lab so this page stays a real product entry instead of ten thin clones.",
+  "problem": "I needed a notes client that was more than a tutorial list, while a swarm of near-identical task apps did not each deserve a case study.",
+  "solution": "Ship Notely as the notes product; park the rest under the Android organizer lab.",
+  "architecture": "Java Android application. Sibling repos share the same era and forge.",
+  "features": ["Note-taking Android client", "Public Java source on Codeberg"],
+  "challenges": ["Choosing one notes app to represent a family of experiments"],
+  "lessonsLearned": [
+    "Portfolio density is a design problem, not a git problem"
+  ],
+  "futureImprovements": [
+    "Deep link the organizer-lab case study from this page"
+  ],
+  "results": [
+    "A single notes product plus a grouped lab instead of a wall of twins"
+  ],
+  "stack": ["Java", "Android"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/Notely",
+  "coverImage": "/projects/covers/notely.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/notely.png"]
+}

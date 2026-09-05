@@ -6,9 +6,8 @@ import { Section } from "@/components/shared/section";
 import { GlassCard } from "@/components/shared/glass-card";
 import { TechIcon } from "@/components/shared/tech-icon";
 import { FadeIn } from "@/components/motion/fade-in";
-import { getAllProjects } from "@/lib/content/projects";
 import { getFeaturedTechnologies } from "@/lib/content/tech-stack";
-import { getStats } from "@/lib/content/misc";
+import { getPortfolioMetrics } from "@/lib/content/metrics";
 import { generatePageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -34,30 +33,29 @@ export default async function StatsPage({
   const { locale } = await params;
   const t = await getTranslations({ locale });
   const ts = await getTranslations({ locale, namespace: "pages.stats" });
-  const projects = getAllProjects(locale);
-  const stats = getStats();
+  const metrics = getPortfolioMetrics(locale);
   const topTech = getFeaturedTechnologies(3, locale);
 
   const summary = [
     {
       icon: Briefcase,
       label: ts("projectsDelivered"),
-      value: `${projects.length}+`,
+      value: `${metrics.projectsDelivered}+`,
     },
     {
       icon: Calendar,
       label: ts("yearsExperience"),
-      value: stats.yearsExperience,
+      value: metrics.yearsExperienceLabel,
     },
     {
       icon: Globe,
       label: ts("liveProducts"),
-      value: `${projects.filter((p) => p.liveUrl).length}`,
+      value: `${metrics.liveProducts}`,
     },
     {
       icon: Users,
       label: ts("clientsServed"),
-      value: `${stats.clientsServed}`,
+      value: `${metrics.clientsServed}`,
     },
   ];
 

@@ -12,7 +12,7 @@ export async function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-[var(--surface-border)] bg-[var(--surface)] pb-28 sm:pb-32">
+    <footer className="border-t border-[var(--surface-border)] bg-[var(--surface)] pb-[calc(var(--dock-space)+1.75rem)]">
       <div className="mx-auto flex max-w-[90rem] flex-col gap-10 px-6 py-12 sm:px-10">
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row">
           <div className="max-w-sm">
@@ -59,7 +59,10 @@ export async function Footer() {
             <Link href="/terms" className="hover:text-[var(--foreground)]">
               {t("footer.terms")}
             </Link>
-            <Link href="/sitemap-page" className="hover:text-[var(--foreground)]">
+            <Link
+              href="/sitemap-page"
+              className="hover:text-[var(--foreground)]"
+            >
               {t("footer.sitemap")}
             </Link>
           </div>

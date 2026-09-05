@@ -1,0 +1,19 @@
+{
+  "slug": "web-motion-lab",
+  "title": "مختبر الحركة والوسائط",
+  "tagline": "VisualLearningHub وSoundSense وSmartWebMedia وMotionMaster وEduMotion — تجارب HTML على بطاقة واحدة.",
+  "role": "مطوّر واجهات",
+  "duration": "سلسلة مختبر",
+  "overview": "خمس تجارب HTML من يوم Codeberg نفسه: تعلّم بصري وصوت ووسائط وحركة وتعليم حركي. مجمّعة كمختبر حتى لا تزاحم عمل Flutter/Laravel المُسلَّم.",
+  "problem": "دراسات HTML تمرين حقيقي وملاءمة سيئة لدراسات الحالة الرائدة.",
+  "solution": "بطاقة مصدر مفتوح واحدة ومدخلها VisualLearningHub.",
+  "architecture": "مستودعات HTML ثابتة على Codeberg.",
+  "features": ["خمس تجارب HTML عامة", "رف معرض واحد"],
+  "challenges": ["عناوين تبدو كمنتجات وهي دراسات"],
+  "lessonsLearned": ["التسمية ليست شهادة إطلاق"],
+  "futureImprovements": ["اختيار تجربة واحدة للترقية إن أُطلقت يومًا"],
+  "results": ["رف مختبر بدل خمس معارض فارغة"],
+  "coverImage": "/projects/covers/web-motion-lab.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/web-motion-lab.png"]
+}

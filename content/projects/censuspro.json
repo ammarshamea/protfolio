@@ -1,0 +1,38 @@
+{
+  "slug": "censuspro",
+  "title": "CensusPro",
+  "tagline": "Census operations stack: JavaScript front-end, Laravel API, and a Python processing lane.",
+  "category": "web",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Full Stack Developer",
+  "duration": "8 weeks",
+  "year": "2026",
+  "overview": "CensusPro splits a census-style workflow across three public repos: a JavaScript front-end, a Laravel API, and a Python service for heavier processing — one product, three deployable pieces.",
+  "problem": "Field/census data collection needed a browser UI, a boring reliable API, and a place to run Python jobs without stuffing everything into one repo.",
+  "solution": "censuspro-frontend for operators, censuspro-backend (Laravel/PHP) for records and auth, censuspro-python for batch/analysis work.",
+  "architecture": "Browser client → Laravel REST API → MySQL (typical Laravel stack) with a sibling Python repo for jobs that do not belong in PHP request time.",
+  "features": [
+    "Operator-facing census UI",
+    "Laravel API for records and access control",
+    "Python companion for processing pipelines"
+  ],
+  "challenges": [
+    "Keeping three repos in contract with each other without a monorepo"
+  ],
+  "lessonsLearned": [
+    "Language boundaries are fine if the API contract is the only shared surface"
+  ],
+  "futureImprovements": [
+    "Shared OpenAPI spec checked in both the Laravel and front-end repos"
+  ],
+  "results": [
+    "Public, inspectable three-repo census stack instead of a private monolith"
+  ],
+  "stack": ["JavaScript", "Laravel", "PHP", "Python"],
+  "githubUrl": "https://github.com/ammarshamea/censuspro-frontend",
+  "coverImage": "/projects/covers/censuspro.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/censuspro.png"]
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "cardbot",
+  "title": "Cardbot",
+  "tagline": "Telegram bot for digital gift-card sales — catalog, wallet, orders, and an admin panel.",
+  "category": "automation",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Backend Developer",
+  "duration": "6 weeks",
+  "year": "2025",
+  "overview": "Cardbot (StyleCard) is a production-shaped Telegram commerce bot: bilingual catalog, balances, code delivery, referrals, and a multi-level admin. PostgreSQL plus optional Redis.",
+  "problem": "Selling digital codes over Telegram without a structured catalog, wallet, and admin meant chaos in chats and spreadsheets.",
+  "solution": "A Python bot with typed handlers, a SQL schema for users/products/codes/orders, and admin commands for stock and broadcasts.",
+  "architecture": "main.py entry, handler modules, PostgreSQL schema in db/init.sql, Redis-optional cache, rate limiting and parameterized queries.",
+  "features": [
+    "EN/AR user flows with inline keyboards",
+    "Balance, purchase, and order history",
+    "Admin product/code/user management and broadcasts"
+  ],
+  "challenges": [
+    "Safe digital-code inventory so a code cannot be sold twice",
+    "Admin sessions that span multiple Telegram messages"
+  ],
+  "lessonsLearned": [
+    "A real schema beats stuffing catalog state into chat memory"
+  ],
+  "futureImprovements": [
+    "Payment-provider webhooks if a live merchant asks for them"
+  ],
+  "results": [
+    "A documented, deployable gift-card bot with admin and user sides"
+  ],
+  "stack": ["Python", "PostgreSQL", "Redis"],
+  "githubUrl": "https://github.com/ammarshamea/cardbot",
+  "coverImage": "/projects/covers/cardbot.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/cardbot.png"]
+}

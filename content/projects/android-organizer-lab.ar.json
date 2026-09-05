@@ -1,0 +1,19 @@
+{
+  "slug": "android-organizer-lab",
+  "title": "مختبر منظِّمات أندرويد",
+  "tagline": "TaskMate وTaskora وTaskZen وPriorio وPlanFlow وMyAgenda وSmartDay وSmartDailyOrganizer وFlowNote — رف واحد لا تسع دراسات.",
+  "role": "مطوّر أندرويد",
+  "duration": "سلسلة مختبر",
+  "overview": "مجموعة تجارب منظِّمات أندرويد بجافا نُشرت في اليوم نفسه على Codeberg. مجمّعة حتى لا يدّعي المعرض أن كل نسخة مهام منتج رائد. نوتلي وكينغ تشس منفصلان لأن مهمتيهما مختلفتان.",
+  "problem": "تسعة تطبيقات إنتاجية شبه متطابقة تُضعف العمل المُسلَّم فعلًا.",
+  "solution": "مدخل مختبر مفتوح واحد يربط العائلة، وTaskMate كرابط ممثل.",
+  "architecture": "مستودعات أندرويد بجافا مستقلة على Codeberg تحت ammarshamea123.",
+  "features": ["تسع تجارب منظِّمات عامة", "تجميع صادق بدل دراسات منفوخة"],
+  "challenges": ["تسمية عشرة تطبيقات في أسبوع بلا نظام تصميم مشترك"],
+  "lessonsLearned": ["صفحات المختبر موجودة حتى تبقى صفحات المنتج حادة"],
+  "futureImprovements": ["اختيار منظِّم واحد وإكماله وأرشفة البقية"],
+  "results": ["الزائر يرى مختبرًا لا سلسلة تسعة منتجات زائفة"],
+  "coverImage": "/projects/covers/android-organizer-lab.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/android-organizer-lab.png"]
+}

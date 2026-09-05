@@ -5,7 +5,7 @@ import { Section } from "@/components/shared/section";
 import { ProjectComparison } from "@/components/projects/project-comparison";
 import { CompareSelector } from "@/components/projects/compare-selector";
 import { EmptyState } from "@/components/shared/empty-state";
-import { getAllProjects } from "@/lib/content/projects";
+import { getShowcaseProjects } from "@/lib/content/projects";
 import { generatePageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -34,7 +34,7 @@ export default async function CompareProjectsPage({
   const { a, b } = await searchParams;
   const t = await getTranslations({ locale });
   const tc = await getTranslations({ locale, namespace: "pages.compare" });
-  const projects = getAllProjects(locale);
+  const projects = getShowcaseProjects(locale);
 
   const projectA = projects.find((p) => p.slug === a) ?? projects[0];
   const projectB = projects.find((p) => p.slug === b) ?? projects[1];

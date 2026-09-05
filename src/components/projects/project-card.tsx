@@ -9,9 +9,11 @@ import type { Project } from "@/lib/schemas/project";
 export function ProjectCard({
   project,
   featuredLayout = false,
+  priority = false,
 }: {
   project: Project;
   featuredLayout?: boolean;
+  priority?: boolean;
 }) {
   const t = useTranslations("common");
   const tp = useTranslations("pages.projects");
@@ -27,7 +29,7 @@ export function ProjectCard({
       <Link
         href={`/projects/${project.slug}`}
         className={cn(
-          "relative block overflow-hidden",
+          "group relative block overflow-hidden",
           featuredLayout
             ? "aspect-[16/10] lg:aspect-auto lg:min-h-full lg:w-[48%] lg:shrink-0"
             : "aspect-[16/10]",
@@ -35,6 +37,7 @@ export function ProjectCard({
       >
         <ProjectVisualPanel
           project={project}
+          priority={priority}
           className="absolute inset-0 h-full w-full"
           sizes={
             featuredLayout

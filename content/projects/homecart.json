@@ -1,0 +1,33 @@
+{
+  "slug": "homecart",
+  "title": "HomeCart",
+  "tagline": "Android home-shopping client; MyBasket and MyPurchases live as sibling repos.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Android Developer",
+  "duration": "5 weeks",
+  "year": "2026",
+  "overview": "HomeCart is the lead Android shopping client in a 2026 Codeberg cluster (HOMECART, MyBasket, MyPurchases). Those siblings are called out here instead of three near-duplicate case studies.",
+  "problem": "Household shopping lists and carts needed a native Android client, and splitting every screen into its own 'product' would lie to visitors.",
+  "solution": "HomeCart as the product entry; MyBasket and MyPurchases as named companion repos.",
+  "architecture": "Java Android apps on Codeberg. HomeCart is the gallery cover; the others share the same week of work.",
+  "features": [
+    "Home shopping Android client",
+    "Companion basket and purchases repos"
+  ],
+  "challenges": ["Deciding which repo is the product vs a screen"],
+  "lessonsLearned": ["Group by user job, not by repository birthday"],
+  "futureImprovements": [
+    "Deep links between the three apps if they stay separate APKs"
+  ],
+  "results": [
+    "One shopping product with two named companion repos instead of three thin case studies"
+  ],
+  "stack": ["Java", "Android"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/HOMECART",
+  "coverImage": "/projects/covers/homecart.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/homecart.png"]
+}

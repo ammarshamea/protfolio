@@ -1,0 +1,25 @@
+{
+  "slug": "flex-logistichub",
+  "title": "فليكس لوجستك هب",
+  "tagline": "تخصيص Fluxstore لكتالوج لوجستي ومسار بائعين.",
+  "role": "مطوّر Flutter",
+  "duration": "5 أسابيع",
+  "overview": "فليكس لوجستك هب يكيّف Fluxstore Multi Vendor لكتالوج لوجستي/جملة — تجميع المنتجات وأدوات البائع ونصوص تناسب وحدات الشحن لا عرض الأزياء.",
+  "problem": "واجهة المتجر متعدد البائعين العامة أخفت الحقول التي يهتم بها عاملو اللوجستيات.",
+  "solution": "تخصيص تنقل Fluxstore وبطاقات المنتج وإدارة البائع لتتوافق العمليات مع مركز لوجستي لا مع بوتيك.",
+  "architecture": "نفس نمط Flutter Fluxstore + WooCommerce لبقية تطبيقات Flex/Flux، في مستودع مستقل حتى تبقى قواعد العلامة منفصلة.",
+  "features": [
+    "عرض كتالوج بطابع لوجستي",
+    "أدوات بائع من Fluxstore مشذّبة لمسار المركز",
+    "عمود دفع مشترك مع ثيم خاص بالعميل"
+  ],
+  "challenges": ["إعادة تزيين قالب موجّه للموضة ليثق به المشغّلون"],
+  "lessonsLearned": [
+    "تغيير بنية المعلومات أهم من تغيير الألوان فقط في كتالوجات الأعمال"
+  ],
+  "futureImprovements": ["واجهات أسعار شحن أعمق إن كشفت إضافات Woo عنها بوضوح"],
+  "results": ["مستودع واجهة لوجستية يمكن للعميل تطويره باستمرار"],
+  "coverImage": "/projects/covers/flex-logistichub.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/flex-logistichub.png"]
+}

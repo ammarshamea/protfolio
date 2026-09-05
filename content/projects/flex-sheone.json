@@ -1,0 +1,38 @@
+{
+  "slug": "flex-sheone",
+  "title": "Flex Sheone",
+  "tagline": "Fashion Fluxstore build for the Sheone catalog — theme, merchandising, and vendor admin.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Flutter Developer",
+  "duration": "5 weeks",
+  "year": "2026",
+  "overview": "Flex Sheone is the Sheone fashion storefront on Fluxstore Multi Vendor: look-and-feel, catalog hierarchy, and the vendor-side pieces the brand needed in production.",
+  "problem": "The brand's Woo catalog existed; the default Fluxstore theme did not look like Sheone.",
+  "solution": "A dedicated Fluxstore fork with Sheone theming, category structure, and vendor admin customizations.",
+  "architecture": "Flutter Fluxstore client with brand assets and module overrides; commerce data stays on the WooCommerce API.",
+  "features": [
+    "Sheone-branded home and product surfaces",
+    "Fashion-oriented category browsing",
+    "Vendor admin customizations for the brand team"
+  ],
+  "challenges": [
+    "Matching a fashion brand's visual density without breaking Fluxstore's checkout"
+  ],
+  "lessonsLearned": [
+    "Keep checkout stock; spend the design budget on catalog and brand moments"
+  ],
+  "futureImprovements": [
+    "Lookbook-style landing modules if the catalog grows seasonal drops"
+  ],
+  "results": [
+    "Production Sheone mobile storefront separated from the other Flex client repos"
+  ],
+  "stack": ["Flutter", "Dart", "WooCommerce"],
+  "githubUrl": "https://github.com/ammarshamea/flex-sheone",
+  "coverImage": "/projects/covers/flex-sheone.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/flex-sheone.png"]
+}

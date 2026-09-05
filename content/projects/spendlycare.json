@@ -1,0 +1,32 @@
+{
+  "slug": "spendlycare",
+  "title": "SpendlyCare",
+  "tagline": "Android spending / care tracker — money and household care in one Java client.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Android Developer",
+  "duration": "4 weeks",
+  "year": "2026",
+  "overview": "SpendlyCare is a Java Android app for spending and care tracking, shipped the same week as HomeCart but aimed at money/care rather than a cart.",
+  "problem": "A shopping cart app is the wrong place to track recurring care costs and spend.",
+  "solution": "A separate SpendlyCare client with that job in the name.",
+  "architecture": "Java Android application on Codeberg.",
+  "features": ["Spend/care tracking client", "Public Java source"],
+  "challenges": [
+    "Not collapsing it into HomeCart just because both launched in May 2026"
+  ],
+  "lessonsLearned": [
+    "Job-to-be-done is a better grouping key than git timestamp"
+  ],
+  "futureImprovements": [
+    "Export a simple CSV if anyone actually budgets with it"
+  ],
+  "results": ["Public Android finance/care client on Codeberg"],
+  "stack": ["Java", "Android"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/SpendlyCare",
+  "coverImage": "/projects/covers/spendlycare.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/spendlycare.png"]
+}

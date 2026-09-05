@@ -1,0 +1,19 @@
+{
+  "slug": "flutter-smart-image",
+  "title": "flutter_smart_image",
+  "tagline": "مساعد Flutter/ويب صغير لتحميل صور أذكى — حزمة مفتوحة لا دراسة حالة.",
+  "role": "مؤلف حزم",
+  "duration": "أسبوعان",
+  "overview": "flutter_smart_image مساعد صغير على Codeberg. مكانه مع أدوات Dart لا بجانب كليكس أوردر.",
+  "problem": "لصق متكرر لتحميل الصور عبر شاشات Flutter.",
+  "solution": "مستودع مساعد مخصّص.",
+  "architecture": "مكتبة صغيرة على Codeberg (خليط HTML/Dart في الشجرة).",
+  "features": ["مساعد صور قابل لإعادة الاستخدام", "مصدر عام على Codeberg"],
+  "challenges": ["مقاومة كتابة دراسة حالة كاملة لمساعد"],
+  "lessonsLearned": ["قائمة المصدر المفتوح الرف الصحيح للأدوات"],
+  "futureImprovements": ["إضافة مثال استخدام من صفحة واحدة"],
+  "results": ["حزمة مساعدة عامة مع بقية أدوات Dart"],
+  "coverImage": "/projects/covers/flutter-smart-image.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/flutter-smart-image.png"]
+}

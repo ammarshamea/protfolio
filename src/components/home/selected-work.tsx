@@ -39,7 +39,7 @@ export function SelectedWork({
       <div className="grid gap-6">
         {lead ? (
           <FadeIn>
-            <ProjectCard project={lead} featuredLayout />
+            <ProjectCard project={lead} featuredLayout priority />
           </FadeIn>
         ) : null}
         {rest.length > 0 ? (

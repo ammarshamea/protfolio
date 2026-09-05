@@ -5,6 +5,7 @@
 @custom-variant hc (&:where([data-theme="high-contrast"], [data-theme="high-contrast"] *));
 
 :root {
+  --dock-space: 5.75rem;
   --background: #f7faf8;
   --foreground: #0f172a;
   --surface: #ffffff;
@@ -27,7 +28,8 @@
   --radius-sm: 0.5rem;
   --radius-lg: 1.25rem;
   --radius-xl: 1.75rem;
-  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 14px 40px rgb(15 23 42 / 0.06);
+  --shadow-card:
+    0 1px 2px rgb(15 23 42 / 0.04), 0 14px 40px rgb(15 23 42 / 0.06);
   --font-display: var(--font-sora), "Sora", ui-sans-serif, sans-serif;
   --font-sans: var(--font-inter), "Inter", ui-sans-serif, sans-serif;
   --font-arabic:
@@ -68,7 +70,8 @@
 }
 
 [dir="rtl"] {
-  --font-display: var(--font-noto-arabic), "Noto Sans Arabic", ui-sans-serif, sans-serif;
+  --font-display:
+    var(--font-noto-arabic), "Noto Sans Arabic", ui-sans-serif, sans-serif;
 }
 
 /*
@@ -208,6 +211,13 @@
 html {
   scroll-behavior: smooth;
   overflow-x: clip;
+  scroll-padding-bottom: var(--dock-space);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --dock-space: 6.5rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -242,6 +252,10 @@ body {
 
 main {
   overflow-x: clip;
+}
+
+#main-content {
+  padding-bottom: 0.5rem;
 }
 
 [dir="rtl"] body {

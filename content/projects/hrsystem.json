@@ -1,0 +1,35 @@
+{
+  "slug": "hrsystem",
+  "title": "HR System",
+  "tagline": "Early Flutter HR client — employee records and internal workflows, kept public as a learning-to-product artifact.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Flutter Developer",
+  "duration": "4 weeks",
+  "year": "2025",
+  "overview": "HR System is an early Flutter application for internal people-ops screens. The public repo is still the default Flutter starter in places — the value is the domain shape, not polished product marketing.",
+  "problem": "I needed a non-commerce Flutter project to practice forms, lists, and role-specific screens around employees rather than products.",
+  "solution": "A Flutter HR shell covering employee-oriented navigation and records. Honest about its starter roots.",
+  "architecture": "Standard Flutter app structure (screens, widgets, default project layout) aimed at HR entities instead of a store.",
+  "features": [
+    "Employee-oriented screen structure",
+    "Form-heavy internal UI practice"
+  ],
+  "challenges": ["Not overselling a learning repo as a finished HRIS"],
+  "lessonsLearned": [
+    "Domain models (employee vs product) change the UI more than the framework does"
+  ],
+  "futureImprovements": [
+    "Replace leftover starter copy with a real design system if this is ever reused"
+  ],
+  "results": [
+    "Public Flutter HR experiment that sits beside later production apps"
+  ],
+  "stack": ["Flutter", "Dart"],
+  "githubUrl": "https://github.com/ammarshamea/hrsystem",
+  "coverImage": "/projects/covers/hrsystem.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/hrsystem.png"]
+}

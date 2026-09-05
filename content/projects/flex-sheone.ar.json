@@ -1,0 +1,27 @@
+{
+  "slug": "flex-sheone",
+  "title": "فليكس شيون",
+  "tagline": "بناء Fluxstore للأزياء لكتالوج شيون — السمة والعرض وإدارة البائعين.",
+  "role": "مطوّر Flutter",
+  "duration": "5 أسابيع",
+  "overview": "فليكس شيون واجهة أزياء شيون على Fluxstore Multi Vendor: الشكل والتسلسل الكتالوجي وأجزاء البائع التي احتاجتها العلامة في الإنتاج.",
+  "problem": "كتالوج Woo للعلامة كان موجودًا؛ سمة Fluxstore الافتراضية لم تشبه شيون.",
+  "solution": "تفريع Fluxstore مخصّص بسمة شيون وبنية تصنيفات وتخصيصات إدارة البائع.",
+  "architecture": "عميل Flutter Fluxstore مع أصول العلامة وتجاوزات الوحدات؛ بيانات التجارة تبقى على واجهة WooCommerce.",
+  "features": [
+    "واجهات رئيسية ومنتج بهوية شيون",
+    "تصفح تصنيفات يناسب الأزياء",
+    "تخصيصات إدارة البائع لفريق العلامة"
+  ],
+  "challenges": ["مطابقة كثافة هوية الأزياء دون كسر دفع Fluxstore"],
+  "lessonsLearned": [
+    "أبقِ الدفع قياسيًا؛ أنفق ميزانية التصميم على الكتالوج ولحظات العلامة"
+  ],
+  "futureImprovements": [
+    "وحدات هبوط بأسلوب lookbook إذا نمت الإسقاطات الموسمية"
+  ],
+  "results": ["واجهة شيون للإنتاج منفصلة عن بقية مستودعات Flex"],
+  "coverImage": "/projects/covers/flex-sheone.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/flex-sheone.png"]
+}

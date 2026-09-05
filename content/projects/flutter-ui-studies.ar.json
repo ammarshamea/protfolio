@@ -1,0 +1,23 @@
+{
+  "slug": "flutter-ui-studies",
+  "title": "دراسات واجهات فلاتر",
+  "tagline": "استنساخ ستاربكس وواجهة مارفل والمزادات — شاشات Flutter مبكرة بقيت عامة عمدًا.",
+  "role": "مطوّر Flutter",
+  "duration": "دراسات",
+  "overview": "استنساخ واجهة ستاربكس (ما زال في الحقائق الطريفة) مع marvel وAuctions. شاشات تعلّم لا منتجات عملاء — مجمّعة لتبقى مرئية دون التظاهر بأنها كليكس.",
+  "problem": "الاستنساخات المبكرة محرجة للإخفاء وغير صادقة كدراسات حالة بارزة.",
+  "solution": "بطاقة دراسات مفتوحة بثلاثة مستودعات GitHub عامة.",
+  "architecture": "تطبيقات Flutter مستقلة: starbucks وmarvel وAuctions.",
+  "features": [
+    "starbucks — أول واجهة Flutter جدية",
+    "marvel — دراسة واجهة كتالوج",
+    "Auctions — دراسة واجهة مزايدة"
+  ],
+  "challenges": ["ترك العيوب عامة"],
+  "lessonsLearned": ["الاستنساخ الأول جزء من السيرة إن قلت ما هو"],
+  "futureImprovements": ["لا تُعد كتابتها؛ أرِّخها واتركها"],
+  "results": ["ثلاثة مستودعات دراسة عامة ورف صادق واحد"],
+  "coverImage": "/projects/covers/flutter-ui-studies.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/flutter-ui-studies.png"]
+}

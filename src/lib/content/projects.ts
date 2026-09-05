@@ -48,3 +48,11 @@ export function getProjectsByCategory(
 export function getAllProjectSlugs(): string[] {
   return loadBase().map((p) => p.slug);
 }
+
+export function getShowcaseProjects(locale: string = "en"): Project[] {
+  return getAllProjects(locale).filter((p) => p.listing !== "open-source");
+}
+
+export function getOpenSourceProjects(locale: string = "en"): Project[] {
+  return getAllProjects(locale).filter((p) => p.listing === "open-source");
+}

@@ -1,7 +1,4 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { fadeUp, viewportOnce } from "@/lib/animations";
+import { FadeIn } from "@/components/motion/fade-in";
 
 export function HowIWork({
   intro,
@@ -17,13 +14,9 @@ export function HowIWork({
       </p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {steps.map((step, index) => (
-          <motion.div
+          <FadeIn
             key={step.title}
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportOnce}
-            variants={fadeUp}
-            transition={{ delay: index * 0.05 }}
+            delay={index * 0.05}
             className="rounded-[var(--radius-lg)] border border-[var(--surface-border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)]"
           >
             <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--accent)]">
@@ -33,7 +26,7 @@ export function HowIWork({
             <p className="mt-2 text-sm leading-relaxed text-[var(--muted-foreground)]">
               {step.description}
             </p>
-          </motion.div>
+          </FadeIn>
         ))}
       </div>
     </div>

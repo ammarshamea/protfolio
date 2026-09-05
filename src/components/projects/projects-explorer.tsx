@@ -21,6 +21,7 @@ const CATEGORIES: (ProjectCategory | "all")[] = [
   "web",
   "agency",
   "automation",
+  "package",
 ];
 
 const PAGE_SIZE = 9;

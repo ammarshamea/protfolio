@@ -1,0 +1,39 @@
+{
+  "slug": "flux-kiddo",
+  "title": "Flux Kiddo",
+  "tagline": "Kids-focused Fluxstore storefront customized for a family retail catalog.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Flutter Developer",
+  "duration": "6 weeks",
+  "year": "2026",
+  "overview": "Flux Kiddo is a client storefront built on Fluxstore Multi Vendor and tailored for a kids/family catalog — navigation, merchandising, and theme work rather than a from-scratch commerce engine.",
+  "problem": "The merchant needed a mobile shop that felt like a kids brand, not a generic Fluxstore demo, without paying for a full custom commerce stack.",
+  "solution": "I forked and customized Fluxstore: kids-oriented information architecture, catalog presentation, and vendor/admin flows the merchant actually uses.",
+  "architecture": "Flutter Fluxstore client talking to a WooCommerce/WordPress backend, with theme and module overrides kept in the kiddo repo so upstream updates can still be merged carefully.",
+  "features": [
+    "Kids-oriented catalog browsing and product detail",
+    "Checkout and cart flows inherited from Fluxstore, restyled",
+    "Vendor/admin customizations for the merchant's catalog"
+  ],
+  "challenges": [
+    "Keeping merchant-specific UI without forking so hard that Fluxstore updates become impossible",
+    "Explaining honestly that this is a production customization, not a greenfield commerce platform"
+  ],
+  "lessonsLearned": [
+    "Theme and module boundaries matter more than rewriting Fluxstore internals"
+  ],
+  "futureImprovements": [
+    "Documented upgrade path for the next Fluxstore release"
+  ],
+  "results": [
+    "Shipped a branded kids storefront the merchant can operate from the existing Fluxstore/Woo stack"
+  ],
+  "stack": ["Flutter", "Dart", "WooCommerce"],
+  "githubUrl": "https://github.com/ammarshamea/flux-kiddo",
+  "coverImage": "/projects/covers/flux-kiddo.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/flux-kiddo.png"]
+}

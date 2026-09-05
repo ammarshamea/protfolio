@@ -1,7 +1,4 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { fadeUp, viewportOnce } from "@/lib/animations";
+import { FadeIn } from "@/components/motion/fade-in";
 import { GlassCard } from "@/components/shared/glass-card";
 import type { TimelineItem } from "@/lib/schemas/misc";
 
@@ -18,12 +15,9 @@ export function InteractiveCareerTimeline({
       />
       <div className="space-y-16">
         {items.map((item, index) => (
-          <motion.div
+          <FadeIn
             key={item.year}
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportOnce}
-            variants={fadeUp}
+            delay={index * 0.04}
             className={`relative flex flex-col gap-6 ps-12 sm:ps-0 ${
               index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
             }`}
@@ -57,7 +51,7 @@ export function InteractiveCareerTimeline({
                 ) : null}
               </GlassCard>
             </div>
-          </motion.div>
+          </FadeIn>
         ))}
       </div>
     </div>

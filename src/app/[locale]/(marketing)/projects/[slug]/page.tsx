@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
+import { FaCodeBranch, FaGithub } from "react-icons/fa";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Section, SectionLabel } from "@/components/shared/section";
@@ -36,6 +36,8 @@ import {
 export function generateStaticParams() {
   return getAllProjectSlugs().map((slug) => ({ slug }));
 }
+
+export const dynamicParams = false;
 
 export async function generateMetadata({
   params,
@@ -124,7 +126,11 @@ export default async function ProjectDetailPage({
               {project.githubUrl ? (
                 <Button variant="secondary" asChild>
                   <a href={project.githubUrl} target="_blank" rel="noreferrer">
-                    <FaGithub className="h-4 w-4" />
+                    {project.githubUrl.includes("codeberg.org") ? (
+                      <FaCodeBranch className="h-4 w-4" />
+                    ) : (
+                      <FaGithub className="h-4 w-4" />
+                    )}
                     {t("common.sourceCode")}
                   </a>
                 </Button>

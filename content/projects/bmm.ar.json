@@ -1,0 +1,19 @@
+{
+  "slug": "bmm",
+  "title": "بي إم إم",
+  "tagline": "موقع HTML ثابت لواجب BMM — عام وصغير وصادق في نطاقه.",
+  "role": "مطوّر واجهات",
+  "duration": "أسبوع واحد",
+  "overview": "بي إم إم موقع HTML عام صغير (مع مستودع واجب BMM_HW). أثر لأساسيات الويب لا منصة منتج.",
+  "problem": "الحاجة لصفحة ثابتة قابلة للمشاركة لواجب بلا إطار جافاسكربت.",
+  "solution": "HTML/CSS مكتوب يدويًا في مستودع عام مع رفيق الواجب.",
+  "architecture": "وثائق HTML ثابتة. بلا خطوة بناء.",
+  "features": ["ترميز دلالي ثابت", "بنية واجب متعددة الصفحات بسيطة"],
+  "challenges": ["الإبقاء على قائمة الأعمال صادقة بشأن الحجم"],
+  "lessonsLearned": ["ليس كل مستودع عام يحتاج دراسة حالة من اثني عشر قسمًا"],
+  "futureImprovements": ["إبقاؤه لقطة لأساسيات الويب"],
+  "results": ["موقع ثابت عام ما زال على GitHub"],
+  "coverImage": "/projects/covers/bmm.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/bmm.png"]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "flex-logistichub",
+  "title": "Flex LogisticHub",
+  "tagline": "Fluxstore customization for a logistics-oriented catalog and vendor workflow.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Flutter Developer",
+  "duration": "5 weeks",
+  "year": "2026",
+  "overview": "Flex LogisticHub adapts Fluxstore Multi Vendor for a logistics/wholesale catalog — product grouping, vendor tools, and copy that match freight-style SKUs instead of fashion merchandising.",
+  "problem": "A generic multi-vendor shop UI buried the fields logistics operators actually care about.",
+  "solution": "Customize Fluxstore navigation, product cards, and vendor admin so catalog and order ops match a logistics hub, not a lifestyle boutique.",
+  "architecture": "Same Fluxstore Flutter + WooCommerce pattern as the other Flex/Flux client apps, isolated in its own repo so brand rules stay separate.",
+  "features": [
+    "Logistics-oriented catalog presentation",
+    "Vendor tools carried from Fluxstore and trimmed to the hub's flow",
+    "Shared checkout backbone with client-specific theming"
+  ],
+  "challenges": [
+    "Reskinning a fashion-first template into something operators will trust"
+  ],
+  "lessonsLearned": [
+    "Information architecture changes beat color-only reskins for B2B catalogs"
+  ],
+  "futureImprovements": [
+    "Deeper shipping-rate surfaces if the merchant's Woo plugins expose them cleanly"
+  ],
+  "results": [
+    "A dedicated logistics storefront repo the client can keep evolving"
+  ],
+  "stack": ["Flutter", "Dart", "WooCommerce"],
+  "githubUrl": "https://github.com/ammarshamea/flex-logistichub",
+  "coverImage": "/projects/covers/flex-logistichub.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/flex-logistichub.png"]
+}

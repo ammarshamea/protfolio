@@ -1,0 +1,25 @@
+{
+  "slug": "censuspro",
+  "title": "سينسس برو",
+  "tagline": "مكدس عمليات إحصاء: واجهة JavaScript وواجهة Laravel ومسار معالجة بايثون.",
+  "role": "مطوّر متكامل",
+  "duration": "8 أسابيع",
+  "overview": "سينسس برو يقسم مسار عمل إحصائيًا على ثلاثة مستودعات عامة: واجهة JavaScript وواجهة Laravel وخدمة بايثون للمعالجة الأثقل — منتج واحد وثلاثة أجزاء قابلة للنشر.",
+  "problem": "جمع بيانات ميدانية/إحصائية احتاج واجهة متصفح وواجهة برمجية موثوقة ومكانًا لمهام بايثون دون حشر كل شيء في مستودع واحد.",
+  "solution": "censuspro-frontend للمشغّلين، وcensuspro-backend (Laravel/PHP) للسجلات والمصادقة، وcensuspro-python للدفعات/التحليل.",
+  "architecture": "عميل متصفح → واجهة Laravel REST → MySQL مع مستودع بايثون شقيق للمهام التي لا تنتمي لزمن طلب PHP.",
+  "features": [
+    "واجهة إحصاء للمشغّلين",
+    "واجهة Laravel للسجلات والتحكم بالوصول",
+    "رفيق بايثون لخطوط المعالجة"
+  ],
+  "challenges": ["إبقاء ثلاثة مستودعات متوافقة دون مونوريبو"],
+  "lessonsLearned": [
+    "حدود اللغات مقبولة إذا كانت عقد الواجهة هو السطح المشترك الوحيد"
+  ],
+  "futureImprovements": ["مواصفة OpenAPI مشتركة في مستودعي Laravel والواجهة"],
+  "results": ["مكدس إحصاء بثلاثة مستودعات عامة بدل كتلة خاصة واحدة"],
+  "coverImage": "/projects/covers/censuspro.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/censuspro.png"]
+}

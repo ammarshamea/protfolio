@@ -1,0 +1,28 @@
+{
+  "slug": "listarf",
+  "title": "Listarf",
+  "tagline": "Java Android listing client — classifieds-style lists, not a Dart package.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Android Developer",
+  "duration": "4 weeks",
+  "year": "2026",
+  "overview": "Listarf is a Java Android app for list/classified-style content, published on Codeberg in 2026 alongside ma9rufi and the shopping clients.",
+  "problem": "Needed an Android client whose primary object is a listing, not a task or a note.",
+  "solution": "A dedicated Listarf app rather than stretching Notely or a to-do clone.",
+  "architecture": "Java Android project on Codeberg.",
+  "features": ["Listing-oriented Android UI", "Public Java source"],
+  "challenges": ["Keeping list UX distinct from the organizer-lab apps"],
+  "lessonsLearned": [
+    "Listings and tasks look similar in a file tree and nothing alike in use"
+  ],
+  "futureImprovements": ["Wire to Daleel if the directory API matches"],
+  "results": ["Public Android listings client on Codeberg"],
+  "stack": ["Java", "Android"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/listarf",
+  "coverImage": "/projects/covers/listarf.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/listarf.png"]
+}

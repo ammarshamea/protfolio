@@ -9,8 +9,10 @@ import { GithubActivity } from "@/components/shared/github-activity";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/motion/fade-in";
 import { getSiteContent } from "@/lib/content/site";
+import { getOpenSourceProjects } from "@/lib/content/projects";
 import { getGithubProfile } from "@/lib/github";
 import { generatePageMetadata } from "@/lib/seo";
+import { ProjectCard } from "@/components/projects/project-card";
 
 export async function generateMetadata({
   params,
@@ -36,6 +38,7 @@ export default async function OpenSourcePage({
   const t = await getTranslations({ locale });
   const to = await getTranslations({ locale, namespace: "pages.openSource" });
   const site = getSiteContent(locale);
+  const packages = getOpenSourceProjects(locale);
   const githubProfile = await getGithubProfile();
 
   return (
@@ -53,6 +56,20 @@ export default async function OpenSourcePage({
           { label: t("nav.openSource") },
         ]}
       />
+      {packages.length > 0 ? (
+        <Section>
+          <h2 className="mb-8 font-[family-name:var(--font-display)] text-[length:var(--text-h2)] font-semibold tracking-tight">
+            {to("curatedTitle")}
+          </h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {packages.map((project, index) => (
+              <FadeIn key={project.slug} delay={index * 0.04}>
+                <ProjectCard project={project} />
+              </FadeIn>
+            ))}
+          </div>
+        </Section>
+      ) : null}
       <Section>
         <div className="mx-auto max-w-2xl space-y-6">
           <FadeIn>

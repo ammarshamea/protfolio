@@ -37,15 +37,9 @@
     "Live in production serving real restaurant brands, including Pureger",
     "Zero per-order commission model, compared to 15-30% on typical delivery marketplaces"
   ],
-  "stack": [
-    "Flutter",
-    "BLoC",
-    "Laravel",
-    "Next.js",
-    "MySQL",
-    "Sanctum"
-  ],
+  "stack": ["Flutter", "BLoC", "Laravel", "Next.js", "MySQL", "Sanctum"],
   "liveUrl": "https://clyxorder.com/",
+  "githubUrl": "https://github.com/ammarshamea/clyx_backend",
   "coverImage": "/projects/covers/clyx-order.png",
   "screenshotPending": false,
   "gallery": [

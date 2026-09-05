@@ -1,0 +1,28 @@
+{
+  "slug": "ehasan",
+  "title": "Ehasan",
+  "tagline": "Flutter app on Codeberg for a charitable / community product client.",
+  "category": "mobile",
+  "listing": "showcase",
+  "featured": false,
+  "favorite": false,
+  "role": "Flutter Developer",
+  "duration": "6 weeks",
+  "year": "2025",
+  "overview": "Ehasan is a Flutter product client published on Codeberg in late 2025. Named for ihsan / charitable work; the public tree is the Dart app itself.",
+  "problem": "A community/charity-shaped mobile client needed a public repository that was not mixed into GitHub client work.",
+  "solution": "Publish the Flutter app on Codeberg and list it as its own case study.",
+  "architecture": "Flutter/Dart application. Details live in the Codeberg tree.",
+  "features": ["Flutter product client", "Public Codeberg source"],
+  "challenges": ["Sparse README — the repo is the source of truth"],
+  "lessonsLearned": [
+    "Name and forge location are part of how a product is found"
+  ],
+  "futureImprovements": ["Add a short Arabic/English README in-repo"],
+  "results": ["Public Flutter client at codeberg.org/ammarshamea123/ehasan"],
+  "stack": ["Flutter", "Dart"],
+  "githubUrl": "https://codeberg.org/ammarshamea123/ehasan",
+  "coverImage": "/projects/covers/ehasan.png",
+  "screenshotPending": false,
+  "gallery": ["/projects/covers/ehasan.png"]
+}
